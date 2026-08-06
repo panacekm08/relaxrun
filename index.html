@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#08192B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Aktivity">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/icon-192.png" sizes="192x192">
+<title>Martin · Aktivity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Inter+Tight:wght@400;500;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<style>
+:root {
+  --abyss:#08192B; --navy:#16395C; --sky:#4F93D1; --mist:#A6C8E5;
+  --paper:#EDF2F7; --card:#FFFFFF; --ink:#0F2438; --muted:#6B8298;
+  --line:#DBE5EF; --ok:#2E7D5B; --warn:#C08A2E; --alert:#AE3A2C;
+}
+* { box-sizing:border-box; margin:0; }
+html { -webkit-text-size-adjust:100%; }
+body {
+  background:var(--paper); color:var(--ink);
+  font-family:'Inter Tight',system-ui,sans-serif; font-size:15px; line-height:1.5;
+  max-width:820px; margin:0 auto;
+  padding:0 14px calc(56px + env(safe-area-inset-bottom));
+  padding-left:calc(14px + env(safe-area-inset-left));
+  padding-right:calc(14px + env(safe-area-inset-right));
+  overscroll-behavior-y:contain;
+}
+/* v standalone rezime doplnime miesto pod stavovy riadok */
+@media (display-mode:standalone) {
+  body { padding-top:env(safe-area-inset-top); }
+}
+.mono { font-family:'Space Mono',ui-monospace,monospace; }
+
+/* ---- eyebrow / section heads: cislovanie je vyskovy vrstevnicovy kod ---- */
+.eyebrow {
+  font-family:'Space Mono',monospace; font-size:.66rem; letter-spacing:.16em;
+  text-transform:uppercase; color:var(--muted); display:flex;
+  align-items:center; gap:8px; margin:30px 0 9px;
+}
+.eyebrow::after { content:""; flex:1; height:1px; background:var(--line); }
+.eyebrow .tick { color:var(--sky); }
+
+/* ---------------------------------------------------------------- hero ---- */
+.hero {
+  position:relative; overflow:hidden; border-radius:14px; margin-top:16px;
+  background:linear-gradient(165deg,#0A1F35 0%,var(--abyss) 60%,#061420 100%);
+  color:#EAF2FA;
+}
+.hero .contours { position:absolute; inset:0; width:100%; height:100%; opacity:.4; }
+.hero .inner { position:relative; padding:20px 20px 8px; }
+.hero .kicker {
+  font-family:'Space Mono',monospace; font-size:.66rem; letter-spacing:.2em;
+  text-transform:uppercase; color:var(--mist);
+}
+.hero .grid {
+  display:grid; grid-template-columns:1fr auto; gap:16px; align-items:end;
+  margin-top:14px;
+}
+.hero .pred {
+  font-family:'Archivo',sans-serif; font-weight:800; font-size:3.5rem;
+  line-height:.92; letter-spacing:-.03em;
+}
+.hero .predlab {
+  font-family:'Space Mono',monospace; font-size:.68rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--mist); margin-bottom:4px;
+}
+.hero .cd { text-align:right; }
+.hero .cd .n {
+  font-family:'Archivo',sans-serif; font-weight:700; font-size:2.1rem;
+  line-height:1; letter-spacing:-.02em;
+}
+.hero .cd .l {
+  font-family:'Space Mono',monospace; font-size:.62rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--mist);
+}
+.hero .targetbar {
+  display:flex; justify-content:space-between; align-items:baseline;
+  gap:10px; margin-top:14px; padding-top:11px;
+  border-top:1px solid rgba(166,200,229,.22);
+  font-family:'Space Mono',monospace; font-size:.8rem;
+}
+.hero .targetbar .lab { color:var(--mist); font-size:.68rem;
+  letter-spacing:.1em; text-transform:uppercase; }
+.delta { font-weight:700; }
+.delta.ok { color:#7EDCAE; } .delta.behind { color:#F2A79B; }
+.ridge { display:block; width:100%; height:112px; }
+.ridge-cap {
+  font-family:'Space Mono',monospace; font-size:.6rem; letter-spacing:.08em;
+  color:var(--mist); text-transform:uppercase; padding:0 20px 14px;
+  display:flex; justify-content:space-between;
+}
+button.edit {
+  background:none; border:none; border-bottom:1px dashed rgba(166,200,229,.6);
+  color:#EAF2FA; font:inherit; cursor:pointer; padding:0 1px;
+}
+button.edit:focus-visible, .toggle button:focus-visible,
+.filter button:focus-visible { outline:2px solid var(--sky); outline-offset:2px; }
+
+/* --------------------------------------------------------------- vitals ---- */
+.vitals { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; margin-top:10px; }
+.vital {
+  background:var(--card); border:1px solid var(--line); border-radius:10px;
+  padding:11px 10px 9px;
+}
+.vital .v { font-family:'Archivo',sans-serif; font-weight:700; font-size:1.35rem;
+  letter-spacing:-.01em; }
+.vital .u { font-size:.68rem; color:var(--muted); font-weight:500; }
+.vital .k {
+  font-family:'Space Mono',monospace; font-size:.6rem; letter-spacing:.08em;
+  text-transform:uppercase; color:var(--muted); margin-top:3px;
+}
+
+/* ---------------------------------------------------------------- cards ---- */
+.card {
+  background:var(--card); border:1px solid var(--line); border-radius:12px;
+  padding:14px;
+}
+canvas { max-height:236px; }
+
+/* ------------------------------------------------------------ compare wk ---- */
+.cmp { display:grid; grid-template-columns:1fr 1fr; gap:0; }
+.cmp > div { padding:12px 14px; }
+.cmp > div:first-child { border-right:1px solid var(--line); }
+.cmp .hd {
+  font-family:'Space Mono',monospace; font-size:.62rem; letter-spacing:.1em;
+  text-transform:uppercase; color:var(--muted); margin-bottom:8px;
+}
+.cmp .row { display:flex; justify-content:space-between; font-size:.86rem;
+  padding:3px 0; }
+.cmp .row span:last-child { font-family:'Space Mono',monospace; font-weight:700; }
+.trend { font-family:'Space Mono',monospace; font-size:.72rem; margin-left:5px; }
+.trend.up { color:var(--ok); } .trend.down { color:var(--alert); }
+
+/* ----------------------------------------------------------------- acwr ---- */
+.acwr-wrap { display:grid; grid-template-columns:auto 1fr; gap:16px;
+  align-items:center; }
+.acwr-num { text-align:center; }
+.acwr-num .n { font-family:'Archivo',sans-serif; font-weight:800;
+  font-size:2.4rem; line-height:1; letter-spacing:-.02em; }
+.acwr-num .l { font-family:'Space Mono',monospace; font-size:.6rem;
+  letter-spacing:.1em; text-transform:uppercase; color:var(--muted); }
+.acwr-scale { height:9px; border-radius:5px; position:relative;
+  background:linear-gradient(90deg,var(--mist) 0 26%,var(--ok) 26% 62%,
+    var(--warn) 62% 78%,var(--alert) 78% 100%); }
+.acwr-scale .pin { position:absolute; top:-5px; width:3px; height:19px;
+  background:var(--ink); border-radius:2px; transform:translateX(-50%); }
+.acwr-legend { display:flex; justify-content:space-between;
+  font-family:'Space Mono',monospace; font-size:.58rem; color:var(--muted);
+  margin-top:5px; letter-spacing:.04em; }
+.acwr-note { font-size:.82rem; color:var(--muted); margin-top:9px; }
+
+/* ---------------------------------------------------------------- table ---- */
+.tscroll { overflow-x:auto; -webkit-overflow-scrolling:touch; }
+table { width:100%; border-collapse:collapse; font-size:.85rem;
+  min-width:340px; }
+th {
+  text-align:left; font-family:'Space Mono',monospace; font-weight:400;
+  font-size:.6rem; letter-spacing:.09em; text-transform:uppercase;
+  color:var(--muted); padding:5px 6px; white-space:nowrap;
+}
+td { padding:8px 6px; border-top:1px solid var(--line); }
+td.mono, th.r, td.r { font-family:'Space Mono',monospace; }
+th.r, td.r { text-align:right; }
+.pill {
+  display:inline-block; font-family:'Space Mono',monospace; font-size:.6rem;
+  letter-spacing:.06em; text-transform:uppercase; padding:2px 6px;
+  border-radius:4px; border:1px solid var(--line); color:var(--muted);
+}
+.pill.run { background:var(--navy); border-color:var(--navy); color:#fff; }
+.pill.bike { background:var(--sky); border-color:var(--sky); color:#fff; }
+.pill.hike { background:var(--mist); border-color:var(--mist); color:var(--ink); }
+.pill.swim { background:#7FB8B0; border-color:#7FB8B0; color:#fff; }
+
+/* -------------------------------------------------------------- toggles ---- */
+.toggle, .filter {
+  display:flex; gap:5px; overflow-x:auto; -webkit-overflow-scrolling:touch;
+  scrollbar-width:none; padding-bottom:2px;
+}
+.toggle::-webkit-scrollbar, .filter::-webkit-scrollbar { display:none; }
+.toggle button, .filter button {
+  background:none; border:1px solid var(--line); color:var(--muted);
+  border-radius:6px; padding:6px 11px; cursor:pointer; white-space:nowrap;
+  min-height:32px; -webkit-tap-highlight-color:transparent;
+  font-family:'Space Mono',monospace; font-size:.65rem; letter-spacing:.05em;
+}
+.toggle button:active, .filter button:active { transform:scale(.96); }
+.toggle button.on, .filter button.on {
+  background:var(--navy); border-color:var(--navy); color:#fff;
+}
+.eyebrow .toggle, .eyebrow .filter { flex:none; }
+.eyebrow.with-ctl::after { margin-right:8px; }
+
+footer {
+  margin-top:34px; padding-top:14px; border-top:1px solid var(--line);
+  font-family:'Space Mono',monospace; font-size:.66rem; color:var(--muted);
+  display:flex; justify-content:space-between; flex-wrap:wrap; gap:6px;
+}
+
+/* ciele */
+.goal { padding:11px 0; border-bottom:1px solid var(--line); }
+.goal:last-child { border-bottom:0; padding-bottom:2px; }
+.goal:first-child { padding-top:2px; }
+.goal .top { display:flex; justify-content:space-between; align-items:baseline;
+  gap:8px; margin-bottom:7px; }
+.goal .name { font-family:'Space Mono',monospace; font-size:.68rem;
+  letter-spacing:.08em; text-transform:uppercase; color:var(--muted); }
+.goal .val { font-family:'Space Mono',monospace; font-size:.86rem; }
+.goal .val b { font-family:'Archivo',sans-serif; font-weight:700;
+  font-size:1.05rem; }
+.gbar { height:20px; border-radius:5px; background:var(--paper);
+  position:relative; overflow:hidden; }
+.gbar .fill { height:100%; border-radius:5px; transition:width .5s ease; }
+.gbar .pace { position:absolute; top:-3px; width:2px; height:26px;
+  background:var(--ink); opacity:.55; }
+.goal .foot { display:flex; justify-content:space-between; margin-top:6px;
+  font-family:'Space Mono',monospace; font-size:.66rem; color:var(--muted); }
+.goal .foot .st { font-weight:700; }
+.goal .foot .st.ahead { color:var(--ok); }
+.goal .foot .st.behind { color:var(--warn); }
+.goal .foot .st.done { color:var(--ok); }
+.gform { display:grid; grid-template-columns:1fr 1fr; gap:10px 14px; }
+.gform label { display:flex; align-items:center; gap:7px;
+  font-family:'Space Mono',monospace; font-size:.66rem; color:var(--muted);
+  letter-spacing:.04em; text-transform:uppercase; }
+.gform input {
+  width:78px; margin-left:auto; padding:7px 8px; border:1px solid var(--line);
+  border-radius:6px; background:var(--paper); color:var(--ink);
+  font-family:'Space Mono',monospace; font-size:.86rem; font-weight:700;
+  text-align:right;
+}
+.gform input:focus { outline:2px solid var(--sky); outline-offset:1px; }
+.gform-actions { display:flex; gap:8px; margin-top:14px; flex-wrap:wrap; }
+.gform-actions .syncbtn { width:auto; }
+@media (max-width:560px) {
+  .gform { grid-template-columns:1fr; gap:8px; }
+  .gform-actions { flex-direction:column; }
+  .gform-actions button { width:100%; }
+}
+
+button.edit-goals { background:none; border:1px solid var(--line);
+  color:var(--muted); border-radius:6px; padding:6px 11px; cursor:pointer;
+  font-family:'Space Mono',monospace; font-size:.65rem; letter-spacing:.05em;
+  min-height:32px; }
+
+.zrow { display:grid; grid-template-columns:64px 1fr 78px; gap:9px;
+  align-items:center; margin-bottom:7px; }
+.zrow .zlab { font-family:'Space Mono',monospace; font-size:.66rem;
+  color:var(--muted); letter-spacing:.04em; }
+.zbar { height:16px; border-radius:4px; background:var(--paper);
+  overflow:hidden; }
+.zbar span { display:block; height:100%; border-radius:4px; }
+.zval { font-family:'Space Mono',monospace; font-size:.72rem; text-align:right; }
+.zval b { font-weight:700; }
+.zsum { font-family:'Space Mono',monospace; font-size:.66rem; color:var(--muted);
+  border-top:1px solid var(--line); padding-top:8px; margin-top:3px; }
+.wear { height:7px; border-radius:4px; background:var(--paper); overflow:hidden;
+  min-width:52px; }
+.wear span { display:block; height:100%; }
+.retired { color:var(--muted); }
+
+.syncbtn {
+  background:var(--navy); border:1px solid var(--navy); color:#fff;
+  font-family:'Space Mono',monospace; font-size:.66rem; letter-spacing:.06em;
+  padding:5px 11px; border-radius:6px; cursor:pointer;
+}
+.syncbtn:disabled { opacity:.55; cursor:default; }
+.syncbtn:focus-visible { outline:2px solid var(--sky); outline-offset:2px; }
+.syncmsg { flex-basis:100%; color:var(--muted); }
+
+@media (max-width:560px) {
+  body { font-size:14.5px; }
+  canvas { max-height:200px; }
+  .card { padding:11px; border-radius:10px; }
+  .eyebrow { margin:24px 0 8px; font-size:.62rem; }
+  .eyebrow.with-ctl { flex-wrap:wrap; row-gap:7px; }
+  .eyebrow.with-ctl::after { display:none; }
+  .hero .inner { padding:16px 16px 6px; }
+  .hero .pred { font-size:2.6rem; }
+  .hero .cd .n { font-size:1.6rem; }
+  .hero .grid { gap:10px; }
+  .ridge { height:96px; }
+  .ridge-cap { padding:0 16px 12px; font-size:.55rem; gap:8px; }
+  .vitals { grid-template-columns:repeat(3,1fr); gap:6px; }
+  .vital { padding:9px 7px 8px; }
+  .vital .v { font-size:1.1rem; }
+  .vital .k { font-size:.54rem; letter-spacing:.05em; }
+  .acwr-wrap { grid-template-columns:1fr; gap:10px; }
+  .acwr-num { text-align:left; display:flex; align-items:baseline; gap:8px; }
+  .cmp { grid-template-columns:1fr; }
+  .cmp > div:first-child { border-right:0; border-bottom:1px solid var(--line); }
+  .zrow { grid-template-columns:34px 1fr 72px; gap:7px; }
+  table { font-size:.78rem; min-width:0; }
+  th, td { padding:6px 4px; }
+  footer { font-size:.6rem; }
+  .syncbtn { width:100%; padding:9px; font-size:.7rem; margin-top:4px; }
+}
+@media (max-width:380px) {
+  .vitals { grid-template-columns:repeat(2,1fr); }
+  .hero .pred { font-size:2.3rem; }
+}
+@media (prefers-reduced-motion:reduce) {
+  .ridge path { animation:none !important; }
+}
+</style>
+</head>
+<body>
+
+<!-- ============================================================== HERO -->
+<section class="hero">
+  <svg class="contours" id="contours" viewBox="0 0 800 300" preserveAspectRatio="none"
+       aria-hidden="true"></svg>
+  <div class="inner">
+    <div class="kicker">Martin · aktivity · beh, bike, túry, plávanie</div>
+    <div class="grid">
+      <div>
+        <div class="predlab">Predikcia polmaratónu</div>
+        <div class="pred mono" id="predEl">–</div>
+      </div>
+      <div class="cd">
+        <div class="n mono" id="cdEl">–</div>
+        <div class="l">dní do <button class="edit mono" id="raceBtn">štartu</button></div>
+      </div>
+    </div>
+    <div class="targetbar">
+      <span class="lab">Cieľ <button class="edit mono" id="goalBtn">1:45:00</button></span>
+      <span class="delta mono" id="deltaEl">–</span>
+    </div>
+  </div>
+  <svg class="ridge" id="ridge" viewBox="0 0 800 112" preserveAspectRatio="none"
+       role="img" aria-label="Hrebeň tempa voči cieľu"></svg>
+  <div class="ridge-cap">
+    <span>hrebeň = kĺzavý priemer tempa (7 behov)</span>
+    <span id="ridgeNow">–</span>
+  </div>
+</section>
+
+<!-- ============================================================ VITALS -->
+<div class="eyebrow"><span class="tick">◈</span> Aktuálne hodnoty</div>
+<div class="vitals" id="vitals"></div>
+
+<!-- =========================================================== CIELE -->
+<div class="eyebrow with-ctl"><span class="tick">◈</span> Ciele objemu
+  <span class="toggle"><button class="edit-goals" id="editGoals">Upraviť ciele</button></span></div>
+<div class="card" id="goalsCard"></div>
+<div class="card" id="goalsForm" hidden>
+  <div class="gform">
+    <label>Beh · mesiac <input type="number" id="gRunM" min="1" step="5"
+      inputmode="numeric"> km</label>
+    <label>Beh · rok <input type="number" id="gRunY" min="1" step="50"
+      inputmode="numeric"> km</label>
+    <label>Bike · mesiac <input type="number" id="gBikeM" min="1" step="10"
+      inputmode="numeric"> km</label>
+    <label>Bike · rok <input type="number" id="gBikeY" min="1" step="100"
+      inputmode="numeric"> km</label>
+  </div>
+  <div class="gform-actions">
+    <button id="gSave" class="syncbtn">Uložiť ciele</button>
+    <button id="gCancel" class="edit-goals">Zrušiť</button>
+    <button id="gReset" class="edit-goals">Predvolené</button>
+  </div>
+</div>
+
+<!-- =========================================================== TÝŽDEŇ -->
+<div class="eyebrow"><span class="tick">◈</span> Tento týždeň vs. minulý</div>
+<div class="card" style="padding:0">
+  <div class="cmp">
+    <div>
+      <div class="hd">Posledných 7 dní</div>
+      <div id="wkNow"></div>
+    </div>
+    <div>
+      <div class="hd">Predchádzajúcich 7</div>
+      <div id="wkPrev"></div>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================= ZÁŤAŽ -->
+<div class="eyebrow"><span class="tick">◈</span> Tréningová záťaž</div>
+<div class="card">
+  <div class="acwr-wrap">
+    <div class="acwr-num">
+      <div class="n mono" id="acwrN">–</div>
+      <div class="l">ACWR</div>
+    </div>
+    <div>
+      <div class="acwr-scale"><div class="pin" id="acwrPin" style="left:50%"></div></div>
+      <div class="acwr-legend"><span>0,5</span><span>0,8</span><span>1,3</span>
+        <span>1,5</span><span>2,0</span></div>
+      <div class="acwr-note" id="acwrNote"></div>
+    </div>
+  </div>
+  <div style="margin-top:14px"><canvas id="cLoad"></canvas></div>
+</div>
+
+<!-- ============================================================= OBJEM -->
+<div class="eyebrow"><span class="tick">◈</span> Týždenný objem a prevýšenie</div>
+<div class="card"><canvas id="cWeeks"></canvas></div>
+
+<!-- ============================================================= TEMPO -->
+<div class="eyebrow"><span class="tick">◈</span> Tempo behov</div>
+<div class="card"><canvas id="cPace"></canvas></div>
+
+<!-- ======================================================== EFEKTIVITA -->
+<div class="eyebrow"><span class="tick">◈</span> Efektivita · tep vs. tempo</div>
+<div class="card"><canvas id="cEff"></canvas></div>
+
+<!-- ============================================================== ZÓNY -->
+<div class="eyebrow with-ctl"><span class="tick">◈</span> Tepové zóny
+  <span class="toggle" id="zPeriod"><button data-p="30" class="on">30 d</button>
+    <button data-p="90">90 d</button><button data-p="9999">Všetko</button></span></div>
+<div class="card">
+  <div class="filter" id="zSport" style="margin-bottom:12px">
+    <button data-s="all" class="on">Všetko</button>
+    <button data-s="run">Beh</button>
+    <button data-s="bike">Bike</button>
+    <button data-s="hike">Túra</button>
+    <button data-s="swim">Plávanie</button>
+  </div>
+  <div id="zoneBars"></div>
+  <div style="margin-top:14px"><canvas id="cZoneTrend"></canvas></div>
+</div>
+
+<!-- ======================================================== INTENZITA -->
+<div class="eyebrow"><span class="tick">◈</span> Minúty intenzity po týždňoch</div>
+<div class="card"><canvas id="cIntensity"></canvas></div>
+
+<!-- ============================================================ SPÁNOK -->
+<div class="eyebrow with-ctl"><span class="tick">◈</span> Spánok podľa fáz
+  <span class="toggle"><button id="s30" class="on">30 d</button>
+    <button id="s90">90 d</button></span></div>
+<div class="card"><canvas id="cSleep"></canvas></div>
+
+<!-- ========================================================= REGENERÁCIA -->
+<div class="eyebrow"><span class="tick">◈</span> Pokojový tep a HRV</div>
+<div class="card"><canvas id="cRec"></canvas></div>
+
+<!-- ========================================================= BATÉRIA -->
+<div class="eyebrow"><span class="tick">◈</span> Body Battery, stres a pripravenosť</div>
+<div class="card"><canvas id="cBody"></canvas></div>
+
+<!-- =========================================================== KROKY -->
+<div class="eyebrow"><span class="tick">◈</span> Denné kroky</div>
+<div class="card"><canvas id="cSteps"></canvas></div>
+
+<!-- ========================================================== FORMA -->
+<div class="eyebrow with-ctl"><span class="tick">◈</span> Dlhodobý trend formy
+  <span class="toggle" id="hMetric"><button data-m="vo2max" class="on">VO2max</button>
+    <button data-m="half_s">Polmaratón</button>
+    <button data-m="endurance_score">Endurance</button></span></div>
+<div class="card"><canvas id="cHist"></canvas></div>
+
+<!-- ====================================================== DEŇ V TÝŽDNI -->
+<div class="eyebrow"><span class="tick">◈</span> Rozloženie tréningu v týždni</div>
+<div class="card"><canvas id="cDow"></canvas></div>
+
+<!-- ======================================================== KADENCIA -->
+<div class="eyebrow"><span class="tick">◈</span> Kadencia a dĺžka kroku</div>
+<div class="card"><canvas id="cCad"></canvas></div>
+
+<!-- ========================================================== OBUV -->
+<div class="eyebrow"><span class="tick">◈</span> Výstroj</div>
+<div class="card" style="padding:6px 10px 10px">
+  <div class="tscroll"><table><thead><tr><th>Kus</th><th class="r">km</th><th class="r">Aktivít</th>
+    <th class="r">Opotrebenie</th></tr></thead>
+  <tbody id="gearBody"></tbody></table></div>
+</div>
+
+<!-- ========================================================== REKORDY -->
+<div class="eyebrow"><span class="tick">◈</span> Osobné rekordy</div>
+<div class="card" style="padding:6px 10px 10px">
+  <div class="tscroll"><table><thead><tr><th>Disciplína</th><th class="r">Čas</th>
+    <th class="r">Tempo</th><th class="r">Dátum</th></tr></thead>
+  <tbody id="prBody"></tbody></table></div>
+</div>
+
+<!-- ========================================================== MESIACE -->
+<div class="eyebrow"><span class="tick">◈</span> Mesačné súčty</div>
+<div class="card" style="padding:6px 10px 10px">
+  <div class="tscroll"><table><thead><tr><th>Mesiac</th><th class="r">Beh</th><th class="r">Bike</th>
+    <th class="r">Túra</th><th class="r">Plav.</th><th class="r">Prevýš.</th></tr></thead>
+  <tbody id="moBody"></tbody></table></div>
+</div>
+
+<!-- ============================================================ ROKY -->
+<div class="eyebrow"><span class="tick">◈</span> Ročné súčty</div>
+<div class="card" style="padding:6px 10px 10px">
+  <div class="tscroll"><table><thead><tr><th>Rok</th><th class="r">Beh</th>
+    <th class="r">Bike</th><th class="r">Túra</th><th class="r">Plav.</th>
+    <th class="r">Prevýš.</th><th class="r">Aktivít</th></tr></thead>
+  <tbody id="yrBody"></tbody></table></div>
+</div>
+
+<!-- ========================================================= AKTIVITY -->
+<div class="eyebrow with-ctl"><span class="tick">◈</span> Aktivity
+  <span class="filter" id="filter">
+    <button data-s="all" class="on">Všetko</button>
+    <button data-s="run">Beh</button>
+    <button data-s="bike">Bike</button>
+    <button data-s="hike">Túra</button>
+    <button data-s="swim">Plávanie</button></span></div>
+<div class="card" style="padding:6px 10px 10px">
+  <div class="tscroll"><table><thead><tr><th>Dátum</th><th>Typ</th><th class="r">km</th>
+    <th class="r">Čas</th><th class="r">Tempo</th><th class="r">Tep</th>
+    <th class="r">Prev.</th></tr></thead>
+  <tbody id="actBody"></tbody></table></div>
+</div>
+
+<footer>
+  <span>Sync: 2026-08-06T07:46</span>
+  <span><a href="/report.md" style="color:var(--muted)">Všetky dáta ako text</a></span>
+  <span id="statusEl"></span>
+  <button class="syncbtn" id="syncBtn">Stiahnuť nové dáta</button>
+</footer>
+
+<script>
+const D = {"zone_rows": [{"d": "2025-09-01", "s": "hike", "z": [224, 0, 0, 0, 0]}, {"d": "2025-09-02", "s": "hike", "z": [1020, 0, 0, 0, 0]}, {"d": "2025-09-03", "s": "hike", "z": [8053, 4902, 2256, 46, 0]}, {"d": "2025-09-07", "s": "bike", "z": [25, 472, 1953, 3580, 219]}, {"d": "2025-09-09", "s": "run", "z": [13, 34, 193, 1497, 748]}, {"d": "2025-09-15", "s": "run", "z": [172, 472, 821, 974, 181]}, {"d": "2025-09-22", "s": "run", "z": [7, 22, 593, 1700, 0]}, {"d": "2025-09-27", "s": "run", "z": [25, 77, 366, 2721, 204]}, {"d": "2025-09-28", "s": "bike", "z": [263, 3501, 3083, 116, 0]}, {"d": "2025-10-04", "s": "hike", "z": [1450, 51, 0, 0, 0]}, {"d": "2025-10-05", "s": "run", "z": [10, 58, 545, 2643, 95]}, {"d": "2025-10-11", "s": "run", "z": [21, 32, 163, 3142, 1340]}, {"d": "2025-10-19", "s": "run", "z": [35, 71, 1376, 4270, 39]}, {"d": "2025-10-25", "s": "run", "z": [15, 27, 289, 3709, 1]}, {"d": "2025-10-27", "s": "bike", "z": [40, 376, 1946, 79, 0]}, {"d": "2025-11-02", "s": "bike", "z": [95, 666, 1753, 49, 0]}, {"d": "2025-11-03", "s": "run", "z": [6, 26, 53, 1310, 78]}, {"d": "2025-11-05", "s": "bike", "z": [102, 548, 1738, 24, 0]}, {"d": "2025-11-08", "s": "run", "z": [20, 36, 573, 4566, 37]}, {"d": "2025-11-10", "s": "run", "z": [21, 29, 28, 1339, 77]}, {"d": "2025-11-11", "s": "bike", "z": [75, 2389, 382, 0, 0]}, {"d": "2025-11-12", "s": "bike", "z": [100, 986, 1423, 0, 0]}, {"d": "2025-11-13", "s": "bike", "z": [264, 2195, 577, 0, 0]}, {"d": "2025-11-15", "s": "run", "z": [23, 12, 385, 2801, 78]}, {"d": "2025-11-17", "s": "bike", "z": [151, 3056, 132, 0, 0]}, {"d": "2025-11-18", "s": "bike", "z": [1205, 1878, 32, 0, 0]}, {"d": "2025-11-20", "s": "bike", "z": [474, 2026, 412, 0, 0]}, {"d": "2025-11-21", "s": "run", "z": [24, 19, 78, 2437, 2]}, {"d": "2025-11-22", "s": "run", "z": [15, 15, 71, 2066, 451]}, {"d": "2025-11-24", "s": "bike", "z": [332, 2450, 227, 0, 0]}, {"d": "2025-11-25", "s": "bike", "z": [1688, 1300, 16, 0, 0]}, {"d": "2025-11-29", "s": "run", "z": [19, 25, 264, 2891, 1]}, {"d": "2025-12-08", "s": "run", "z": [10, 41, 37, 1331, 98]}, {"d": "2025-12-16", "s": "run", "z": [109, 859, 140, 1096, 0]}, {"d": "2025-12-18", "s": "run", "z": [5, 9, 116, 2421, 74]}, {"d": "2025-12-24", "s": "run", "z": [19, 28, 56, 1649, 369]}, {"d": "2025-12-26", "s": "run", "z": [6, 7, 540, 6922, 104]}, {"d": "2026-01-17", "s": "run", "z": [23, 33, 251, 1780, 168]}, {"d": "2026-01-19", "s": "run", "z": [29, 16, 17, 1059, 486]}, {"d": "2026-01-25", "s": "run", "z": [34, 32, 214, 2330, 63]}, {"d": "2026-01-27", "s": "swim", "z": [359, 1059, 709, 21, 0]}, {"d": "2026-01-28", "s": "run", "z": [19, 18, 289, 2040, 259]}, {"d": "2026-02-02", "s": "run", "z": [14, 16, 190, 1967, 170]}, {"d": "2026-02-03", "s": "swim", "z": [485, 754, 904, 5, 0]}, {"d": "2026-02-08", "s": "run", "z": [10, 25, 712, 2724, 19]}, {"d": "2026-02-13", "s": "run", "z": [14, 26, 636, 1630, 3]}, {"d": "2026-02-14", "s": "run", "z": [15, 77, 548, 2039, 0]}, {"d": "2026-02-17", "s": "swim", "z": [196, 988, 733, 0, 0]}, {"d": "2026-02-21", "s": "run", "z": [28, 22, 682, 1404, 423]}, {"d": "2026-02-23", "s": "run", "z": [31, 31, 421, 2668, 28]}, {"d": "2026-02-25", "s": "run", "z": [28, 58, 402, 1964, 0]}, {"d": "2026-02-28", "s": "run", "z": [6, 42, 929, 1780, 0]}, {"d": "2026-03-01", "s": "run", "z": [26, 90, 2100, 706, 0]}, {"d": "2026-03-03", "s": "swim", "z": [155, 895, 556, 0, 0]}, {"d": "2026-03-05", "s": "run", "z": [20, 46, 446, 1586, 0]}, {"d": "2026-03-07", "s": "bike", "z": [1675, 1452, 870, 202, 0]}, {"d": "2026-03-08", "s": "bike", "z": [536, 2950, 1809, 48, 0]}, {"d": "2026-03-13", "s": "run", "z": [16, 10, 893, 3660, 0]}, {"d": "2026-03-16", "s": "run", "z": [10, 4, 70, 1581, 92]}, {"d": "2026-03-19", "s": "run", "z": [15, 59, 1638, 1833, 0]}, {"d": "2026-03-22", "s": "run", "z": [192, 2550, 700, 1317, 0]}, {"d": "2026-03-24", "s": "run", "z": [836, 1244, 223, 298, 0]}, {"d": "2026-03-28", "s": "run", "z": [42, 2099, 1949, 334, 0]}, {"d": "2026-03-29", "s": "run", "z": [22, 44, 290, 2674, 47]}, {"d": "2026-04-02", "s": "run", "z": [27, 57, 1791, 1184, 0]}, {"d": "2026-04-08", "s": "run", "z": [23, 114, 1381, 1239, 0]}, {"d": "2026-04-12", "s": "run", "z": [2, 3, 10, 5071, 1589]}, {"d": "2026-04-15", "s": "run", "z": [103, 430, 2508, 0, 0]}, {"d": "2026-04-25", "s": "bike", "z": [6322, 2325, 225, 0, 0]}, {"d": "2026-04-26", "s": "bike", "z": [2493, 3033, 3021, 974, 233]}, {"d": "2026-05-11", "s": "run", "z": [36, 1769, 913, 0, 0]}, {"d": "2026-05-12", "s": "run", "z": [130, 1222, 837, 687, 0]}, {"d": "2026-05-16", "s": "run", "z": [0, 18, 37, 752, 3419]}, {"d": "2026-05-21", "s": "run", "z": [50, 2536, 976, 0, 0]}, {"d": "2026-05-22", "s": "run", "z": [7, 36, 591, 1873, 21]}, {"d": "2026-05-25", "s": "run", "z": [16, 568, 2054, 596, 0]}, {"d": "2026-05-31", "s": "run", "z": [101, 518, 273, 711, 8]}, {"d": "2026-06-23", "s": "run", "z": [11, 43, 1392, 1364, 127]}, {"d": "2026-06-24", "s": "bike", "z": [261, 1177, 4749, 823, 0]}, {"d": "2026-06-25", "s": "run", "z": [22, 221, 1039, 918, 11]}, {"d": "2026-07-05", "s": "hike", "z": [703, 0, 0, 0, 0]}, {"d": "2026-07-07", "s": "bike", "z": [3651, 717, 154, 0, 0]}, {"d": "2026-07-09", "s": "run", "z": [48, 592, 2408, 832, 0]}, {"d": "2026-07-10", "s": "run", "z": [8, 34, 128, 1564, 61]}, {"d": "2026-07-11", "s": "hike", "z": [1748, 33, 0, 0, 0]}, {"d": "2026-07-12", "s": "run", "z": [26, 1174, 4262, 302, 0]}, {"d": "2026-07-15", "s": "run", "z": [27, 1556, 1468, 15, 0]}, {"d": "2026-07-17", "s": "run", "z": [29, 1686, 1111, 300, 6]}, {"d": "2026-07-19", "s": "run", "z": [1214, 5010, 5386, 1423, 65]}, {"d": "2026-07-21", "s": "bike", "z": [933, 358, 102, 0, 0]}, {"d": "2026-07-21", "s": "bike", "z": [938, 595, 67, 65, 4]}, {"d": "2026-07-22", "s": "run", "z": [23, 2552, 128, 0, 0]}, {"d": "2026-07-23", "s": "run", "z": [132, 2437, 468, 0, 0]}, {"d": "2026-07-25", "s": "bike", "z": [173, 1676, 10082, 942, 0]}, {"d": "2026-07-26", "s": "run", "z": [46, 2201, 919, 0, 0]}, {"d": "2026-07-28", "s": "run", "z": [12, 37, 875, 2824, 0]}, {"d": "2026-07-29", "s": "run", "z": [20, 1635, 1300, 38, 0]}, {"d": "2026-08-01", "s": "bike", "z": [116, 2143, 5781, 724, 0]}, {"d": "2026-08-04", "s": "run", "z": [27, 2355, 612, 0, 0]}, {"d": "2026-08-05", "s": "run", "z": [51, 2082, 621, 0, 0]}], "dow": [{"km": 142.4, "n": 15, "load": 784}, {"km": 202.2, "n": 18, "load": 777}, {"km": 179.3, "n": 13, "load": 853}, {"km": 117.5, "n": 10, "load": 588}, {"km": 70.7, "n": 7, "load": 644}, {"km": 383.3, "n": 19, "load": 1864}, {"km": 359.1, "n": 18, "load": 1847}], "cad": [{"d": "2025-10-25", "c": 165, "sl": 107}, {"d": "2025-11-03", "c": 162, "sl": 123}, {"d": "2025-11-08", "c": 157, "sl": 95}, {"d": "2025-11-10", "c": 163, "sl": 122}, {"d": "2025-11-15", "c": 166, "sl": 110}, {"d": "2025-11-21", "c": 162, "sl": 115}, {"d": "2025-11-22", "c": 168, "sl": 109}, {"d": "2025-11-29", "c": 164, "sl": 115}, {"d": "2025-12-08", "c": 162, "sl": 122}, {"d": "2025-12-16", "c": 163, "sl": 116}, {"d": "2025-12-18", "c": 163, "sl": 115}, {"d": "2025-12-24", "c": 166, "sl": 118}, {"d": "2025-12-26", "c": 164, "sl": 104}, {"d": "2026-01-17", "c": 165, "sl": 113}, {"d": "2026-01-19", "c": 167, "sl": 121}, {"d": "2026-01-25", "c": 163, "sl": 114}, {"d": "2026-01-28", "c": 162, "sl": 111}, {"d": "2026-02-02", "c": 163, "sl": 113}, {"d": "2026-02-08", "c": 163, "sl": 108}, {"d": "2026-02-13", "c": 161, "sl": 113}, {"d": "2026-02-14", "c": 166, "sl": 109}, {"d": "2026-02-21", "c": 165, "sl": 113}, {"d": "2026-02-23", "c": 162, "sl": 116}, {"d": "2026-02-25", "c": 162, "sl": 109}, {"d": "2026-02-28", "c": 160, "sl": 109}, {"d": "2026-03-01", "c": 166, "sl": 105}, {"d": "2026-03-05", "c": 163, "sl": 123}, {"d": "2026-03-13", "c": 163, "sl": 112}, {"d": "2026-03-16", "c": 168, "sl": 121}, {"d": "2026-03-19", "c": 163, "sl": 113}, {"d": "2026-03-22", "c": 158, "sl": 95}, {"d": "2026-03-24", "c": 157, "sl": 90}, {"d": "2026-03-28", "c": 158, "sl": 90}, {"d": "2026-03-29", "c": 170, "sl": 114}, {"d": "2026-04-02", "c": 161, "sl": 110}, {"d": "2026-04-08", "c": 161, "sl": 113}, {"d": "2026-04-12", "c": 168, "sl": 113}, {"d": "2026-04-15", "c": 159, "sl": 98}, {"d": "2026-05-11", "c": 155, "sl": 86}, {"d": "2026-05-12", "c": 158, "sl": 97}, {"d": "2026-05-16", "c": 143, "sl": 112}, {"d": "2026-05-21", "c": 155, "sl": 87}, {"d": "2026-05-22", "c": 162, "sl": 102}, {"d": "2026-05-25", "c": 159, "sl": 97}, {"d": "2026-05-31", "c": 145, "sl": 103}, {"d": "2026-06-23", "c": 160, "sl": 102}, {"d": "2026-06-25", "c": 161, "sl": 101}, {"d": "2026-07-09", "c": 159, "sl": 97}, {"d": "2026-07-10", "c": 163, "sl": 112}, {"d": "2026-07-12", "c": 161, "sl": 90}, {"d": "2026-07-15", "c": 159, "sl": 99}, {"d": "2026-07-17", "c": 157, "sl": 92}, {"d": "2026-07-19", "c": 128, "sl": 86}, {"d": "2026-07-22", "c": 157, "sl": 87}, {"d": "2026-07-23", "c": 158, "sl": 87}, {"d": "2026-07-26", "c": 155, "sl": 85}, {"d": "2026-07-28", "c": 162, "sl": 112}, {"d": "2026-07-29", "c": 158, "sl": 91}, {"d": "2026-08-04", "c": 160, "sl": 87}, {"d": "2026-08-05", "c": 160, "sl": 86}], "te": [{"d": "2025-10-25", "te": 5.0}, {"d": "2025-11-03", "te": 4.0}, {"d": "2025-11-08", "te": 4.900000095367432}, {"d": "2025-11-10", "te": 3.700000047683716}, {"d": "2025-11-15", "te": 4.5}, {"d": "2025-11-21", "te": 4.199999809265137}, {"d": "2025-11-22", "te": 4.300000190734863}, {"d": "2025-11-29", "te": 4.400000095367432}, {"d": "2025-12-08", "te": 3.700000047683716}, {"d": "2025-12-16", "te": 3.9000000953674316}, {"d": "2025-12-18", "te": 4.800000190734863}, {"d": "2025-12-24", "te": 4.699999809265137}, {"d": "2025-12-26", "te": 5.0}, {"d": "2026-01-17", "te": 4.300000190734863}, {"d": "2026-01-19", "te": 4.300000190734863}, {"d": "2026-01-25", "te": 4.599999904632568}, {"d": "2026-01-28", "te": 4.400000095367432}, {"d": "2026-02-02", "te": 4.5}, {"d": "2026-02-08", "te": 4.800000190734863}, {"d": "2026-02-13", "te": 4.0}, {"d": "2026-02-14", "te": 3.9000000953674316}, {"d": "2026-02-21", "te": 4.199999809265137}, {"d": "2026-02-23", "te": 4.5}, {"d": "2026-02-25", "te": 3.5999999046325684}, {"d": "2026-02-28", "te": 3.799999952316284}, {"d": "2026-03-01", "te": 3.5999999046325684}, {"d": "2026-03-05", "te": 4.0}, {"d": "2026-03-13", "te": 4.599999904632568}, {"d": "2026-03-16", "te": 3.9000000953674316}, {"d": "2026-03-19", "te": 3.9000000953674316}, {"d": "2026-03-22", "te": 3.4000000953674316}, {"d": "2026-03-24", "te": 2.700000047683716}, {"d": "2026-03-28", "te": 3.299999952316284}, {"d": "2026-03-29", "te": 4.0}, {"d": "2026-04-02", "te": 3.799999952316284}, {"d": "2026-04-08", "te": 3.799999952316284}, {"d": "2026-04-12", "te": 5.0}, {"d": "2026-04-15", "te": 3.0}, {"d": "2026-05-11", "te": 2.299999952316284}, {"d": "2026-05-12", "te": 3.0999999046325684}, {"d": "2026-05-16", "te": 5.0}, {"d": "2026-05-21", "te": 2.5}, {"d": "2026-05-22", "te": 3.5}, {"d": "2026-05-25", "te": 3.299999952316284}, {"d": "2026-05-31", "te": 3.0}, {"d": "2026-06-23", "te": 3.5999999046325684}, {"d": "2026-06-25", "te": 3.4000000953674316}, {"d": "2026-07-09", "te": 3.299999952316284}, {"d": "2026-07-10", "te": 3.700000047683716}, {"d": "2026-07-12", "te": 3.4000000953674316}, {"d": "2026-07-15", "te": 3.0999999046325684}, {"d": "2026-07-17", "te": 2.9000000953674316}, {"d": "2026-07-19", "te": 4.199999809265137}, {"d": "2026-07-22", "te": 2.4000000953674316}, {"d": "2026-07-23", "te": 2.5}, {"d": "2026-07-26", "te": 2.5}, {"d": "2026-07-28", "te": 4.300000190734863}, {"d": "2026-07-29", "te": 2.9000000953674316}, {"d": "2026-08-04", "te": 2.5}, {"d": "2026-08-05", "te": 2.299999952316284}], "history": [{"date": "2026-07-29", "vo2max": 50.3, "half_s": 6684, "time5k_s": 1405, "time10k_s": 3003, "endurance_score": null, "hill_score": null, "fitness_age": 25.237529610128995}, {"date": "2026-07-30", "vo2max": null, "half_s": 6685, "time5k_s": 1408, "time10k_s": 3006, "endurance_score": null, "hill_score": null, "fitness_age": 25.237529610128995}, {"date": "2026-07-31", "vo2max": null, "half_s": 6685, "time5k_s": 1408, "time10k_s": 3006, "endurance_score": null, "hill_score": null, "fitness_age": 25.237529610128995}, {"date": "2026-08-01", "vo2max": null, "half_s": 6693, "time5k_s": 1412, "time10k_s": 3010, "endurance_score": null, "hill_score": null, "fitness_age": 25.10887053324587}, {"date": "2026-08-02", "vo2max": null, "half_s": 6704, "time5k_s": 1417, "time10k_s": 3014, "endurance_score": null, "hill_score": null, "fitness_age": 25.10887053324587}, {"date": "2026-08-03", "vo2max": null, "half_s": 6712, "time5k_s": 1419, "time10k_s": 3017, "endurance_score": null, "hill_score": null, "fitness_age": 25.10887053324587}, {"date": "2026-08-04", "vo2max": null, "half_s": 6720, "time5k_s": 1423, "time10k_s": 3019, "endurance_score": null, "hill_score": null, "fitness_age": 25.10887053324587}, {"date": "2026-08-05", "vo2max": null, "half_s": 6733, "time5k_s": 1430, "time10k_s": 3025, "endurance_score": null, "hill_score": null, "fitness_age": 25.10887053324587}, {"date": "2026-08-06", "vo2max": null, "half_s": 6748, "time5k_s": 1439, "time10k_s": 3032, "endurance_score": null, "hill_score": null, "fitness_age": 25.10887053324587}], "gear": [], "intensity": [{"week": "2026-06-08", "moderate": 0, "vigorous": 0}, {"week": "2026-06-15", "moderate": 0, "vigorous": 0}, {"week": "2026-06-22", "moderate": 0, "vigorous": 0}, {"week": "2026-06-29", "moderate": 0, "vigorous": 0}, {"week": "2026-07-06", "moderate": 0, "vigorous": 0}, {"week": "2026-07-13", "moderate": 0, "vigorous": 0}, {"week": "2026-07-20", "moderate": 0, "vigorous": 0}, {"week": "2026-07-27", "moderate": 0, "vigorous": 0}, {"week": "2026-08-03", "moderate": 0, "vigorous": 0}], "weeks": [{"w": "2026-03-16", "run": 29.0, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 162}, {"w": "2026-03-23", "run": 26.7, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 198}, {"w": "2026-03-30", "run": 9.0, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 75}, {"w": "2026-04-06", "run": 29.8, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 178}, {"w": "2026-04-13", "run": 8.1, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 75}, {"w": "2026-04-20", "run": 0.0, "bike": 82.0, "hike": 0.0, "swim": 0.0, "elev": 970}, {"w": "2026-05-11", "run": 24.8, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 469}, {"w": "2026-05-18", "run": 15.0, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 113}, {"w": "2026-05-25", "run": 12.4, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 60}, {"w": "2026-06-22", "run": 14.0, "bike": 60.0, "hike": 0.0, "swim": 0.0, "elev": 490}, {"w": "2026-06-29", "run": 0.0, "bike": 0.0, "hike": 8.6, "swim": 0.0, "elev": 34}, {"w": "2026-07-06", "run": 29.5, "bike": 35.0, "hike": 7.1, "swim": 0.0, "elev": 853}, {"w": "2026-07-13", "run": 39.8, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 1150}, {"w": "2026-07-20", "run": 20.2, "bike": 122.8, "hike": 0.0, "swim": 0.0, "elev": 1254}, {"w": "2026-07-27", "run": 18.8, "bike": 74.1, "hike": 0.0, "swim": 0.0, "elev": 556}, {"w": "2026-08-03", "run": 13.3, "bike": 0.0, "hike": 0.0, "swim": 0.0, "elev": 106}], "ridge": [{"d": "2026-02-14", "p": 5.437}, {"d": "2026-02-21", "p": 5.492}, {"d": "2026-02-23", "p": 5.48}, {"d": "2026-02-25", "p": 5.492}, {"d": "2026-02-28", "p": 5.539}, {"d": "2026-03-01", "p": 5.545}, {"d": "2026-03-05", "p": 5.472}, {"d": "2026-03-13", "p": 5.474}, {"d": "2026-03-16", "p": 5.413}, {"d": "2026-03-19", "p": 5.429}, {"d": "2026-03-22", "p": 5.57}, {"d": "2026-03-24", "p": 5.764}, {"d": "2026-03-28", "p": 5.947}, {"d": "2026-03-29", "p": 5.966}, {"d": "2026-04-02", "p": 5.989}, {"d": "2026-04-08", "p": 6.068}, {"d": "2026-04-12", "p": 6.045}, {"d": "2026-04-15", "p": 6.006}, {"d": "2026-05-11", "p": 6.068}, {"d": "2026-05-12", "p": 5.991}, {"d": "2026-05-16", "p": 6.15}, {"d": "2026-05-21", "p": 6.403}, {"d": "2026-05-22", "p": 6.482}, {"d": "2026-05-25", "p": 6.656}, {"d": "2026-05-31", "p": 6.703}, {"d": "2026-06-23", "p": 6.502}, {"d": "2026-06-25", "p": 6.455}, {"d": "2026-07-09", "p": 6.487}, {"d": "2026-07-10", "p": 6.205}, {"d": "2026-07-12", "p": 6.327}, {"d": "2026-07-15", "p": 6.313}, {"d": "2026-07-17", "p": 6.35}, {"d": "2026-07-19", "p": 6.767}, {"d": "2026-07-22", "p": 6.93}, {"d": "2026-07-23", "p": 7.044}, {"d": "2026-07-26", "p": 7.35}, {"d": "2026-07-28", "p": 7.156}, {"d": "2026-07-29", "p": 7.24}, {"d": "2026-08-04", "p": 7.269}, {"d": "2026-08-05", "p": 7.022}], "pace": [{"d": "2025-09-09", "p": 5.54, "hr": 165.0, "km": 7.5}, {"d": "2025-09-15", "p": 6.28, "hr": 151.0, "km": 7.0}, {"d": "2025-09-22", "p": 5.58, "hr": 163.0, "km": 7.0}, {"d": "2025-09-27", "p": 5.67, "hr": 168.0, "km": 10.0}, {"d": "2025-10-05", "p": 5.59, "hr": 168.0, "km": 10.0}, {"d": "2025-10-11", "p": 7.27, "hr": 177.0, "km": 10.8}, {"d": "2025-10-19", "p": 6.48, "hr": 164.0, "km": 15.0}, {"d": "2025-10-25", "p": 5.62, "hr": 170.0, "km": 12.0}, {"d": "2025-11-03", "p": 5.0, "hr": 170.0, "km": 5.0}, {"d": "2025-11-08", "p": 6.71, "hr": 167.0, "km": 13.0}, {"d": "2025-11-10", "p": 5.02, "hr": 167.0, "km": 5.0}, {"d": "2025-11-15", "p": 5.5, "hr": 167.0, "km": 10.0}, {"d": "2025-11-21", "p": 5.35, "hr": 168.0, "km": 8.0}, {"d": "2025-11-22", "p": 5.45, "hr": 172.0, "km": 8.0}, {"d": "2025-11-29", "p": 5.33, "hr": 168.0, "km": 10.0}, {"d": "2025-12-08", "p": 5.07, "hr": 171.0, "km": 5.0}, {"d": "2025-12-16", "p": 5.29, "hr": 150.0, "km": 7.0}, {"d": "2025-12-18", "p": 5.36, "hr": 170.0, "km": 8.2}, {"d": "2025-12-24", "p": 5.08, "hr": 173.0, "km": 7.0}, {"d": "2025-12-26", "p": 5.86, "hr": 170.0, "km": 21.6}, {"d": "2026-01-17", "p": 5.37, "hr": 169.0, "km": 7.0}, {"d": "2026-01-19", "p": 4.95, "hr": 174.0, "km": 5.5}, {"d": "2026-01-25", "p": 5.4, "hr": 167.0, "km": 8.3}, {"d": "2026-01-28", "p": 5.57, "hr": 167.0, "km": 7.9}, {"d": "2026-02-02", "p": 5.41, "hr": 164.0, "km": 7.4}, {"d": "2026-02-08", "p": 5.7, "hr": 164.0, "km": 10.2}, {"d": "2026-02-13", "p": 5.52, "hr": 162.0, "km": 7.0}, {"d": "2026-02-14", "p": 5.49, "hr": 161.0, "km": 8.1}, {"d": "2026-02-21", "p": 5.34, "hr": 166.0, "km": 8.0}, {"d": "2026-02-23", "p": 5.32, "hr": 165.0, "km": 10.0}, {"d": "2026-02-25", "p": 5.65, "hr": 161.0, "km": 7.2}, {"d": "2026-02-28", "p": 5.74, "hr": 160.0, "km": 8.0}, {"d": "2026-03-01", "p": 5.75, "hr": 154.0, "km": 8.5}, {"d": "2026-03-05", "p": 5.02, "hr": 163.0, "km": 7.0}, {"d": "2026-03-13", "p": 5.5, "hr": 163.0, "km": 14.0}, {"d": "2026-03-16", "p": 4.91, "hr": 168.0, "km": 6.0}, {"d": "2026-03-19", "p": 5.43, "hr": 156.0, "km": 11.0}, {"d": "2026-03-22", "p": 6.64, "hr": 140.0, "km": 12.0}, {"d": "2026-03-24", "p": 7.1, "hr": 128.0, "km": 6.1}, {"d": "2026-03-28", "p": 7.03, "hr": 138.0, "km": 10.6}, {"d": "2026-03-29", "p": 5.15, "hr": 163.0, "km": 10.0}, {"d": "2026-04-02", "p": 5.66, "hr": 155.0, "km": 9.0}, {"d": "2026-04-08", "p": 5.47, "hr": 153.0, "km": 8.5}, {"d": "2026-04-12", "p": 5.26, "hr": 172.0, "km": 21.3}, {"d": "2026-04-15", "p": 6.38, "hr": 140.0, "km": 8.1}, {"d": "2026-05-11", "p": 7.54, "hr": 134.0, "km": 6.0}, {"d": "2026-05-12", "p": 6.49, "hr": 139.0, "km": 7.5}, {"d": "2026-05-16", "p": 6.26, "hr": 179.0, "km": 11.3}, {"d": "2026-05-21", "p": 7.44, "hr": 134.0, "km": 8.0}, {"d": "2026-05-22", "p": 6.02, "hr": 161.0, "km": 7.0}, {"d": "2026-05-25", "p": 6.47, "hr": 147.0, "km": 8.4}, {"d": "2026-05-31", "p": 6.71, "hr": 148.0, "km": 4.0}, {"d": "2026-06-23", "p": 6.12, "hr": 159.0, "km": 8.0}, {"d": "2026-06-25", "p": 6.16, "hr": 154.0, "km": 6.0}, {"d": "2026-07-09", "p": 6.49, "hr": 147.0, "km": 10.0}, {"d": "2026-07-10", "p": 5.46, "hr": 167.0, "km": 5.5}, {"d": "2026-07-12", "p": 6.88, "hr": 144.0, "km": 14.0}, {"d": "2026-07-15", "p": 6.37, "hr": 139.0, "km": 8.1}, {"d": "2026-07-17", "p": 6.97, "hr": 138.0, "km": 7.5}, {"d": "2026-07-19", "p": 9.05, "hr": 139.0, "km": 24.2}, {"d": "2026-07-22", "p": 7.3, "hr": 130.0, "km": 6.2}, {"d": "2026-07-23", "p": 7.29, "hr": 129.0, "km": 7.0}, {"d": "2026-07-26", "p": 7.6, "hr": 134.0, "km": 7.0}, {"d": "2026-07-28", "p": 5.52, "hr": 159.0, "km": 11.5}, {"d": "2026-07-29", "p": 6.96, "hr": 135.0, "km": 7.3}, {"d": "2026-08-04", "p": 7.18, "hr": 132.0, "km": 7.0}, {"d": "2026-08-05", "p": 7.31, "hr": 133.0, "km": 6.3}], "load": [{"d": "2026-06-26", "v": 0}, {"d": "2026-06-27", "v": 0}, {"d": "2026-06-28", "v": 0}, {"d": "2026-06-29", "v": 0}, {"d": "2026-06-30", "v": 0}, {"d": "2026-07-01", "v": 0}, {"d": "2026-07-02", "v": 0}, {"d": "2026-07-03", "v": 0}, {"d": "2026-07-04", "v": 0}, {"d": "2026-07-05", "v": 60.8}, {"d": "2026-07-06", "v": 0}, {"d": "2026-07-07", "v": 45.3}, {"d": "2026-07-08", "v": 0}, {"d": "2026-07-09", "v": 76.6}, {"d": "2026-07-10", "v": 50.5}, {"d": "2026-07-11", "v": 35.2}, {"d": "2026-07-12", "v": 107.2}, {"d": "2026-07-13", "v": 0}, {"d": "2026-07-14", "v": 0}, {"d": "2026-07-15", "v": 51.5}, {"d": "2026-07-16", "v": 0}, {"d": "2026-07-17", "v": 51.3}, {"d": "2026-07-18", "v": 0}, {"d": "2026-07-19", "v": 219.2}, {"d": "2026-07-20", "v": 0}, {"d": "2026-07-21", "v": 32.1}, {"d": "2026-07-22", "v": 37.0}, {"d": "2026-07-23", "v": 40.7}, {"d": "2026-07-24", "v": 0}, {"d": "2026-07-25", "v": 248.4}, {"d": "2026-07-26", "v": 47.8}, {"d": "2026-07-27", "v": 0}, {"d": "2026-07-28", "v": 93.4}, {"d": "2026-07-29", "v": 46.6}, {"d": "2026-07-30", "v": 0}, {"d": "2026-07-31", "v": 0}, {"d": "2026-08-01", "v": 159.3}, {"d": "2026-08-02", "v": 0}, {"d": "2026-08-03", "v": 0}, {"d": "2026-08-04", "v": 43.1}, {"d": "2026-08-05", "v": 40.4}, {"d": "2026-08-06", "v": 0}], "acwr": 0.74, "acute": 243, "chronic": 326, "prs": [{"label": "5 km", "date": "2026-03-16", "time": "24:34", "pace": "4:55", "note": "6.0 km"}, {"label": "10 km", "date": "2026-03-29", "time": "51:31", "pace": "5:09", "note": "10.0 km"}, {"label": "Polmaratón", "date": "2026-04-12", "time": "1:50:56", "pace": "5:16", "note": "21.3 km"}, {"label": "Najdlhší beh", "date": "2026-07-19", "time": "24.2 km", "pace": "9:03", "note": "3:38:43"}, {"label": "Najviac prevýšenia", "date": "2026-07-19", "time": "1056 m", "pace": "24.2 km", "note": "3:38:43"}], "months": [{"m": "2026-08", "swim": 0.0, "run": 13, "bike": 74, "hike": 0, "elev": 541, "n": 3}, {"m": "2026-07", "swim": 0.0, "run": 108, "bike": 158, "hike": 16, "elev": 3412, "n": 17}, {"m": "2026-06", "swim": 0.0, "run": 14, "bike": 60, "hike": 0, "elev": 490, "n": 3}, {"m": "2026-05", "swim": 0.0, "run": 52, "bike": 0, "hike": 0, "elev": 642, "n": 7}, {"m": "2026-04", "swim": 0.0, "run": 47, "bike": 82, "hike": 0, "elev": 1298, "n": 6}, {"m": "2026-03", "swim": 1.0, "run": 85, "bike": 61, "hike": 0, "elev": 1162, "n": 12}, {"m": "2026-02", "swim": 2.0, "run": 66, "bike": 0, "hike": 0, "elev": 352, "n": 10}, {"m": "2026-01", "swim": 1.0, "run": 29, "bike": 0, "hike": 0, "elev": 132, "n": 5}, {"m": "2025-12", "swim": 0.0, "run": 49, "bike": 0, "hike": 0, "elev": 163, "n": 5}, {"m": "2025-11", "swim": 0.0, "run": 59, "bike": 243, "hike": 0, "elev": 1560, "n": 17}, {"m": "2025-10", "swim": 0.0, "run": 48, "bike": 16, "hike": 4, "elev": 1487, "n": 6}, {"m": "2025-09", "swim": 0.0, "run": 32, "bike": 111, "hike": 24, "elev": 2522, "n": 9}], "years": [{"y": "2026", "swim": 4.0, "run": 415, "bike": 435, "hike": 16, "elev": 8029, "n": 63}, {"y": "2025", "swim": 0.0, "run": 187, "bike": 370, "hike": 28, "elev": 5732, "n": 37}], "counters": {"month": {"run": {"km": 13.3, "n": 2, "elev": 106, "time_s": 5780}, "bike": {"km": 74.1, "n": 1, "elev": 435, "time_s": 8769}, "hike": {"km": 0.0, "n": 0, "elev": 0, "time_s": 0}, "swim": {"km": 0.0, "n": 0, "elev": 0, "time_s": 0}}, "year": {"run": {"km": 414.6, "n": 47, "elev": 3881, "time_s": 155169}, "bike": {"km": 434.7, "n": 10, "elev": 3886, "time_s": 71059}, "hike": {"km": 15.8, "n": 2, "elev": 262, "time_s": 17335}, "swim": {"km": 4.0, "n": 4, "elev": 0, "time_s": 8026}}, "month_label": "2026-08", "year_label": "2026", "day_of_month": 6, "days_in_month": 31, "day_of_year": 218, "days_in_year": 365}, "wellness": [{"date": "2026-06-29", "sleep_s": 24180, "sleep_score": 79, "hrv_last_night": 62, "hrv_status": "BALANCED", "bb_max": 83, "bb_min": 29, "readiness": 81}, {"date": "2026-06-30", "sleep_s": 27418, "sleep_score": 95, "hrv_last_night": 69, "hrv_status": "BALANCED", "bb_max": 96, "bb_min": 26, "readiness": 80}, {"date": "2026-07-01", "sleep_s": null, "sleep_score": null, "hrv_last_night": null, "hrv_status": "UNBALANCED", "bb_max": 92, "bb_min": 32, "readiness": 73}, {"date": "2026-07-02", "sleep_s": 24660, "sleep_score": 85, "hrv_last_night": 58, "hrv_status": "BALANCED", "bb_max": 90, "bb_min": 30, "readiness": 95}, {"date": "2026-07-03", "sleep_s": 22320, "sleep_score": 82, "hrv_last_night": 60, "hrv_status": "BALANCED", "bb_max": 94, "bb_min": 28, "readiness": 91}, {"date": "2026-07-04", "sleep_s": 16980, "sleep_score": 65, "hrv_last_night": 54, "hrv_status": "UNBALANCED", "bb_max": 73, "bb_min": 6, "readiness": 72}, {"date": "2026-07-05", "sleep_s": 26160, "sleep_score": 78, "hrv_last_night": 64, "hrv_status": "UNBALANCED", "bb_max": 79, "bb_min": 8, "readiness": 76}, {"date": "2026-07-06", "sleep_s": 24720, "sleep_score": 78, "hrv_last_night": 62, "hrv_status": "UNBALANCED", "bb_max": 81, "bb_min": 17, "readiness": 81}, {"date": "2026-07-07", "sleep_s": 23160, "sleep_score": 82, "hrv_last_night": 63, "hrv_status": "UNBALANCED", "bb_max": 92, "bb_min": 22, "readiness": 86}, {"date": "2026-07-08", "sleep_s": 24600, "sleep_score": 86, "hrv_last_night": 61, "hrv_status": "UNBALANCED", "bb_max": 94, "bb_min": 25, "readiness": 85}, {"date": "2026-07-09", "sleep_s": 29100, "sleep_score": 96, "hrv_last_night": 72, "hrv_status": "BALANCED", "bb_max": 100, "bb_min": 25, "readiness": 75}, {"date": "2026-07-10", "sleep_s": 23880, "sleep_score": 84, "hrv_last_night": 68, "hrv_status": "BALANCED", "bb_max": 82, "bb_min": 17, "readiness": 67}, {"date": "2026-07-11", "sleep_s": 26760, "sleep_score": 84, "hrv_last_night": 56, "hrv_status": "BALANCED", "bb_max": 66, "bb_min": 17, "readiness": 75}, {"date": "2026-07-12", "sleep_s": 24720, "sleep_score": 89, "hrv_last_night": 73, "hrv_status": "BALANCED", "bb_max": 95, "bb_min": 18, "readiness": 50}, {"date": "2026-07-13", "sleep_s": 23040, "sleep_score": 76, "hrv_last_night": 67, "hrv_status": "BALANCED", "bb_max": 80, "bb_min": 18, "readiness": 58}, {"date": "2026-07-14", "sleep_s": 22800, "sleep_score": 84, "hrv_last_night": 66, "hrv_status": "BALANCED", "bb_max": 94, "bb_min": 34, "readiness": 73}, {"date": "2026-07-15", "sleep_s": 24660, "sleep_score": 90, "hrv_last_night": 57, "hrv_status": "BALANCED", "bb_max": 95, "bb_min": 33, "readiness": 65}, {"date": "2026-07-16", "sleep_s": 23312, "sleep_score": 83, "hrv_last_night": 75, "hrv_status": "BALANCED", "bb_max": 96, "bb_min": 31, "readiness": 75}, {"date": "2026-07-17", "sleep_s": 24945, "sleep_score": 91, "hrv_last_night": 68, "hrv_status": "BALANCED", "bb_max": 97, "bb_min": 18, "readiness": 65}, {"date": "2026-07-18", "sleep_s": 25760, "sleep_score": 97, "hrv_last_night": 70, "hrv_status": "BALANCED", "bb_max": 98, "bb_min": 10, "readiness": 95}, {"date": "2026-07-19", "sleep_s": 27000, "sleep_score": 85, "hrv_last_night": 61, "hrv_status": "BALANCED", "bb_max": 72, "bb_min": 8, "readiness": 16}, {"date": "2026-07-20", "sleep_s": 18720, "sleep_score": 66, "hrv_last_night": 61, "hrv_status": "BALANCED", "bb_max": 46, "bb_min": 6, "readiness": 26}, {"date": "2026-07-21", "sleep_s": 23100, "sleep_score": 84, "hrv_last_night": 64, "hrv_status": "BALANCED", "bb_max": 94, "bb_min": 24, "readiness": 58}, {"date": "2026-07-22", "sleep_s": 25200, "sleep_score": 95, "hrv_last_night": 65, "hrv_status": "BALANCED", "bb_max": 96, "bb_min": 30, "readiness": 75}, {"date": "2026-07-23", "sleep_s": 27540, "sleep_score": 95, "hrv_last_night": 66, "hrv_status": "BALANCED", "bb_max": 100, "bb_min": 30, "readiness": 85}, {"date": "2026-07-24", "sleep_s": 27000, "sleep_score": 96, "hrv_last_night": 71, "hrv_status": "BALANCED", "bb_max": 100, "bb_min": 35, "readiness": 100}, {"date": "2026-07-25", "sleep_s": 22500, "sleep_score": 76, "hrv_last_night": 64, "hrv_status": "BALANCED", "bb_max": 93, "bb_min": 5, "readiness": 50}, {"date": "2026-07-26", "sleep_s": 24660, "sleep_score": 63, "hrv_last_night": 50, "hrv_status": "BALANCED", "bb_max": 36, "bb_min": 5, "readiness": 31}, {"date": "2026-07-27", "sleep_s": 25140, "sleep_score": 81, "hrv_last_night": 62, "hrv_status": "BALANCED", "bb_max": 63, "bb_min": 5, "readiness": 50}, {"date": "2026-07-28", "sleep_s": 27338, "sleep_score": 95, "deep_s": 7860, "light_s": 11940, "rem_s": 7560, "awake_s": 780, "hrv_last_night": 69, "hrv_status": "BALANCED", "bb_max": 100, "bb_min": 24, "readiness": 34, "rhr": 43.0, "steps": 16716, "stress_avg": 22}, {"date": "2026-07-29", "sleep_s": 22707, "sleep_score": 80, "deep_s": 6060, "light_s": 13140, "rem_s": 3540, "awake_s": 1620, "hrv_last_night": 72, "hrv_status": "BALANCED", "bb_max": 92, "bb_min": 19, "readiness": 57, "rhr": 49.0, "steps": 14154, "stress_avg": 26}, {"date": "2026-07-30", "sleep_s": 22980, "sleep_score": 81, "deep_s": 5880, "light_s": 13500, "rem_s": 3600, "awake_s": 1140, "hrv_last_night": 65, "hrv_status": "BALANCED", "bb_max": 81, "bb_min": 18, "readiness": 62, "rhr": 48.0, "steps": 5118, "stress_avg": 23}, {"date": "2026-07-31", "sleep_s": 24522, "sleep_score": 91, "deep_s": 6360, "light_s": 11760, "rem_s": 6420, "awake_s": 240, "hrv_last_night": 61, "hrv_status": "BALANCED", "bb_max": 92, "bb_min": 20, "readiness": 79, "rhr": 48.0, "steps": 10731, "stress_avg": 28}, {"date": "2026-08-01", "sleep_s": null, "sleep_score": null, "deep_s": null, "light_s": null, "rem_s": null, "awake_s": null, "hrv_last_night": null, "hrv_status": "BALANCED", "bb_max": 81, "bb_min": 20, "readiness": 52, "rhr": 53.0, "steps": 5977, "stress_avg": 37}, {"date": "2026-08-02", "sleep_s": 20280, "sleep_score": 71, "deep_s": 4980, "light_s": 12780, "rem_s": 2520, "awake_s": 2340, "hrv_last_night": 64, "hrv_status": "BALANCED", "bb_max": 82, "bb_min": 20, "readiness": 78, "rhr": 48.0, "steps": 13076, "stress_avg": 23}, {"date": "2026-08-03", "sleep_s": 25440, "sleep_score": 96, "deep_s": 8100, "light_s": 11100, "rem_s": 6240, "awake_s": 60, "hrv_last_night": 63, "hrv_status": "BALANCED", "bb_max": 99, "bb_min": 26, "readiness": 85, "rhr": 47.0, "steps": 3761, "stress_avg": 21}, {"date": "2026-08-04", "sleep_s": 24120, "sleep_score": 86, "deep_s": 7560, "light_s": 11280, "rem_s": 5280, "awake_s": 600, "hrv_last_night": 61, "hrv_status": "BALANCED", "bb_max": 96, "bb_min": 32, "readiness": 71, "rhr": 46.0, "steps": 14076, "stress_avg": 20}, {"date": "2026-08-05", "sleep_s": 29220, "sleep_score": 95, "deep_s": 7560, "light_s": 15120, "rem_s": 6540, "awake_s": 660, "hrv_last_night": 63, "hrv_status": "BALANCED", "bb_max": 100, "bb_min": 30, "readiness": 84, "rhr": 46.0, "steps": 16904, "stress_avg": 22}, {"date": "2026-08-06", "sleep_s": 25380, "sleep_score": 86, "deep_s": 7080, "light_s": 14460, "rem_s": 3840, "awake_s": 600, "hrv_last_night": 68, "hrv_status": "BALANCED", "bb_max": 92, "bb_min": 29, "readiness": 95, "rhr": 48.0, "steps": 233, "stress_avg": 14}], "sleep7_s": 24827, "sleep_prev7_s": 24618, "rhr7": 48, "hrv7": 63, "steps7": 9251, "week_now": {"km": 13.3, "pace": "7:14", "hr": 132, "n": 2}, "week_prev": {"km": 25.8, "pace": "6:29", "hr": 143, "n": 3}, "preds": {"time5k_s": 1439, "time10k_s": 3032, "half_s": 6748, "marathon_s": 15246}, "half_pred_s": 6748, "vo2max": null, "endurance": null, "hill": null, "status": "PEAKING_1", "synced_at": "2026-08-06T07:46", "default_race": "2026-08-22", "default_goal_s": 6300, "hm_km": 21.0975, "acts": [{"d": "2026-08-05", "s": "run", "n": "Kromeriz Running", "km": 6.3, "t": "46:02", "pace": "7:19", "hr": 133.0, "elev": 57}, {"d": "2026-08-04", "s": "run", "n": "Kromeriz Running", "km": 7.0, "t": "50:17", "pace": "7:11", "hr": 132.0, "elev": 49}, {"d": "2026-08-01", "s": "bike", "n": "Puchov Road Cycling", "km": 74.1, "t": "2:26:09", "pace": "1:58", "hr": 143.0, "elev": 435}, {"d": "2026-07-29", "s": "run", "n": "Kromeriz Running", "km": 7.3, "t": "50:45", "pace": "6:58", "hr": 135.0, "elev": 54}, {"d": "2026-07-28", "s": "run", "n": "Kromeriz Running", "km": 11.5, "t": "1:03:26", "pace": "5:31", "hr": 159.0, "elev": 67}, {"d": "2026-07-26", "s": "run", "n": "Puchov Running", "km": 7.0, "t": "53:14", "pace": "7:36", "hr": 134.0, "elev": 41}, {"d": "2026-07-25", "s": "bike", "n": "Kromeriz Road Cycling", "km": 100.1, "t": "3:34:33", "pace": "2:09", "hr": 146.0, "elev": 902}, {"d": "2026-07-23", "s": "run", "n": "Kromeriz Running", "km": 7.0, "t": "51:04", "pace": "7:17", "hr": 129.0, "elev": 56}, {"d": "2026-07-22", "s": "run", "n": "Kromeriz Running", "km": 6.2, "t": "45:19", "pace": "7:18", "hr": 130.0, "elev": 47}, {"d": "2026-07-21", "s": "bike", "n": "Kromeriz Cycling", "km": 10.7, "t": "32:08", "pace": "3:00", "hr": 115.0, "elev": 107}, {"d": "2026-07-21", "s": "bike", "n": "Kojetin Cycling", "km": 12.0, "t": "38:11", "pace": "3:11", "hr": 104.0, "elev": 101}, {"d": "2026-07-19", "s": "run", "n": "Dolna Marikova Trail Running", "km": 24.2, "t": "3:38:43", "pace": "9:03", "hr": 139.0, "elev": 1056}, {"d": "2026-07-17", "s": "run", "n": "Puchov Running", "km": 7.5, "t": "52:20", "pace": "6:58", "hr": 138.0, "elev": 66}, {"d": "2026-07-15", "s": "run", "n": "Poznan Running", "km": 8.1, "t": "51:23", "pace": "6:22", "hr": 139.0, "elev": 28}, {"d": "2026-07-12", "s": "run", "n": "Kromeriz Running", "km": 14.0, "t": "1:36:24", "pace": "6:53", "hr": 144.0, "elev": 145}, {"d": "2026-07-11", "s": "hike", "n": "Salas Hiking", "km": 7.1, "t": "1:45:57", "pace": "14:50", "hr": 93.0, "elev": 228}, {"d": "2026-07-10", "s": "run", "n": "Kromeriz Running", "km": 5.5, "t": "30:01", "pace": "5:28", "hr": 167.0, "elev": 31}, {"d": "2026-07-09", "s": "run", "n": "Kromeriz Running", "km": 10.0, "t": "1:04:53", "pace": "6:29", "hr": 147.0, "elev": 95}, {"d": "2026-07-07", "s": "bike", "n": "Sankt Gilgen Cycling", "km": 35.0, "t": "2:08:38", "pace": "3:40", "hr": 102.0, "elev": 354}, {"d": "2026-07-05", "s": "hike", "n": "Sankt Gilgen Hiking", "km": 8.6, "t": "3:02:58", "pace": "21:11", "hr": 82.0, "elev": 34}, {"d": "2026-06-25", "s": "run", "n": "Kromeriz Running", "km": 6.0, "t": "36:59", "pace": "6:10", "hr": 154.0, "elev": 42}, {"d": "2026-06-24", "s": "bike", "n": "Puchov Road Cycling", "km": 60.0, "t": "2:07:47", "pace": "2:08", "hr": 141.0, "elev": 394}, {"d": "2026-06-23", "s": "run", "n": "Puchov Running", "km": 8.0, "t": "49:01", "pace": "6:07", "hr": 159.0, "elev": 54}, {"d": "2026-05-31", "s": "run", "n": "Kromeriz Running", "km": 4.0, "t": "27:11", "pace": "6:43", "hr": 148.0, "elev": 0}, {"d": "2026-05-25", "s": "run", "n": "Kromeriz Running", "km": 8.4, "t": "54:08", "pace": "6:28", "hr": 147.0, "elev": 60}, {"d": "2026-05-22", "s": "run", "n": "Kromeriz Running", "km": 7.0, "t": "42:21", "pace": "6:01", "hr": 161.0, "elev": 66}, {"d": "2026-05-21", "s": "run", "n": "Kromeriz Running", "km": 8.0, "t": "59:32", "pace": "7:26", "hr": 134.0, "elev": 47}, {"d": "2026-05-16", "s": "run", "n": "Beckov Running", "km": 11.3, "t": "1:10:26", "pace": "6:16", "hr": 179.0, "elev": 347}, {"d": "2026-05-12", "s": "run", "n": "Kromeriz Running", "km": 7.5, "t": "48:40", "pace": "6:29", "hr": 139.0, "elev": 65}, {"d": "2026-05-11", "s": "run", "n": "Kromeriz Running", "km": 6.0, "t": "45:28", "pace": "7:32", "hr": 134.0, "elev": 57}, {"d": "2026-04-26", "s": "bike", "n": "Puchov Mountain Biking", "km": 31.0, "t": "2:45:44", "pace": "5:21", "hr": 133.0, "elev": 655}, {"d": "2026-04-25", "s": "bike", "n": "Puchov Cycling", "km": 51.0, "t": "2:35:18", "pace": "3:03", "hr": 113.0, "elev": 315}, {"d": "2026-04-15", "s": "run", "n": "Barcelona Running", "km": 8.1, "t": "51:29", "pace": "6:23", "hr": 140.0, "elev": 75}, {"d": "2026-04-12", "s": "run", "n": "Bratislava Running", "km": 21.3, "t": "1:51:53", "pace": "5:16", "hr": 172.0, "elev": 130}, {"d": "2026-04-08", "s": "run", "n": "Kromeriz Running", "km": 8.5, "t": "46:30", "pace": "5:28", "hr": 153.0, "elev": 48}, {"d": "2026-04-02", "s": "run", "n": "Puchov Running", "km": 9.0, "t": "51:00", "pace": "5:40", "hr": 155.0, "elev": 75}, {"d": "2026-03-29", "s": "run", "n": "Puchov Running", "km": 10.0, "t": "51:33", "pace": "5:09", "hr": 163.0, "elev": 76}, {"d": "2026-03-28", "s": "run", "n": "Puchov Running", "km": 10.6, "t": "1:14:14", "pace": "7:02", "hr": 138.0, "elev": 65}, {"d": "2026-03-24", "s": "run", "n": "Kromeriz Running", "km": 6.1, "t": "43:39", "pace": "7:06", "hr": 128.0, "elev": 57}, {"d": "2026-03-22", "s": "run", "n": "Puchov Running", "km": 12.0, "t": "1:19:45", "pace": "6:39", "hr": 140.0, "elev": 65}]};
+
+/* ---------------------------------------------------------------- utils */
+const css = getComputedStyle(document.documentElement);
+const C = k => css.getPropertyValue(k).trim();
+const NAVY = C('--navy'), SKY = C('--sky'), MIST = C('--mist'),
+      MUTED = C('--muted'), INK = C('--ink'), OK = C('--ok'),
+      WARN = C('--warn'), ALERT = C('--alert');
+
+const store = {
+  get(k, d) { try { return localStorage.getItem(k) ?? d; } catch { return d; } },
+  set(k, v) { try { localStorage.setItem(k, v); } catch {} }
+};
+
+const pad = n => String(n).padStart(2, '0');
+const fmtHMS = s => {
+  s = Math.round(s);
+  const h = Math.floor(s / 3600), m = Math.floor(s % 3600 / 60);
+  return h ? h + ':' + pad(m) + ':' + pad(s % 60) : m + ':' + pad(s % 60);
+};
+const fmtPace = v => Math.floor(v) + ':' + pad(Math.round((v - Math.floor(v)) * 60));
+const fmtHrs = s => s ? Math.floor(s / 3600) + ':' + pad(Math.round(s % 3600 / 60)) : '–';
+const md = iso => iso.slice(8, 10) + '.' + iso.slice(5, 7) + '.';
+
+Chart.defaults.font.family = "'Space Mono', monospace";
+Chart.defaults.font.size = 10;
+Chart.defaults.color = MUTED;
+Chart.defaults.plugins.legend.labels.boxWidth = 9;
+Chart.defaults.plugins.legend.labels.boxHeight = 9;
+Chart.defaults.maintainAspectRatio = false;
+
+/* na mobile menej popiskov a vacsie body na dotyk */
+const SMALL = window.matchMedia('(max-width:560px)').matches;
+const TICKS = SMALL ? 5 : 9;
+Chart.defaults.font.size = SMALL ? 9.5 : 10;
+Chart.defaults.plugins.legend.labels.padding = SMALL ? 8 : 10;
+Chart.defaults.plugins.tooltip.bodyFont = { size: SMALL ? 11 : 12 };
+Chart.defaults.plugins.tooltip.titleFont = { size: SMALL ? 11 : 12 };
+Chart.defaults.plugins.tooltip.padding = SMALL ? 8 : 6;
+Chart.defaults.elements.point.hitRadius = SMALL ? 14 : 8;
+
+/* ------------------------------------------------------------ contours */
+(function drawContours() {
+  const svg = document.getElementById('contours');
+  let out = '';
+  for (let i = 0; i < 7; i++) {
+    let d = 'M -20 ' + (40 + i * 34);
+    for (let x = 0; x <= 840; x += 40) {
+      const y = 40 + i * 34 + Math.sin((x / 150) + i * 0.7) * (11 + i * 1.4)
+                + Math.cos(x / 320 + i) * 7;
+      d += ' L ' + x + ' ' + y.toFixed(1);
+    }
+    out += '<path d="' + d + '" fill="none" stroke="' + MIST +
+           '" stroke-width="' + (i % 3 === 0 ? 1.1 : 0.6) +
+           '" opacity="' + (0.30 - i * 0.025).toFixed(2) + '"/>';
+  }
+  svg.innerHTML = out;
+})();
+
+/* ---------------------------------------------------------- goal / race */
+const GOAL_KEY = 'hm_target_s', RACE_KEY = 'race_date';
+const goalS = () => parseInt(store.get(GOAL_KEY, String(D.default_goal_s)), 10);
+const raceD = () => store.get(RACE_KEY, D.default_race);
+
+function renderHero() {
+  const g = goalS();
+  document.getElementById('goalBtn').textContent = fmtHMS(g);
+  document.getElementById('predEl').textContent =
+    D.half_pred_s ? fmtHMS(D.half_pred_s) : '–';
+
+  const dEl = document.getElementById('deltaEl');
+  if (D.half_pred_s) {
+    const diff = D.half_pred_s - g;
+    dEl.textContent = (diff <= 0 ? '−' : '+') + fmtHMS(Math.abs(diff));
+    dEl.className = 'delta mono ' + (diff <= 0 ? 'ok' : 'behind');
+  } else { dEl.textContent = '–'; dEl.className = 'delta mono'; }
+
+  const days = Math.ceil((new Date(raceD()) - new Date()) / 864e5);
+  document.getElementById('cdEl').textContent =
+    isNaN(days) ? '–' : (days >= 0 ? days : '—');
+  document.getElementById('raceBtn').textContent =
+    isNaN(days) ? 'štartu' : md(raceD());
+  drawRidge();
+}
+
+document.getElementById('goalBtn').onclick = () => {
+  const inp = prompt('Cieľový čas polmaratónu (h:mm:ss):', fmtHMS(goalS()));
+  if (!inp) return;
+  const m = inp.trim().match(/^(\d+):(\d{2}):(\d{2})$/);
+  if (!m) { alert('Formát h:mm:ss, napríklad 1:45:00'); return; }
+  store.set(GOAL_KEY, String(+m[1] * 3600 + +m[2] * 60 + +m[3]));
+  renderHero();
+};
+document.getElementById('raceBtn').onclick = () => {
+  const inp = prompt('Dátum závodu (RRRR-MM-DD):', raceD());
+  if (!inp) return;
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(inp.trim())) {
+    alert('Formát RRRR-MM-DD, napríklad 2026-08-22'); return;
+  }
+  store.set(RACE_KEY, inp.trim());
+  renderHero();
+};
+
+/* --------------------------------------------------------- ridge (SVG) */
+function drawRidge() {
+  const svg = document.getElementById('ridge');
+  const pts = D.ridge || [];
+  if (pts.length < 2) { svg.innerHTML = ''; return; }
+
+  const targetPace = goalS() / 60 / D.hm_km;
+  const paces = pts.map(p => p.p).concat([targetPace]);
+  const lo = Math.min(...paces) - 0.12, hi = Math.max(...paces) + 0.12;
+  const W = 800, H = 112, top = 14, bot = H - 6;
+  const x = i => (i / (pts.length - 1)) * W;
+  const y = p => bot - ((hi - p) / (hi - lo)) * (bot - top);
+
+  let line = 'M ' + x(0).toFixed(1) + ' ' + y(pts[0].p).toFixed(1);
+  pts.forEach((p, i) => { if (i) line += ' L ' + x(i).toFixed(1) + ' ' + y(p.p).toFixed(1); });
+  const fill = line + ' L ' + W + ' ' + H + ' L 0 ' + H + ' Z';
+  const ty = y(targetPace).toFixed(1);
+
+  svg.innerHTML =
+    '<defs><linearGradient id="rg" x1="0" y1="0" x2="0" y2="1">' +
+      '<stop offset="0%" stop-color="' + SKY + '" stop-opacity=".55"/>' +
+      '<stop offset="100%" stop-color="' + SKY + '" stop-opacity="0"/>' +
+    '</linearGradient></defs>' +
+    '<path d="' + fill + '" fill="url(#rg)"/>' +
+    '<path d="' + line + '" fill="none" stroke="#EAF2FA" stroke-width="2" ' +
+      'stroke-linejoin="round" style="stroke-dasharray:2400;' +
+      'animation:draw 1.1s ease-out forwards"/>' +
+    '<line x1="0" y1="' + ty + '" x2="800" y2="' + ty + '" stroke="#7EDCAE" ' +
+      'stroke-width="1" stroke-dasharray="5 4" opacity=".85"/>' +
+    '<text x="6" y="' + (ty - 5) + '" fill="#7EDCAE" font-size="9" ' +
+      'font-family="Space Mono, monospace">cieľové tempo ' +
+      fmtPace(targetPace) + '/km</text>' +
+    '<style>@keyframes draw{from{stroke-dashoffset:2400}to{stroke-dashoffset:0}}</style>';
+
+  document.getElementById('ridgeNow').textContent =
+    'teraz ' + fmtPace(pts[pts.length - 1].p) + '/km';
+}
+
+/* -------------------------------------------------------------- vitals */
+(function vitals() {
+  const items = [
+    ['VO2max', D.vo2max ? Number(D.vo2max).toFixed(1) : '–', ''],
+    ['Pokoj. tep', D.rhr7 ?? '–', 'bpm'],
+    ['HRV', D.hrv7 ?? '–', 'ms'],
+    ['Ø spánok 7 d', fmtHrs(D.sleep7_s), 'h'],
+    ['Endurance', D.endurance ?? '–', ''],
+    ['Hill score', D.hill ?? '–', '']
+  ];
+  document.getElementById('vitals').innerHTML = items.map(([k, v, u]) =>
+    '<div class="vital"><div class="v mono">' + v +
+    (u ? ' <span class="u">' + u + '</span>' : '') +
+    '</div><div class="k">' + k + '</div></div>').join('');
+  document.getElementById('statusEl').textContent =
+    D.status ? 'Stav tréningu: ' + D.status : '';
+})();
+
+/* ------------------------------------------------------- week compare */
+(function weeks() {
+  const trend = (now, prev, better) => {
+    if (now == null || prev == null || !prev) return '';
+    const diff = now - prev;
+    if (Math.abs(diff) < 0.05) return '';
+    const good = better === 'up' ? diff > 0 : diff < 0;
+    return '<span class="trend ' + (good ? 'up' : 'down') + '">' +
+      (diff > 0 ? '▲' : '▼') + '</span>';
+  };
+  const row = (k, v, extra) => '<div class="row"><span>' + k +
+    '</span><span>' + v + (extra || '') + '</span></div>';
+  const n = D.week_now, p = D.week_prev;
+  const sl = D.sleep7_s, slp = D.sleep_prev7_s;
+
+  document.getElementById('wkNow').innerHTML =
+    row('Behy', n.n) +
+    row('Objem', n.km + ' km', trend(n.km, p.km, 'up')) +
+    row('Tempo', n.pace + '/km') +
+    row('Ø tep', (n.hr ?? '–') + (n.hr ? ' bpm' : ''),
+        trend(n.hr, p.hr, 'down')) +
+    row('Ø spánok', fmtHrs(sl) + ' h', trend(sl, slp, 'up'));
+
+  document.getElementById('wkPrev').innerHTML =
+    row('Behy', p.n) + row('Objem', p.km + ' km') + row('Tempo', p.pace + '/km') +
+    row('Ø tep', (p.hr ?? '–') + (p.hr ? ' bpm' : '')) +
+    row('Ø spánok', fmtHrs(slp) + ' h');
+})();
+
+/* ---------------------------------------------------------------- ACWR */
+(function acwr() {
+  const v = D.acwr;
+  const nEl = document.getElementById('acwrN');
+  const note = document.getElementById('acwrNote');
+  if (v == null) {
+    nEl.textContent = '–';
+    note.textContent = 'Na výpočet treba aspoň štyri týždne dát.';
+    document.getElementById('acwrPin').style.display = 'none';
+  } else {
+    nEl.textContent = v.toFixed(2).replace('.', ',');
+    const pct = Math.min(Math.max((v - 0.5) / 1.5, 0), 1) * 100;
+    document.getElementById('acwrPin').style.left = pct + '%';
+    let msg;
+    if (v < 0.8) msg = 'Záťaž klesla pod dlhodobý priemer – priestor pridať.';
+    else if (v <= 1.3) msg = 'Optimálne okno. Takto sa forma stavia bez rizika.';
+    else if (v <= 1.5) msg = 'Rýchly nárast. Ďalší týždeň radšej udrž, nie pridávaj.';
+    else msg = 'Skok príliš veľký – zvýšené riziko zranenia. Zvoľni.';
+    note.textContent = msg + ' Akútne ' + D.acute + ' vs. dlhodobo ' +
+      D.chronic + ' za týždeň.';
+    nEl.style.color = v < 0.8 ? MUTED : v <= 1.3 ? OK : v <= 1.5 ? WARN : ALERT;
+  }
+
+  new Chart(document.getElementById('cLoad'), {
+    type: 'bar',
+    data: { labels: D.load.map(l => md(l.d)),
+      datasets: [{ label: 'Denná záťaž', data: D.load.map(l => l.v),
+        backgroundColor: D.load.map(l => l.v > 0 ? NAVY : 'transparent'),
+        borderRadius: 2, barPercentage: .95, categoryPercentage: .95 }] },
+    options: { plugins: { legend: { display: false } },
+      scales: { x: { ticks: { maxTicksLimit: TICKS }, grid: { display: false } },
+        y: { title: { display: true, text: 'záťaž' } } } }
+  });
+})();
+
+/* --------------------------------------------------------------- weeks */
+new Chart(document.getElementById('cWeeks'), {
+  data: { labels: D.weeks.map(w => md(w.w)),
+    datasets: [
+      { type: 'bar', label: 'Beh', data: D.weeks.map(w => w.run),
+        backgroundColor: NAVY, borderRadius: 2, stack: 'km', yAxisID: 'y' },
+      { type: 'bar', label: 'Bike', data: D.weeks.map(w => w.bike),
+        backgroundColor: SKY, borderRadius: 2, stack: 'km', yAxisID: 'y' },
+      { type: 'bar', label: 'Túra', data: D.weeks.map(w => w.hike),
+        backgroundColor: MIST, borderRadius: 2, stack: 'km', yAxisID: 'y' },
+      { type: 'bar', label: 'Plávanie', data: D.weeks.map(w => w.swim),
+        backgroundColor: '#7FB8B0', borderRadius: 2, stack: 'km', yAxisID: 'y' },
+      { type: 'line', label: 'Prevýšenie', data: D.weeks.map(w => w.elev),
+        borderColor: WARN, backgroundColor: WARN, borderWidth: 2,
+        pointRadius: 2, tension: .3, yAxisID: 'y1' }
+    ] },
+  options: { plugins: { legend: { position: 'bottom' } },
+    scales: { x: { stacked: true, grid: { display: false },
+        ticks: { maxTicksLimit: TICKS } },
+      y: { stacked: true, position: 'left',
+        title: { display: true, text: 'km' } },
+      y1: { position: 'right', grid: { drawOnChartArea: false },
+        title: { display: true, text: 'm ↑' } } } }
+});
+
+/* ---------------------------------------------------------------- pace */
+new Chart(document.getElementById('cPace'), {
+  type: 'line',
+  data: { labels: D.pace.map(p => md(p.d)),
+    datasets: [{ label: 'Tempo', data: D.pace.map(p => p.p),
+      borderColor: NAVY, backgroundColor: NAVY, pointRadius: 2.4,
+      borderWidth: 1.6, tension: .25 }] },
+  options: { plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: c => fmtPace(c.parsed.y) + '/km · ' +
+        D.pace[c.dataIndex].km + ' km' } } },
+    scales: { x: { ticks: { maxTicksLimit: TICKS }, grid: { display: false } },
+      y: { reverse: true, ticks: { callback: fmtPace },
+        title: { display: true, text: 'min/km' } } } }
+});
+
+/* ----------------------------------------------------------- efficiency */
+new Chart(document.getElementById('cEff'), {
+  type: 'scatter',
+  data: { datasets: [{ label: 'Beh',
+    data: D.pace.filter(p => p.hr).map(p => ({ x: p.p, y: p.hr, r: p.km })),
+    backgroundColor: NAVY, pointRadius: 3.6 }] },
+  options: { plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: c => fmtPace(c.parsed.x) + '/km @ ' +
+        c.parsed.y + ' bpm' } } },
+    scales: { x: { reverse: true, ticks: { callback: fmtPace },
+        title: { display: true, text: 'tempo' } },
+      y: { title: { display: true, text: 'priemerný tep' } } } }
+});
+
+/* --------------------------------------------------------------- sleep */
+let sleepDays = SMALL ? 14 : 30;
+const sleepChart = new Chart(document.getElementById('cSleep'), {
+  data: { labels: [], datasets: [
+    { type: 'bar', label: 'Hlboký', data: [], backgroundColor: NAVY,
+      stack: 's', borderRadius: 1 },
+    { type: 'bar', label: 'REM', data: [], backgroundColor: SKY,
+      stack: 's', borderRadius: 1 },
+    { type: 'bar', label: 'Ľahký', data: [], backgroundColor: MIST,
+      stack: 's', borderRadius: 1 },
+    { type: 'line', label: 'Skóre', data: [], borderColor: WARN,
+      backgroundColor: WARN, borderWidth: 1.8, pointRadius: 0,
+      tension: .3, yAxisID: 'y1' }
+  ] },
+  options: { plugins: { legend: { position: 'bottom' },
+      tooltip: { callbacks: { label: c => c.dataset.type === 'line'
+        ? 'Skóre: ' + c.parsed.y
+        : c.dataset.label + ': ' + fmtHrs(c.parsed.y * 3600) + ' h' } } },
+    scales: { x: { stacked: true, ticks: { maxTicksLimit: TICKS },
+        grid: { display: false } },
+      y: { stacked: true, title: { display: true, text: 'hodiny' } },
+      y1: { position: 'right', min: 0, max: 100,
+        grid: { drawOnChartArea: false },
+        title: { display: true, text: 'skóre' } } } }
+});
+function renderSleep() {
+  const w = D.wellness.slice(-sleepDays);
+  const hrs = f => w.map(x => x[f] ? +(x[f] / 3600).toFixed(2) : 0);
+  sleepChart.data.labels = w.map(x => md(x.date));
+  sleepChart.data.datasets[0].data = hrs('deep_s');
+  sleepChart.data.datasets[1].data = hrs('rem_s');
+  sleepChart.data.datasets[2].data = hrs('light_s');
+  sleepChart.data.datasets[3].data = w.map(x => x.sleep_score ?? null);
+  sleepChart.update();
+  document.getElementById('s30').classList.toggle('on', sleepDays !== 90);
+  document.getElementById('s90').classList.toggle('on', sleepDays === 90);
+}
+document.getElementById('s30').onclick = () => { sleepDays = SMALL ? 14 : 30; renderSleep(); };
+document.getElementById('s90').onclick = () => { sleepDays = 90; renderSleep(); };
+
+/* ------------------------------------------------------------- recovery */
+const WL = SMALL ? D.wellness.slice(-45) : D.wellness;
+new Chart(document.getElementById('cRec'), {
+  type: 'line',
+  data: { labels: WL.map(w => md(w.date)),
+    datasets: [
+      { label: 'Pokojový tep', data: WL.map(w => w.rhr ?? null),
+        borderColor: NAVY, backgroundColor: NAVY, borderWidth: 2,
+        pointRadius: 0, tension: .3, spanGaps: true },
+      { label: 'HRV', data: WL.map(w => w.hrv_last_night ?? null),
+        borderColor: SKY, backgroundColor: SKY, borderWidth: 2,
+        pointRadius: 0, tension: .3, spanGaps: true, yAxisID: 'y1' }
+    ] },
+  options: { plugins: { legend: { position: 'bottom' } },
+    scales: { x: { ticks: { maxTicksLimit: TICKS }, grid: { display: false } },
+      y: { title: { display: true, text: 'bpm' } },
+      y1: { position: 'right', grid: { drawOnChartArea: false },
+        title: { display: true, text: 'ms' } } } }
+});
+
+/* -------------------------------------------------------------- tables */
+document.getElementById('prBody').innerHTML = (D.prs || []).map(p =>
+  '<tr><td>' + p.label + '</td><td class="r">' + p.time +
+  '</td><td class="r">' + p.pace + '</td><td class="r">' + md(p.date) +
+  '</td></tr>').join('') ||
+  '<tr><td colspan="4" style="color:var(--muted)">Zatiaľ bez dát.</td></tr>';
+
+const MON = ['jan', 'feb', 'mar', 'apr', 'máj', 'jún', 'júl', 'aug', 'sep',
+             'okt', 'nov', 'dec'];
+document.getElementById('moBody').innerHTML = (D.months || []).map(m =>
+  '<tr><td>' + MON[+m.m.slice(5, 7) - 1] + ' ' + m.m.slice(2, 4) +
+  '</td><td class="r">' + m.run + '</td><td class="r">' + m.bike +
+  '</td><td class="r">' + m.hike + '</td><td class="r">' +
+  (m.swim ? m.swim : '–') + '</td><td class="r">' + m.elev +
+  ' m</td></tr>').join('');
+
+document.getElementById('yrBody').innerHTML = (D.years || []).map(y =>
+  '<tr><td class="mono">' + y.y + '</td><td class="r">' + y.run +
+  '</td><td class="r">' + y.bike + '</td><td class="r">' + y.hike +
+  '</td><td class="r">' + (y.swim || '–') + '</td><td class="r">' + y.elev +
+  ' m</td><td class="r">' + y.n + '</td></tr>').join('') ||
+  '<tr><td colspan="7" style="color:var(--muted)">Zatiaľ bez dát.</td></tr>';
+
+const S_LBL = { run: 'Beh', bike: 'Bike', hike: 'Túra', swim: 'Plávanie' };
+let sportFilter = 'all';
+function renderActs() {
+  const rows = D.acts.filter(a => sportFilter === 'all' || a.s === sportFilter);
+  document.getElementById('actBody').innerHTML = rows.map(a =>
+    '<tr><td class="mono">' + md(a.d) + '</td><td><span class="pill ' + a.s +
+    '">' + S_LBL[a.s] + '</span></td><td class="r">' + a.km +
+    '</td><td class="r">' + a.t + '</td><td class="r">' + a.pace +
+    (a.s === 'swim' ? '<span class="u">/100m</span>' : '') +
+    '</td><td class="r">' + (a.hr ?? '–') + '</td><td class="r">' + a.elev +
+    '</td></tr>').join('') ||
+    '<tr><td colspan="7" style="color:var(--muted)">Žiadne aktivity.</td></tr>';
+}
+document.getElementById('filter').querySelectorAll('button').forEach(b => {
+  b.onclick = () => {
+    sportFilter = b.dataset.s;
+    document.getElementById('filter').querySelectorAll('button')
+      .forEach(x => x.classList.toggle('on', x === b));
+    renderActs();
+  };
+});
+
+/* ---------------------------------------------------------------- goals */
+const G_DEF = { run_m: 100, run_y: 1000, bike_m: 100, bike_y: 1000 };
+const G_KEY = 'volume_goals';
+
+function goals() {
+  try {
+    return { ...G_DEF, ...JSON.parse(store.get(G_KEY, '{}')) };
+  } catch { return { ...G_DEF }; }
+}
+
+function renderGoals() {
+  const g = goals(), c = D.counters;
+  if (!c) { document.getElementById('goalsCard').innerHTML = ''; return; }
+
+  const rows = [
+    ['Beh · ' + c.month_label.slice(5) + '/' + c.month_label.slice(2, 4),
+     c.month.run, g.run_m, c.day_of_month / c.days_in_month, NAVY],
+    ['Beh · rok ' + c.year_label,
+     c.year.run, g.run_y, c.day_of_year / c.days_in_year, NAVY],
+    ['Bike · ' + c.month_label.slice(5) + '/' + c.month_label.slice(2, 4),
+     c.month.bike, g.bike_m, c.day_of_month / c.days_in_month, SKY],
+    ['Bike · rok ' + c.year_label,
+     c.year.bike, g.bike_y, c.day_of_year / c.days_in_year, SKY]
+  ];
+
+  document.getElementById('goalsCard').innerHTML = rows.map(
+    ([name, tal, target, elapsed, col]) => {
+      const km = tal.km, pct = target ? km / target * 100 : 0;
+      const expected = target * elapsed;
+      const diff = km - expected;
+      const remain = Math.max(target - km, 0);
+      const daysLeft = Math.round((1 - elapsed) *
+        (name.includes('rok') ? c.days_in_year : c.days_in_month));
+
+      let st, cls;
+      if (km >= target) { st = 'Cieľ splnený'; cls = 'done'; }
+      else if (diff >= 0) { st = '+' + diff.toFixed(0) + ' km pred plánom'; cls = 'ahead'; }
+      else { st = diff.toFixed(0) + ' km za plánom'; cls = 'behind'; }
+
+      const perDay = daysLeft > 0 ? (remain / daysLeft).toFixed(1) : '0';
+
+      return '<div class="goal"><div class="top">' +
+        '<span class="name">' + name + '</span>' +
+        '<span class="val"><b>' + km + '</b> / ' + target + ' km · ' +
+        tal.n + '× </span></div>' +
+        '<div class="gbar"><div class="fill" style="width:' +
+          Math.min(pct, 100).toFixed(1) + '%;background:' + col + '"></div>' +
+          (pct < 100 ? '<div class="pace" style="left:' +
+            (elapsed * 100).toFixed(1) + '%"></div>' : '') +
+        '</div>' +
+        '<div class="foot"><span class="st ' + cls + '">' + st + '</span>' +
+        '<span>' + (km >= target ? 'hotovo' : 'zvyšok ' + remain.toFixed(0) +
+          ' km · ' + perDay + ' km/deň') + '</span></div></div>';
+    }).join('');
+}
+
+const gCard = document.getElementById('goalsCard');
+const gForm = document.getElementById('goalsForm');
+const gBtn = document.getElementById('editGoals');
+const F = { run_m: 'gRunM', run_y: 'gRunY', bike_m: 'gBikeM', bike_y: 'gBikeY' };
+
+function openGoals() {
+  const g = goals();
+  Object.entries(F).forEach(([k, id]) => document.getElementById(id).value = g[k]);
+  gForm.hidden = false;
+  gCard.hidden = true;
+  gBtn.textContent = 'Zavrieť';
+}
+function closeGoals() {
+  gForm.hidden = true;
+  gCard.hidden = false;
+  gBtn.textContent = 'Upraviť ciele';
+}
+
+gBtn.onclick = () => (gForm.hidden ? openGoals() : closeGoals());
+document.getElementById('gCancel').onclick = closeGoals;
+document.getElementById('gSave').onclick = () => {
+  const out = {};
+  for (const [k, id] of Object.entries(F)) {
+    const n = parseFloat(document.getElementById(id).value);
+    if (!isFinite(n) || n <= 0) {
+      alert('Doplň platné číslo väčšie ako nula do všetkých štyroch cieľov.');
+      document.getElementById(id).focus();
+      return;
+    }
+    out[k] = n;
+  }
+  store.set(G_KEY, JSON.stringify(out));
+  renderGoals();
+  closeGoals();
+};
+document.getElementById('gReset').onclick = () => {
+  store.set(G_KEY, JSON.stringify(G_DEF));
+  Object.entries(F).forEach(([k, id]) =>
+    document.getElementById(id).value = G_DEF[k]);
+  renderGoals();
+};
+
+/* ---------------------------------------------------------------- zones */
+const Z_COL = [MIST, '#8FBEE0', SKY, NAVY, '#0B2440'];
+const Z_LBL = ['Z1 · regenerácia', 'Z2 · základ', 'Z3 · tempo',
+               'Z4 · prah', 'Z5 · maximum'];
+let zPeriod = 30, zSport = 'all';
+
+const zoneTrend = new Chart(document.getElementById('cZoneTrend'), {
+  type: 'bar',
+  data: { labels: [], datasets: Z_LBL.map((l, i) => ({
+    label: 'Z' + (i + 1), data: [], backgroundColor: Z_COL[i],
+    stack: 'z', borderRadius: 1 })) },
+  options: { plugins: { legend: { position: 'bottom' },
+      tooltip: { callbacks: { label: c => c.dataset.label + ': ' +
+        c.parsed.y.toFixed(0) + ' %' } } },
+    scales: { x: { stacked: true, grid: { display: false },
+        ticks: { maxTicksLimit: TICKS } },
+      y: { stacked: true, max: 100, title: { display: true, text: '%' } } } }
+});
+
+function renderZones() {
+  const cut = new Date(Date.now() - zPeriod * 864e5).toISOString().slice(0, 10);
+  const rows = (D.zone_rows || []).filter(r =>
+    r.d >= cut && (zSport === 'all' || r.s === zSport));
+
+  const tot = [0, 0, 0, 0, 0];
+  rows.forEach(r => r.z.forEach((v, i) => tot[i] += v));
+  const sum = tot.reduce((a, b) => a + b, 0);
+
+  const box = document.getElementById('zoneBars');
+  if (!sum) {
+    box.innerHTML = '<div class="zsum" style="border:0;padding:0">' +
+      'Za toto obdobie nemám dáta o zónach. Sťahujú sa postupne, ' +
+      'po 40 aktivitách na jeden sync.</div>';
+  } else {
+    box.innerHTML = Z_LBL.map((lab, i) => {
+      const pct = tot[i] / sum * 100;
+      const mins = Math.round(tot[i] / 60);
+      return '<div class="zrow"><span class="zlab">' + lab.split(' · ')[0] +
+        '</span><div class="zbar"><span style="width:' + pct.toFixed(1) +
+        '%;background:' + Z_COL[i] + '"></span></div>' +
+        '<span class="zval"><b>' + pct.toFixed(1).replace('.', ',') +
+        ' %</b> · ' + (mins >= 60 ? Math.floor(mins / 60) + 'h ' + (mins % 60) +
+        'm' : mins + 'm') + '</span></div>';
+    }).join('') +
+    '<div class="zsum">' + rows.length + ' aktivít · celkom ' +
+      fmtHrs(sum) + ' h v zónach · ' +
+      'nízka intenzita (Z1–Z2) ' +
+      ((tot[0] + tot[1]) / sum * 100).toFixed(0) + ' %</div>';
+  }
+
+  // tyzdenny trend rozlozenia
+  const byWeek = {};
+  rows.forEach(r => {
+    const d = new Date(r.d);
+    const mon = new Date(d.setDate(d.getDate() - ((d.getDay() + 6) % 7)))
+      .toISOString().slice(0, 10);
+    byWeek[mon] = byWeek[mon] || [0, 0, 0, 0, 0];
+    r.z.forEach((v, i) => byWeek[mon][i] += v);
+  });
+  const keys = Object.keys(byWeek).sort();
+  zoneTrend.data.labels = keys.map(md);
+  Z_LBL.forEach((_, i) => {
+    zoneTrend.data.datasets[i].data = keys.map(k => {
+      const s = byWeek[k].reduce((a, b) => a + b, 0);
+      return s ? byWeek[k][i] / s * 100 : 0;
+    });
+  });
+  zoneTrend.update();
+}
+
+document.getElementById('zPeriod').querySelectorAll('button').forEach(b => {
+  b.onclick = () => {
+    zPeriod = +b.dataset.p;
+    b.parentNode.querySelectorAll('button')
+      .forEach(x => x.classList.toggle('on', x === b));
+    renderZones();
+  };
+});
+document.getElementById('zSport').querySelectorAll('button').forEach(b => {
+  b.onclick = () => {
+    zSport = b.dataset.s;
+    b.parentNode.querySelectorAll('button')
+      .forEach(x => x.classList.toggle('on', x === b));
+    renderZones();
+  };
+});
+
+/* ---------------------------------------------------------- intensity */
+if ((D.intensity || []).length) {
+  new Chart(document.getElementById('cIntensity'), {
+    type: 'bar',
+    data: { labels: D.intensity.map(w => md(w.week)),
+      datasets: [
+        { label: 'Stredná', data: D.intensity.map(w => w.moderate),
+          backgroundColor: SKY, stack: 'i', borderRadius: 2 },
+        { label: 'Vysoká', data: D.intensity.map(w => w.vigorous),
+          backgroundColor: NAVY, stack: 'i', borderRadius: 2 }
+      ] },
+    options: { plugins: { legend: { position: 'bottom' } },
+      scales: { x: { stacked: true, grid: { display: false },
+          ticks: { maxTicksLimit: TICKS } },
+        y: { stacked: true, title: { display: true, text: 'minúty' } } } }
+  });
+}
+
+/* ------------------------------------------------------- body battery */
+new Chart(document.getElementById('cBody'), {
+  type: 'line',
+  data: { labels: WL.map(w => md(w.date)),
+    datasets: [
+      { label: 'Body Battery max', data: WL.map(w => w.bb_max ?? null),
+        borderColor: SKY, backgroundColor: SKY + '33', borderWidth: 1.8,
+        pointRadius: 0, tension: .3, fill: '+1', spanGaps: true },
+      { label: 'Body Battery min', data: WL.map(w => w.bb_min ?? null),
+        borderColor: MIST, borderWidth: 1.4, pointRadius: 0, tension: .3,
+        spanGaps: true },
+      { label: 'Pripravenosť', data: WL.map(w => w.readiness ?? null),
+        borderColor: NAVY, borderWidth: 2, pointRadius: 0, tension: .3,
+        spanGaps: true, borderDash: [4, 3] },
+      { label: 'Stres', data: WL.map(w => w.stress_avg ?? null),
+        borderColor: ALERT, borderWidth: 1.6, pointRadius: 0, tension: .3,
+        spanGaps: true }
+    ] },
+  options: { plugins: { legend: { position: 'bottom' } },
+    scales: { x: { ticks: { maxTicksLimit: TICKS }, grid: { display: false } },
+      y: { min: 0, max: 100 } } }
+});
+
+/* -------------------------------------------------------------- steps */
+new Chart(document.getElementById('cSteps'), {
+  type: 'bar',
+  data: { labels: WL.map(w => md(w.date)),
+    datasets: [{ label: 'Kroky', data: WL.map(w => w.steps ?? null),
+      backgroundColor: WL.map(w => (w.steps || 0) >= 10000 ? NAVY : MIST),
+      borderRadius: 2 }] },
+  options: { plugins: { legend: { display: false } },
+    scales: { x: { ticks: { maxTicksLimit: TICKS }, grid: { display: false } },
+      y: { title: { display: true, text: 'krokov' } } } }
+});
+
+/* ------------------------------------------------------------- history */
+const H_CFG = {
+  vo2max: { lab: 'VO2max', rev: false, fmt: v => v },
+  half_s: { lab: 'Predikcia polmaratónu', rev: true, fmt: v => fmtHMS(v) },
+  endurance_score: { lab: 'Endurance score', rev: false, fmt: v => v }
+};
+const histChart = new Chart(document.getElementById('cHist'), {
+  type: 'line',
+  data: { labels: [], datasets: [{ label: '', data: [], borderColor: NAVY,
+    backgroundColor: SKY + '22', borderWidth: 2.2, pointRadius: 0,
+    tension: .3, fill: true, spanGaps: true }] },
+  options: { plugins: { legend: { display: false } },
+    scales: { x: { ticks: { maxTicksLimit: TICKS }, grid: { display: false } },
+      y: {} } }
+});
+function renderHist(metric) {
+  const h = (D.history || []).filter(x => x[metric] != null);
+  const cfg = H_CFG[metric];
+  histChart.data.labels = h.map(x => md(x.date));
+  histChart.data.datasets[0].data = h.map(x => x[metric]);
+  histChart.data.datasets[0].label = cfg.lab;
+  histChart.options.scales.y.reverse = cfg.rev;
+  histChart.options.scales.y.ticks = { callback: v => cfg.fmt(v) };
+  histChart.options.plugins.tooltip = { callbacks: {
+    label: c => cfg.lab + ': ' + cfg.fmt(c.parsed.y) } };
+  histChart.update();
+}
+document.getElementById('hMetric').querySelectorAll('button').forEach(b => {
+  b.onclick = () => {
+    b.parentNode.querySelectorAll('button')
+      .forEach(x => x.classList.toggle('on', x === b));
+    renderHist(b.dataset.m);
+  };
+});
+
+/* ---------------------------------------------------------------- dow */
+const DOW = ['Po', 'Ut', 'St', 'Št', 'Pi', 'So', 'Ne'];
+new Chart(document.getElementById('cDow'), {
+  data: { labels: DOW,
+    datasets: [
+      { type: 'bar', label: 'Kilometre', data: (D.dow || []).map(d => d.km),
+        backgroundColor: NAVY, borderRadius: 3, yAxisID: 'y' },
+      { type: 'line', label: 'Záťaž', data: (D.dow || []).map(d => d.load),
+        borderColor: WARN, backgroundColor: WARN, borderWidth: 2,
+        pointRadius: 3, tension: .35, yAxisID: 'y1' }
+    ] },
+  options: { plugins: { legend: { position: 'bottom' },
+      tooltip: { callbacks: { afterBody: c => {
+        const d = D.dow[c[0].dataIndex];
+        return d ? d.n + ' aktivít celkovo' : ''; } } } },
+    scales: { x: { grid: { display: false } },
+      y: { title: { display: true, text: 'km' } },
+      y1: { position: 'right', grid: { drawOnChartArea: false },
+        title: { display: true, text: 'záťaž' } } } }
+});
+
+/* --------------------------------------------------------------- cadence */
+new Chart(document.getElementById('cCad'), {
+  data: { labels: (D.cad || []).map(c => md(c.d)),
+    datasets: [
+      { type: 'line', label: 'Kadencia', data: (D.cad || []).map(c => c.c),
+        borderColor: NAVY, borderWidth: 2, pointRadius: 1.8, tension: .3,
+        yAxisID: 'y' },
+      { type: 'line', label: 'Dĺžka kroku', data: (D.cad || []).map(c => c.sl),
+        borderColor: SKY, borderWidth: 1.8, pointRadius: 0, tension: .3,
+        yAxisID: 'y1', spanGaps: true }
+    ] },
+  options: { plugins: { legend: { position: 'bottom' } },
+    scales: { x: { ticks: { maxTicksLimit: TICKS }, grid: { display: false } },
+      y: { title: { display: true, text: 'krokov/min' } },
+      y1: { position: 'right', grid: { drawOnChartArea: false },
+        title: { display: true, text: 'cm' } } } }
+});
+
+/* ----------------------------------------------------------------- gear */
+document.getElementById('gearBody').innerHTML = (D.gear || []).map(g => {
+  const pct = g.max_km ? Math.min(g.km / g.max_km * 100, 100) : null;
+  const col = pct == null ? MIST : pct > 85 ? ALERT : pct > 65 ? WARN : OK;
+  return '<tr class="' + (g.retired ? 'retired' : '') + '"><td>' + g.name +
+    (g.retired ? ' <span class="pill">vyradené</span>' : '') +
+    '</td><td class="r">' + g.km + '</td><td class="r">' +
+    (g.activities ?? '–') + '</td><td class="r">' +
+    (pct == null ? '–' : '<div class="wear"><span style="width:' +
+      pct.toFixed(0) + '%;background:' + col + '"></span></div>') +
+    '</td></tr>';
+}).join('') ||
+  '<tr><td colspan="4" style="color:var(--muted)">Žiadna výstroj v Garmin Connect.</td></tr>';
+
+/* ----------------------------------------------------------- sync button */
+(function syncButton() {
+  const btn = document.getElementById('syncBtn');
+  const msg = document.createElement('span');
+  msg.className = 'syncmsg mono';
+  btn.after(msg);
+
+  // Netlify funkcia existuje len na Netlify. Inde (GitHub Pages) posli
+  // pouzivatela rovno na spustenie workflow v GitHube.
+  const onNetlify = location.hostname.endsWith('netlify.app');
+  if (!onNetlify) {
+    btn.textContent = 'Spustiť sync na GitHube';
+    btn.onclick = () => window.open(
+      'https://github.com/panacekm08/garmin-dashboard/actions/workflows/sync.yml',
+      '_blank', 'noopener');
+    return;
+  }
+
+  btn.onclick = async () => {
+    let secret = store.get('sync_secret', '');
+    if (!secret) {
+      secret = prompt('Heslo pre spustenie synchronizácie:') || '';
+      if (!secret) return;
+      store.set('sync_secret', secret);
+    }
+
+    btn.disabled = true;
+    msg.textContent = 'Spúšťam…';
+    try {
+      const res = await fetch('/.netlify/functions/trigger-sync', {
+        method: 'POST',
+        headers: { 'x-sync-secret': secret }
+      });
+      const data = await res.json().catch(() => ({}));
+      if (res.ok) {
+        msg.textContent = 'Sync beží. Dáta tu budú za 2–3 minúty, potom obnov stránku.';
+      } else {
+        if (res.status === 401) store.set('sync_secret', '');
+        msg.textContent = data.error || ('Nepodarilo sa spustiť (' + res.status + ').');
+        btn.disabled = false;
+      }
+    } catch (e) {
+      msg.textContent = 'Bez pripojenia na server. Skús znova.';
+      btn.disabled = false;
+    }
+  };
+})();
+
+/* ---------------------------------------------------------------- init */
+renderHero();
+renderSleep();
+renderActs();
+renderZones();
+renderGoals();
+renderHist('vo2max');
+</script>
+</body>
+</html>

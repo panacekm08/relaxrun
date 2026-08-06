@@ -1,0 +1,1982 @@
+{
+ "generated_at": "2026-08-06T07:46",
+ "goal": {
+  "race": "half_marathon",
+  "target": "1:45:00",
+  "target_s": 6300
+ },
+ "meta": {
+  "synced_at": "2026-08-06T07:46",
+  "race_predictions": {
+   "time5k_s": 1439,
+   "time10k_s": 3032,
+   "half_s": 6748,
+   "marathon_s": 15246
+  },
+  "training_status": "PEAKING_1",
+  "fitness_age": 25.10887053324587,
+  "intensity_weeks": [
+   {
+    "week": "2026-06-08",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-06-15",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-06-22",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-06-29",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-07-06",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-07-13",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-07-20",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-07-27",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-08-03",
+    "moderate": 0,
+    "vigorous": 0
+   }
+  ]
+ },
+ "training_load": {
+  "acute_7d": 243,
+  "chronic_weekly": 326,
+  "acwr": 0.74,
+  "note": "ACWR 0.8-1.3 = optimalne okno"
+ },
+ "week_now": {
+  "km": 13.3,
+  "pace": "7:14",
+  "hr": 132,
+  "n": 2
+ },
+ "week_prev": {
+  "km": 25.8,
+  "pace": "6:29",
+  "hr": 143,
+  "n": 3
+ },
+ "personal_records": [
+  {
+   "label": "5 km",
+   "date": "2026-03-16",
+   "time": "24:34",
+   "pace": "4:55",
+   "note": "6.0 km"
+  },
+  {
+   "label": "10 km",
+   "date": "2026-03-29",
+   "time": "51:31",
+   "pace": "5:09",
+   "note": "10.0 km"
+  },
+  {
+   "label": "Polmaratón",
+   "date": "2026-04-12",
+   "time": "1:50:56",
+   "pace": "5:16",
+   "note": "21.3 km"
+  },
+  {
+   "label": "Najdlhší beh",
+   "date": "2026-07-19",
+   "time": "24.2 km",
+   "pace": "9:03",
+   "note": "3:38:43"
+  },
+  {
+   "label": "Najviac prevýšenia",
+   "date": "2026-07-19",
+   "time": "1056 m",
+   "pace": "24.2 km",
+   "note": "3:38:43"
+  }
+ ],
+ "hr_zones_by_activity": [
+  {
+   "d": "2026-01-27",
+   "s": "swim",
+   "z": [
+    359,
+    1059,
+    709,
+    21,
+    0
+   ]
+  },
+  {
+   "d": "2026-01-28",
+   "s": "run",
+   "z": [
+    19,
+    18,
+    289,
+    2040,
+    259
+   ]
+  },
+  {
+   "d": "2026-02-02",
+   "s": "run",
+   "z": [
+    14,
+    16,
+    190,
+    1967,
+    170
+   ]
+  },
+  {
+   "d": "2026-02-03",
+   "s": "swim",
+   "z": [
+    485,
+    754,
+    904,
+    5,
+    0
+   ]
+  },
+  {
+   "d": "2026-02-08",
+   "s": "run",
+   "z": [
+    10,
+    25,
+    712,
+    2724,
+    19
+   ]
+  },
+  {
+   "d": "2026-02-13",
+   "s": "run",
+   "z": [
+    14,
+    26,
+    636,
+    1630,
+    3
+   ]
+  },
+  {
+   "d": "2026-02-14",
+   "s": "run",
+   "z": [
+    15,
+    77,
+    548,
+    2039,
+    0
+   ]
+  },
+  {
+   "d": "2026-02-17",
+   "s": "swim",
+   "z": [
+    196,
+    988,
+    733,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-02-21",
+   "s": "run",
+   "z": [
+    28,
+    22,
+    682,
+    1404,
+    423
+   ]
+  },
+  {
+   "d": "2026-02-23",
+   "s": "run",
+   "z": [
+    31,
+    31,
+    421,
+    2668,
+    28
+   ]
+  },
+  {
+   "d": "2026-02-25",
+   "s": "run",
+   "z": [
+    28,
+    58,
+    402,
+    1964,
+    0
+   ]
+  },
+  {
+   "d": "2026-02-28",
+   "s": "run",
+   "z": [
+    6,
+    42,
+    929,
+    1780,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-01",
+   "s": "run",
+   "z": [
+    26,
+    90,
+    2100,
+    706,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-03",
+   "s": "swim",
+   "z": [
+    155,
+    895,
+    556,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-05",
+   "s": "run",
+   "z": [
+    20,
+    46,
+    446,
+    1586,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-07",
+   "s": "bike",
+   "z": [
+    1675,
+    1452,
+    870,
+    202,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-08",
+   "s": "bike",
+   "z": [
+    536,
+    2950,
+    1809,
+    48,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-13",
+   "s": "run",
+   "z": [
+    16,
+    10,
+    893,
+    3660,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-16",
+   "s": "run",
+   "z": [
+    10,
+    4,
+    70,
+    1581,
+    92
+   ]
+  },
+  {
+   "d": "2026-03-19",
+   "s": "run",
+   "z": [
+    15,
+    59,
+    1638,
+    1833,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-22",
+   "s": "run",
+   "z": [
+    192,
+    2550,
+    700,
+    1317,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-24",
+   "s": "run",
+   "z": [
+    836,
+    1244,
+    223,
+    298,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-28",
+   "s": "run",
+   "z": [
+    42,
+    2099,
+    1949,
+    334,
+    0
+   ]
+  },
+  {
+   "d": "2026-03-29",
+   "s": "run",
+   "z": [
+    22,
+    44,
+    290,
+    2674,
+    47
+   ]
+  },
+  {
+   "d": "2026-04-02",
+   "s": "run",
+   "z": [
+    27,
+    57,
+    1791,
+    1184,
+    0
+   ]
+  },
+  {
+   "d": "2026-04-08",
+   "s": "run",
+   "z": [
+    23,
+    114,
+    1381,
+    1239,
+    0
+   ]
+  },
+  {
+   "d": "2026-04-12",
+   "s": "run",
+   "z": [
+    2,
+    3,
+    10,
+    5071,
+    1589
+   ]
+  },
+  {
+   "d": "2026-04-15",
+   "s": "run",
+   "z": [
+    103,
+    430,
+    2508,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-04-25",
+   "s": "bike",
+   "z": [
+    6322,
+    2325,
+    225,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-04-26",
+   "s": "bike",
+   "z": [
+    2493,
+    3033,
+    3021,
+    974,
+    233
+   ]
+  },
+  {
+   "d": "2026-05-11",
+   "s": "run",
+   "z": [
+    36,
+    1769,
+    913,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-05-12",
+   "s": "run",
+   "z": [
+    130,
+    1222,
+    837,
+    687,
+    0
+   ]
+  },
+  {
+   "d": "2026-05-16",
+   "s": "run",
+   "z": [
+    0,
+    18,
+    37,
+    752,
+    3419
+   ]
+  },
+  {
+   "d": "2026-05-21",
+   "s": "run",
+   "z": [
+    50,
+    2536,
+    976,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-05-22",
+   "s": "run",
+   "z": [
+    7,
+    36,
+    591,
+    1873,
+    21
+   ]
+  },
+  {
+   "d": "2026-05-25",
+   "s": "run",
+   "z": [
+    16,
+    568,
+    2054,
+    596,
+    0
+   ]
+  },
+  {
+   "d": "2026-05-31",
+   "s": "run",
+   "z": [
+    101,
+    518,
+    273,
+    711,
+    8
+   ]
+  },
+  {
+   "d": "2026-06-23",
+   "s": "run",
+   "z": [
+    11,
+    43,
+    1392,
+    1364,
+    127
+   ]
+  },
+  {
+   "d": "2026-06-24",
+   "s": "bike",
+   "z": [
+    261,
+    1177,
+    4749,
+    823,
+    0
+   ]
+  },
+  {
+   "d": "2026-06-25",
+   "s": "run",
+   "z": [
+    22,
+    221,
+    1039,
+    918,
+    11
+   ]
+  },
+  {
+   "d": "2026-07-05",
+   "s": "hike",
+   "z": [
+    703,
+    0,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-07",
+   "s": "bike",
+   "z": [
+    3651,
+    717,
+    154,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-09",
+   "s": "run",
+   "z": [
+    48,
+    592,
+    2408,
+    832,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-10",
+   "s": "run",
+   "z": [
+    8,
+    34,
+    128,
+    1564,
+    61
+   ]
+  },
+  {
+   "d": "2026-07-11",
+   "s": "hike",
+   "z": [
+    1748,
+    33,
+    0,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-12",
+   "s": "run",
+   "z": [
+    26,
+    1174,
+    4262,
+    302,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-15",
+   "s": "run",
+   "z": [
+    27,
+    1556,
+    1468,
+    15,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-17",
+   "s": "run",
+   "z": [
+    29,
+    1686,
+    1111,
+    300,
+    6
+   ]
+  },
+  {
+   "d": "2026-07-19",
+   "s": "run",
+   "z": [
+    1214,
+    5010,
+    5386,
+    1423,
+    65
+   ]
+  },
+  {
+   "d": "2026-07-21",
+   "s": "bike",
+   "z": [
+    933,
+    358,
+    102,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-21",
+   "s": "bike",
+   "z": [
+    938,
+    595,
+    67,
+    65,
+    4
+   ]
+  },
+  {
+   "d": "2026-07-22",
+   "s": "run",
+   "z": [
+    23,
+    2552,
+    128,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-23",
+   "s": "run",
+   "z": [
+    132,
+    2437,
+    468,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-25",
+   "s": "bike",
+   "z": [
+    173,
+    1676,
+    10082,
+    942,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-26",
+   "s": "run",
+   "z": [
+    46,
+    2201,
+    919,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-28",
+   "s": "run",
+   "z": [
+    12,
+    37,
+    875,
+    2824,
+    0
+   ]
+  },
+  {
+   "d": "2026-07-29",
+   "s": "run",
+   "z": [
+    20,
+    1635,
+    1300,
+    38,
+    0
+   ]
+  },
+  {
+   "d": "2026-08-01",
+   "s": "bike",
+   "z": [
+    116,
+    2143,
+    5781,
+    724,
+    0
+   ]
+  },
+  {
+   "d": "2026-08-04",
+   "s": "run",
+   "z": [
+    27,
+    2355,
+    612,
+    0,
+    0
+   ]
+  },
+  {
+   "d": "2026-08-05",
+   "s": "run",
+   "z": [
+    51,
+    2082,
+    621,
+    0,
+    0
+   ]
+  }
+ ],
+ "day_of_week_pattern": [
+  {
+   "km": 142.4,
+   "n": 15,
+   "load": 784
+  },
+  {
+   "km": 202.2,
+   "n": 18,
+   "load": 777
+  },
+  {
+   "km": 179.3,
+   "n": 13,
+   "load": 853
+  },
+  {
+   "km": 117.5,
+   "n": 10,
+   "load": 588
+  },
+  {
+   "km": 70.7,
+   "n": 7,
+   "load": 644
+  },
+  {
+   "km": 383.3,
+   "n": 19,
+   "load": 1864
+  },
+  {
+   "km": 359.1,
+   "n": 18,
+   "load": 1847
+  }
+ ],
+ "fitness_history": [
+  {
+   "date": "2026-07-29",
+   "vo2max": 50.3,
+   "half_s": 6684,
+   "time5k_s": 1405,
+   "time10k_s": 3003,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.237529610128995
+  },
+  {
+   "date": "2026-07-30",
+   "vo2max": null,
+   "half_s": 6685,
+   "time5k_s": 1408,
+   "time10k_s": 3006,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.237529610128995
+  },
+  {
+   "date": "2026-07-31",
+   "vo2max": null,
+   "half_s": 6685,
+   "time5k_s": 1408,
+   "time10k_s": 3006,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.237529610128995
+  },
+  {
+   "date": "2026-08-01",
+   "vo2max": null,
+   "half_s": 6693,
+   "time5k_s": 1412,
+   "time10k_s": 3010,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-02",
+   "vo2max": null,
+   "half_s": 6704,
+   "time5k_s": 1417,
+   "time10k_s": 3014,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-03",
+   "vo2max": null,
+   "half_s": 6712,
+   "time5k_s": 1419,
+   "time10k_s": 3017,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-04",
+   "vo2max": null,
+   "half_s": 6720,
+   "time5k_s": 1423,
+   "time10k_s": 3019,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-05",
+   "vo2max": null,
+   "half_s": 6733,
+   "time5k_s": 1430,
+   "time10k_s": 3025,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-06",
+   "vo2max": null,
+   "half_s": 6748,
+   "time5k_s": 1439,
+   "time10k_s": 3032,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
+  }
+ ],
+ "gear": [],
+ "intensity_minutes_weekly": [
+  {
+   "week": "2026-06-08",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-06-15",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-06-22",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-06-29",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-07-06",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-07-13",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-07-20",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-07-27",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-08-03",
+   "moderate": 0,
+   "vigorous": 0
+  }
+ ],
+ "monthly_totals": [
+  {
+   "m": "2026-08",
+   "swim": 0.0,
+   "run": 13,
+   "bike": 74,
+   "hike": 0,
+   "elev": 541,
+   "n": 3
+  },
+  {
+   "m": "2026-07",
+   "swim": 0.0,
+   "run": 108,
+   "bike": 158,
+   "hike": 16,
+   "elev": 3412,
+   "n": 17
+  },
+  {
+   "m": "2026-06",
+   "swim": 0.0,
+   "run": 14,
+   "bike": 60,
+   "hike": 0,
+   "elev": 490,
+   "n": 3
+  },
+  {
+   "m": "2026-05",
+   "swim": 0.0,
+   "run": 52,
+   "bike": 0,
+   "hike": 0,
+   "elev": 642,
+   "n": 7
+  },
+  {
+   "m": "2026-04",
+   "swim": 0.0,
+   "run": 47,
+   "bike": 82,
+   "hike": 0,
+   "elev": 1298,
+   "n": 6
+  },
+  {
+   "m": "2026-03",
+   "swim": 1.0,
+   "run": 85,
+   "bike": 61,
+   "hike": 0,
+   "elev": 1162,
+   "n": 12
+  },
+  {
+   "m": "2026-02",
+   "swim": 2.0,
+   "run": 66,
+   "bike": 0,
+   "hike": 0,
+   "elev": 352,
+   "n": 10
+  },
+  {
+   "m": "2026-01",
+   "swim": 1.0,
+   "run": 29,
+   "bike": 0,
+   "hike": 0,
+   "elev": 132,
+   "n": 5
+  },
+  {
+   "m": "2025-12",
+   "swim": 0.0,
+   "run": 49,
+   "bike": 0,
+   "hike": 0,
+   "elev": 163,
+   "n": 5
+  },
+  {
+   "m": "2025-11",
+   "swim": 0.0,
+   "run": 59,
+   "bike": 243,
+   "hike": 0,
+   "elev": 1560,
+   "n": 17
+  },
+  {
+   "m": "2025-10",
+   "swim": 0.0,
+   "run": 48,
+   "bike": 16,
+   "hike": 4,
+   "elev": 1487,
+   "n": 6
+  },
+  {
+   "m": "2025-09",
+   "swim": 0.0,
+   "run": 32,
+   "bike": 111,
+   "hike": 24,
+   "elev": 2522,
+   "n": 9
+  }
+ ],
+ "yearly_totals": [
+  {
+   "y": "2026",
+   "swim": 4.0,
+   "run": 415,
+   "bike": 435,
+   "hike": 16,
+   "elev": 8029,
+   "n": 63
+  },
+  {
+   "y": "2025",
+   "swim": 0.0,
+   "run": 187,
+   "bike": 370,
+   "hike": 28,
+   "elev": 5732,
+   "n": 37
+  }
+ ],
+ "counters": {
+  "month": {
+   "run": {
+    "km": 13.3,
+    "n": 2,
+    "elev": 106,
+    "time_s": 5780
+   },
+   "bike": {
+    "km": 74.1,
+    "n": 1,
+    "elev": 435,
+    "time_s": 8769
+   },
+   "hike": {
+    "km": 0.0,
+    "n": 0,
+    "elev": 0,
+    "time_s": 0
+   },
+   "swim": {
+    "km": 0.0,
+    "n": 0,
+    "elev": 0,
+    "time_s": 0
+   }
+  },
+  "year": {
+   "run": {
+    "km": 414.6,
+    "n": 47,
+    "elev": 3881,
+    "time_s": 155169
+   },
+   "bike": {
+    "km": 434.7,
+    "n": 10,
+    "elev": 3886,
+    "time_s": 71059
+   },
+   "hike": {
+    "km": 15.8,
+    "n": 2,
+    "elev": 262,
+    "time_s": 17335
+   },
+   "swim": {
+    "km": 4.0,
+    "n": 4,
+    "elev": 0,
+    "time_s": 8026
+   }
+  },
+  "month_label": "2026-08",
+  "year_label": "2026",
+  "day_of_month": 6,
+  "days_in_month": 31,
+  "day_of_year": 218,
+  "days_in_year": 365
+ },
+ "activities_last_60d": [
+  {
+   "id": 23356015134,
+   "date": "2026-06-23",
+   "type": "running",
+   "name": "Puchov Running",
+   "distance_m": 8005.02001953125,
+   "duration_s": 2940.736083984375,
+   "moving_s": 2939.018035888672,
+   "avg_hr": 159.0,
+   "max_hr": 182.0,
+   "avg_speed_mps": 2.7219998836517334,
+   "elev_gain_m": 54.0,
+   "cadence": 159.671875,
+   "aerobic_te": 3.5999999046325684,
+   "vo2max": 49.0
+  },
+  {
+   "id": 23363802521,
+   "date": "2026-06-24",
+   "type": "road_biking",
+   "name": "Puchov Road Cycling",
+   "distance_m": 60018.328125,
+   "duration_s": 7666.60400390625,
+   "moving_s": 7659.112976074219,
+   "avg_hr": 141.0,
+   "max_hr": 175.0,
+   "avg_speed_mps": 7.828999996185303,
+   "elev_gain_m": 394.0,
+   "cadence": null,
+   "aerobic_te": 3.799999952316284,
+   "vo2max": null
+  },
+  {
+   "id": 23378432522,
+   "date": "2026-06-25",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 6003.7900390625,
+   "duration_s": 2219.27392578125,
+   "moving_s": 2218.0180053710938,
+   "avg_hr": 154.0,
+   "max_hr": 178.0,
+   "avg_speed_mps": 2.7049999237060542,
+   "elev_gain_m": 42.0,
+   "cadence": 160.890625,
+   "aerobic_te": 3.4000000953674316,
+   "vo2max": 49.0
+  },
+  {
+   "id": 23491803990,
+   "date": "2026-07-05",
+   "type": "hiking",
+   "name": "Sankt Gilgen Hiking",
+   "distance_m": 8638.5400390625,
+   "duration_s": 10977.7607421875,
+   "moving_s": 8029.0,
+   "avg_hr": 82.0,
+   "max_hr": 117.0,
+   "avg_speed_mps": 0.7870000004768372,
+   "elev_gain_m": 34.0,
+   "cadence": 67.109375,
+   "aerobic_te": 0.5,
+   "vo2max": null
+  },
+  {
+   "id": 23512425600,
+   "date": "2026-07-07",
+   "type": "cycling",
+   "name": "Sankt Gilgen Cycling",
+   "distance_m": 35019.30859375,
+   "duration_s": 7717.51806640625,
+   "moving_s": 7396.6429443359375,
+   "avg_hr": 102.0,
+   "max_hr": 149.0,
+   "avg_speed_mps": 4.538000106811523,
+   "elev_gain_m": 354.0,
+   "cadence": null,
+   "aerobic_te": 1.100000023841858,
+   "vo2max": null
+  },
+  {
+   "id": 23537534078,
+   "date": "2026-07-09",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 10002.98046875,
+   "duration_s": 3893.172119140625,
+   "moving_s": 3885.726999759674,
+   "avg_hr": 147.0,
+   "max_hr": 172.0,
+   "avg_speed_mps": 2.5690000057220455,
+   "elev_gain_m": 95.0,
+   "cadence": 158.78125,
+   "aerobic_te": 3.299999952316284,
+   "vo2max": 49.0
+  },
+  {
+   "id": 23548612119,
+   "date": "2026-07-10",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 5498.9599609375,
+   "duration_s": 1801.16796875,
+   "moving_s": 1799.8269958496094,
+   "avg_hr": 167.0,
+   "max_hr": 179.0,
+   "avg_speed_mps": 3.052999973297119,
+   "elev_gain_m": 31.0,
+   "cadence": 163.25,
+   "aerobic_te": 3.700000047683716,
+   "vo2max": 49.0
+  },
+  {
+   "id": 23568130587,
+   "date": "2026-07-11",
+   "type": "hiking",
+   "name": "Salas Hiking",
+   "distance_m": 7139.22021484375,
+   "duration_s": 6356.880859375,
+   "moving_s": 5533.0,
+   "avg_hr": 93.0,
+   "max_hr": 123.0,
+   "avg_speed_mps": 1.1230000257492065,
+   "elev_gain_m": 228.0,
+   "cadence": 87.6875,
+   "aerobic_te": 0.800000011920929,
+   "vo2max": null
+  },
+  {
+   "id": 23568131040,
+   "date": "2026-07-12",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 14015.6103515625,
+   "duration_s": 5783.56591796875,
+   "moving_s": 5779.487010478973,
+   "avg_hr": 144.0,
+   "max_hr": 170.0,
+   "avg_speed_mps": 2.4230000972747803,
+   "elev_gain_m": 145.0,
+   "cadence": 160.984375,
+   "aerobic_te": 3.4000000953674316,
+   "vo2max": 49.0
+  },
+  {
+   "id": 23609990629,
+   "date": "2026-07-15",
+   "type": "running",
+   "name": "Poznan Running",
+   "distance_m": 8062.2900390625,
+   "duration_s": 3082.882080078125,
+   "moving_s": 3081.3829650878906,
+   "avg_hr": 139.0,
+   "max_hr": 159.0,
+   "avg_speed_mps": 2.615000009536743,
+   "elev_gain_m": 28.0,
+   "cadence": 158.921875,
+   "aerobic_te": 3.0999999046325684,
+   "vo2max": 49.0
+  },
+  {
+   "id": 23633988913,
+   "date": "2026-07-17",
+   "type": "running",
+   "name": "Puchov Running",
+   "distance_m": 7507.81005859375,
+   "duration_s": 3139.85009765625,
+   "moving_s": 3137.2220153808594,
+   "avg_hr": 138.0,
+   "max_hr": 178.0,
+   "avg_speed_mps": 2.3910000324249268,
+   "elev_gain_m": 66.0,
+   "cadence": 156.703125,
+   "aerobic_te": 2.9000000953674316,
+   "vo2max": 50.0
+  },
+  {
+   "id": 23655262285,
+   "date": "2026-07-19",
+   "type": "trail_running",
+   "name": "Dolna Marikova Trail Running",
+   "distance_m": 24180.240234375,
+   "duration_s": 13122.8056640625,
+   "moving_s": 13019.349029541016,
+   "avg_hr": 139.0,
+   "max_hr": 179.0,
+   "avg_speed_mps": 1.843000054359436,
+   "elev_gain_m": 1056.0,
+   "cadence": 127.859375,
+   "aerobic_te": 4.199999809265137,
+   "vo2max": 50.0
+  },
+  {
+   "id": 23679511985,
+   "date": "2026-07-21",
+   "type": "cycling",
+   "name": "Kojetin Cycling",
+   "distance_m": 11979.580078125,
+   "duration_s": 2291.257080078125,
+   "moving_s": 2179.0,
+   "avg_hr": 104.0,
+   "max_hr": 150.0,
+   "avg_speed_mps": 5.228000164031982,
+   "elev_gain_m": 101.0,
+   "cadence": null,
+   "aerobic_te": 0.8999999761581421,
+   "vo2max": null
+  },
+  {
+   "id": 23673226190,
+   "date": "2026-07-21",
+   "type": "cycling",
+   "name": "Kromeriz Cycling",
+   "distance_m": 10691.98046875,
+   "duration_s": 1927.833984375,
+   "moving_s": 1893.7880249023438,
+   "avg_hr": 115.0,
+   "max_hr": 178.0,
+   "avg_speed_mps": 5.546000003814697,
+   "elev_gain_m": 107.0,
+   "cadence": null,
+   "aerobic_te": 1.7000000476837158,
+   "vo2max": null
+  },
+  {
+   "id": 23692763236,
+   "date": "2026-07-22",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 6208.0498046875,
+   "duration_s": 2718.81103515625,
+   "moving_s": 2711.239013671875,
+   "avg_hr": 130.0,
+   "max_hr": 148.0,
+   "avg_speed_mps": 2.2829999923706055,
+   "elev_gain_m": 47.0,
+   "cadence": 156.640625,
+   "aerobic_te": 2.4000000953674316,
+   "vo2max": null
+  },
+  {
+   "id": 23706165853,
+   "date": "2026-07-23",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 7008.47998046875,
+   "duration_s": 3063.888916015625,
+   "moving_s": 3061.189971923828,
+   "avg_hr": 129.0,
+   "max_hr": 144.0,
+   "avg_speed_mps": 2.2869999408721924,
+   "elev_gain_m": 56.0,
+   "cadence": 157.6875,
+   "aerobic_te": 2.5,
+   "vo2max": 50.0
+  },
+  {
+   "id": 23726369130,
+   "date": "2026-07-25",
+   "type": "road_biking",
+   "name": "Kromeriz Road Cycling",
+   "distance_m": 100095.453125,
+   "duration_s": 12872.9541015625,
+   "moving_s": 12854.748992919922,
+   "avg_hr": 146.0,
+   "max_hr": 168.0,
+   "avg_speed_mps": 7.776000022888184,
+   "elev_gain_m": 902.0,
+   "cadence": null,
+   "aerobic_te": 4.199999809265137,
+   "vo2max": null
+  },
+  {
+   "id": 23743047744,
+   "date": "2026-07-26",
+   "type": "running",
+   "name": "Puchov Running",
+   "distance_m": 7004.0400390625,
+   "duration_s": 3193.68505859375,
+   "moving_s": 3182.6189880371094,
+   "avg_hr": 134.0,
+   "max_hr": 157.0,
+   "avg_speed_mps": 2.193000078201294,
+   "elev_gain_m": 41.0,
+   "cadence": 154.75,
+   "aerobic_te": 2.5,
+   "vo2max": 50.0
+  },
+  {
+   "id": 23767029414,
+   "date": "2026-07-28",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 11499.6103515625,
+   "duration_s": 3806.22900390625,
+   "moving_s": 3800.822021484375,
+   "avg_hr": 159.0,
+   "max_hr": 171.0,
+   "avg_speed_mps": 3.020999908447266,
+   "elev_gain_m": 67.0,
+   "cadence": 162.328125,
+   "aerobic_te": 4.300000190734863,
+   "vo2max": 50.0
+  },
+  {
+   "id": 23778304839,
+   "date": "2026-07-29",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 7286.22021484375,
+   "duration_s": 3044.528076171875,
+   "moving_s": 3042.094024658203,
+   "avg_hr": 135.0,
+   "max_hr": 159.0,
+   "avg_speed_mps": 2.3929998874664307,
+   "elev_gain_m": 54.0,
+   "cadence": 158.109375,
+   "aerobic_te": 2.9000000953674316,
+   "vo2max": 50.0
+  },
+  {
+   "id": 23810458756,
+   "date": "2026-08-01",
+   "type": "road_biking",
+   "name": "Puchov Road Cycling",
+   "distance_m": 74141.0625,
+   "duration_s": 8768.5615234375,
+   "moving_s": 8756.97900390625,
+   "avg_hr": 143.0,
+   "max_hr": 172.0,
+   "avg_speed_mps": 8.454999923706055,
+   "elev_gain_m": 435.0,
+   "cadence": null,
+   "aerobic_te": 3.5999999046325684,
+   "vo2max": null
+  },
+  {
+   "id": 23853440895,
+   "date": "2026-08-04",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 7008.52978515625,
+   "duration_s": 3017.35400390625,
+   "moving_s": 3013.8930053710938,
+   "avg_hr": 132.0,
+   "max_hr": 147.0,
+   "avg_speed_mps": 2.322999954223633,
+   "elev_gain_m": 49.0,
+   "cadence": 160.09375,
+   "aerobic_te": 2.5,
+   "vo2max": 50.0
+  },
+  {
+   "id": 23865653115,
+   "date": "2026-08-05",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 6296.47998046875,
+   "duration_s": 2762.468017578125,
+   "moving_s": 2759.102996826172,
+   "avg_hr": 133.0,
+   "max_hr": 145.0,
+   "avg_speed_mps": 2.2790000438690186,
+   "elev_gain_m": 57.0,
+   "cadence": 159.921875,
+   "aerobic_te": 2.299999952316284,
+   "vo2max": 50.0
+  }
+ ],
+ "wellness_last_90d": [
+  {
+   "date": "2026-06-29",
+   "sleep_s": 24180,
+   "sleep_score": 79,
+   "hrv_last_night": 62,
+   "hrv_status": "BALANCED",
+   "bb_max": 83,
+   "bb_min": 29,
+   "readiness": 81
+  },
+  {
+   "date": "2026-06-30",
+   "sleep_s": 27418,
+   "sleep_score": 95,
+   "hrv_last_night": 69,
+   "hrv_status": "BALANCED",
+   "bb_max": 96,
+   "bb_min": 26,
+   "readiness": 80
+  },
+  {
+   "date": "2026-07-01",
+   "sleep_s": null,
+   "sleep_score": null,
+   "hrv_last_night": null,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 92,
+   "bb_min": 32,
+   "readiness": 73
+  },
+  {
+   "date": "2026-07-02",
+   "sleep_s": 24660,
+   "sleep_score": 85,
+   "hrv_last_night": 58,
+   "hrv_status": "BALANCED",
+   "bb_max": 90,
+   "bb_min": 30,
+   "readiness": 95
+  },
+  {
+   "date": "2026-07-03",
+   "sleep_s": 22320,
+   "sleep_score": 82,
+   "hrv_last_night": 60,
+   "hrv_status": "BALANCED",
+   "bb_max": 94,
+   "bb_min": 28,
+   "readiness": 91
+  },
+  {
+   "date": "2026-07-04",
+   "sleep_s": 16980,
+   "sleep_score": 65,
+   "hrv_last_night": 54,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 73,
+   "bb_min": 6,
+   "readiness": 72
+  },
+  {
+   "date": "2026-07-05",
+   "sleep_s": 26160,
+   "sleep_score": 78,
+   "hrv_last_night": 64,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 79,
+   "bb_min": 8,
+   "readiness": 76
+  },
+  {
+   "date": "2026-07-06",
+   "sleep_s": 24720,
+   "sleep_score": 78,
+   "hrv_last_night": 62,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 81,
+   "bb_min": 17,
+   "readiness": 81
+  },
+  {
+   "date": "2026-07-07",
+   "sleep_s": 23160,
+   "sleep_score": 82,
+   "hrv_last_night": 63,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 92,
+   "bb_min": 22,
+   "readiness": 86
+  },
+  {
+   "date": "2026-07-08",
+   "sleep_s": 24600,
+   "sleep_score": 86,
+   "hrv_last_night": 61,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 94,
+   "bb_min": 25,
+   "readiness": 85
+  },
+  {
+   "date": "2026-07-09",
+   "sleep_s": 29100,
+   "sleep_score": 96,
+   "hrv_last_night": 72,
+   "hrv_status": "BALANCED",
+   "bb_max": 100,
+   "bb_min": 25,
+   "readiness": 75
+  },
+  {
+   "date": "2026-07-10",
+   "sleep_s": 23880,
+   "sleep_score": 84,
+   "hrv_last_night": 68,
+   "hrv_status": "BALANCED",
+   "bb_max": 82,
+   "bb_min": 17,
+   "readiness": 67
+  },
+  {
+   "date": "2026-07-11",
+   "sleep_s": 26760,
+   "sleep_score": 84,
+   "hrv_last_night": 56,
+   "hrv_status": "BALANCED",
+   "bb_max": 66,
+   "bb_min": 17,
+   "readiness": 75
+  },
+  {
+   "date": "2026-07-12",
+   "sleep_s": 24720,
+   "sleep_score": 89,
+   "hrv_last_night": 73,
+   "hrv_status": "BALANCED",
+   "bb_max": 95,
+   "bb_min": 18,
+   "readiness": 50
+  },
+  {
+   "date": "2026-07-13",
+   "sleep_s": 23040,
+   "sleep_score": 76,
+   "hrv_last_night": 67,
+   "hrv_status": "BALANCED",
+   "bb_max": 80,
+   "bb_min": 18,
+   "readiness": 58
+  },
+  {
+   "date": "2026-07-14",
+   "sleep_s": 22800,
+   "sleep_score": 84,
+   "hrv_last_night": 66,
+   "hrv_status": "BALANCED",
+   "bb_max": 94,
+   "bb_min": 34,
+   "readiness": 73
+  },
+  {
+   "date": "2026-07-15",
+   "sleep_s": 24660,
+   "sleep_score": 90,
+   "hrv_last_night": 57,
+   "hrv_status": "BALANCED",
+   "bb_max": 95,
+   "bb_min": 33,
+   "readiness": 65
+  },
+  {
+   "date": "2026-07-16",
+   "sleep_s": 23312,
+   "sleep_score": 83,
+   "hrv_last_night": 75,
+   "hrv_status": "BALANCED",
+   "bb_max": 96,
+   "bb_min": 31,
+   "readiness": 75
+  },
+  {
+   "date": "2026-07-17",
+   "sleep_s": 24945,
+   "sleep_score": 91,
+   "hrv_last_night": 68,
+   "hrv_status": "BALANCED",
+   "bb_max": 97,
+   "bb_min": 18,
+   "readiness": 65
+  },
+  {
+   "date": "2026-07-18",
+   "sleep_s": 25760,
+   "sleep_score": 97,
+   "hrv_last_night": 70,
+   "hrv_status": "BALANCED",
+   "bb_max": 98,
+   "bb_min": 10,
+   "readiness": 95
+  },
+  {
+   "date": "2026-07-19",
+   "sleep_s": 27000,
+   "sleep_score": 85,
+   "hrv_last_night": 61,
+   "hrv_status": "BALANCED",
+   "bb_max": 72,
+   "bb_min": 8,
+   "readiness": 16
+  },
+  {
+   "date": "2026-07-20",
+   "sleep_s": 18720,
+   "sleep_score": 66,
+   "hrv_last_night": 61,
+   "hrv_status": "BALANCED",
+   "bb_max": 46,
+   "bb_min": 6,
+   "readiness": 26
+  },
+  {
+   "date": "2026-07-21",
+   "sleep_s": 23100,
+   "sleep_score": 84,
+   "hrv_last_night": 64,
+   "hrv_status": "BALANCED",
+   "bb_max": 94,
+   "bb_min": 24,
+   "readiness": 58
+  },
+  {
+   "date": "2026-07-22",
+   "sleep_s": 25200,
+   "sleep_score": 95,
+   "hrv_last_night": 65,
+   "hrv_status": "BALANCED",
+   "bb_max": 96,
+   "bb_min": 30,
+   "readiness": 75
+  },
+  {
+   "date": "2026-07-23",
+   "sleep_s": 27540,
+   "sleep_score": 95,
+   "hrv_last_night": 66,
+   "hrv_status": "BALANCED",
+   "bb_max": 100,
+   "bb_min": 30,
+   "readiness": 85
+  },
+  {
+   "date": "2026-07-24",
+   "sleep_s": 27000,
+   "sleep_score": 96,
+   "hrv_last_night": 71,
+   "hrv_status": "BALANCED",
+   "bb_max": 100,
+   "bb_min": 35,
+   "readiness": 100
+  },
+  {
+   "date": "2026-07-25",
+   "sleep_s": 22500,
+   "sleep_score": 76,
+   "hrv_last_night": 64,
+   "hrv_status": "BALANCED",
+   "bb_max": 93,
+   "bb_min": 5,
+   "readiness": 50
+  },
+  {
+   "date": "2026-07-26",
+   "sleep_s": 24660,
+   "sleep_score": 63,
+   "hrv_last_night": 50,
+   "hrv_status": "BALANCED",
+   "bb_max": 36,
+   "bb_min": 5,
+   "readiness": 31
+  },
+  {
+   "date": "2026-07-27",
+   "sleep_s": 25140,
+   "sleep_score": 81,
+   "hrv_last_night": 62,
+   "hrv_status": "BALANCED",
+   "bb_max": 63,
+   "bb_min": 5,
+   "readiness": 50
+  },
+  {
+   "date": "2026-07-28",
+   "sleep_s": 27338,
+   "sleep_score": 95,
+   "deep_s": 7860,
+   "light_s": 11940,
+   "rem_s": 7560,
+   "awake_s": 780,
+   "hrv_last_night": 69,
+   "hrv_status": "BALANCED",
+   "bb_max": 100,
+   "bb_min": 24,
+   "readiness": 34,
+   "rhr": 43.0,
+   "steps": 16716,
+   "stress_avg": 22
+  },
+  {
+   "date": "2026-07-29",
+   "sleep_s": 22707,
+   "sleep_score": 80,
+   "deep_s": 6060,
+   "light_s": 13140,
+   "rem_s": 3540,
+   "awake_s": 1620,
+   "hrv_last_night": 72,
+   "hrv_status": "BALANCED",
+   "bb_max": 92,
+   "bb_min": 19,
+   "readiness": 57,
+   "rhr": 49.0,
+   "steps": 14154,
+   "stress_avg": 26
+  },
+  {
+   "date": "2026-07-30",
+   "sleep_s": 22980,
+   "sleep_score": 81,
+   "deep_s": 5880,
+   "light_s": 13500,
+   "rem_s": 3600,
+   "awake_s": 1140,
+   "hrv_last_night": 65,
+   "hrv_status": "BALANCED",
+   "bb_max": 81,
+   "bb_min": 18,
+   "readiness": 62,
+   "rhr": 48.0,
+   "steps": 5118,
+   "stress_avg": 23
+  },
+  {
+   "date": "2026-07-31",
+   "sleep_s": 24522,
+   "sleep_score": 91,
+   "deep_s": 6360,
+   "light_s": 11760,
+   "rem_s": 6420,
+   "awake_s": 240,
+   "hrv_last_night": 61,
+   "hrv_status": "BALANCED",
+   "bb_max": 92,
+   "bb_min": 20,
+   "readiness": 79,
+   "rhr": 48.0,
+   "steps": 10731,
+   "stress_avg": 28
+  },
+  {
+   "date": "2026-08-01",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": "BALANCED",
+   "bb_max": 81,
+   "bb_min": 20,
+   "readiness": 52,
+   "rhr": 53.0,
+   "steps": 5977,
+   "stress_avg": 37
+  },
+  {
+   "date": "2026-08-02",
+   "sleep_s": 20280,
+   "sleep_score": 71,
+   "deep_s": 4980,
+   "light_s": 12780,
+   "rem_s": 2520,
+   "awake_s": 2340,
+   "hrv_last_night": 64,
+   "hrv_status": "BALANCED",
+   "bb_max": 82,
+   "bb_min": 20,
+   "readiness": 78,
+   "rhr": 48.0,
+   "steps": 13076,
+   "stress_avg": 23
+  },
+  {
+   "date": "2026-08-03",
+   "sleep_s": 25440,
+   "sleep_score": 96,
+   "deep_s": 8100,
+   "light_s": 11100,
+   "rem_s": 6240,
+   "awake_s": 60,
+   "hrv_last_night": 63,
+   "hrv_status": "BALANCED",
+   "bb_max": 99,
+   "bb_min": 26,
+   "readiness": 85,
+   "rhr": 47.0,
+   "steps": 3761,
+   "stress_avg": 21
+  },
+  {
+   "date": "2026-08-04",
+   "sleep_s": 24120,
+   "sleep_score": 86,
+   "deep_s": 7560,
+   "light_s": 11280,
+   "rem_s": 5280,
+   "awake_s": 600,
+   "hrv_last_night": 61,
+   "hrv_status": "BALANCED",
+   "bb_max": 96,
+   "bb_min": 32,
+   "readiness": 71,
+   "rhr": 46.0,
+   "steps": 14076,
+   "stress_avg": 20
+  },
+  {
+   "date": "2026-08-05",
+   "sleep_s": 29220,
+   "sleep_score": 95,
+   "deep_s": 7560,
+   "light_s": 15120,
+   "rem_s": 6540,
+   "awake_s": 660,
+   "hrv_last_night": 63,
+   "hrv_status": "BALANCED",
+   "bb_max": 100,
+   "bb_min": 30,
+   "readiness": 84,
+   "rhr": 46.0,
+   "steps": 16904,
+   "stress_avg": 22
+  },
+  {
+   "date": "2026-08-06",
+   "sleep_s": 25380,
+   "sleep_score": 86,
+   "deep_s": 7080,
+   "light_s": 14460,
+   "rem_s": 3840,
+   "awake_s": 600,
+   "hrv_last_night": 68,
+   "hrv_status": "BALANCED",
+   "bb_max": 92,
+   "bb_min": 29,
+   "readiness": 95,
+   "rhr": 48.0,
+   "steps": 233,
+   "stress_avg": 14
+  }
+ ]
+}
