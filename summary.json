@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-08-08T17:53",
+ "generated_at": "2026-08-09T05:28",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-08T17:53",
+  "synced_at": "2026-08-09T05:28",
   "race_predictions": {
    "time5k_s": 1455,
-   "time10k_s": 3048,
-   "half_s": 6787,
-   "marathon_s": 15402
+   "time10k_s": 3050,
+   "half_s": 6791,
+   "marathon_s": 15414
   },
-  "training_status": "PEAKING_1",
+  "training_status": "RECOVERY_2",
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
    {
@@ -65,8 +65,8 @@
  },
  "training_load": {
   "acute_7d": 83,
-  "chronic_weekly": 305,
-  "acwr": 0.27,
+  "chronic_weekly": 278,
+  "acwr": 0.3,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -76,10 +76,10 @@
   "n": 2
  },
  "week_prev": {
-  "km": 25.8,
-  "pace": "6:29",
-  "hr": 143,
-  "n": 3
+  "km": 18.8,
+  "pace": "6:05",
+  "hr": 147,
+  "n": 2
  },
  "personal_records": [
   {
@@ -927,6 +927,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-09",
+   "vo2max": null,
+   "half_s": 6791,
+   "time5k_s": 1455,
+   "time10k_s": 3050,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
   }
  ],
  "gear": [],
@@ -1162,9 +1172,9 @@
   },
   "month_label": "2026-08",
   "year_label": "2026",
-  "day_of_month": 8,
+  "day_of_month": 9,
   "days_in_month": 31,
-  "day_of_year": 220,
+  "day_of_year": 221,
   "days_in_year": 365
  },
  "activities_last_60d": [
@@ -2026,11 +2036,28 @@
    "hrv_last_night": 58,
    "hrv_status": "BALANCED",
    "bb_max": 56,
-   "bb_min": 16,
+   "bb_min": 14,
    "readiness": 59,
    "rhr": 51.0,
-   "steps": 14526,
-   "stress_avg": 29
+   "steps": 19952,
+   "stress_avg": 32
+  },
+  {
+   "date": "2026-08-09",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": null,
+   "bb_max": 14,
+   "bb_min": 9,
+   "readiness": 75,
+   "rhr": 52.0,
+   "steps": 5506,
+   "stress_avg": 54
   }
  ]
 }
