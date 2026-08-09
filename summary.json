@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-08-09T05:28",
+ "generated_at": "2026-08-09T17:55",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-09T05:28",
+  "synced_at": "2026-08-09T17:55",
   "race_predictions": {
    "time5k_s": 1455,
    "time10k_s": 3050,
@@ -2044,20 +2044,20 @@
   },
   {
    "date": "2026-08-09",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "bb_max": 14,
-   "bb_min": 9,
-   "readiness": 75,
+   "sleep_s": 22980,
+   "sleep_score": 73,
+   "deep_s": 4080,
+   "light_s": 15540,
+   "rem_s": 3360,
+   "awake_s": 1440,
+   "hrv_last_night": 53,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 52,
+   "bb_min": 8,
+   "readiness": 68,
    "rhr": 52.0,
-   "steps": 5506,
-   "stress_avg": 54
+   "steps": 14563,
+   "stress_avg": 32
   }
  ]
 }
