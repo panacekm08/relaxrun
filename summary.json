@@ -1,18 +1,20 @@
 {
- "generated_at": "2026-08-13T05:55",
+ "generated_at": "2026-08-13T18:13",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-13T05:55",
+  "synced_at": "2026-08-13T18:13",
   "race_predictions": {
    "time5k_s": 1456,
    "time10k_s": 3052,
    "half_s": 6802,
    "marathon_s": 15458
   },
+  "vo2max": 50.2,
+  "training_status": "RECOVERY_2",
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
    {
@@ -63,16 +65,16 @@
   ]
  },
  "training_load": {
-  "acute_7d": 62,
-  "chronic_weekly": 280,
-  "acwr": 0.22,
+  "acute_7d": 100,
+  "chronic_weekly": 290,
+  "acwr": 0.34,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 0.0,
-  "pace": "–",
-  "hr": null,
-  "n": 0
+  "km": 5.6,
+  "pace": "6:18",
+  "hr": 142,
+  "n": 1
  },
  "week_prev": {
   "km": 13.3,
@@ -118,17 +120,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-01-28",
-   "s": "run",
-   "z": [
-    19,
-    18,
-    289,
-    2040,
-    259
-   ]
-  },
   {
    "d": "2026-02-02",
    "s": "run",
@@ -777,6 +768,17 @@
     0,
     0
    ]
+  },
+  {
+   "d": "2026-08-13",
+   "s": "run",
+   "z": [
+    88,
+    631,
+    1097,
+    280,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -796,9 +798,9 @@
    "load": 853
   },
   {
-   "km": 117.5,
-   "n": 10,
-   "load": 588
+   "km": 123.1,
+   "n": 11,
+   "load": 626
   },
   {
    "km": 70.7,
@@ -969,7 +971,7 @@
   },
   {
    "date": "2026-08-13",
-   "vo2max": null,
+   "vo2max": 50.2,
    "half_s": 6802,
    "time5k_s": 1456,
    "time10k_s": 3052,
@@ -1030,11 +1032,11 @@
   {
    "m": "2026-08",
    "swim": 0.0,
-   "run": 13,
+   "run": 19,
    "bike": 74,
    "hike": 6,
-   "elev": 1045,
-   "n": 4
+   "elev": 1130,
+   "n": 5
   },
   {
    "m": "2026-07",
@@ -1140,11 +1142,11 @@
   {
    "y": "2026",
    "swim": 4.0,
-   "run": 415,
+   "run": 420,
    "bike": 435,
    "hike": 22,
-   "elev": 8533,
-   "n": 64
+   "elev": 8618,
+   "n": 65
   },
   {
    "y": "2025",
@@ -1159,10 +1161,10 @@
  "counters": {
   "month": {
    "run": {
-    "km": 13.3,
-    "n": 2,
-    "elev": 106,
-    "time_s": 5780
+    "km": 18.9,
+    "n": 3,
+    "elev": 191,
+    "time_s": 7896
    },
    "bike": {
     "km": 74.1,
@@ -1185,10 +1187,10 @@
   },
   "year": {
    "run": {
-    "km": 414.6,
-    "n": 47,
-    "elev": 3881,
-    "time_s": 155169
+    "km": 420.2,
+    "n": 48,
+    "elev": 3966,
+    "time_s": 157286
    },
    "bike": {
     "km": 434.7,
@@ -1600,6 +1602,22 @@
    "cadence": 43.96875,
    "aerobic_te": 0.6000000238418579,
    "vo2max": null
+  },
+  {
+   "id": 23958959861,
+   "date": "2026-08-13",
+   "type": "running",
+   "name": "Medulin Running",
+   "distance_m": 5598.259765625,
+   "duration_s": 2116.177001953125,
+   "moving_s": 2111.699005126953,
+   "avg_hr": 142.0,
+   "max_hr": 170.0,
+   "avg_speed_mps": 2.6449999809265137,
+   "elev_gain_m": 85.0,
+   "cadence": 160.34375,
+   "aerobic_te": 2.799999952316284,
+   "vo2max": 50.0
   }
  ],
  "wellness_last_90d": [
@@ -2167,19 +2185,20 @@
   },
   {
    "date": "2026-08-13",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "bb_max": 28,
+   "sleep_s": 29040,
+   "sleep_score": 96,
+   "deep_s": 4680,
+   "light_s": 17460,
+   "rem_s": 6900,
+   "awake_s": 60,
+   "hrv_last_night": 75,
+   "hrv_status": "UNBALANCED",
+   "bb_max": 100,
    "bb_min": 26,
-   "rhr": 53.0,
-   "steps": 109,
-   "stress_avg": 24
+   "readiness": 78,
+   "rhr": 48.0,
+   "steps": 13226,
+   "stress_avg": 26
   }
  ]
 }
