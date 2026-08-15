@@ -1,13 +1,13 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-08-14T18:12
-Vygenerované: 2026-08-14T18:12
+Synchronizované: 2026-08-15T04:56
+Vygenerované: 2026-08-15T04:56
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:53:36
-- Rozdiel: +8:36 (nad cieľom)
-- Ďalšie predikcie: 5 km 24:18, 10 km 50:58, maratón 4:18:22
+- Garmin predikcia polmaratónu: 1:53:39
+- Rozdiel: +8:39 (nad cieľom)
+- Ďalšie predikcie: 5 km 24:19, 10 km 50:59, maratón 4:18:31
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
@@ -17,20 +17,19 @@ Vygenerované: 2026-08-14T18:12
 | Objem | 5.6 km | 13.3 km | -7.7 km |
 | Priemerné tempo | 6:18/km | 7:14/km | – |
 | Priemerný tep | 142 bpm | 132 bpm | +10 bpm |
-| Priemerný spánok | 6:36:34 | 6:55:00 | -18 min |
+| Priemerný spánok | 6:58:10 | 6:33:51 | +24 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 6:36:34
-- HRV: 61 ms
+- Priemerný spánok: 6:58:10
+- HRV: 62 ms
 - Pokojový tep: 49 bpm
-- Kroky: 17692 denne
-- Naposledy (2026-08-14): spánok 8:55:00, skóre 85, HRV 68, pripravenosť 92, stres 20
+- Kroky: 15008 denne
+- Naposledy (2026-08-15): spánok –, skóre –, HRV –, pripravenosť –, stres 28
 
 ### Posledných 14 dní po dňoch
 
 | Dátum | Spánok | Skóre | Hlboký | REM | HRV | Pokoj. tep | Pripravenosť | Stres | Kroky |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-08-01 | – | – | – | – | – | 53.0 | 52 | 37 | 5977 |
 | 2026-08-02 | 5:38:00 | 71 | 1:23:00 | 42:00 | 64 | 48.0 | 78 | 23 | 13076 |
 | 2026-08-03 | 7:04:00 | 96 | 2:15:00 | 1:44:00 | 63 | 47.0 | 85 | 21 | 3761 |
 | 2026-08-04 | 6:42:00 | 86 | 2:06:00 | 1:28:00 | 61 | 46.0 | 71 | 20 | 14076 |
@@ -43,7 +42,8 @@ Vygenerované: 2026-08-14T18:12
 | 2026-08-11 | 4:57:00 | 72 | 1:54:00 | 56:00 | 65 | 46.0 | 62 | 26 | 19221 |
 | 2026-08-12 | 6:52:00 | 92 | 2:47:00 | 1:37:00 | 68 | 46.0 | 67 | 22 | 14577 |
 | 2026-08-13 | 8:04:00 | 96 | 1:18:00 | 1:55:00 | 75 | 48.0 | 78 | 30 | 20303 |
-| 2026-08-14 | 8:55:00 | 85 | 1:12:00 | 1:51:00 | 68 | 49.0 | 92 | 20 | 3469 |
+| 2026-08-14 | 8:55:00 | 85 | 1:12:00 | 1:51:00 | 68 | 49.0 | 92 | 21 | 4623 |
+| 2026-08-15 | – | – | – | – | – | 53.0 | – | 28 | 9 |
 
 ## Tréningová záťaž
 - Akútna záťaž (7 dní): 100
@@ -59,7 +59,7 @@ Vygenerované: 2026-08-14T18:12
 | Túra | 6.2 km / 1× | 22.0 km / 3× |
 | Plávanie | 0.0 km / 0× | 4.0 km / 4× |
 
-- Uplynulo 14 z 31 dní mesiaca, 226 z 365 dní roka
+- Uplynulo 15 z 31 dní mesiaca, 227 z 365 dní roka
 - Sledované ciele: beh 100 km/mesiac a 1000 km/rok, bike rovnako (dajú sa zmeniť v dashboarde)
 
 ## Tepové zóny
@@ -68,19 +68,19 @@ Vygenerované: 2026-08-14T18:12
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 4 % | 52 % | 33 % | 11 % | 0 % | 11:53:07 |
+| Beh | 4 % | 52 % | 32 % | 12 % | 0 % | 11:02:01 |
 | Bike | 9 % | 19 % | 65 % | 7 % | 0 % | 6:51:39 |
 | Túra | 80 % | 19 % | 1 % | 0 % | 0 % | 42:21 |
-| **Všetko** | 8 % | 39 % | 43 % | 9 % | 0 % | 19:27:07 |
+| **Všetko** | 9 % | 39 % | 43 % | 10 % | 0 % | 18:36:01 |
 
 ### Posledných 90 dní
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 3 % | 37 % | 36 % | 19 % | 5 % | 20:42:15 |
+| Beh | 3 % | 40 % | 39 % | 19 % | 0 % | 19:31:49 |
 | Bike | 17 % | 18 % | 58 % | 7 % | 0 % | 10:03:51 |
 | Túra | 89 % | 10 % | 1 % | 0 % | 0 % | 1:23:45 |
-| **Všetko** | 11 % | 30 % | 42 % | 14 % | 3 % | 32:09:51 |
+| **Všetko** | 11 % | 31 % | 43 % | 14 % | 0 % | 30:59:25 |
 
 ## Osobné rekordy
 
@@ -282,7 +282,7 @@ Stĺpce: datum,sport,km,cas,tempo,tep,max_tep,prevysenie_m,kadencia,TE
 2026-08-13,run,5.60,35:16,6:18,142.0,170.0,85,160,2.799999952316284
 ```
 
-## Wellness po dňoch (47)
+## Wellness po dňoch (48)
 
 Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres,kroky
 
@@ -333,5 +333,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres
 2026-08-11,4:57:00,72,1:54:00,56:00,2:07:00,65,46.0,62,26,19221
 2026-08-12,6:52:00,92,2:47:00,1:37:00,2:28:00,68,46.0,67,22,14577
 2026-08-13,8:04:00,96,1:18:00,1:55:00,4:51:00,75,48.0,78,30,20303
-2026-08-14,8:55:00,85,1:12:00,1:51:00,5:52:00,68,49.0,92,20,3469
+2026-08-14,8:55:00,85,1:12:00,1:51:00,5:52:00,68,49.0,92,21,4623
+2026-08-15,,,,,,,53.0,,28,9
 ```
