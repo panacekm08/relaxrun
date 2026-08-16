@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-08-16T04:59",
+ "generated_at": "2026-08-16T17:41",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-16T04:59",
+  "synced_at": "2026-08-16T17:41",
   "race_predictions": {
    "time5k_s": 1459,
    "time10k_s": 3060,
@@ -63,9 +63,9 @@
   ]
  },
  "training_load": {
-  "acute_7d": 100,
-  "chronic_weekly": 222,
-  "acwr": 0.45,
+  "acute_7d": 110,
+  "chronic_weekly": 225,
+  "acwr": 0.49,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -118,17 +118,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-02-02",
-   "s": "run",
-   "z": [
-    14,
-    16,
-    190,
-    1967,
-    170
-   ]
-  },
   {
    "d": "2026-02-03",
    "s": "swim",
@@ -777,6 +766,17 @@
     280,
     0
    ]
+  },
+  {
+   "d": "2026-08-16",
+   "s": "swim",
+   "z": [
+    327,
+    365,
+    163,
+    0,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -811,9 +811,9 @@
    "load": 1864
   },
   {
-   "km": 359.1,
-   "n": 18,
-   "load": 1847
+   "km": 359.5,
+   "n": 19,
+   "load": 1857
   }
  ],
  "fitness_history": [
@@ -1059,12 +1059,12 @@
  "monthly_totals": [
   {
    "m": "2026-08",
-   "swim": 0.0,
+   "swim": 0.4,
    "run": 19,
    "bike": 74,
    "hike": 6,
    "elev": 1130,
-   "n": 5
+   "n": 6
   },
   {
    "m": "2026-07",
@@ -1169,12 +1169,12 @@
  "yearly_totals": [
   {
    "y": "2026",
-   "swim": 4.0,
+   "swim": 4.4,
    "run": 420,
    "bike": 435,
    "hike": 22,
    "elev": 8618,
-   "n": 65
+   "n": 66
   },
   {
    "y": "2025",
@@ -1207,10 +1207,10 @@
     "time_s": 11242
    },
    "swim": {
-    "km": 0.0,
-    "n": 0,
+    "km": 0.4,
+    "n": 1,
     "elev": 0,
-    "time_s": 0
+    "time_s": 975
    }
   },
   "year": {
@@ -1233,10 +1233,10 @@
     "time_s": 28577
    },
    "swim": {
-    "km": 4.0,
-    "n": 4,
+    "km": 4.4,
+    "n": 5,
     "elev": 0,
-    "time_s": 8026
+    "time_s": 9001
    }
   },
   "month_label": "2026-08",
@@ -1646,6 +1646,22 @@
    "cadence": 160.34375,
    "aerobic_te": 2.799999952316284,
    "vo2max": 50.0
+  },
+  {
+   "id": 23996773026,
+   "date": "2026-08-16",
+   "type": "open_water_swimming",
+   "name": "Medulin Open Water Swimming",
+   "distance_m": 410.1600036621094,
+   "duration_s": 975.4229736328125,
+   "moving_s": 829.0,
+   "avg_hr": 119.0,
+   "max_hr": 155.0,
+   "avg_speed_mps": 0.41999998688697815,
+   "elev_gain_m": null,
+   "cadence": null,
+   "aerobic_te": 1.899999976158142,
+   "vo2max": null
   }
  ],
  "wellness_last_90d": [
@@ -2264,19 +2280,20 @@
   },
   {
    "date": "2026-08-16",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "bb_max": 35,
+   "sleep_s": 28500,
+   "sleep_score": 92,
+   "deep_s": 5400,
+   "light_s": 17160,
+   "rem_s": 5940,
+   "awake_s": 120,
+   "hrv_last_night": 69,
+   "hrv_status": "BALANCED",
+   "bb_max": 93,
    "bb_min": 25,
-   "rhr": 53.0,
-   "steps": 9,
-   "stress_avg": 18
+   "readiness": 95,
+   "rhr": 49.0,
+   "steps": 3059,
+   "stress_avg": 31
   }
  ]
 }
