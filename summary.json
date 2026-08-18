@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-08-17T17:51",
+ "generated_at": "2026-08-18T05:02",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-17T17:51",
+  "synced_at": "2026-08-18T05:02",
   "race_predictions": {
-   "time5k_s": 1458,
-   "time10k_s": 3060,
-   "half_s": 6824,
-   "marathon_s": 15537
+   "time5k_s": 1459,
+   "time10k_s": 3061,
+   "half_s": 6828,
+   "marathon_s": 15546
   },
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
@@ -63,9 +63,9 @@
   ]
  },
  "training_load": {
-  "acute_7d": 110,
-  "chronic_weekly": 225,
-  "acwr": 0.49,
+  "acute_7d": 48,
+  "chronic_weekly": 217,
+  "acwr": 0.22,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -75,10 +75,10 @@
   "n": 1
  },
  "week_prev": {
-  "km": 13.3,
-  "pace": "7:14",
-  "hr": 132,
-  "n": 2
+  "km": 6.3,
+  "pace": "7:19",
+  "hr": 133,
+  "n": 1
  },
  "personal_records": [
   {
@@ -1016,6 +1016,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-18",
+   "vo2max": null,
+   "half_s": 6828,
+   "time5k_s": 1459,
+   "time10k_s": 3061,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
   }
  ],
  "gear": [],
@@ -1251,9 +1261,9 @@
   },
   "month_label": "2026-08",
   "year_label": "2026",
-  "day_of_month": 17,
+  "day_of_month": 18,
   "days_in_month": 31,
-  "day_of_year": 229,
+  "day_of_year": 230,
   "days_in_year": 365
  },
  "activities_last_60d": [
@@ -2319,8 +2329,25 @@
    "bb_min": 21,
    "readiness": 100,
    "rhr": 50.0,
-   "steps": 2988,
-   "stress_avg": 22
+   "steps": 8229,
+   "stress_avg": 28
+  },
+  {
+   "date": "2026-08-18",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": null,
+   "bb_max": 39,
+   "bb_min": 35,
+   "readiness": 94,
+   "rhr": 51.0,
+   "steps": 410,
+   "stress_avg": 15
   }
  ]
 }
