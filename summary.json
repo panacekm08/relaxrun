@@ -1,19 +1,18 @@
 {
- "generated_at": "2026-08-19T17:47",
+ "generated_at": "2026-08-20T05:04",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-19T17:47",
+  "synced_at": "2026-08-20T05:03",
   "race_predictions": {
    "time5k_s": 1459,
-   "time10k_s": 3060,
-   "half_s": 6824,
-   "marathon_s": 15514
+   "time10k_s": 3061,
+   "half_s": 6828,
+   "marathon_s": 15522
   },
-  "vo2max": 50.2,
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
    {
@@ -64,22 +63,22 @@
   ]
  },
  "training_load": {
-  "acute_7d": 93,
-  "chronic_weekly": 219,
-  "acwr": 0.43,
+  "acute_7d": 56,
+  "chronic_weekly": 209,
+  "acwr": 0.27,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 13.6,
-  "pace": "6:25",
-  "hr": 138,
-  "n": 2
+  "km": 8.0,
+  "pace": "6:30",
+  "hr": 133,
+  "n": 1
  },
  "week_prev": {
-  "km": 0.0,
-  "pace": "–",
-  "hr": null,
-  "n": 0
+  "km": 5.6,
+  "pace": "6:18",
+  "hr": 142,
+  "n": 1
  },
  "personal_records": [
   {
@@ -1037,6 +1036,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-20",
+   "vo2max": null,
+   "half_s": 6828,
+   "time5k_s": 1459,
+   "time10k_s": 3061,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
   }
  ],
  "gear": [],
@@ -1272,9 +1281,9 @@
   },
   "month_label": "2026-08",
   "year_label": "2026",
-  "day_of_month": 19,
+  "day_of_month": 20,
   "days_in_month": 31,
-  "day_of_year": 231,
+  "day_of_year": 232,
   "days_in_year": 365
  },
  "activities_last_60d": [
@@ -2387,11 +2396,27 @@
    "hrv_last_night": 62,
    "hrv_status": "BALANCED",
    "bb_max": 82,
-   "bb_min": 30,
+   "bb_min": 20,
    "readiness": 80,
    "rhr": 48.0,
-   "steps": 14156,
-   "stress_avg": 24
+   "steps": 16067,
+   "stress_avg": 26
+  },
+  {
+   "date": "2026-08-20",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": null,
+   "bb_max": 43,
+   "bb_min": 24,
+   "rhr": 49.0,
+   "steps": null,
+   "stress_avg": 10
   }
  ]
 }
