@@ -1,18 +1,20 @@
 {
- "generated_at": "2026-08-22T04:59",
+ "generated_at": "2026-08-22T17:42",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-22T04:59",
+  "synced_at": "2026-08-22T17:42",
   "race_predictions": {
-   "time5k_s": 1459,
-   "time10k_s": 3062,
-   "half_s": 6831,
-   "marathon_s": 15531
+   "time5k_s": 1442,
+   "time10k_s": 3040,
+   "half_s": 6778,
+   "marathon_s": 15328
   },
+  "vo2max": 50.2,
+  "training_status": "OVERREACHING_5",
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
    {
@@ -63,16 +65,16 @@
   ]
  },
  "training_load": {
-  "acute_7d": 56,
-  "chronic_weekly": 147,
-  "acwr": 0.38,
+  "acute_7d": 179,
+  "chronic_weekly": 177,
+  "acwr": 1.01,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 8.0,
-  "pace": "6:30",
-  "hr": 133,
-  "n": 1
+  "km": 18.5,
+  "pace": "6:13",
+  "hr": 155,
+  "n": 2
  },
  "week_prev": {
   "km": 5.6,
@@ -118,17 +120,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-02-08",
-   "s": "run",
-   "z": [
-    10,
-    25,
-    712,
-    2724,
-    19
-   ]
-  },
   {
    "d": "2026-02-13",
    "s": "run",
@@ -777,6 +768,17 @@
     0,
     0
    ]
+  },
+  {
+   "d": "2026-08-22",
+   "s": "run",
+   "z": [
+    29,
+    73,
+    26,
+    786,
+    2852
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -806,9 +808,9 @@
    "load": 644
   },
   {
-   "km": 383.3,
-   "n": 19,
-   "load": 1864
+   "km": 393.8,
+   "n": 20,
+   "load": 1988
   },
   {
    "km": 359.5,
@@ -1059,10 +1061,10 @@
   },
   {
    "date": "2026-08-22",
-   "vo2max": null,
-   "half_s": 6831,
-   "time5k_s": 1459,
-   "time10k_s": 3062,
+   "vo2max": 50.2,
+   "half_s": 6778,
+   "time5k_s": 1442,
+   "time10k_s": 3040,
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.10887053324587
@@ -1120,11 +1122,11 @@
   {
    "m": "2026-08",
    "swim": 0.4,
-   "run": 27,
+   "run": 37,
    "bike": 74,
    "hike": 6,
-   "elev": 1190,
-   "n": 7
+   "elev": 1563,
+   "n": 8
   },
   {
    "m": "2026-07",
@@ -1230,11 +1232,11 @@
   {
    "y": "2026",
    "swim": 4.4,
-   "run": 428,
+   "run": 439,
    "bike": 435,
    "hike": 22,
-   "elev": 8678,
-   "n": 67
+   "elev": 9051,
+   "n": 68
   },
   {
    "y": "2025",
@@ -1249,10 +1251,10 @@
  "counters": {
   "month": {
    "run": {
-    "km": 26.9,
-    "n": 4,
-    "elev": 251,
-    "time_s": 11015
+    "km": 37.4,
+    "n": 5,
+    "elev": 624,
+    "time_s": 14781
    },
    "bike": {
     "km": 74.1,
@@ -1275,10 +1277,10 @@
   },
   "year": {
    "run": {
-    "km": 428.2,
-    "n": 49,
-    "elev": 4026,
-    "time_s": 160405
+    "km": 438.7,
+    "n": 50,
+    "elev": 4399,
+    "time_s": 164171
    },
    "bike": {
     "km": 434.7,
@@ -1737,6 +1739,22 @@
    "elev_gain_m": 60.0,
    "cadence": 157.359375,
    "aerobic_te": 3.0,
+   "vo2max": 50.0
+  },
+  {
+   "id": 24071345891,
+   "date": "2026-08-22",
+   "type": "running",
+   "name": "Cicmany Running",
+   "distance_m": 10480.4697265625,
+   "duration_s": 3765.509033203125,
+   "moving_s": 3760.7049865722656,
+   "avg_hr": 177.0,
+   "max_hr": 187.0,
+   "avg_speed_mps": 2.7829999923706055,
+   "elev_gain_m": 373.0,
+   "cadence": 142.0625,
+   "aerobic_te": 5.0,
    "vo2max": 50.0
   }
  ],
@@ -2450,27 +2468,28 @@
    "hrv_last_night": 60,
    "hrv_status": "BALANCED",
    "bb_max": 71,
-   "bb_min": 17,
+   "bb_min": 13,
    "readiness": 86,
    "rhr": 53.0,
-   "steps": 5295,
-   "stress_avg": 36
+   "steps": 5462,
+   "stress_avg": 37
   },
   {
    "date": "2026-08-22",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "bb_max": 13,
+   "sleep_s": 25740,
+   "sleep_score": 86,
+   "deep_s": 5820,
+   "light_s": 13800,
+   "rem_s": 6120,
+   "awake_s": 2040,
+   "hrv_last_night": 61,
+   "hrv_status": "BALANCED",
+   "bb_max": 67,
    "bb_min": 9,
+   "readiness": 5,
    "rhr": 53.0,
-   "steps": 2187,
-   "stress_avg": 28
+   "steps": 20857,
+   "stress_avg": 37
   }
  ]
 }
