@@ -1,18 +1,19 @@
 {
- "generated_at": "2026-08-23T05:01",
+ "generated_at": "2026-08-23T17:41",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-23T05:01",
+  "synced_at": "2026-08-23T17:41",
   "race_predictions": {
    "time5k_s": 1441,
    "time10k_s": 3040,
    "half_s": 6780,
    "marathon_s": 15349
   },
+  "training_status": "OVERREACHING_5",
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
    {
@@ -63,9 +64,9 @@
   ]
  },
  "training_load": {
-  "acute_7d": 169,
-  "chronic_weekly": 165,
-  "acwr": 1.02,
+  "acute_7d": 269,
+  "chronic_weekly": 190,
+  "acwr": 1.41,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -118,17 +119,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-02-13",
-   "s": "run",
-   "z": [
-    14,
-    26,
-    636,
-    1630,
-    3
-   ]
-  },
   {
    "d": "2026-02-14",
    "s": "run",
@@ -777,6 +767,17 @@
     786,
     2852
    ]
+  },
+  {
+   "d": "2026-08-23",
+   "s": "bike",
+   "z": [
+    179,
+    3086,
+    2590,
+    280,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -811,9 +812,9 @@
    "load": 1988
   },
   {
-   "km": 359.5,
-   "n": 19,
-   "load": 1857
+   "km": 412.0,
+   "n": 20,
+   "load": 1958
   }
  ],
  "fitness_history": [
@@ -1131,10 +1132,10 @@
    "m": "2026-08",
    "swim": 0.4,
    "run": 37,
-   "bike": 74,
+   "bike": 127,
    "hike": 6,
-   "elev": 1563,
-   "n": 8
+   "elev": 1931,
+   "n": 9
   },
   {
    "m": "2026-07",
@@ -1241,10 +1242,10 @@
    "y": "2026",
    "swim": 4.4,
    "run": 439,
-   "bike": 435,
+   "bike": 487,
    "hike": 22,
-   "elev": 9051,
-   "n": 68
+   "elev": 9419,
+   "n": 69
   },
   {
    "y": "2025",
@@ -1265,10 +1266,10 @@
     "time_s": 14781
    },
    "bike": {
-    "km": 74.1,
-    "n": 1,
-    "elev": 435,
-    "time_s": 8769
+    "km": 126.7,
+    "n": 2,
+    "elev": 803,
+    "time_s": 14915
    },
    "hike": {
     "km": 6.2,
@@ -1291,10 +1292,10 @@
     "time_s": 164171
    },
    "bike": {
-    "km": 434.7,
-    "n": 10,
-    "elev": 3886,
-    "time_s": 71059
+    "km": 487.2,
+    "n": 11,
+    "elev": 4254,
+    "time_s": 77206
    },
    "hike": {
     "km": 22.0,
@@ -1748,6 +1749,22 @@
    "cadence": 142.0625,
    "aerobic_te": 5.0,
    "vo2max": 50.0
+  },
+  {
+   "id": 24083771102,
+   "date": "2026-08-23",
+   "type": "road_biking",
+   "name": "Puchov Road Cycling",
+   "distance_m": 52513.671875,
+   "duration_s": 6146.38818359375,
+   "moving_s": 6140.751037597656,
+   "avg_hr": 138.0,
+   "max_hr": 176.0,
+   "avg_speed_mps": 8.543999671936035,
+   "elev_gain_m": 368.0,
+   "cadence": null,
+   "aerobic_te": 3.0999999046325684,
+   "vo2max": null
   }
  ],
  "wellness_last_90d": [
@@ -2485,19 +2502,20 @@
   },
   {
    "date": "2026-08-23",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "bb_max": 10,
+   "sleep_s": 30835,
+   "sleep_score": 71,
+   "deep_s": 4140,
+   "light_s": 22680,
+   "rem_s": 4020,
+   "awake_s": 1740,
+   "hrv_last_night": 46,
+   "hrv_status": "BALANCED",
+   "bb_max": 45,
    "bb_min": 9,
+   "readiness": 1,
    "rhr": 53.0,
-   "steps": null,
-   "stress_avg": 32
+   "steps": 3834,
+   "stress_avg": 35
   }
  ]
 }
