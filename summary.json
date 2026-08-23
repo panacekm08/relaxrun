@@ -1,20 +1,18 @@
 {
- "generated_at": "2026-08-22T17:42",
+ "generated_at": "2026-08-23T05:01",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-22T17:42",
+  "synced_at": "2026-08-23T05:01",
   "race_predictions": {
-   "time5k_s": 1442,
+   "time5k_s": 1441,
    "time10k_s": 3040,
-   "half_s": 6778,
-   "marathon_s": 15328
+   "half_s": 6780,
+   "marathon_s": 15349
   },
-  "vo2max": 50.2,
-  "training_status": "OVERREACHING_5",
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
    {
@@ -65,9 +63,9 @@
   ]
  },
  "training_load": {
-  "acute_7d": 179,
-  "chronic_weekly": 177,
-  "acwr": 1.01,
+  "acute_7d": 169,
+  "chronic_weekly": 165,
+  "acwr": 1.02,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -1068,6 +1066,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-23",
+   "vo2max": null,
+   "half_s": 6780,
+   "time5k_s": 1441,
+   "time10k_s": 3040,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
   }
  ],
  "gear": [],
@@ -1303,28 +1311,12 @@
   },
   "month_label": "2026-08",
   "year_label": "2026",
-  "day_of_month": 22,
+  "day_of_month": 23,
   "days_in_month": 31,
-  "day_of_year": 234,
+  "day_of_year": 235,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23356015134,
-   "date": "2026-06-23",
-   "type": "running",
-   "name": "Puchov Running",
-   "distance_m": 8005.02001953125,
-   "duration_s": 2940.736083984375,
-   "moving_s": 2939.018035888672,
-   "avg_hr": 159.0,
-   "max_hr": 182.0,
-   "avg_speed_mps": 2.7219998836517334,
-   "elev_gain_m": 54.0,
-   "cadence": 159.671875,
-   "aerobic_te": 3.5999999046325684,
-   "vo2max": 49.0
-  },
   {
    "id": 23363802521,
    "date": "2026-06-24",
@@ -2488,8 +2480,24 @@
    "bb_min": 9,
    "readiness": 5,
    "rhr": 53.0,
-   "steps": 20857,
+   "steps": 24065,
    "stress_avg": 37
+  },
+  {
+   "date": "2026-08-23",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": null,
+   "bb_max": 10,
+   "bb_min": 9,
+   "rhr": 53.0,
+   "steps": null,
+   "stress_avg": 32
   }
  ]
 }
