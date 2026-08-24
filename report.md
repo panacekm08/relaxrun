@@ -1,13 +1,13 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-08-23T17:41
-Vygenerované: 2026-08-23T17:41
+Synchronizované: 2026-08-24T05:11
+Vygenerované: 2026-08-24T05:11
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:53:00
-- Rozdiel: +8:00 (nad cieľom)
-- Ďalšie predikcie: 5 km 24:01, 10 km 50:40, maratón 4:15:49
+- Garmin predikcia polmaratónu: 1:53:10
+- Rozdiel: +8:10 (nad cieľom)
+- Ďalšie predikcie: 5 km 24:03, 10 km 50:42, maratón 4:16:25
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
@@ -17,20 +17,19 @@ Vygenerované: 2026-08-23T17:41
 | Objem | 18.5 km | 5.6 km | +12.9 km |
 | Priemerné tempo | 6:13/km | 6:18/km | – |
 | Priemerný tep | 155 bpm | 142 bpm | +13 bpm |
-| Priemerný spánok | 7:09:25 | 7:04:34 | +5 min |
+| Priemerný spánok | 7:06:39 | 7:11:26 | -5 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 7:09:25
-- HRV: 64 ms
-- Pokojový tep: 50 bpm
-- Kroky: 11045 denne
-- Naposledy (2026-08-23): spánok 8:33:55, skóre 71, HRV 46, pripravenosť 1, stres 35
+- Priemerný spánok: 7:06:39
+- HRV: 63 ms
+- Pokojový tep: 51 bpm
+- Kroky: 11920 denne
+- Naposledy (2026-08-24): spánok –, skóre –, HRV –, pripravenosť –, stres 24
 
 ### Posledných 14 dní po dňoch
 
 | Dátum | Spánok | Skóre | Hlboký | REM | HRV | Pokoj. tep | Pripravenosť | Stres | Kroky |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-08-10 | 6:38:00 | 40 | 34:00 | – | 42 | 52.0 | 39 | 32 | 16301 |
 | 2026-08-11 | 4:57:00 | 72 | 1:54:00 | 56:00 | 65 | 46.0 | 62 | 26 | 19221 |
 | 2026-08-12 | 6:52:00 | 92 | 2:47:00 | 1:37:00 | 68 | 46.0 | 67 | 22 | 14577 |
 | 2026-08-13 | 8:04:00 | 96 | 1:18:00 | 1:55:00 | 75 | 48.0 | 78 | 30 | 20303 |
@@ -43,7 +42,8 @@ Vygenerované: 2026-08-23T17:41
 | 2026-08-20 | 7:43:00 | 92 | 1:55:00 | 1:40:00 | 72 | 46.0 | 96 | 24 | 7500 |
 | 2026-08-21 | 6:44:00 | 74 | 50:00 | 1:26:00 | 60 | 53.0 | 86 | 37 | 5462 |
 | 2026-08-22 | 7:09:00 | 86 | 1:37:00 | 1:42:00 | 61 | 53.0 | 5 | 37 | 24065 |
-| 2026-08-23 | 8:33:55 | 71 | 1:09:00 | 1:07:00 | 46 | 53.0 | 1 | 35 | 3834 |
+| 2026-08-23 | 8:33:55 | 71 | 1:09:00 | 1:07:00 | 46 | 57.0 | 1 | 37 | 6274 |
+| 2026-08-24 | – | – | – | – | – | 54.0 | – | 24 | – |
 
 ## Tréningová záťaž
 - Akútna záťaž (7 dní): 269
@@ -59,7 +59,7 @@ Vygenerované: 2026-08-23T17:41
 | Túra | 6.2 km / 1× | 22.0 km / 3× |
 | Plávanie | 0.4 km / 1× | 4.4 km / 5× |
 
-- Uplynulo 23 z 31 dní mesiaca, 235 z 365 dní roka
+- Uplynulo 24 z 31 dní mesiaca, 236 z 365 dní roka
 - Sledované ciele: beh 100 km/mesiac a 1000 km/rok, bike rovnako (dajú sa zmeniť v dashboarde)
 
 ## Tepové zóny
@@ -78,11 +78,11 @@ Vygenerované: 2026-08-23T17:41
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 3 % | 37 % | 38 % | 17 % | 4 % | 19:44:14 |
+| Beh | 3 % | 38 % | 37 % | 17 % | 5 % | 18:50:20 |
 | Bike | 15 % | 23 % | 56 % | 7 % | 0 % | 11:46:06 |
 | Túra | 89 % | 10 % | 1 % | 0 % | 0 % | 1:23:45 |
 | Plávanie | 38 % | 43 % | 19 % | 0 % | 0 % | 14:15 |
-| **Všetko** | 11 % | 31 % | 43 % | 12 % | 3 % | 33:08:20 |
+| **Všetko** | 11 % | 32 % | 42 % | 12 % | 3 % | 32:14:26 |
 
 ## Osobné rekordy
 
@@ -167,7 +167,7 @@ Vygenerované: 2026-08-23T17:41
 - VO2max: –
 - Endurance score: –
 - Hill score: –
-- Stav tréningu podľa Garminu: OVERREACHING_5
+- Stav tréningu podľa Garminu: –
 
 ---
 
@@ -288,7 +288,7 @@ Stĺpce: datum,sport,km,cas,tempo,tep,max_tep,prevysenie_m,kadencia,TE
 2026-08-23,bike,52.51,1:42:26,1:57,138.0,176.0,368,,3.0999999046325684
 ```
 
-## Wellness po dňoch (56)
+## Wellness po dňoch (57)
 
 Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres,kroky
 
@@ -348,5 +348,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres
 2026-08-20,7:43:00,92,1:55:00,1:40:00,4:08:00,72,46.0,96,24,7500
 2026-08-21,6:44:00,74,50:00,1:26:00,4:28:00,60,53.0,86,37,5462
 2026-08-22,7:09:00,86,1:37:00,1:42:00,3:50:00,61,53.0,5,37,24065
-2026-08-23,8:33:55,71,1:09:00,1:07:00,6:18:00,46,53.0,1,35,3834
+2026-08-23,8:33:55,71,1:09:00,1:07:00,6:18:00,46,57.0,1,37,6274
+2026-08-24,,,,,,,54.0,,24,
 ```

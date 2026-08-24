@@ -1,26 +1,20 @@
 {
- "generated_at": "2026-08-23T17:41",
+ "generated_at": "2026-08-24T05:11",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-23T17:41",
+  "synced_at": "2026-08-24T05:11",
   "race_predictions": {
-   "time5k_s": 1441,
-   "time10k_s": 3040,
-   "half_s": 6780,
-   "marathon_s": 15349
+   "time5k_s": 1443,
+   "time10k_s": 3042,
+   "half_s": 6790,
+   "marathon_s": 15385
   },
-  "training_status": "OVERREACHING_5",
   "fitness_age": 25.10887053324587,
   "intensity_weeks": [
-   {
-    "week": "2026-06-22",
-    "moderate": 0,
-    "vigorous": 0
-   },
    {
     "week": "2026-06-29",
     "moderate": 0,
@@ -58,6 +52,11 @@
    },
    {
     "week": "2026-08-17",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-08-24",
     "moderate": 0,
     "vigorous": 0
    }
@@ -1077,15 +1076,20 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.10887053324587
+  },
+  {
+   "date": "2026-08-24",
+   "vo2max": null,
+   "half_s": 6790,
+   "time5k_s": 1443,
+   "time10k_s": 3042,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.10887053324587
   }
  ],
  "gear": [],
  "intensity_minutes_weekly": [
-  {
-   "week": "2026-06-22",
-   "moderate": 0,
-   "vigorous": 0
-  },
   {
    "week": "2026-06-29",
    "moderate": 0,
@@ -1123,6 +1127,11 @@
   },
   {
    "week": "2026-08-17",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-08-24",
    "moderate": 0,
    "vigorous": 0
   }
@@ -1312,28 +1321,12 @@
   },
   "month_label": "2026-08",
   "year_label": "2026",
-  "day_of_month": 23,
+  "day_of_month": 24,
   "days_in_month": 31,
-  "day_of_year": 235,
+  "day_of_year": 236,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23363802521,
-   "date": "2026-06-24",
-   "type": "road_biking",
-   "name": "Puchov Road Cycling",
-   "distance_m": 60018.328125,
-   "duration_s": 7666.60400390625,
-   "moving_s": 7659.112976074219,
-   "avg_hr": 141.0,
-   "max_hr": 175.0,
-   "avg_speed_mps": 7.828999996185303,
-   "elev_gain_m": 394.0,
-   "cadence": null,
-   "aerobic_te": 3.799999952316284,
-   "vo2max": null
-  },
   {
    "id": 23378432522,
    "date": "2026-06-25",
@@ -2513,9 +2506,25 @@
    "bb_max": 45,
    "bb_min": 9,
    "readiness": 1,
-   "rhr": 53.0,
-   "steps": 3834,
-   "stress_avg": 35
+   "rhr": 57.0,
+   "steps": 6274,
+   "stress_avg": 37
+  },
+  {
+   "date": "2026-08-24",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": null,
+   "bb_max": 17,
+   "bb_min": 9,
+   "rhr": 54.0,
+   "steps": null,
+   "stress_avg": 24
   }
  ]
 }
