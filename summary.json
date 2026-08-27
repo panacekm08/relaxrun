@@ -1,21 +1,20 @@
 {
- "generated_at": "2026-08-26T19:22",
+ "generated_at": "2026-08-27T15:23",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-26T19:22",
+  "synced_at": "2026-08-27T15:23",
   "race_predictions": {
    "time5k_s": 1422,
    "time10k_s": 3022,
-   "half_s": 6751,
-   "marathon_s": 15229
+   "half_s": 6756,
+   "marathon_s": 15246
   },
-  "vo2max": 50.4,
   "training_status": "OVERREACHING_5",
-  "fitness_age": 25.237529610128995,
+  "fitness_age": 24.425439695516268,
   "intensity_weeks": [
    {
     "week": "2026-06-29",
@@ -77,10 +76,10 @@
   "n": 3
  },
  "week_prev": {
-  "km": 13.6,
-  "pace": "6:25",
-  "hr": 138,
-  "n": 2
+  "km": 8.0,
+  "pace": "6:30",
+  "hr": 133,
+  "n": 1
  },
  "personal_records": [
   {
@@ -1108,6 +1107,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.237529610128995
+  },
+  {
+   "date": "2026-08-27",
+   "vo2max": null,
+   "half_s": 6756,
+   "time5k_s": 1422,
+   "time10k_s": 3022,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 24.425439695516268
   }
  ],
  "gear": [],
@@ -1343,9 +1352,9 @@
   },
   "month_label": "2026-08",
   "year_label": "2026",
-  "day_of_month": 26,
+  "day_of_month": 27,
   "days_in_month": 31,
-  "day_of_year": 238,
+  "day_of_year": 239,
   "days_in_year": 365
  },
  "activities_last_60d": [
@@ -2593,11 +2602,28 @@
    "hrv_last_night": 70,
    "hrv_status": "BALANCED",
    "bb_max": 94,
-   "bb_min": 25,
-   "readiness": 45,
+   "bb_min": 17,
+   "readiness": 51,
    "rhr": 48.0,
-   "steps": 15581,
-   "stress_avg": 26
+   "steps": 16216,
+   "stress_avg": 29
+  },
+  {
+   "date": "2026-08-27",
+   "sleep_s": 23700,
+   "sleep_score": 84,
+   "deep_s": 4380,
+   "light_s": 14160,
+   "rem_s": 5160,
+   "awake_s": 240,
+   "hrv_last_night": 69,
+   "hrv_status": "BALANCED",
+   "bb_max": 78,
+   "bb_min": 16,
+   "readiness": 55,
+   "rhr": 51.0,
+   "steps": 2801,
+   "stress_avg": 24
   }
  ]
 }
