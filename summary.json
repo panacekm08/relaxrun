@@ -1,20 +1,20 @@
 {
- "generated_at": "2026-08-31T21:57",
+ "generated_at": "2026-09-01T09:31",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-08-31T21:57",
+  "synced_at": "2026-09-01T09:31",
   "race_predictions": {
-   "time5k_s": 1426,
-   "time10k_s": 3026,
-   "half_s": 6771,
-   "marathon_s": 15254
+   "time5k_s": 1427,
+   "time10k_s": 3029,
+   "half_s": 6780,
+   "marathon_s": 15264
   },
-  "training_status": "PRODUCTIVE_6",
-  "fitness_age": 25.237529610128995,
+  "training_status": "MAINTAINING_2",
+  "fitness_age": 25.613500736016086,
   "intensity_weeks": [
    {
     "week": "2026-07-06",
@@ -64,22 +64,22 @@
   ]
  },
  "training_load": {
-  "acute_7d": 237,
-  "chronic_weekly": 175,
-  "acwr": 1.35,
+  "acute_7d": 191,
+  "chronic_weekly": 164,
+  "acwr": 1.16,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 35.7,
-  "pace": "6:32",
-  "hr": 139,
-  "n": 4
+  "km": 28.5,
+  "pace": "6:31",
+  "hr": 140,
+  "n": 3
  },
  "week_prev": {
-  "km": 18.5,
-  "pace": "6:13",
-  "hr": 155,
-  "n": 2
+  "km": 25.7,
+  "pace": "6:20",
+  "hr": 149,
+  "n": 3
  },
  "personal_records": [
   {
@@ -1157,6 +1157,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 25.237529610128995
+  },
+  {
+   "date": "2026-09-01",
+   "vo2max": null,
+   "half_s": 6780,
+   "time5k_s": 1427,
+   "time10k_s": 3029,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 25.613500736016086
   }
  ],
  "gear": [],
@@ -1340,28 +1350,28 @@
  "counters": {
   "month": {
    "run": {
-    "km": 73.1,
-    "n": 9,
-    "elev": 924,
-    "time_s": 28783
+    "km": 0.0,
+    "n": 0,
+    "elev": 0,
+    "time_s": 0
    },
    "bike": {
-    "km": 126.7,
-    "n": 2,
-    "elev": 803,
-    "time_s": 14915
+    "km": 0.0,
+    "n": 0,
+    "elev": 0,
+    "time_s": 0
    },
    "hike": {
-    "km": 6.2,
-    "n": 1,
-    "elev": 504,
-    "time_s": 11242
+    "km": 0.0,
+    "n": 0,
+    "elev": 0,
+    "time_s": 0
    },
    "swim": {
-    "km": 0.4,
-    "n": 1,
+    "km": 0.0,
+    "n": 0,
     "elev": 0,
-    "time_s": 975
+    "time_s": 0
    }
   },
   "year": {
@@ -1390,11 +1400,11 @@
     "time_s": 9001
    }
   },
-  "month_label": "2026-08",
+  "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 31,
-  "days_in_month": 31,
-  "day_of_year": 243,
+  "day_of_month": 1,
+  "days_in_month": 30,
+  "day_of_year": 244,
   "days_in_year": 365
  },
  "activities_last_60d": [
@@ -2759,11 +2769,28 @@
    "hrv_last_night": 67,
    "hrv_status": "BALANCED",
    "bb_max": 59,
-   "bb_min": 20,
+   "bb_min": 19,
    "readiness": 29,
    "rhr": 50.0,
-   "steps": 7736,
-   "stress_avg": 30
+   "steps": 8350,
+   "stress_avg": 29
+  },
+  {
+   "date": "2026-09-01",
+   "sleep_s": 28320,
+   "sleep_score": 88,
+   "deep_s": 8280,
+   "light_s": 14340,
+   "rem_s": 5700,
+   "awake_s": 1380,
+   "hrv_last_night": 65,
+   "hrv_status": "BALANCED",
+   "bb_max": 97,
+   "bb_min": 23,
+   "readiness": 71,
+   "rhr": 47.0,
+   "steps": 1285,
+   "stress_avg": 14
   }
  ]
 }
