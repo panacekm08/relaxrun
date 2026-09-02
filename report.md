@@ -1,36 +1,35 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-09-01T19:59
-Vygenerované: 2026-09-01T19:59
+Synchronizované: 2026-09-02T08:56
+Vygenerované: 2026-09-02T08:56
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:53:00
-- Rozdiel: +8:00 (nad cieľom)
-- Ďalšie predikcie: 5 km 23:47, 10 km 50:29, maratón 4:14:24
+- Garmin predikcia polmaratónu: 1:53:10
+- Rozdiel: +8:10 (nad cieľom)
+- Ďalšie predikcie: 5 km 23:48, 10 km 50:32, maratón 4:14:35
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
 | Metrika | Posledných 7 dní | Predchádzajúcich 7 | Zmena |
 |---|---|---|---|
-| Počet behov | 3 | 3 | +0 |
-| Objem | 28.5 km | 25.7 km | +2.8 km |
-| Priemerné tempo | 6:31/km | 6:20/km | – |
-| Priemerný tep | 140 bpm | 149 bpm | -9 bpm |
-| Priemerný spánok | 6:44:51 | 7:13:59 | -29 min |
+| Počet behov | 2 | 3 | -1 |
+| Objem | 18.1 km | 28.1 km | -10.0 km |
+| Priemerné tempo | 6:50/km | 6:08/km | – |
+| Priemerný tep | 138 bpm | 153 bpm | -15 bpm |
+| Priemerný spánok | 6:37:17 | 7:31:59 | -55 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 6:44:51
-- HRV: 68 ms
+- Priemerný spánok: 6:37:17
+- HRV: 67 ms
 - Pokojový tep: 48 bpm
-- Kroky: 12972 denne
-- Naposledy (2026-09-01): spánok 7:52:00, skóre 88, HRV 65, pripravenosť 71, stres 26
+- Kroky: 11446 denne
+- Naposledy (2026-09-02): spánok 7:00:00, skóre 85, HRV 60, pripravenosť 82, stres 19
 
 ### Posledných 14 dní po dňoch
 
 | Dátum | Spánok | Skóre | Hlboký | REM | HRV | Pokoj. tep | Pripravenosť | Stres | Kroky |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-08-19 | 5:47:00 | 78 | 1:24:00 | 1:44:00 | 62 | 48.0 | 80 | 26 | 16067 |
 | 2026-08-20 | 7:43:00 | 92 | 1:55:00 | 1:40:00 | 72 | 46.0 | 96 | 24 | 7500 |
 | 2026-08-21 | 6:44:00 | 74 | 50:00 | 1:26:00 | 60 | 53.0 | 86 | 37 | 5462 |
 | 2026-08-22 | 7:09:00 | 86 | 1:37:00 | 1:42:00 | 61 | 53.0 | 5 | 37 | 24065 |
@@ -43,12 +42,13 @@ Vygenerované: 2026-09-01T19:59
 | 2026-08-29 | 7:05:00 | 92 | 1:19:00 | 1:44:00 | 68 | 49.0 | 75 | 30 | 14850 |
 | 2026-08-30 | 8:16:00 | 96 | 1:36:00 | 2:17:00 | 69 | 48.0 | 75 | 26 | 17858 |
 | 2026-08-31 | 2:48:00 | 36 | 13:00 | – | 67 | 50.0 | 29 | 29 | 8350 |
-| 2026-09-01 | 7:52:00 | 88 | 2:18:00 | 1:35:00 | 65 | 47.0 | 71 | 26 | 9485 |
+| 2026-09-01 | 7:52:00 | 88 | 2:18:00 | 1:35:00 | 65 | 47.0 | 71 | 26 | 11870 |
+| 2026-09-02 | 7:00:00 | 85 | 1:59:00 | 2:05:00 | 60 | 47.0 | 82 | 19 | 3153 |
 
 ## Tréningová záťaž
-- Akútna záťaž (7 dní): 191
-- Chronická (týždenný priemer za 28 dní): 164
-- ACWR: 1.16 (optimálne okno 0,8–1,3; nad 1,5 zvýšené riziko)
+- Akútna záťaž (7 dní): 122
+- Chronická (týždenný priemer za 28 dní): 154
+- ACWR: 0.79 (optimálne okno 0,8–1,3; nad 1,5 zvýšené riziko)
 
 ## Objem v aktuálnom mesiaci a roku
 
@@ -59,7 +59,7 @@ Vygenerované: 2026-09-01T19:59
 | Túra | 0.0 km / 0× | 22.0 km / 3× |
 | Plávanie | 0.0 km / 0× | 4.4 km / 5× |
 
-- Uplynulo 1 z 30 dní mesiaca, 244 z 365 dní roka
+- Uplynulo 2 z 30 dní mesiaca, 245 z 365 dní roka
 - Sledované ciele: beh 100 km/mesiac a 1000 km/rok, bike rovnako (dajú sa zmeniť v dashboarde)
 
 ## Tepové zóny
@@ -167,7 +167,7 @@ Vygenerované: 2026-09-01T19:59
 - VO2max: –
 - Endurance score: –
 - Hill score: –
-- Stav tréningu podľa Garminu: MAINTAINING_2
+- Stav tréningu podľa Garminu: PRODUCTIVE_3
 
 ---
 
@@ -292,7 +292,7 @@ Stĺpce: datum,sport,km,cas,tempo,tep,max_tep,prevysenie_m,kadencia,TE
 2026-08-30,run,10.07,1:08:11,6:46,140.0,177.0,126,162,3.0999999046325684
 ```
 
-## Wellness po dňoch (65)
+## Wellness po dňoch (66)
 
 Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres,kroky
 
@@ -361,5 +361,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres
 2026-08-29,7:05:00,92,1:19:00,1:44:00,4:02:00,68,49.0,75,30,14850
 2026-08-30,8:16:00,96,1:36:00,2:17:00,4:23:00,69,48.0,75,26,17858
 2026-08-31,2:48:00,36,13:00,,2:35:00,67,50.0,29,29,8350
-2026-09-01,7:52:00,88,2:18:00,1:35:00,3:59:00,65,47.0,71,26,9485
+2026-09-01,7:52:00,88,2:18:00,1:35:00,3:59:00,65,47.0,71,26,11870
+2026-09-02,7:00:00,85,1:59:00,2:05:00,2:56:00,60,47.0,82,19,3153
 ```
