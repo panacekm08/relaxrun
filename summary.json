@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-09-02T19:54",
+ "generated_at": "2026-09-03T09:04",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-02T19:54",
+  "synced_at": "2026-09-03T09:04",
   "race_predictions": {
-   "time5k_s": 1428,
-   "time10k_s": 3032,
-   "half_s": 6790,
-   "marathon_s": 15275
+   "time5k_s": 1429,
+   "time10k_s": 3036,
+   "half_s": 6800,
+   "marathon_s": 15288
   },
-  "training_status": "PRODUCTIVE_3",
+  "training_status": "PEAKING_1",
   "fitness_age": 26.36846749304152,
   "intensity_weeks": [
    {
@@ -1177,6 +1177,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.36846749304152
+  },
+  {
+   "date": "2026-09-03",
+   "vo2max": null,
+   "half_s": 6800,
+   "time5k_s": 1429,
+   "time10k_s": 3036,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.36846749304152
   }
  ],
  "gear": [],
@@ -1412,9 +1422,9 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 2,
+  "day_of_month": 3,
   "days_in_month": 30,
-  "day_of_year": 245,
+  "day_of_year": 246,
   "days_in_year": 365
  },
  "activities_last_60d": [
@@ -2816,8 +2826,25 @@
    "bb_min": 23,
    "readiness": 82,
    "rhr": 47.0,
-   "steps": 13230,
+   "steps": 14579,
    "stress_avg": 21
+  },
+  {
+   "date": "2026-09-03",
+   "sleep_s": 24097,
+   "sleep_score": 85,
+   "deep_s": 7440,
+   "light_s": 11640,
+   "rem_s": 5040,
+   "awake_s": 1080,
+   "hrv_last_night": 72,
+   "hrv_status": "BALANCED",
+   "bb_max": 98,
+   "bb_min": 36,
+   "readiness": 91,
+   "rhr": 45.0,
+   "steps": 7,
+   "stress_avg": 9
   }
  ]
 }
