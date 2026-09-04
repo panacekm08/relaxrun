@@ -1,7 +1,7 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-09-04T08:58
-Vygenerované: 2026-09-04T08:58
+Synchronizované: 2026-09-04T19:43
+Vygenerované: 2026-09-04T19:43
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
@@ -17,14 +17,14 @@ Vygenerované: 2026-09-04T08:58
 | Objem | 10.1 km | 36.1 km | -26.0 km |
 | Priemerné tempo | 6:46/km | 6:19/km | – |
 | Priemerný tep | 140 bpm | 148 bpm | -8 bpm |
-| Priemerný spánok | 6:37:06 | 7:22:25 | -45 min |
+| Priemerný spánok | 6:39:22 | 7:22:25 | -43 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 6:37:06
+- Priemerný spánok: 6:39:22
 - HRV: 67 ms
-- Pokojový tep: 48 bpm
-- Kroky: 11656 denne
-- Naposledy (2026-09-04): spánok –, skóre –, HRV –, pripravenosť –, stres 15
+- Pokojový tep: 47 bpm
+- Kroky: 12105 denne
+- Naposledy (2026-09-04): spánok 6:53:00, skóre 89, HRV 65, pripravenosť 96, stres 18
 
 ### Posledných 14 dní po dňoch
 
@@ -43,7 +43,7 @@ Vygenerované: 2026-09-04T08:58
 | 2026-09-01 | 7:52:00 | 88 | 2:18:00 | 1:35:00 | 65 | 47.0 | 71 | 26 | 11870 |
 | 2026-09-02 | 7:00:00 | 85 | 1:59:00 | 2:05:00 | 60 | 47.0 | 82 | 21 | 14579 |
 | 2026-09-03 | 6:41:37 | 85 | 2:04:00 | 1:24:00 | 72 | 45.0 | 91 | 17 | 14074 |
-| 2026-09-04 | – | – | – | – | – | 50.0 | – | 15 | 11 |
+| 2026-09-04 | 6:53:00 | 89 | 2:19:00 | 2:02:00 | 65 | 43.0 | 96 | 18 | 3152 |
 
 ## Tréningová záťaž
 - Akútna záťaž (7 dní): 70
@@ -364,5 +364,5 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres
 2026-09-01,7:52:00,88,2:18:00,1:35:00,3:59:00,65,47.0,71,26,11870
 2026-09-02,7:00:00,85,1:59:00,2:05:00,2:56:00,60,47.0,82,21,14579
 2026-09-03,6:41:37,85,2:04:00,1:24:00,3:14:00,72,45.0,91,17,14074
-2026-09-04,,,,,,,50.0,,15,11
+2026-09-04,6:53:00,89,2:19:00,2:02:00,2:32:00,65,43.0,96,18,3152
 ```
