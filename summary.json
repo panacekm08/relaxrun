@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-05T19:11",
+ "generated_at": "2026-09-06T08:46",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-05T19:11",
+  "synced_at": "2026-09-06T08:46",
   "race_predictions": {
    "time5k_s": 1434,
    "time10k_s": 3046,
@@ -63,22 +63,22 @@
   ]
  },
  "training_load": {
-  "acute_7d": 70,
+  "acute_7d": 0,
   "chronic_weekly": 154,
-  "acwr": 0.45,
+  "acwr": 0.0,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 10.1,
-  "pace": "6:46",
-  "hr": 140,
-  "n": 1
+  "km": 0.0,
+  "pace": "–",
+  "hr": null,
+  "n": 0
  },
  "week_prev": {
-  "km": 25.6,
-  "pace": "6:27",
+  "km": 35.7,
+  "pace": "6:32",
   "hr": 139,
-  "n": 3
+  "n": 4
  },
  "personal_records": [
   {
@@ -1206,6 +1206,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.36846749304152
+  },
+  {
+   "date": "2026-09-06",
+   "vo2max": null,
+   "half_s": 6827,
+   "time5k_s": 1434,
+   "time10k_s": 3046,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.36846749304152
   }
  ],
  "gear": [],
@@ -1441,28 +1451,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 5,
+  "day_of_month": 6,
   "days_in_month": 30,
-  "day_of_year": 248,
+  "day_of_year": 249,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23512425600,
-   "date": "2026-07-07",
-   "type": "cycling",
-   "name": "Sankt Gilgen Cycling",
-   "distance_m": 35019.30859375,
-   "duration_s": 7717.51806640625,
-   "moving_s": 7396.6429443359375,
-   "avg_hr": 102.0,
-   "max_hr": 149.0,
-   "avg_speed_mps": 4.538000106811523,
-   "elev_gain_m": 354.0,
-   "cadence": null,
-   "aerobic_te": 1.100000023841858,
-   "vo2max": null
-  },
   {
    "id": 23537534078,
    "date": "2026-07-09",
@@ -2882,6 +2876,17 @@
    "rhr": 49.0,
    "steps": 13232,
    "stress_avg": 20
+  },
+  {
+   "date": "2026-09-06",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": null
   }
  ]
 }
