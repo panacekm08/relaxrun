@@ -1,25 +1,20 @@
 {
- "generated_at": "2026-09-06T19:20",
+ "generated_at": "2026-09-07T09:33",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-06T19:20",
+  "synced_at": "2026-09-07T09:33",
   "race_predictions": {
-   "time5k_s": 1441,
-   "time10k_s": 3056,
-   "half_s": 6852,
-   "marathon_s": 15390
+   "time5k_s": 1449,
+   "time10k_s": 3067,
+   "half_s": 6880,
+   "marathon_s": 15458
   },
   "fitness_age": 26.36846749304152,
   "intensity_weeks": [
-   {
-    "week": "2026-07-06",
-    "moderate": 0,
-    "vigorous": 0
-   },
    {
     "week": "2026-07-13",
     "moderate": 0,
@@ -57,6 +52,11 @@
    },
    {
     "week": "2026-08-31",
+    "moderate": 0,
+    "vigorous": 0
+   },
+   {
+    "week": "2026-09-07",
     "moderate": 0,
     "vigorous": 0
    }
@@ -1216,15 +1216,20 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.36846749304152
+  },
+  {
+   "date": "2026-09-07",
+   "vo2max": null,
+   "half_s": 6880,
+   "time5k_s": 1449,
+   "time10k_s": 3067,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.36846749304152
   }
  ],
  "gear": [],
  "intensity_minutes_weekly": [
-  {
-   "week": "2026-07-06",
-   "moderate": 0,
-   "vigorous": 0
-  },
   {
    "week": "2026-07-13",
    "moderate": 0,
@@ -1262,6 +1267,11 @@
   },
   {
    "week": "2026-08-31",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-09-07",
    "moderate": 0,
    "vigorous": 0
   }
@@ -1451,9 +1461,9 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 6,
+  "day_of_month": 7,
   "days_in_month": 30,
-  "day_of_year": 249,
+  "day_of_year": 250,
   "days_in_year": 365
  },
  "activities_last_60d": [
@@ -2891,8 +2901,25 @@
    "bb_min": 17,
    "readiness": 92,
    "rhr": 46.0,
-   "steps": 12018,
-   "stress_avg": 20
+   "steps": 12694,
+   "stress_avg": 25
+  },
+  {
+   "date": "2026-09-07",
+   "sleep_s": 25440,
+   "sleep_score": 93,
+   "deep_s": 7080,
+   "light_s": 12120,
+   "rem_s": 6240,
+   "awake_s": 540,
+   "hrv_last_night": 66,
+   "hrv_status": "BALANCED",
+   "bb_max": 98,
+   "bb_min": 29,
+   "readiness": 99,
+   "rhr": 45.0,
+   "steps": 72,
+   "stress_avg": 12
   }
  ]
 }
