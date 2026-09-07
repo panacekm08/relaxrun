@@ -1,18 +1,19 @@
 {
- "generated_at": "2026-09-07T09:33",
+ "generated_at": "2026-09-07T20:40",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-07T09:33",
+  "synced_at": "2026-09-07T20:40",
   "race_predictions": {
-   "time5k_s": 1449,
-   "time10k_s": 3067,
-   "half_s": 6880,
-   "marathon_s": 15458
+   "time5k_s": 1438,
+   "time10k_s": 3055,
+   "half_s": 6850,
+   "marathon_s": 15351
   },
+  "vo2max": 51.0,
   "fitness_age": 26.36846749304152,
   "intensity_weeks": [
    {
@@ -63,16 +64,16 @@
   ]
  },
  "training_load": {
-  "acute_7d": 0,
-  "chronic_weekly": 154,
-  "acwr": 0.0,
+  "acute_7d": 38,
+  "chronic_weekly": 163,
+  "acwr": 0.23,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 0.0,
-  "pace": "–",
-  "hr": null,
-  "n": 0
+  "km": 7.0,
+  "pace": "6:46",
+  "hr": 129,
+  "n": 1
  },
  "week_prev": {
   "km": 35.7,
@@ -118,17 +119,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-02-25",
-   "s": "run",
-   "z": [
-    28,
-    58,
-    402,
-    1964,
-    0
-   ]
-  },
   {
    "d": "2026-02-28",
    "s": "run",
@@ -777,13 +767,24 @@
     410,
     15
    ]
+  },
+  {
+   "d": "2026-09-07",
+   "s": "run",
+   "z": [
+    374,
+    1994,
+    105,
+    321,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
   {
-   "km": 142.4,
-   "n": 15,
-   "load": 784
+   "km": 149.4,
+   "n": 16,
+   "load": 821
   },
   {
    "km": 215.6,
@@ -1219,10 +1220,10 @@
   },
   {
    "date": "2026-09-07",
-   "vo2max": null,
-   "half_s": 6880,
-   "time5k_s": 1449,
-   "time10k_s": 3067,
+   "vo2max": 51.0,
+   "half_s": 6850,
+   "time5k_s": 1438,
+   "time10k_s": 3055,
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.36846749304152
@@ -1277,6 +1278,15 @@
   }
  ],
  "monthly_totals": [
+  {
+   "m": "2026-09",
+   "swim": 0.0,
+   "run": 7,
+   "bike": 0,
+   "hike": 0,
+   "elev": 62,
+   "n": 1
+  },
   {
    "m": "2026-08",
    "swim": 0.4,
@@ -1390,11 +1400,11 @@
   {
    "y": "2026",
    "swim": 4.4,
-   "run": 474,
+   "run": 481,
    "bike": 487,
    "hike": 22,
-   "elev": 9719,
-   "n": 73
+   "elev": 9781,
+   "n": 74
   },
   {
    "y": "2025",
@@ -1409,10 +1419,10 @@
  "counters": {
   "month": {
    "run": {
-    "km": 0.0,
-    "n": 0,
-    "elev": 0,
-    "time_s": 0
+    "km": 7.0,
+    "n": 1,
+    "elev": 62,
+    "time_s": 2847
    },
    "bike": {
     "km": 0.0,
@@ -1435,10 +1445,10 @@
   },
   "year": {
    "run": {
-    "km": 474.4,
-    "n": 54,
-    "elev": 4699,
-    "time_s": 178173
+    "km": 481.4,
+    "n": 55,
+    "elev": 4761,
+    "time_s": 181019
    },
    "bike": {
     "km": 487.2,
@@ -1913,6 +1923,22 @@
    "elev_gain_m": 126.0,
    "cadence": 162.984375,
    "aerobic_te": 3.0999999046325684,
+   "vo2max": 51.0
+  },
+  {
+   "id": 24274389892,
+   "date": "2026-09-07",
+   "type": "running",
+   "name": "Amiens Running",
+   "distance_m": 7005.5400390625,
+   "duration_s": 2846.535888671875,
+   "moving_s": 2839.8380126953125,
+   "avg_hr": 129.0,
+   "max_hr": 174.0,
+   "avg_speed_mps": 2.4609999656677246,
+   "elev_gain_m": 62.0,
+   "cadence": 155.171875,
+   "aerobic_te": 2.700000047683716,
    "vo2max": 51.0
   }
  ],
@@ -2916,10 +2942,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 98,
    "bb_min": 29,
-   "readiness": 99,
+   "readiness": 88,
    "rhr": 45.0,
-   "steps": 72,
-   "stress_avg": 12
+   "steps": 12666,
+   "stress_avg": 19
   }
  ]
 }
