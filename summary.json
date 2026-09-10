@@ -1,19 +1,18 @@
 {
- "generated_at": "2026-09-09T19:53",
+ "generated_at": "2026-09-10T09:03",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-09T19:53",
+  "synced_at": "2026-09-10T09:03",
   "race_predictions": {
-   "time5k_s": 1437,
-   "time10k_s": 3054,
-   "half_s": 6847,
-   "marathon_s": 15307
+   "time5k_s": 1445,
+   "time10k_s": 3064,
+   "half_s": 6870,
+   "marathon_s": 15368
   },
-  "vo2max": 51.3,
   "fitness_age": 26.245432322976097,
   "intensity_weeks": [
    {
@@ -65,8 +64,8 @@
  },
  "training_load": {
   "acute_7d": 100,
-  "chronic_weekly": 163,
-  "acwr": 0.61,
+  "chronic_weekly": 154,
+  "acwr": 0.65,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -1247,6 +1246,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-09-10",
+   "vo2max": null,
+   "half_s": 6870,
+   "time5k_s": 1445,
+   "time10k_s": 3064,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1491,28 +1500,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 9,
+  "day_of_month": 10,
   "days_in_month": 30,
-  "day_of_year": 252,
+  "day_of_year": 253,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23568130587,
-   "date": "2026-07-11",
-   "type": "hiking",
-   "name": "Salas Hiking",
-   "distance_m": 7139.22021484375,
-   "duration_s": 6356.880859375,
-   "moving_s": 5533.0,
-   "avg_hr": 93.0,
-   "max_hr": 123.0,
-   "avg_speed_mps": 1.1230000257492065,
-   "elev_gain_m": 228.0,
-   "cadence": 87.6875,
-   "aerobic_te": 0.800000011920929,
-   "vo2max": null
-  },
   {
    "id": 23568131040,
    "date": "2026-07-12",
@@ -2979,11 +2972,28 @@
    "hrv_last_night": null,
    "hrv_status": "BALANCED",
    "bb_max": 96,
-   "bb_min": 37,
+   "bb_min": 26,
    "readiness": 63,
    "rhr": 50.0,
-   "steps": 16404,
-   "stress_avg": 26
+   "steps": 16626,
+   "stress_avg": 30
+  },
+  {
+   "date": "2026-09-10",
+   "sleep_s": 25651,
+   "sleep_score": 89,
+   "deep_s": 4560,
+   "light_s": 15300,
+   "rem_s": 5820,
+   "awake_s": 1560,
+   "hrv_last_night": 76,
+   "hrv_status": "BALANCED",
+   "bb_max": 95,
+   "bb_min": 25,
+   "readiness": 83,
+   "rhr": 48.0,
+   "steps": 129,
+   "stress_avg": 13
   }
  ]
 }
