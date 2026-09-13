@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-09-13T09:39",
+ "generated_at": "2026-09-13T19:34",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-13T09:39",
+  "synced_at": "2026-09-13T19:34",
   "race_predictions": {
    "time5k_s": 1454,
    "time10k_s": 3077,
@@ -3058,8 +3058,8 @@
    "bb_min": 28,
    "readiness": 94,
    "rhr": 50.0,
-   "steps": 758,
-   "stress_avg": 15
+   "steps": 8756,
+   "stress_avg": 25
   }
  ]
 }
