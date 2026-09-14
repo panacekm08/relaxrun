@@ -1,26 +1,21 @@
 {
- "generated_at": "2026-09-13T19:34",
+ "generated_at": "2026-09-14T10:02",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-13T19:34",
+  "synced_at": "2026-09-14T10:02",
   "race_predictions": {
-   "time5k_s": 1454,
-   "time10k_s": 3077,
-   "half_s": 6902,
-   "marathon_s": 15458
+   "time5k_s": 1456,
+   "time10k_s": 3080,
+   "half_s": 6909,
+   "marathon_s": 15475
   },
-  "training_status": "RECOVERY_1",
+  "training_status": "RECOVERY_2",
   "fitness_age": 26.245432322976097,
   "intensity_weeks": [
-   {
-    "week": "2026-07-13",
-    "moderate": 0,
-    "vigorous": 0
-   },
    {
     "week": "2026-07-20",
     "moderate": 0,
@@ -60,26 +55,31 @@
     "week": "2026-09-07",
     "moderate": 0,
     "vigorous": 0
+   },
+   {
+    "week": "2026-09-14",
+    "moderate": 0,
+    "vigorous": 0
    }
   ]
  },
  "training_load": {
-  "acute_7d": 100,
+  "acute_7d": 62,
   "chronic_weekly": 151,
-  "acwr": 0.66,
+  "acwr": 0.41,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 17.0,
-  "pace": "6:41",
-  "hr": 132,
-  "n": 2
+  "km": 10.0,
+  "pace": "6:37",
+  "hr": 136,
+  "n": 1
  },
  "week_prev": {
-  "km": 0.0,
-  "pace": "–",
-  "hr": null,
-  "n": 0
+  "km": 7.0,
+  "pace": "6:46",
+  "hr": 129,
+  "n": 1
  },
  "personal_records": [
   {
@@ -1287,15 +1287,20 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-09-14",
+   "vo2max": null,
+   "half_s": 6909,
+   "time5k_s": 1456,
+   "time10k_s": 3080,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
  "intensity_minutes_weekly": [
-  {
-   "week": "2026-07-13",
-   "moderate": 0,
-   "vigorous": 0
-  },
   {
    "week": "2026-07-20",
    "moderate": 0,
@@ -1333,6 +1338,11 @@
   },
   {
    "week": "2026-09-07",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-09-14",
    "moderate": 0,
    "vigorous": 0
   }
@@ -1531,28 +1541,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 13,
+  "day_of_month": 14,
   "days_in_month": 30,
-  "day_of_year": 256,
+  "day_of_year": 257,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23609990629,
-   "date": "2026-07-15",
-   "type": "running",
-   "name": "Poznan Running",
-   "distance_m": 8062.2900390625,
-   "duration_s": 3082.882080078125,
-   "moving_s": 3081.3829650878906,
-   "avg_hr": 139.0,
-   "max_hr": 159.0,
-   "avg_speed_mps": 2.615000009536743,
-   "elev_gain_m": 28.0,
-   "cadence": 158.921875,
-   "aerobic_te": 3.0999999046325684,
-   "vo2max": 49.0
-  },
   {
    "id": 23633988913,
    "date": "2026-07-17",
@@ -3058,8 +3052,25 @@
    "bb_min": 28,
    "readiness": 94,
    "rhr": 50.0,
-   "steps": 8756,
-   "stress_avg": 25
+   "steps": 9194,
+   "stress_avg": 27
+  },
+  {
+   "date": "2026-09-14",
+   "sleep_s": 24060,
+   "sleep_score": 80,
+   "deep_s": 5580,
+   "light_s": 12780,
+   "rem_s": 5700,
+   "awake_s": 1500,
+   "hrv_last_night": 70,
+   "hrv_status": "BALANCED",
+   "bb_max": 82,
+   "bb_min": 29,
+   "readiness": 93,
+   "rhr": 52.0,
+   "steps": 2337,
+   "stress_avg": 21
   }
  ]
 }
