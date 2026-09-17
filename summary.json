@@ -1,20 +1,21 @@
 {
- "generated_at": "2026-09-17T09:34",
+ "generated_at": "2026-09-17T20:26",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-17T09:34",
+  "synced_at": "2026-09-17T20:25",
   "race_predictions": {
-   "time5k_s": 1460,
-   "time10k_s": 3090,
-   "half_s": 6937,
-   "marathon_s": 15557
+   "time5k_s": 1429,
+   "time10k_s": 3014,
+   "half_s": 6881,
+   "marathon_s": 15264
   },
-  "training_status": "RECOVERY_1",
-  "fitness_age": 26.955463132260828,
+  "vo2max": 50.9,
+  "training_status": "PRODUCTIVE_3",
+  "fitness_age": 26.245432322976097,
   "intensity_weeks": [
    {
     "week": "2026-07-20",
@@ -64,16 +65,16 @@
   ]
  },
  "training_load": {
-  "acute_7d": 50,
-  "chronic_weekly": 153,
-  "acwr": 0.33,
+  "acute_7d": 91,
+  "chronic_weekly": 163,
+  "acwr": 0.56,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 8.0,
-  "pace": "6:30",
-  "hr": 137,
-  "n": 1
+  "km": 13.0,
+  "pace": "5:51",
+  "hr": 152,
+  "n": 2
  },
  "week_prev": {
   "km": 17.0,
@@ -84,10 +85,10 @@
  "personal_records": [
   {
    "label": "5 km",
-   "date": "2026-03-16",
-   "time": "24:34",
-   "pace": "4:55",
-   "note": "6.0 km"
+   "date": "2026-09-17",
+   "time": "23:57",
+   "pace": "4:47",
+   "note": "5.0 km"
   },
   {
    "label": "10 km",
@@ -119,17 +120,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-03-03",
-   "s": "swim",
-   "z": [
-    155,
-    895,
-    556,
-    0,
-    0
-   ]
-  },
   {
    "d": "2026-03-05",
    "s": "run",
@@ -778,6 +768,17 @@
     80,
     0
    ]
+  },
+  {
+   "d": "2026-09-17",
+   "s": "run",
+   "z": [
+    16,
+    13,
+    24,
+    909,
+    441
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -797,9 +798,9 @@
    "load": 1080
   },
   {
-   "km": 123.1,
-   "n": 11,
-   "load": 626
+   "km": 128.1,
+   "n": 12,
+   "load": 667
   },
   {
    "km": 78.7,
@@ -1320,13 +1321,13 @@
   },
   {
    "date": "2026-09-17",
-   "vo2max": null,
-   "half_s": 6937,
-   "time5k_s": 1460,
-   "time10k_s": 3090,
+   "vo2max": 50.9,
+   "half_s": 6881,
+   "time5k_s": 1429,
+   "time10k_s": 3014,
    "endurance_score": null,
    "hill_score": null,
-   "fitness_age": 26.955463132260828
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1381,11 +1382,11 @@
   {
    "m": "2026-09",
    "swim": 0.0,
-   "run": 25,
+   "run": 30,
    "bike": 0,
    "hike": 0,
-   "elev": 303,
-   "n": 3
+   "elev": 348,
+   "n": 4
   },
   {
    "m": "2026-08",
@@ -1500,11 +1501,11 @@
   {
    "y": "2026",
    "swim": 4.4,
-   "run": 499,
+   "run": 504,
    "bike": 487,
    "hike": 22,
-   "elev": 10022,
-   "n": 76
+   "elev": 10067,
+   "n": 77
   },
   {
    "y": "2025",
@@ -1519,10 +1520,10 @@
  "counters": {
   "month": {
    "run": {
-    "km": 25.0,
-    "n": 3,
-    "elev": 303,
-    "time_s": 9944
+    "km": 30.0,
+    "n": 4,
+    "elev": 348,
+    "time_s": 11383
    },
    "bike": {
     "km": 0.0,
@@ -1545,10 +1546,10 @@
   },
   "year": {
    "run": {
-    "km": 499.5,
-    "n": 57,
-    "elev": 5002,
-    "time_s": 188116
+    "km": 504.5,
+    "n": 58,
+    "elev": 5047,
+    "time_s": 189555
    },
    "bike": {
     "km": 487.2,
@@ -1975,6 +1976,22 @@
    "elev_gain_m": 134.0,
    "cadence": 159.984375,
    "aerobic_te": 3.0,
+   "vo2max": 51.0
+  },
+  {
+   "id": 24397790942,
+   "date": "2026-09-17",
+   "type": "running",
+   "name": "Beauvais Running",
+   "distance_m": 5006.18994140625,
+   "duration_s": 1439.06103515625,
+   "moving_s": 1435.3820190429688,
+   "avg_hr": 168.0,
+   "max_hr": 183.0,
+   "avg_speed_mps": 3.4790000915527344,
+   "elev_gain_m": 45.0,
+   "cadence": 168.09375,
+   "aerobic_te": 3.799999952316284,
    "vo2max": 51.0
   }
  ],
@@ -3148,10 +3165,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 68,
    "bb_min": 19,
-   "readiness": 83,
+   "readiness": 53,
    "rhr": 54.0,
-   "steps": 245,
-   "stress_avg": 22
+   "steps": 11586,
+   "stress_avg": 35
   }
  ]
 }
