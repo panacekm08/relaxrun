@@ -1,19 +1,18 @@
 {
- "generated_at": "2026-09-17T20:26",
+ "generated_at": "2026-09-18T09:06",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-17T20:25",
+  "synced_at": "2026-09-18T09:06",
   "race_predictions": {
-   "time5k_s": 1429,
-   "time10k_s": 3014,
-   "half_s": 6881,
-   "marathon_s": 15264
+   "time5k_s": 1424,
+   "time10k_s": 3011,
+   "half_s": 6880,
+   "marathon_s": 15268
   },
-  "vo2max": 50.9,
   "training_status": "PRODUCTIVE_3",
   "fitness_age": 26.245432322976097,
   "intensity_weeks": [
@@ -1328,6 +1327,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-09-18",
+   "vo2max": null,
+   "half_s": 6880,
+   "time5k_s": 1424,
+   "time10k_s": 3011,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1572,28 +1581,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 17,
+  "day_of_month": 18,
   "days_in_month": 30,
-  "day_of_year": 260,
+  "day_of_year": 261,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23655262285,
-   "date": "2026-07-19",
-   "type": "trail_running",
-   "name": "Dolna Marikova Trail Running",
-   "distance_m": 24180.240234375,
-   "duration_s": 13122.8056640625,
-   "moving_s": 13019.349029541016,
-   "avg_hr": 139.0,
-   "max_hr": 179.0,
-   "avg_speed_mps": 1.843000054359436,
-   "elev_gain_m": 1056.0,
-   "cadence": 127.859375,
-   "aerobic_te": 4.199999809265137,
-   "vo2max": 50.0
-  },
   {
    "id": 23679511985,
    "date": "2026-07-21",
@@ -3164,11 +3157,28 @@
    "hrv_last_night": 56,
    "hrv_status": "BALANCED",
    "bb_max": 68,
-   "bb_min": 19,
+   "bb_min": 15,
    "readiness": 53,
    "rhr": 54.0,
-   "steps": 11586,
+   "steps": 11964,
    "stress_avg": 35
+  },
+  {
+   "date": "2026-09-18",
+   "sleep_s": 26814,
+   "sleep_score": 85,
+   "deep_s": 6120,
+   "light_s": 14520,
+   "rem_s": 6180,
+   "awake_s": 1500,
+   "hrv_last_night": 68,
+   "hrv_status": "BALANCED",
+   "bb_max": 76,
+   "bb_min": 15,
+   "readiness": 65,
+   "rhr": 52.0,
+   "steps": 2766,
+   "stress_avg": 20
   }
  ]
 }
