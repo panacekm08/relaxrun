@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-09-19T19:25",
+ "generated_at": "2026-09-20T09:23",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-19T19:25",
+  "synced_at": "2026-09-20T09:23",
   "race_predictions": {
    "time5k_s": 1424,
-   "time10k_s": 3019,
-   "half_s": 6900,
-   "marathon_s": 15325
+   "time10k_s": 3021,
+   "half_s": 6909,
+   "marathon_s": 15347
   },
   "training_status": "PRODUCTIVE_3",
   "fitness_age": 26.245432322976097,
@@ -65,8 +65,8 @@
  },
  "training_load": {
   "acute_7d": 166,
-  "chronic_weekly": 151,
-  "acwr": 1.1,
+  "chronic_weekly": 126,
+  "acwr": 1.32,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -1347,6 +1347,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-09-20",
+   "vo2max": null,
+   "half_s": 6909,
+   "time5k_s": 1424,
+   "time10k_s": 3021,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1591,44 +1601,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 19,
+  "day_of_month": 20,
   "days_in_month": 30,
-  "day_of_year": 262,
+  "day_of_year": 263,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23679511985,
-   "date": "2026-07-21",
-   "type": "cycling",
-   "name": "Kojetin Cycling",
-   "distance_m": 11979.580078125,
-   "duration_s": 2291.257080078125,
-   "moving_s": 2179.0,
-   "avg_hr": 104.0,
-   "max_hr": 150.0,
-   "avg_speed_mps": 5.228000164031982,
-   "elev_gain_m": 101.0,
-   "cadence": null,
-   "aerobic_te": 0.8999999761581421,
-   "vo2max": null
-  },
-  {
-   "id": 23673226190,
-   "date": "2026-07-21",
-   "type": "cycling",
-   "name": "Kromeriz Cycling",
-   "distance_m": 10691.98046875,
-   "duration_s": 1927.833984375,
-   "moving_s": 1893.7880249023438,
-   "avg_hr": 115.0,
-   "max_hr": 178.0,
-   "avg_speed_mps": 5.546000003814697,
-   "elev_gain_m": 107.0,
-   "cadence": null,
-   "aerobic_te": 1.7000000476837158,
-   "vo2max": null
-  },
   {
    "id": 23692763236,
    "date": "2026-07-22",
@@ -3218,10 +3196,27 @@
    "hrv_status": "BALANCED",
    "bb_max": 71,
    "bb_min": 11,
-   "readiness": 72,
+   "readiness": 75,
    "rhr": 54.0,
-   "steps": 4689,
+   "steps": 17696,
    "stress_avg": 28
+  },
+  {
+   "date": "2026-09-20",
+   "sleep_s": 25703,
+   "sleep_score": 85,
+   "deep_s": 6840,
+   "light_s": 13860,
+   "rem_s": 5040,
+   "awake_s": 540,
+   "hrv_last_night": 65,
+   "hrv_status": "BALANCED",
+   "bb_max": 88,
+   "bb_min": 34,
+   "readiness": 77,
+   "rhr": 51.0,
+   "steps": 1518,
+   "stress_avg": 22
   }
  ]
 }
