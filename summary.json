@@ -1,26 +1,21 @@
 {
- "generated_at": "2026-09-20T19:34",
+ "generated_at": "2026-09-21T10:07",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-20T19:34",
+  "synced_at": "2026-09-21T10:07",
   "race_predictions": {
    "time5k_s": 1424,
-   "time10k_s": 3021,
-   "half_s": 6909,
-   "marathon_s": 15347
+   "time10k_s": 3023,
+   "half_s": 6914,
+   "marathon_s": 15359
   },
   "training_status": "PRODUCTIVE_3",
-  "fitness_age": 26.245432322976097,
+  "fitness_age": 26.36846749304152,
   "intensity_weeks": [
-   {
-    "week": "2026-07-20",
-    "moderate": 0,
-    "vigorous": 0
-   },
    {
     "week": "2026-07-27",
     "moderate": 0,
@@ -60,6 +55,11 @@
     "week": "2026-09-14",
     "moderate": 0,
     "vigorous": 0
+   },
+   {
+    "week": "2026-09-21",
+    "moderate": 0,
+    "vigorous": 0
    }
   ]
  },
@@ -76,10 +76,10 @@
   "n": 3
  },
  "week_prev": {
-  "km": 17.0,
-  "pace": "6:41",
-  "hr": 132,
-  "n": 2
+  "km": 10.0,
+  "pace": "6:37",
+  "hr": 136,
+  "n": 1
  },
  "personal_records": [
   {
@@ -1357,15 +1357,20 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-09-21",
+   "vo2max": null,
+   "half_s": 6914,
+   "time5k_s": 1424,
+   "time10k_s": 3023,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.36846749304152
   }
  ],
  "gear": [],
  "intensity_minutes_weekly": [
-  {
-   "week": "2026-07-20",
-   "moderate": 0,
-   "vigorous": 0
-  },
   {
    "week": "2026-07-27",
    "moderate": 0,
@@ -1403,6 +1408,11 @@
   },
   {
    "week": "2026-09-14",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-09-21",
    "moderate": 0,
    "vigorous": 0
   }
@@ -1601,28 +1611,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 20,
+  "day_of_month": 21,
   "days_in_month": 30,
-  "day_of_year": 263,
+  "day_of_year": 264,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23692763236,
-   "date": "2026-07-22",
-   "type": "running",
-   "name": "Kromeriz Running",
-   "distance_m": 6208.0498046875,
-   "duration_s": 2718.81103515625,
-   "moving_s": 2711.239013671875,
-   "avg_hr": 130.0,
-   "max_hr": 148.0,
-   "avg_speed_mps": 2.2829999923706055,
-   "elev_gain_m": 47.0,
-   "cadence": 156.640625,
-   "aerobic_te": 2.4000000953674316,
-   "vo2max": null
-  },
   {
    "id": 23706165853,
    "date": "2026-07-23",
@@ -3212,11 +3206,28 @@
    "hrv_last_night": 65,
    "hrv_status": "BALANCED",
    "bb_max": 88,
-   "bb_min": 34,
+   "bb_min": 27,
    "readiness": 77,
    "rhr": 51.0,
-   "steps": 25434,
+   "steps": 26225,
    "stress_avg": 29
+  },
+  {
+   "date": "2026-09-21",
+   "sleep_s": 24780,
+   "sleep_score": 91,
+   "deep_s": 7020,
+   "light_s": 11820,
+   "rem_s": 5940,
+   "awake_s": 780,
+   "hrv_last_night": 69,
+   "hrv_status": "BALANCED",
+   "bb_max": 95,
+   "bb_min": 32,
+   "readiness": 85,
+   "rhr": 47.0,
+   "steps": 3248,
+   "stress_avg": 18
   }
  ]
 }
