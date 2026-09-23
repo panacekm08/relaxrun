@@ -1,36 +1,35 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-09-22T20:17
-Vygenerované: 2026-09-22T20:17
+Synchronizované: 2026-09-23T09:25
+Vygenerované: 2026-09-23T09:25
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:52:53
-- Rozdiel: +7:53 (nad cieľom)
-- Ďalšie predikcie: 5 km 23:27, 10 km 49:34, maratón 4:10:18
+- Garmin predikcia polmaratónu: 1:52:58
+- Rozdiel: +7:58 (nad cieľom)
+- Ďalšie predikcie: 5 km 23:30, 10 km 49:36, maratón 4:10:31
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
 | Metrika | Posledných 7 dní | Predchádzajúcich 7 | Zmena |
 |---|---|---|---|
-| Počet behov | 4 | 1 | +3 |
-| Objem | 30.5 km | 10.0 km | +20.5 km |
-| Priemerné tempo | 6:11/km | 6:37/km | – |
-| Priemerný tep | 149 bpm | 136 bpm | +13 bpm |
-| Priemerný spánok | 7:13:25 | 6:58:15 | +15 min |
+| Počet behov | 3 | 1 | +2 |
+| Objem | 22.5 km | 8.0 km | +14.5 km |
+| Priemerné tempo | 6:05/km | 6:30/km | – |
+| Priemerný tep | 153 bpm | 137 bpm | +16 bpm |
+| Priemerný spánok | 7:10:20 | 6:59:45 | +11 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 7:13:25
+- Priemerný spánok: 7:10:20
 - HRV: 67 ms
 - Pokojový tep: 51 bpm
-- Kroky: 17233 denne
-- Naposledy (2026-09-22): spánok 6:23:00, skóre 80, HRV 73, pripravenosť 56, stres 21
+- Kroky: 15292 denne
+- Naposledy (2026-09-23): spánok 6:47:00, skóre 88, HRV 69, pripravenosť 82, stres 15
 
 ### Posledných 14 dní po dňoch
 
 | Dátum | Spánok | Skóre | Hlboký | REM | HRV | Pokoj. tep | Pripravenosť | Stres | Kroky |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-09-09 | – | – | – | – | – | 50.0 | 63 | 30 | 16626 |
 | 2026-09-10 | 7:07:31 | 89 | 1:16:00 | 1:37:00 | 76 | 48.0 | 83 | 22 | 9009 |
 | 2026-09-11 | 6:37:00 | 83 | 1:21:00 | 1:29:00 | 67 | 50.0 | 91 | 23 | 10792 |
 | 2026-09-12 | 6:27:00 | 79 | 2:05:00 | 58:00 | 72 | 48.0 | 89 | 27 | 15098 |
@@ -43,12 +42,13 @@ Vygenerované: 2026-09-22T20:17
 | 2026-09-19 | 8:04:00 | 88 | 1:53:00 | 1:38:00 | 66 | 54.0 | 75 | 28 | 17696 |
 | 2026-09-20 | 7:08:23 | 85 | 1:54:00 | 1:24:00 | 65 | 51.0 | 77 | 29 | 26225 |
 | 2026-09-21 | 6:53:00 | 91 | 1:57:00 | 1:39:00 | 69 | 47.0 | 53 | 25 | 16555 |
-| 2026-09-22 | 6:23:00 | 80 | 1:06:00 | 1:27:00 | 73 | 49.0 | 56 | 21 | 7601 |
+| 2026-09-22 | 6:23:00 | 80 | 1:06:00 | 1:27:00 | 73 | 49.0 | 56 | 23 | 8812 |
+| 2026-09-23 | 6:47:00 | 88 | 1:42:00 | 1:47:00 | 69 | 48.0 | 82 | 15 | 183 |
 
 ## Tréningová záťaž
-- Akútna záťaž (7 dní): 207
-- Chronická (týždenný priemer za 28 dní): 124
-- ACWR: 1.66 (optimálne okno 0,8–1,3; nad 1,5 zvýšené riziko)
+- Akútna záťaž (7 dní): 157
+- Chronická (týždenný priemer za 28 dní): 107
+- ACWR: 1.46 (optimálne okno 0,8–1,3; nad 1,5 zvýšené riziko)
 
 ## Objem v aktuálnom mesiaci a roku
 
@@ -59,7 +59,7 @@ Vygenerované: 2026-09-22T20:17
 | Túra | 0.0 km / 0× | 22.0 km / 3× |
 | Plávanie | 0.0 km / 0× | 4.4 km / 5× |
 
-- Uplynulo 22 z 30 dní mesiaca, 265 z 365 dní roka
+- Uplynulo 23 z 30 dní mesiaca, 266 z 365 dní roka
 - Sledované ciele: beh 100 km/mesiac a 1000 km/rok, bike rovnako (dajú sa zmeniť v dashboarde)
 
 ## Tepové zóny
@@ -69,18 +69,17 @@ Vygenerované: 2026-09-22T20:17
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
 | Beh | 3 % | 47 % | 32 % | 16 % | 2 % | 8:51:01 |
-| Bike | 3 % | 50 % | 42 % | 5 % | 0 % | 1:42:15 |
-| **Všetko** | 3 % | 47 % | 34 % | 14 % | 1 % | 10:33:16 |
+| **Všetko** | 3 % | 47 % | 32 % | 16 % | 2 % | 8:51:01 |
 
 ### Posledných 90 dní
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
 | Beh | 3 % | 42 % | 35 % | 15 % | 4 % | 26:25:33 |
-| Bike | 15 % | 23 % | 56 % | 7 % | 0 % | 11:46:06 |
+| Bike | 17 % | 24 % | 53 % | 6 % | 0 % | 9:49:16 |
 | Túra | 89 % | 10 % | 1 % | 0 % | 0 % | 1:23:45 |
 | Plávanie | 38 % | 43 % | 19 % | 0 % | 0 % | 14:15 |
-| **Všetko** | 10 % | 36 % | 40 % | 12 % | 2 % | 39:49:39 |
+| **Všetko** | 10 % | 37 % | 39 % | 12 % | 3 % | 37:52:49 |
 
 ## Osobné rekordy
 
@@ -165,7 +164,7 @@ Vygenerované: 2026-09-22T20:17
 - VO2max: –
 - Endurance score: –
 - Hill score: –
-- Stav tréningu podľa Garminu: PRODUCTIVE_6
+- Stav tréningu podľa Garminu: PRODUCTIVE_2
 
 ---
 
@@ -296,7 +295,7 @@ Stĺpce: datum,sport,km,cas,tempo,tep,max_tep,prevysenie_m,kadencia,TE
 2026-09-21,run,5.50,27:50,5:03,159.0,171.0,34,160,3.5999999046325684
 ```
 
-## Wellness po dňoch (86)
+## Wellness po dňoch (87)
 
 Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres,kroky
 
@@ -386,5 +385,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres
 2026-09-19,8:04:00,88,1:53:00,1:38:00,4:33:00,66,54.0,75,28,17696
 2026-09-20,7:08:23,85,1:54:00,1:24:00,3:51:00,65,51.0,77,29,26225
 2026-09-21,6:53:00,91,1:57:00,1:39:00,3:17:00,69,47.0,53,25,16555
-2026-09-22,6:23:00,80,1:06:00,1:27:00,3:50:00,73,49.0,56,21,7601
+2026-09-22,6:23:00,80,1:06:00,1:27:00,3:50:00,73,49.0,56,23,8812
+2026-09-23,6:47:00,88,1:42:00,1:47:00,3:18:00,69,48.0,82,15,183
 ```
