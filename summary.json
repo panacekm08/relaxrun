@@ -1,21 +1,20 @@
 {
- "generated_at": "2026-09-23T20:33",
+ "generated_at": "2026-09-24T09:26",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-23T20:33",
+  "synced_at": "2026-09-24T09:26",
   "race_predictions": {
    "time5k_s": 1404,
-   "time10k_s": 2968,
-   "half_s": 6752,
-   "marathon_s": 14981
+   "time10k_s": 2969,
+   "half_s": 6754,
+   "marathon_s": 14984
   },
-  "vo2max": 50.9,
   "training_status": "PRODUCTIVE_6",
-  "fitness_age": 26.36846749304152,
+  "fitness_age": 26.245432322976097,
   "intensity_weeks": [
    {
     "week": "2026-07-27",
@@ -65,22 +64,22 @@
   ]
  },
  "training_load": {
-  "acute_7d": 236,
+  "acute_7d": 195,
   "chronic_weekly": 127,
-  "acwr": 1.86,
+  "acwr": 1.53,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 34.5,
-  "pace": "6:21",
-  "hr": 149,
-  "n": 4
+  "km": 29.5,
+  "pace": "6:37",
+  "hr": 143,
+  "n": 3
  },
  "week_prev": {
-  "km": 8.0,
-  "pace": "6:30",
-  "hr": 137,
-  "n": 1
+  "km": 13.0,
+  "pace": "5:51",
+  "hr": 152,
+  "n": 2
  },
  "personal_records": [
   {
@@ -1388,6 +1387,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.36846749304152
+  },
+  {
+   "date": "2026-09-24",
+   "vo2max": null,
+   "half_s": 6754,
+   "time5k_s": 1404,
+   "time10k_s": 2969,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1632,28 +1641,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 23,
+  "day_of_month": 24,
   "days_in_month": 30,
-  "day_of_year": 266,
+  "day_of_year": 267,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23726369130,
-   "date": "2026-07-25",
-   "type": "road_biking",
-   "name": "Kromeriz Road Cycling",
-   "distance_m": 100095.453125,
-   "duration_s": 12872.9541015625,
-   "moving_s": 12854.748992919922,
-   "avg_hr": 146.0,
-   "max_hr": 168.0,
-   "avg_speed_mps": 7.776000022888184,
-   "elev_gain_m": 902.0,
-   "cadence": null,
-   "aerobic_te": 4.199999809265137,
-   "vo2max": null
-  },
   {
    "id": 23743047744,
    "date": "2026-07-26",
@@ -3294,11 +3287,28 @@
    "hrv_last_night": 69,
    "hrv_status": "BALANCED",
    "bb_max": 89,
-   "bb_min": 25,
+   "bb_min": 21,
    "readiness": 52,
    "rhr": 48.0,
    "steps": 22120,
-   "stress_avg": 25
+   "stress_avg": 26
+  },
+  {
+   "date": "2026-09-24",
+   "sleep_s": 23880,
+   "sleep_score": 80,
+   "deep_s": 5100,
+   "light_s": 13740,
+   "rem_s": 5040,
+   "awake_s": 1560,
+   "hrv_last_night": 68,
+   "hrv_status": "BALANCED",
+   "bb_max": 79,
+   "bb_min": 21,
+   "readiness": 60,
+   "rhr": 49.0,
+   "steps": 2838,
+   "stress_avg": 22
   }
  ]
 }
