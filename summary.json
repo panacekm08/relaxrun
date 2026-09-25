@@ -1,19 +1,19 @@
 {
- "generated_at": "2026-09-24T20:35",
+ "generated_at": "2026-09-25T09:43",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-24T20:35",
+  "synced_at": "2026-09-25T09:43",
   "race_predictions": {
-   "time5k_s": 1404,
-   "time10k_s": 2969,
-   "half_s": 6754,
-   "marathon_s": 14984
+   "time5k_s": 1406,
+   "time10k_s": 2970,
+   "half_s": 6758,
+   "marathon_s": 14995
   },
-  "training_status": "PRODUCTIVE_6",
+  "training_status": "PRODUCTIVE_2",
   "fitness_age": 26.245432322976097,
   "intensity_weeks": [
    {
@@ -64,22 +64,22 @@
   ]
  },
  "training_load": {
-  "acute_7d": 195,
-  "chronic_weekly": 127,
-  "acwr": 1.53,
+  "acute_7d": 120,
+  "chronic_weekly": 114,
+  "acwr": 1.05,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 29.5,
-  "pace": "6:37",
-  "hr": 143,
-  "n": 3
+  "km": 17.5,
+  "pace": "6:17",
+  "hr": 148,
+  "n": 2
  },
  "week_prev": {
-  "km": 13.0,
-  "pace": "5:51",
-  "hr": 152,
-  "n": 2
+  "km": 25.0,
+  "pace": "6:26",
+  "hr": 146,
+  "n": 3
  },
  "personal_records": [
   {
@@ -1397,6 +1397,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-09-25",
+   "vo2max": null,
+   "half_s": 6758,
+   "time5k_s": 1406,
+   "time10k_s": 2970,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1641,28 +1651,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 24,
+  "day_of_month": 25,
   "days_in_month": 30,
-  "day_of_year": 267,
+  "day_of_year": 268,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23743047744,
-   "date": "2026-07-26",
-   "type": "running",
-   "name": "Puchov Running",
-   "distance_m": 7004.0400390625,
-   "duration_s": 3193.68505859375,
-   "moving_s": 3182.6189880371094,
-   "avg_hr": 134.0,
-   "max_hr": 157.0,
-   "avg_speed_mps": 2.193000078201294,
-   "elev_gain_m": 41.0,
-   "cadence": 154.75,
-   "aerobic_te": 2.5,
-   "vo2max": 50.0
-  },
   {
    "id": 23767029414,
    "date": "2026-07-28",
@@ -3307,8 +3301,25 @@
    "bb_min": 21,
    "readiness": 60,
    "rhr": 49.0,
-   "steps": 5223,
-   "stress_avg": 25
+   "steps": 7645,
+   "stress_avg": 27
+  },
+  {
+   "date": "2026-09-25",
+   "sleep_s": 21455,
+   "sleep_score": 78,
+   "deep_s": 6360,
+   "light_s": 8700,
+   "rem_s": 6420,
+   "awake_s": 540,
+   "hrv_last_night": 70,
+   "hrv_status": "BALANCED",
+   "bb_max": 88,
+   "bb_min": 27,
+   "readiness": 75,
+   "rhr": 48.0,
+   "steps": 1584,
+   "stress_avg": 16
   }
  ]
 }
