@@ -1,30 +1,30 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-09-26T09:27
-Vygenerované: 2026-09-26T09:27
+Synchronizované: 2026-09-26T20:00
+Vygenerované: 2026-09-26T20:00
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:52:51
-- Rozdiel: +7:51 (nad cieľom)
-- Ďalšie predikcie: 5 km 23:30, 10 km 49:34, maratón 4:10:27
+- Garmin predikcia polmaratónu: 1:51:44
+- Rozdiel: +6:44 (nad cieľom)
+- Ďalšie predikcie: 5 km 23:03, 10 km 49:09, maratón 4:07:59
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
 | Metrika | Posledných 7 dní | Predchádzajúcich 7 | Zmena |
 |---|---|---|---|
-| Počet behov | 2 | 3 | -1 |
-| Objem | 17.5 km | 25.0 km | -7.5 km |
-| Priemerné tempo | 6:17/km | 6:26/km | – |
-| Priemerný tep | 148 bpm | 146 bpm | +2 bpm |
+| Počet behov | 3 | 3 | +0 |
+| Objem | 22.5 km | 25.0 km | -2.5 km |
+| Priemerné tempo | 5:56/km | 6:26/km | – |
+| Priemerný tep | 155 bpm | 146 bpm | +9 bpm |
 | Priemerný spánok | 6:40:25 | 7:23:56 | -44 min |
 
 ## Regenerácia (priemer za 7 dní)
 - Priemerný spánok: 6:40:25
 - HRV: 69 ms
 - Pokojový tep: 48 bpm
-- Kroky: 13711 denne
-- Naposledy (2026-09-26): spánok 6:56:00, skóre 92, HRV 69, pripravenosť 87, stres 14
+- Kroky: 17788 denne
+- Naposledy (2026-09-26): spánok 6:56:00, skóre 92, HRV 69, pripravenosť 44, stres 22
 
 ### Posledných 14 dní po dňoch
 
@@ -43,18 +43,18 @@ Vygenerované: 2026-09-26T09:27
 | 2026-09-23 | 6:47:00 | 88 | 1:42:00 | 1:47:00 | 69 | 48.0 | 52 | 26 | 22120 |
 | 2026-09-24 | 6:38:00 | 80 | 1:25:00 | 1:24:00 | 68 | 49.0 | 60 | 27 | 7645 |
 | 2026-09-25 | 5:57:35 | 78 | 1:46:00 | 1:47:00 | 70 | 48.0 | 75 | 26 | 13836 |
-| 2026-09-26 | 6:56:00 | 92 | 2:51:00 | 2:07:00 | 69 | 46.0 | 87 | 14 | 783 |
+| 2026-09-26 | 6:56:00 | 92 | 2:51:00 | 2:07:00 | 69 | 46.0 | 44 | 22 | 29322 |
 
 ## Tréningová záťaž
-- Akútna záťaž (7 dní): 120
-- Chronická (týždenný priemer za 28 dní): 114
-- ACWR: 1.05 (optimálne okno 0,8–1,3; nad 1,5 zvýšené riziko)
+- Akútna záťaž (7 dní): 161
+- Chronická (týždenný priemer za 28 dní): 124
+- ACWR: 1.3 (optimálne okno 0,8–1,3; nad 1,5 zvýšené riziko)
 
 ## Objem v aktuálnom mesiaci a roku
 
 | Šport | Mesiac (2026-09) | Rok (2026) |
 |---|---|---|
-| Beh | 59.5 km / 7× | 534.0 km / 61× |
+| Beh | 64.6 km / 8× | 539.0 km / 62× |
 | Bike | 0.0 km / 0× | 487.2 km / 11× |
 | Túra | 0.0 km / 0× | 22.0 km / 3× |
 | Plávanie | 0.0 km / 0× | 4.4 km / 5× |
@@ -68,24 +68,24 @@ Vygenerované: 2026-09-26T09:27
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 3 % | 47 % | 34 % | 15 % | 2 % | 8:23:39 |
-| **Všetko** | 3 % | 47 % | 34 % | 15 % | 2 % | 8:23:39 |
+| Beh | 3 % | 44 % | 33 % | 15 % | 4 % | 8:47:08 |
+| **Všetko** | 3 % | 44 % | 33 % | 15 % | 4 % | 8:47:08 |
 
 ### Posledných 90 dní
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 3 % | 43 % | 36 % | 14 % | 4 % | 27:10:25 |
+| Beh | 3 % | 42 % | 36 % | 14 % | 4 % | 27:33:54 |
 | Bike | 17 % | 24 % | 53 % | 6 % | 0 % | 9:49:16 |
 | Túra | 89 % | 10 % | 1 % | 0 % | 0 % | 1:23:45 |
 | Plávanie | 38 % | 43 % | 19 % | 0 % | 0 % | 14:15 |
-| **Všetko** | 10 % | 37 % | 39 % | 11 % | 3 % | 38:37:41 |
+| **Všetko** | 10 % | 37 % | 39 % | 11 % | 3 % | 39:01:10 |
 
 ## Osobné rekordy
 
 | Disciplína | Výkon | Tempo | Dátum |
 |---|---|---|---|
-| 5 km | 23:57 | 4:47 | 2026-09-17 |
+| 5 km | 23:37 | 4:43 | 2026-09-26 |
 | 10 km | 51:31 | 5:09 | 2026-03-29 |
 | Polmaratón | 1:50:56 | 5:16 | 2026-04-12 |
 | Najdlhší beh | 24.2 km | 9:03 | 2026-07-19 |
@@ -95,6 +95,7 @@ Vygenerované: 2026-09-26T09:27
 
 | Dátum | Šport | km | Čas | Tempo | Tep | Prevýšenie |
 |---|---|---|---|---|---|---|
+| 2026-09-26 | Beh | 5.0 | 23:39 | 4:43 | 169.0 | 4 m |
 | 2026-09-23 | Beh | 12.0 | 1:22:17 | 6:51 | 137.0 | 116 m |
 | 2026-09-21 | Beh | 5.5 | 27:50 | 5:03 | 159.0 | 34 m |
 | 2026-09-18 | Beh | 12.0 | 1:25:04 | 7:05 | 133.0 | 102 m |
@@ -134,13 +135,12 @@ Vygenerované: 2026-09-26T09:27
 | 2026-07-05 | Túra | 8.6 | 3:02:58 | 21:11 | 82.0 | 34 m |
 | 2026-06-25 | Beh | 6.0 | 36:59 | 6:10 | 154.0 | 42 m |
 | 2026-06-24 | Bike | 60.0 | 2:07:47 | 2:08 | 141.0 | 394 m |
-| 2026-06-23 | Beh | 8.0 | 49:01 | 6:07 | 159.0 | 54 m |
 
 ## Mesačné súčty (km)
 
 | Mesiac | Beh | Bike | Túra | Plávanie | Prevýšenie | Aktivít |
 |---|---|---|---|---|---|---|
-| 2026-09 | 60 | 0 | 0 | 0.0 | 600 m | 7 |
+| 2026-09 | 65 | 0 | 0 | 0.0 | 604 m | 8 |
 | 2026-08 | 73 | 127 | 6 | 0.4 | 2231 m | 13 |
 | 2026-07 | 108 | 158 | 16 | 0.0 | 3412 m | 17 |
 | 2026-06 | 14 | 60 | 0 | 0.0 | 490 m | 3 |
@@ -157,14 +157,14 @@ Vygenerované: 2026-09-26T09:27
 
 | Rok | Beh | Bike | Túra | Plávanie | Prevýšenie | Aktivít |
 |---|---|---|---|---|---|---|
-| 2026 | 534 | 487 | 22 | 4.4 | 10319 m | 80 |
+| 2026 | 539 | 487 | 22 | 4.4 | 10323 m | 81 |
 | 2025 | 187 | 370 | 28 | 0.0 | 5732 m | 37 |
 
 ## Aktuálne hodnoty
-- VO2max: –
+- VO2max: 50.6
 - Endurance score: –
 - Hill score: –
-- Stav tréningu podľa Garminu: MAINTAINING_3
+- Stav tréningu podľa Garminu: PRODUCTIVE_6
 
 ---
 
@@ -172,7 +172,7 @@ Vygenerované: 2026-09-26T09:27
 
 Nasledujú úplné dáta od začiatku merania, v kompaktnom CSV formáte.
 
-## Všetky aktivity (117)
+## Všetky aktivity (118)
 
 Stĺpce: datum,sport,km,cas,tempo,tep,max_tep,prevysenie_m,kadencia,TE
 
@@ -294,6 +294,7 @@ Stĺpce: datum,sport,km,cas,tempo,tep,max_tep,prevysenie_m,kadencia,TE
 2026-09-18,run,12.01,1:25:04,7:05,133.0,152.0,102,159,3.0
 2026-09-21,run,5.50,27:50,5:03,159.0,171.0,34,160,3.5999999046325684
 2026-09-23,run,12.01,1:22:17,6:51,137.0,165.0,116,159,3.200000047683716
+2026-09-26,run,5.01,23:39,4:43,169.0,183.0,4,165,3.9000000953674316
 ```
 
 ## Wellness po dňoch (90)
@@ -390,5 +391,5 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres
 2026-09-23,6:47:00,88,1:42:00,1:47:00,3:18:00,69,48.0,52,26,22120
 2026-09-24,6:38:00,80,1:25:00,1:24:00,3:49:00,68,49.0,60,27,7645
 2026-09-25,5:57:35,78,1:46:00,1:47:00,2:25:00,70,48.0,75,26,13836
-2026-09-26,6:56:00,92,2:51:00,2:07:00,1:58:00,69,46.0,87,14,783
+2026-09-26,6:56:00,92,2:51:00,2:07:00,1:58:00,69,46.0,44,22,29322
 ```
