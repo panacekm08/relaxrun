@@ -1,19 +1,18 @@
 {
- "generated_at": "2026-09-26T20:00",
+ "generated_at": "2026-09-27T10:07",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-26T20:00",
+  "synced_at": "2026-09-27T10:07",
   "race_predictions": {
-   "time5k_s": 1383,
-   "time10k_s": 2949,
-   "half_s": 6704,
-   "marathon_s": 14879
+   "time5k_s": 1384,
+   "time10k_s": 2930,
+   "half_s": 6677,
+   "marathon_s": 14836
   },
-  "vo2max": 50.6,
   "training_status": "PRODUCTIVE_6",
   "fitness_age": 26.245432322976097,
   "intensity_weeks": [
@@ -66,8 +65,8 @@
  },
  "training_load": {
   "acute_7d": 161,
-  "chronic_weekly": 124,
-  "acwr": 1.3,
+  "chronic_weekly": 107,
+  "acwr": 1.51,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
@@ -1418,6 +1417,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-09-27",
+   "vo2max": null,
+   "half_s": 6677,
+   "time5k_s": 1384,
+   "time10k_s": 2930,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1662,28 +1671,12 @@
   },
   "month_label": "2026-09",
   "year_label": "2026",
-  "day_of_month": 26,
+  "day_of_month": 27,
   "days_in_month": 30,
-  "day_of_year": 269,
+  "day_of_year": 270,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23767029414,
-   "date": "2026-07-28",
-   "type": "running",
-   "name": "Kromeriz Running",
-   "distance_m": 11499.6103515625,
-   "duration_s": 3806.22900390625,
-   "moving_s": 3800.822021484375,
-   "avg_hr": 159.0,
-   "max_hr": 171.0,
-   "avg_speed_mps": 3.020999908447266,
-   "elev_gain_m": 67.0,
-   "cadence": 162.328125,
-   "aerobic_te": 4.300000190734863,
-   "vo2max": 50.0
-  },
   {
    "id": 23778304839,
    "date": "2026-07-29",
@@ -3359,11 +3352,28 @@
    "hrv_last_night": 69,
    "hrv_status": "BALANCED",
    "bb_max": 95,
-   "bb_min": 23,
+   "bb_min": 22,
    "readiness": 44,
    "rhr": 46.0,
-   "steps": 29322,
-   "stress_avg": 22
+   "steps": 30199,
+   "stress_avg": 26
+  },
+  {
+   "date": "2026-09-27",
+   "sleep_s": 17820,
+   "sleep_score": 53,
+   "deep_s": 4620,
+   "light_s": 13200,
+   "rem_s": 0,
+   "awake_s": 1620,
+   "hrv_last_night": 74,
+   "hrv_status": "BALANCED",
+   "bb_max": 68,
+   "bb_min": 20,
+   "readiness": 27,
+   "rhr": 50.0,
+   "steps": 4338,
+   "stress_avg": 28
   }
  ]
 }
