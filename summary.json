@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-09-30T21:28",
+ "generated_at": "2026-10-01T11:05",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-09-30T21:28",
+  "synced_at": "2026-10-01T11:05",
   "race_predictions": {
-   "time5k_s": 1371,
-   "time10k_s": 2921,
-   "half_s": 6657,
-   "marathon_s": 14800
+   "time5k_s": 1372,
+   "time10k_s": 2922,
+   "half_s": 6662,
+   "marathon_s": 14812
   },
   "training_status": "MAINTAINING_3",
   "fitness_age": 26.245432322976097,
@@ -76,10 +76,10 @@
   "n": 2
  },
  "week_prev": {
-  "km": 34.5,
-  "pace": "6:21",
-  "hr": 149,
-  "n": 4
+  "km": 29.5,
+  "pace": "6:37",
+  "hr": 143,
+  "n": 3
  },
  "personal_records": [
   {
@@ -1457,6 +1457,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-10-01",
+   "vo2max": null,
+   "half_s": 6662,
+   "time5k_s": 1372,
+   "time10k_s": 2922,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
@@ -1649,10 +1659,10 @@
  "counters": {
   "month": {
    "run": {
-    "km": 72.6,
-    "n": 9,
-    "elev": 756,
-    "time_s": 27653
+    "km": 0.0,
+    "n": 0,
+    "elev": 0,
+    "time_s": 0
    },
    "bike": {
     "km": 0.0,
@@ -1699,30 +1709,14 @@
     "time_s": 9001
    }
   },
-  "month_label": "2026-09",
+  "month_label": "2026-10",
   "year_label": "2026",
-  "day_of_month": 30,
-  "days_in_month": 30,
-  "day_of_year": 273,
+  "day_of_month": 1,
+  "days_in_month": 31,
+  "day_of_year": 274,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23810458756,
-   "date": "2026-08-01",
-   "type": "road_biking",
-   "name": "Puchov Road Cycling",
-   "distance_m": 74141.0625,
-   "duration_s": 8768.5615234375,
-   "moving_s": 8756.97900390625,
-   "avg_hr": 143.0,
-   "max_hr": 172.0,
-   "avg_speed_mps": 8.454999923706055,
-   "elev_gain_m": 435.0,
-   "cadence": null,
-   "aerobic_te": 3.5999999046325684,
-   "vo2max": null
-  },
   {
    "id": 23853440895,
    "date": "2026-08-04",
@@ -2061,16 +2055,6 @@
   }
  ],
  "wellness_last_90d": [
-  {
-   "date": "2026-07-02",
-   "sleep_s": 24660,
-   "sleep_score": 85,
-   "hrv_last_night": 58,
-   "hrv_status": "BALANCED",
-   "bb_max": 90,
-   "bb_min": 30,
-   "readiness": 95
-  },
   {
    "date": "2026-07-03",
    "sleep_s": 22320,
@@ -3420,11 +3404,28 @@
    "hrv_last_night": 68,
    "hrv_status": "BALANCED",
    "bb_max": 95,
-   "bb_min": 30,
+   "bb_min": 28,
    "readiness": 80,
    "rhr": 45.0,
-   "steps": 8720,
+   "steps": 8888,
    "stress_avg": 23
+  },
+  {
+   "date": "2026-10-01",
+   "sleep_s": 23389,
+   "sleep_score": 85,
+   "deep_s": 6300,
+   "light_s": 11700,
+   "rem_s": 5400,
+   "awake_s": 960,
+   "hrv_last_night": 75,
+   "hrv_status": "BALANCED",
+   "bb_max": 90,
+   "bb_min": 25,
+   "readiness": 79,
+   "rhr": 49.0,
+   "steps": 2034,
+   "stress_avg": 15
   }
  ]
 }
