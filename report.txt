@@ -1,13 +1,13 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-10-04T10:41
-Vygenerované: 2026-10-04T10:41
+Synchronizované: 2026-10-04T20:15
+Vygenerované: 2026-10-04T20:15
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:51:23
-- Rozdiel: +6:23 (nad cieľom)
-- Ďalšie predikcie: 5 km 22:58, 10 km 48:49, maratón 4:07:46
+- Garmin predikcia polmaratónu: 1:51:36
+- Rozdiel: +6:36 (nad cieľom)
+- Ďalšie predikcie: 5 km 23:02, 10 km 48:53, maratón 4:08:18
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
@@ -22,9 +22,9 @@ Vygenerované: 2026-10-04T10:41
 ## Regenerácia (priemer za 7 dní)
 - Priemerný spánok: 6:29:48
 - HRV: 70 ms
-- Pokojový tep: 48 bpm
-- Kroky: 9447 denne
-- Naposledy (2026-10-04): spánok –, skóre –, HRV –, pripravenosť –, stres –
+- Pokojový tep: 49 bpm
+- Kroky: 8482 denne
+- Naposledy (2026-10-04): spánok –, skóre –, HRV –, pripravenosť 76, stres 51
 
 ### Posledných 14 dní po dňoch
 
@@ -42,8 +42,8 @@ Vygenerované: 2026-10-04T10:41
 | 2026-09-30 | 6:17:00 | 84 | 2:03:00 | 1:57:00 | 68 | 45.0 | 80 | 23 | 8888 |
 | 2026-10-01 | 6:29:49 | 85 | 1:45:00 | 1:30:00 | 75 | 49.0 | 79 | 24 | 8899 |
 | 2026-10-02 | 5:13:00 | 74 | 2:27:00 | 55:00 | 68 | 46.0 | 37 | 31 | 6605 |
-| 2026-10-03 | 7:30:00 | 66 | 1:07:00 | 1:16:00 | 67 | 52.0 | 44 | 17 | 282 |
-| 2026-10-04 | – | – | – | – | – | – | – | – | – |
+| 2026-10-03 | 7:30:00 | 66 | 1:07:00 | 1:16:00 | 67 | 52.0 | 50 | 19 | 2599 |
+| 2026-10-04 | – | – | – | – | – | 52.0 | 76 | 51 | 373 |
 
 ## Tréningová záťaž
 - Akútna záťaž (7 dní): 201
@@ -165,7 +165,7 @@ Vygenerované: 2026-10-04T10:41
 - VO2max: –
 - Endurance score: –
 - Hill score: –
-- Stav tréningu podľa Garminu: –
+- Stav tréningu podľa Garminu: MAINTAINING_4
 
 ---
 
@@ -401,6 +401,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost,stres
 2026-09-30,6:17:00,84,2:03:00,1:57:00,2:17:00,68,45.0,80,23,8888
 2026-10-01,6:29:49,85,1:45:00,1:30:00,3:15:00,75,49.0,79,24,8899
 2026-10-02,5:13:00,74,2:27:00,55:00,1:51:00,68,46.0,37,31,6605
-2026-10-03,7:30:00,66,1:07:00,1:16:00,5:07:00,67,52.0,44,17,282
-2026-10-04,,,,,,,,,,
+2026-10-03,7:30:00,66,1:07:00,1:16:00,5:07:00,67,52.0,50,19,2599
+2026-10-04,,,,,,,52.0,76,51,373
 ```

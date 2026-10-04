@@ -1,18 +1,19 @@
 {
- "generated_at": "2026-10-04T10:41",
+ "generated_at": "2026-10-04T20:15",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-04T10:41",
+  "synced_at": "2026-10-04T20:15",
   "race_predictions": {
-   "time5k_s": 1378,
-   "time10k_s": 2929,
-   "half_s": 6683,
-   "marathon_s": 14866
+   "time5k_s": 1382,
+   "time10k_s": 2933,
+   "half_s": 6696,
+   "marathon_s": 14898
   },
+  "training_status": "MAINTAINING_4",
   "fitness_age": 26.245432322976097,
   "intensity_weeks": [
    {
@@ -1490,9 +1491,9 @@
   {
    "date": "2026-10-04",
    "vo2max": null,
-   "half_s": 6683,
-   "time5k_s": 1378,
-   "time10k_s": 2929,
+   "half_s": 6696,
+   "time5k_s": 1382,
+   "time10k_s": 2933,
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
@@ -3464,10 +3465,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 75,
    "bb_min": 5,
-   "readiness": 44,
+   "readiness": 50,
    "rhr": 52.0,
-   "steps": 282,
-   "stress_avg": 17
+   "steps": 2599,
+   "stress_avg": 19
   },
   {
    "date": "2026-10-04",
@@ -3478,7 +3479,13 @@
    "rem_s": null,
    "awake_s": null,
    "hrv_last_night": null,
-   "hrv_status": null
+   "hrv_status": "BALANCED",
+   "bb_max": 67,
+   "bb_min": 57,
+   "readiness": 76,
+   "rhr": 52.0,
+   "steps": 373,
+   "stress_avg": 51
   }
  ]
 }
