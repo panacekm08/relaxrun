@@ -1,26 +1,21 @@
 {
- "generated_at": "2026-10-04T20:15",
+ "generated_at": "2026-10-05T11:44",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-04T20:15",
+  "synced_at": "2026-10-05T11:44",
   "race_predictions": {
-   "time5k_s": 1382,
-   "time10k_s": 2933,
-   "half_s": 6696,
-   "marathon_s": 14898
+   "time5k_s": 1383,
+   "time10k_s": 2935,
+   "half_s": 6701,
+   "marathon_s": 14912
   },
-  "training_status": "MAINTAINING_4",
+  "training_status": "MAINTAINING_3",
   "fitness_age": 26.245432322976097,
   "intensity_weeks": [
-   {
-    "week": "2026-08-03",
-    "moderate": 0,
-    "vigorous": 0
-   },
    {
     "week": "2026-08-10",
     "moderate": 0,
@@ -60,25 +55,30 @@
     "week": "2026-09-28",
     "moderate": 0,
     "vigorous": 0
+   },
+   {
+    "week": "2026-10-05",
+    "moderate": 0,
+    "vigorous": 0
    }
   ]
  },
  "training_load": {
-  "acute_7d": 201,
-  "chronic_weekly": 157,
-  "acwr": 1.28,
+  "acute_7d": 154,
+  "chronic_weekly": 148,
+  "acwr": 1.05,
   "note": "ACWR 0.8-1.3 = optimalne okno"
  },
  "week_now": {
-  "km": 8.0,
-  "pace": "6:32",
-  "hr": 134,
-  "n": 1
+  "km": 0.0,
+  "pace": "–",
+  "hr": null,
+  "n": 0
  },
  "week_prev": {
-  "km": 22.5,
-  "pace": "5:56",
-  "hr": 155,
+  "km": 25.0,
+  "pace": "6:19",
+  "hr": 147,
   "n": 3
  },
  "personal_records": [
@@ -1497,15 +1497,20 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 26.245432322976097
+  },
+  {
+   "date": "2026-10-05",
+   "vo2max": null,
+   "half_s": 6701,
+   "time5k_s": 1383,
+   "time10k_s": 2935,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.245432322976097
   }
  ],
  "gear": [],
  "intensity_minutes_weekly": [
-  {
-   "week": "2026-08-03",
-   "moderate": 0,
-   "vigorous": 0
-  },
   {
    "week": "2026-08-10",
    "moderate": 0,
@@ -1543,6 +1548,11 @@
   },
   {
    "week": "2026-09-28",
+   "moderate": 0,
+   "vigorous": 0
+  },
+  {
+   "week": "2026-10-05",
    "moderate": 0,
    "vigorous": 0
   }
@@ -1750,28 +1760,12 @@
   },
   "month_label": "2026-10",
   "year_label": "2026",
-  "day_of_month": 4,
+  "day_of_month": 5,
   "days_in_month": 31,
-  "day_of_year": 277,
+  "day_of_year": 278,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23865653115,
-   "date": "2026-08-05",
-   "type": "running",
-   "name": "Kromeriz Running",
-   "distance_m": 6296.47998046875,
-   "duration_s": 2762.468017578125,
-   "moving_s": 2759.102996826172,
-   "avg_hr": 133.0,
-   "max_hr": 145.0,
-   "avg_speed_mps": 2.2790000438690186,
-   "elev_gain_m": 57.0,
-   "cadence": 159.921875,
-   "aerobic_te": 2.299999952316284,
-   "vo2max": 50.0
-  },
   {
    "id": 23937086291,
    "date": "2026-08-11",
@@ -2094,16 +2088,6 @@
   }
  ],
  "wellness_last_90d": [
-  {
-   "date": "2026-07-06",
-   "sleep_s": 24720,
-   "sleep_score": 78,
-   "hrv_last_night": 62,
-   "hrv_status": "UNBALANCED",
-   "bb_max": 81,
-   "bb_min": 17,
-   "readiness": 81
-  },
   {
    "date": "2026-07-07",
    "sleep_s": 23160,
@@ -3481,11 +3465,28 @@
    "hrv_last_night": null,
    "hrv_status": "BALANCED",
    "bb_max": 67,
-   "bb_min": 57,
+   "bb_min": 38,
    "readiness": 76,
-   "rhr": 52.0,
-   "steps": 373,
-   "stress_avg": 51
+   "rhr": 51.0,
+   "steps": 1895,
+   "stress_avg": 38
+  },
+  {
+   "date": "2026-10-05",
+   "sleep_s": 30180,
+   "sleep_score": 92,
+   "deep_s": 5040,
+   "light_s": 18000,
+   "rem_s": 7140,
+   "awake_s": 1080,
+   "hrv_last_night": 73,
+   "hrv_status": "BALANCED",
+   "bb_max": 99,
+   "bb_min": 38,
+   "readiness": 80,
+   "rhr": 51.0,
+   "steps": 1527,
+   "stress_avg": 16
   }
  ]
 }
