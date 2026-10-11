@@ -1,7 +1,7 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-10-11T16:32
-Vygenerované: 2026-10-11T16:32
+Synchronizované: 2026-10-11T16:59
+Vygenerované: 2026-10-11T16:59
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
@@ -99,6 +99,8 @@ Vygenerované: 2026-10-11T16:32
 - „Garmin" = skutočný najrýchlejší úsek podľa Garminu. „odhad" = priemerné tempo celej aktivity prepočítané na vzdialenosť (Garmin rekord nebol dostupný).
 
 ## Posledných 40 aktivít
+
+Všetkých 126 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súbore activities.csv.
 
 | Dátum | Šport | km | Čas | Tempo / rýchlosť | Tep | Prevýšenie |
 |---|---|---|---|---|---|---|
