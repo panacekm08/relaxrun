@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-11T10:57",
+ "generated_at": "2026-10-11T16:12",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-11T10:57",
+  "synced_at": "2026-10-11T16:12",
   "race_predictions": {
    "time5k_s": 1362,
    "time10k_s": 2912,
@@ -14,7 +14,47 @@
    "marathon_s": 14781
   },
   "training_status": "PRODUCTIVE_6",
+  "garmin_load": {
+   "ratio": 1.5,
+   "acute": 543,
+   "chronic": 355,
+   "status": "HIGH",
+   "chronic_min": 284.0,
+   "chronic_max": 532.5,
+   "raw": {
+    "acwrPercent": 66,
+    "acwrStatus": "HIGH",
+    "acwrStatusFeedback": "FEEDBACK_4",
+    "dailyTrainingLoadAcute": 543,
+    "maxTrainingLoadChronic": 532.5,
+    "minTrainingLoadChronic": 284.0,
+    "dailyTrainingLoadChronic": 355,
+    "dailyAcuteChronicWorkloadRatio": 1.5
+   }
+  },
+  "endurance_score": 6007,
+  "hill_score": 38,
   "fitness_age": 27.192869657680944,
+  "garmin_prs": [
+   {
+    "key": "5k",
+    "value_s": 1419.1429443359375,
+    "activity_id": 24508491150,
+    "date": "2026-09-26"
+   },
+   {
+    "key": "10k",
+    "value_s": 3029.41796875,
+    "activity_id": 22497435537,
+    "date": "2026-04-12"
+   },
+   {
+    "key": "half",
+    "value_s": 6651.17919921875,
+    "activity_id": 22497435537,
+    "date": "2026-04-12"
+   }
+  ],
   "intensity_weeks": [
    {
     "week": "2026-08-10",
@@ -64,11 +104,14 @@
   ]
  },
  "training_load": {
-  "acute_7d": 402,
-  "chronic_weekly": 233,
-  "acwr": 1.73,
-  "note": "ACWR 0.8-1.3 = optimalne okno"
+  "source": "garmin",
+  "acute": 543,
+  "chronic": 355,
+  "acwr": 1.5,
+  "band": "high",
+  "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
+ "readiness_note": "readiness = ranna hodnota po prebudeni, readiness_now = posledna hodnota dna",
  "week_now": {
   "km": 34.4,
   "pace": "5:58",
@@ -85,37 +128,37 @@
   {
    "label": "5 km",
    "date": "2026-09-26",
-   "time": "23:37",
-   "pace": "4:43",
-   "note": "5.0 km"
+   "time": "23:39",
+   "pace": "4:44",
+   "note": "Garmin"
   },
   {
    "label": "10 km",
-   "date": "2026-10-10",
-   "time": "49:23",
-   "pace": "4:56",
-   "note": "11.3 km"
+   "date": "2026-04-12",
+   "time": "50:29",
+   "pace": "5:03",
+   "note": "Garmin"
   },
   {
    "label": "Polmaratón",
    "date": "2026-04-12",
-   "time": "1:50:56",
-   "pace": "5:16",
-   "note": "21.3 km"
+   "time": "1:50:51",
+   "pace": "5:15",
+   "note": "Garmin"
   },
   {
    "label": "Najdlhší beh",
    "date": "2026-07-19",
    "time": "24.2 km",
    "pace": "9:03",
-   "note": "3:38:43"
+   "note": "čas 3:38:43"
   },
   {
    "label": "Najviac prevýšenia",
    "date": "2026-07-19",
    "time": "1056 m",
-   "pace": "24.2 km",
-   "note": "3:38:43"
+   "pace": "–",
+   "note": "24.2 km, 3:38:43"
   }
  ],
  "hr_zones_by_activity": [
@@ -1564,9 +1607,10 @@
    "half_s": 6638,
    "time5k_s": 1362,
    "time10k_s": 2912,
-   "endurance_score": null,
-   "hill_score": null,
-   "fitness_age": 27.192869657680944
+   "endurance_score": 6007,
+   "hill_score": 38,
+   "fitness_age": 27.192869657680944,
+   "load_ratio": 1.5
   }
  ],
  "gear": [],
@@ -1758,6 +1802,7 @@
   {
    "y": "2025",
    "swim": 0.0,
+   "partial_from": "2025-09-01",
    "run": 187,
    "bike": 370,
    "hike": 28,
@@ -2631,7 +2676,10 @@
    "readiness": 62,
    "rhr": 46.0,
    "steps": 19221,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "MODERATE",
+   "readiness_now": 62,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-12",
@@ -2648,7 +2696,10 @@
    "readiness": 67,
    "rhr": 46.0,
    "steps": 14577,
-   "stress_avg": 22
+   "stress_avg": 22,
+   "readiness_level": "MODERATE",
+   "readiness_now": 67,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-13",
@@ -2662,10 +2713,13 @@
    "hrv_status": "UNBALANCED",
    "bb_max": 100,
    "bb_min": 20,
-   "readiness": 78,
+   "readiness": 90,
    "rhr": 48.0,
    "steps": 20303,
-   "stress_avg": 30
+   "stress_avg": 30,
+   "readiness_level": "HIGH",
+   "readiness_now": 78,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-14",
@@ -2682,7 +2736,10 @@
    "readiness": 92,
    "rhr": 49.0,
    "steps": 4623,
-   "stress_avg": 21
+   "stress_avg": 21,
+   "readiness_level": "HIGH",
+   "readiness_now": 92,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-15",
@@ -2699,7 +2756,10 @@
    "readiness": 84,
    "rhr": 53.0,
    "steps": 234,
-   "stress_avg": 23
+   "stress_avg": 23,
+   "readiness_level": "HIGH",
+   "readiness_now": 84,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-16",
@@ -2713,10 +2773,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 93,
    "bb_min": 22,
-   "readiness": 95,
+   "readiness": 97,
    "rhr": 49.0,
    "steps": 11963,
-   "stress_avg": 34
+   "stress_avg": 34,
+   "readiness_level": "PRIME",
+   "readiness_now": 95,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-17",
@@ -2733,7 +2796,10 @@
    "readiness": 100,
    "rhr": 50.0,
    "steps": 8229,
-   "stress_avg": 28
+   "stress_avg": 28,
+   "readiness_level": "PRIME",
+   "readiness_now": 100,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-18",
@@ -2750,7 +2816,10 @@
    "readiness": 100,
    "rhr": 45.0,
    "steps": 12155,
-   "stress_avg": 23
+   "stress_avg": 23,
+   "readiness_level": "PRIME",
+   "readiness_now": 100,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-19",
@@ -2764,10 +2833,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 82,
    "bb_min": 20,
-   "readiness": 80,
+   "readiness": 100,
    "rhr": 48.0,
    "steps": 16067,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "PRIME",
+   "readiness_now": 80,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-20",
@@ -2784,7 +2856,10 @@
    "readiness": 96,
    "rhr": 46.0,
    "steps": 7500,
-   "stress_avg": 24
+   "stress_avg": 24,
+   "readiness_level": "PRIME",
+   "readiness_now": 96,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-21",
@@ -2801,7 +2876,10 @@
    "readiness": 86,
    "rhr": 53.0,
    "steps": 5462,
-   "stress_avg": 37
+   "stress_avg": 37,
+   "readiness_level": "HIGH",
+   "readiness_now": 86,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-22",
@@ -2815,10 +2893,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 67,
    "bb_min": 9,
-   "readiness": 5,
+   "readiness": 99,
    "rhr": 53.0,
    "steps": 24065,
-   "stress_avg": 37
+   "stress_avg": 37,
+   "readiness_level": "PRIME",
+   "readiness_now": 5,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-23",
@@ -2835,7 +2916,10 @@
    "readiness": 1,
    "rhr": 57.0,
    "steps": 6274,
-   "stress_avg": 37
+   "stress_avg": 37,
+   "readiness_level": "POOR",
+   "readiness_now": 1,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-24",
@@ -2852,7 +2936,10 @@
    "readiness": 1,
    "rhr": 53.0,
    "steps": 10193,
-   "stress_avg": 28
+   "stress_avg": 28,
+   "readiness_level": "POOR",
+   "readiness_now": 1,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-25",
@@ -2866,10 +2953,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 92,
    "bb_min": 25,
-   "readiness": 45,
+   "readiness": 47,
    "rhr": 48.0,
    "steps": 14816,
-   "stress_avg": 25
+   "stress_avg": 25,
+   "readiness_level": "LOW",
+   "readiness_now": 45,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-26",
@@ -2883,10 +2973,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 94,
    "bb_min": 17,
-   "readiness": 51,
+   "readiness": 74,
    "rhr": 48.0,
    "steps": 16216,
-   "stress_avg": 29
+   "stress_avg": 29,
+   "readiness_level": "MODERATE",
+   "readiness_now": 51,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-27",
@@ -2903,7 +2996,10 @@
    "readiness": 55,
    "rhr": 51.0,
    "steps": 7108,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "MODERATE",
+   "readiness_now": 55,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-28",
@@ -2917,10 +3013,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 98,
    "bb_min": 23,
-   "readiness": 53,
+   "readiness": 70,
    "rhr": 46.0,
    "steps": 16936,
-   "stress_avg": 24
+   "stress_avg": 24,
+   "readiness_level": "MODERATE",
+   "readiness_now": 53,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-29",
@@ -2934,10 +3033,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 87,
    "bb_min": 23,
-   "readiness": 75,
+   "readiness": 66,
    "rhr": 49.0,
    "steps": 14850,
-   "stress_avg": 30
+   "stress_avg": 30,
+   "readiness_level": "MODERATE",
+   "readiness_now": 75,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-30",
@@ -2951,10 +3053,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 23,
-   "readiness": 75,
+   "readiness": 96,
    "rhr": 48.0,
    "steps": 17858,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "PRIME",
+   "readiness_now": 75,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-31",
@@ -2971,7 +3076,10 @@
    "readiness": 29,
    "rhr": 50.0,
    "steps": 8350,
-   "stress_avg": 29
+   "stress_avg": 29,
+   "readiness_level": "LOW",
+   "readiness_now": 29,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-01",
@@ -2988,7 +3096,10 @@
    "readiness": 71,
    "rhr": 47.0,
    "steps": 11870,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "MODERATE",
+   "readiness_now": 71,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-02",
@@ -3005,7 +3116,10 @@
    "readiness": 82,
    "rhr": 47.0,
    "steps": 14579,
-   "stress_avg": 21
+   "stress_avg": 21,
+   "readiness_level": "HIGH",
+   "readiness_now": 82,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-03",
@@ -3022,7 +3136,10 @@
    "readiness": 91,
    "rhr": 45.0,
    "steps": 14074,
-   "stress_avg": 17
+   "stress_avg": 17,
+   "readiness_level": "HIGH",
+   "readiness_now": 91,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-04",
@@ -3039,7 +3156,10 @@
    "readiness": 96,
    "rhr": 43.0,
    "steps": 10561,
-   "stress_avg": 20
+   "stress_avg": 20,
+   "readiness_level": "PRIME",
+   "readiness_now": 96,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-05",
@@ -3056,7 +3176,10 @@
    "readiness": 62,
    "rhr": 49.0,
    "steps": 25983,
-   "stress_avg": 27
+   "stress_avg": 27,
+   "readiness_level": "MODERATE",
+   "readiness_now": 62,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-06",
@@ -3073,7 +3196,10 @@
    "readiness": 92,
    "rhr": 46.0,
    "steps": 12694,
-   "stress_avg": 25
+   "stress_avg": 25,
+   "readiness_level": "HIGH",
+   "readiness_now": 92,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-07",
@@ -3087,10 +3213,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 98,
    "bb_min": 28,
-   "readiness": 88,
+   "readiness": 99,
    "rhr": 45.0,
    "steps": 13365,
-   "stress_avg": 22
+   "stress_avg": 22,
+   "readiness_level": "PRIME",
+   "readiness_now": 88,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-08",
@@ -3107,7 +3236,10 @@
    "readiness": 99,
    "rhr": 50.0,
    "steps": 9368,
-   "stress_avg": 19
+   "stress_avg": 19,
+   "readiness_level": "PRIME",
+   "readiness_now": 99,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-09",
@@ -3121,10 +3253,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 96,
    "bb_min": 26,
-   "readiness": 63,
+   "readiness": 92,
    "rhr": 50.0,
    "steps": 16626,
-   "stress_avg": 30
+   "stress_avg": 30,
+   "readiness_level": "HIGH",
+   "readiness_now": 63,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-10",
@@ -3141,7 +3276,10 @@
    "readiness": 83,
    "rhr": 48.0,
    "steps": 9009,
-   "stress_avg": 22
+   "stress_avg": 22,
+   "readiness_level": "HIGH",
+   "readiness_now": 83,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-11",
@@ -3158,7 +3296,10 @@
    "readiness": 91,
    "rhr": 50.0,
    "steps": 10792,
-   "stress_avg": 23
+   "stress_avg": 23,
+   "readiness_level": "HIGH",
+   "readiness_now": 91,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-12",
@@ -3175,7 +3316,10 @@
    "readiness": 89,
    "rhr": 48.0,
    "steps": 15098,
-   "stress_avg": 27
+   "stress_avg": 27,
+   "readiness_level": "HIGH",
+   "readiness_now": 89,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-13",
@@ -3192,7 +3336,10 @@
    "readiness": 94,
    "rhr": 50.0,
    "steps": 9194,
-   "stress_avg": 27
+   "stress_avg": 27,
+   "readiness_level": "HIGH",
+   "readiness_now": 94,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-14",
@@ -3209,7 +3356,10 @@
    "readiness": 93,
    "rhr": 52.0,
    "steps": 13117,
-   "stress_avg": 24
+   "stress_avg": 24,
+   "readiness_level": "HIGH",
+   "readiness_now": 93,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-15",
@@ -3226,7 +3376,10 @@
    "readiness": 91,
    "rhr": 48.0,
    "steps": 11401,
-   "stress_avg": 28
+   "stress_avg": 28,
+   "readiness_level": "HIGH",
+   "readiness_now": 91,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-16",
@@ -3240,10 +3393,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 82,
    "bb_min": 20,
-   "readiness": 75,
+   "readiness": 100,
    "rhr": 51.0,
    "steps": 14986,
-   "stress_avg": 30
+   "stress_avg": 30,
+   "readiness_level": "PRIME",
+   "readiness_now": 75,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-17",
@@ -3257,10 +3413,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 68,
    "bb_min": 15,
-   "readiness": 53,
+   "readiness": 83,
    "rhr": 54.0,
    "steps": 11964,
-   "stress_avg": 35
+   "stress_avg": 35,
+   "readiness_level": "HIGH",
+   "readiness_now": 53,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-18",
@@ -3274,10 +3433,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 76,
    "bb_min": 13,
-   "readiness": 61,
+   "readiness": 65,
    "rhr": 52.0,
    "steps": 25606,
-   "stress_avg": 34
+   "stress_avg": 34,
+   "readiness_level": "MODERATE",
+   "readiness_now": 61,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-19",
@@ -3291,10 +3453,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 71,
    "bb_min": 11,
-   "readiness": 75,
+   "readiness": 72,
    "rhr": 54.0,
    "steps": 17696,
-   "stress_avg": 28
+   "stress_avg": 28,
+   "readiness_level": "MODERATE",
+   "readiness_now": 75,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-20",
@@ -3311,7 +3476,10 @@
    "readiness": 77,
    "rhr": 51.0,
    "steps": 26225,
-   "stress_avg": 29
+   "stress_avg": 29,
+   "readiness_level": "HIGH",
+   "readiness_now": 77,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-21",
@@ -3325,10 +3493,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 95,
    "bb_min": 27,
-   "readiness": 53,
+   "readiness": 85,
    "rhr": 47.0,
    "steps": 16555,
-   "stress_avg": 25
+   "stress_avg": 25,
+   "readiness_level": "HIGH",
+   "readiness_now": 53,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-22",
@@ -3345,7 +3516,10 @@
    "readiness": 56,
    "rhr": 49.0,
    "steps": 8812,
-   "stress_avg": 23
+   "stress_avg": 23,
+   "readiness_level": "MODERATE",
+   "readiness_now": 56,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-23",
@@ -3359,10 +3533,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 89,
    "bb_min": 21,
-   "readiness": 52,
+   "readiness": 82,
    "rhr": 48.0,
    "steps": 22120,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "HIGH",
+   "readiness_now": 52,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-24",
@@ -3379,7 +3556,10 @@
    "readiness": 60,
    "rhr": 49.0,
    "steps": 7645,
-   "stress_avg": 27
+   "stress_avg": 27,
+   "readiness_level": "MODERATE",
+   "readiness_now": 60,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-25",
@@ -3396,7 +3576,10 @@
    "readiness": 75,
    "rhr": 48.0,
    "steps": 13836,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "HIGH",
+   "readiness_now": 75,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-26",
@@ -3410,10 +3593,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 95,
    "bb_min": 22,
-   "readiness": 44,
+   "readiness": 87,
    "rhr": 46.0,
    "steps": 30199,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "HIGH",
+   "readiness_now": 44,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-27",
@@ -3430,7 +3616,10 @@
    "readiness": 27,
    "rhr": 50.0,
    "steps": 19079,
-   "stress_avg": 35
+   "stress_avg": 35,
+   "readiness_level": "LOW",
+   "readiness_now": 27,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-28",
@@ -3444,10 +3633,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 83,
    "bb_min": 13,
-   "readiness": 56,
+   "readiness": 63,
    "rhr": 49.0,
    "steps": 17313,
-   "stress_avg": 29
+   "stress_avg": 29,
+   "readiness_level": "MODERATE",
+   "readiness_now": 56,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-29",
@@ -3464,7 +3656,10 @@
    "readiness": 72,
    "rhr": 47.0,
    "steps": 14695,
-   "stress_avg": 24
+   "stress_avg": 24,
+   "readiness_level": "MODERATE",
+   "readiness_now": 72,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-09-30",
@@ -3481,7 +3676,10 @@
    "readiness": 80,
    "rhr": 45.0,
    "steps": 8888,
-   "stress_avg": 23
+   "stress_avg": 23,
+   "readiness_level": "HIGH",
+   "readiness_now": 80,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-01",
@@ -3498,7 +3696,10 @@
    "readiness": 79,
    "rhr": 49.0,
    "steps": 8899,
-   "stress_avg": 24
+   "stress_avg": 24,
+   "readiness_level": "HIGH",
+   "readiness_now": 79,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-02",
@@ -3512,10 +3713,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 89,
    "bb_min": 6,
-   "readiness": 37,
+   "readiness": 80,
    "rhr": 46.0,
    "steps": 6605,
-   "stress_avg": 31
+   "stress_avg": 31,
+   "readiness_level": "HIGH",
+   "readiness_now": 37,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-03",
@@ -3529,10 +3733,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 75,
    "bb_min": 5,
-   "readiness": 50,
+   "readiness": 44,
    "rhr": 52.0,
    "steps": 2599,
-   "stress_avg": 19
+   "stress_avg": 19,
+   "readiness_level": "LOW",
+   "readiness_now": 50,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-04",
@@ -3549,7 +3756,10 @@
    "readiness": 76,
    "rhr": 51.0,
    "steps": 1895,
-   "stress_avg": 38
+   "stress_avg": 38,
+   "readiness_level": "HIGH",
+   "readiness_now": 76,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-05",
@@ -3563,10 +3773,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 99,
    "bb_min": 28,
-   "readiness": 53,
+   "readiness": 80,
    "rhr": 51.0,
    "steps": 5102,
-   "stress_avg": 24
+   "stress_avg": 24,
+   "readiness_level": "HIGH",
+   "readiness_now": 53,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-06",
@@ -3580,10 +3793,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 27,
-   "readiness": 64,
+   "readiness": 81,
    "rhr": 49.0,
    "steps": 14574,
-   "stress_avg": 27
+   "stress_avg": 27,
+   "readiness_level": "HIGH",
+   "readiness_now": 64,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-07",
@@ -3597,10 +3813,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 93,
    "bb_min": 25,
-   "readiness": 65,
+   "readiness": 68,
    "rhr": 52.0,
    "steps": 13859,
-   "stress_avg": 29
+   "stress_avg": 29,
+   "readiness_level": "MODERATE",
+   "readiness_now": 65,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-08",
@@ -3617,7 +3836,10 @@
    "readiness": 79,
    "rhr": 48.0,
    "steps": 7999,
-   "stress_avg": 22
+   "stress_avg": 22,
+   "readiness_level": "HIGH",
+   "readiness_now": 79,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-09",
@@ -3631,10 +3853,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 33,
-   "readiness": 78,
+   "readiness": 94,
    "rhr": 47.0,
    "steps": 16347,
-   "stress_avg": 20
+   "stress_avg": 20,
+   "readiness_level": "HIGH",
+   "readiness_now": 78,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-10-10",
@@ -3648,7 +3873,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 23,
-   "readiness": 22,
+   "readiness": 98,
+   "readiness_level": "PRIME",
+   "readiness_now": 22,
+   "readiness_src": "morning",
    "rhr": 46.0,
    "steps": 17442,
    "stress_avg": 27
@@ -3666,9 +3894,12 @@
    "bb_max": 53,
    "bb_min": 20,
    "readiness": 18,
+   "readiness_level": "POOR",
+   "readiness_now": 25,
+   "readiness_src": "morning",
    "rhr": 53.0,
-   "steps": 9542,
-   "stress_avg": 32
+   "steps": 10384,
+   "stress_avg": 31
   }
  ]
 }
