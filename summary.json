@@ -1,19 +1,18 @@
 {
- "generated_at": "2026-10-10T20:36",
+ "generated_at": "2026-10-11T10:57",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-10T20:36",
+  "synced_at": "2026-10-11T10:57",
   "race_predictions": {
-   "time5k_s": 1363,
+   "time5k_s": 1362,
    "time10k_s": 2912,
-   "half_s": 6639,
-   "marathon_s": 14785
+   "half_s": 6638,
+   "marathon_s": 14781
   },
-  "vo2max": 50.1,
   "training_status": "PRODUCTIVE_6",
   "fitness_age": 27.192869657680944,
   "intensity_weeks": [
@@ -1558,6 +1557,16 @@
    "endurance_score": null,
    "hill_score": null,
    "fitness_age": 27.192869657680944
+  },
+  {
+   "date": "2026-10-11",
+   "vo2max": null,
+   "half_s": 6638,
+   "time5k_s": 1362,
+   "time10k_s": 2912,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 27.192869657680944
   }
  ],
  "gear": [],
@@ -1811,28 +1820,12 @@
   },
   "month_label": "2026-10",
   "year_label": "2026",
-  "day_of_month": 10,
+  "day_of_month": 11,
   "days_in_month": 31,
-  "day_of_year": 283,
+  "day_of_year": 284,
   "days_in_year": 365
  },
  "activities_last_60d": [
-  {
-   "id": 23937086291,
-   "date": "2026-08-11",
-   "type": "hiking",
-   "name": "Kranjska Gora Hiking",
-   "distance_m": 6213.02978515625,
-   "duration_s": 11242.0693359375,
-   "moving_s": 6073.0,
-   "avg_hr": 88.0,
-   "max_hr": 145.0,
-   "avg_speed_mps": 0.5529999732971191,
-   "elev_gain_m": 504.0,
-   "cadence": 43.96875,
-   "aerobic_te": 0.6000000238418579,
-   "vo2max": null
-  },
   {
    "id": 23958959861,
    "date": "2026-08-13",
@@ -2235,16 +2228,6 @@
   }
  ],
  "wellness_last_90d": [
-  {
-   "date": "2026-07-12",
-   "sleep_s": 24720,
-   "sleep_score": 89,
-   "hrv_last_night": 73,
-   "hrv_status": "BALANCED",
-   "bb_max": 95,
-   "bb_min": 18,
-   "readiness": 50
-  },
   {
    "date": "2026-07-13",
    "sleep_s": 23040,
@@ -3664,11 +3647,28 @@
    "hrv_last_night": 78,
    "hrv_status": "BALANCED",
    "bb_max": 100,
-   "bb_min": 33,
+   "bb_min": 23,
    "readiness": 22,
    "rhr": 46.0,
-   "steps": 15301,
-   "stress_avg": 20
+   "steps": 17442,
+   "stress_avg": 27
+  },
+  {
+   "date": "2026-10-11",
+   "sleep_s": 20220,
+   "sleep_score": 64,
+   "deep_s": 2880,
+   "light_s": 14460,
+   "rem_s": 2880,
+   "awake_s": 3960,
+   "hrv_last_night": 51,
+   "hrv_status": "BALANCED",
+   "bb_max": 53,
+   "bb_min": 20,
+   "readiness": 18,
+   "rhr": 53.0,
+   "steps": 9542,
+   "stress_avg": 32
   }
  ]
 }
