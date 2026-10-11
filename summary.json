@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-10-11T16:12",
+ "generated_at": "2026-10-11T16:32",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-11T16:12",
+  "synced_at": "2026-10-11T16:32",
   "race_predictions": {
    "time5k_s": 1362,
    "time10k_s": 2912,
@@ -58,48 +58,57 @@
   "intensity_weeks": [
    {
     "week": "2026-08-10",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 62,
+    "vigorous": 61,
+    "goal": 150
    },
    {
     "week": "2026-08-17",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 49,
+    "vigorous": 179,
+    "goal": 150
    },
    {
     "week": "2026-08-24",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 30,
+    "vigorous": 222,
+    "goal": 150
    },
    {
     "week": "2026-08-31",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 1,
+    "vigorous": 4,
+    "goal": 150
    },
    {
     "week": "2026-09-07",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 15,
+    "vigorous": 111,
+    "goal": 150
    },
    {
     "week": "2026-09-14",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 107,
+    "vigorous": 165,
+    "goal": 150
    },
    {
     "week": "2026-09-21",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 15,
+    "vigorous": 127,
+    "goal": 150
    },
    {
     "week": "2026-09-28",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 27,
+    "vigorous": 197,
+    "goal": 150
    },
    {
     "week": "2026-10-05",
-    "moderate": 0,
-    "vigorous": 0
+    "moderate": 123,
+    "vigorous": 304,
+    "goal": 150
    }
   ]
  },
@@ -1617,48 +1626,57 @@
  "intensity_minutes_weekly": [
   {
    "week": "2026-08-10",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 62,
+   "vigorous": 61,
+   "goal": 150
   },
   {
    "week": "2026-08-17",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 49,
+   "vigorous": 179,
+   "goal": 150
   },
   {
    "week": "2026-08-24",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 30,
+   "vigorous": 222,
+   "goal": 150
   },
   {
    "week": "2026-08-31",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 1,
+   "vigorous": 4,
+   "goal": 150
   },
   {
    "week": "2026-09-07",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 15,
+   "vigorous": 111,
+   "goal": 150
   },
   {
    "week": "2026-09-14",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 107,
+   "vigorous": 165,
+   "goal": 150
   },
   {
    "week": "2026-09-21",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 15,
+   "vigorous": 127,
+   "goal": 150
   },
   {
    "week": "2026-09-28",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 27,
+   "vigorous": 197,
+   "goal": 150
   },
   {
    "week": "2026-10-05",
-   "moderate": 0,
-   "vigorous": 0
+   "moderate": 123,
+   "vigorous": 304,
+   "goal": 150
   }
  ],
  "monthly_totals": [
@@ -2281,7 +2299,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 80,
    "bb_min": 18,
-   "readiness": 58
+   "readiness": 58,
+   "readiness_level": "MODERATE",
+   "readiness_now": 58,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-14",
@@ -2291,7 +2312,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 94,
    "bb_min": 34,
-   "readiness": 73
+   "readiness": 73,
+   "readiness_level": "MODERATE",
+   "readiness_now": 73,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-15",
@@ -2301,7 +2325,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 95,
    "bb_min": 33,
-   "readiness": 65
+   "readiness": 87,
+   "readiness_level": "HIGH",
+   "readiness_now": 65,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-16",
@@ -2311,7 +2338,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 96,
    "bb_min": 31,
-   "readiness": 75
+   "readiness": 68,
+   "readiness_level": "MODERATE",
+   "readiness_now": 75,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-17",
@@ -2321,7 +2351,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 97,
    "bb_min": 18,
-   "readiness": 65
+   "readiness": 82,
+   "readiness_level": "HIGH",
+   "readiness_now": 65,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-18",
@@ -2331,7 +2364,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 98,
    "bb_min": 10,
-   "readiness": 95
+   "readiness": 94,
+   "readiness_level": "HIGH",
+   "readiness_now": 95,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-19",
@@ -2341,7 +2377,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 72,
    "bb_min": 8,
-   "readiness": 16
+   "readiness": 92,
+   "readiness_level": "HIGH",
+   "readiness_now": 16,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-20",
@@ -2351,7 +2390,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 46,
    "bb_min": 6,
-   "readiness": 26
+   "readiness": 8,
+   "readiness_level": "POOR",
+   "readiness_now": 26,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-21",
@@ -2361,7 +2403,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 94,
    "bb_min": 24,
-   "readiness": 58
+   "readiness": 50,
+   "readiness_level": "MODERATE",
+   "readiness_now": 58,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-22",
@@ -2371,7 +2416,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 96,
    "bb_min": 30,
-   "readiness": 75
+   "readiness": 85,
+   "readiness_level": "HIGH",
+   "readiness_now": 75,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-23",
@@ -2381,7 +2429,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 30,
-   "readiness": 85
+   "readiness": 96,
+   "readiness_level": "PRIME",
+   "readiness_now": 85,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-24",
@@ -2391,7 +2442,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 35,
-   "readiness": 100
+   "readiness": 100,
+   "readiness_level": "PRIME",
+   "readiness_now": 100,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-25",
@@ -2401,7 +2455,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 93,
    "bb_min": 5,
-   "readiness": 50
+   "readiness": 89,
+   "readiness_level": "HIGH",
+   "readiness_now": 50,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-26",
@@ -2411,7 +2468,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 36,
    "bb_min": 5,
-   "readiness": 31
+   "readiness": 25,
+   "readiness_level": "LOW",
+   "readiness_now": 31,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-27",
@@ -2421,7 +2481,10 @@
    "hrv_status": "BALANCED",
    "bb_max": 63,
    "bb_min": 5,
-   "readiness": 50
+   "readiness": 50,
+   "readiness_level": "MODERATE",
+   "readiness_now": 50,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-28",
@@ -2435,10 +2498,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 24,
-   "readiness": 34,
+   "readiness": 84,
    "rhr": 43.0,
    "steps": 16716,
-   "stress_avg": 22
+   "stress_avg": 22,
+   "readiness_level": "HIGH",
+   "readiness_now": 34,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-29",
@@ -2452,10 +2518,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 92,
    "bb_min": 19,
-   "readiness": 57,
+   "readiness": 50,
    "rhr": 49.0,
    "steps": 14154,
-   "stress_avg": 26
+   "stress_avg": 26,
+   "readiness_level": "MODERATE",
+   "readiness_now": 57,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-30",
@@ -2472,7 +2541,10 @@
    "readiness": 62,
    "rhr": 48.0,
    "steps": 5118,
-   "stress_avg": 23
+   "stress_avg": 23,
+   "readiness_level": "MODERATE",
+   "readiness_now": 62,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-07-31",
@@ -2489,7 +2561,10 @@
    "readiness": 79,
    "rhr": 48.0,
    "steps": 10731,
-   "stress_avg": 28
+   "stress_avg": 28,
+   "readiness_level": "HIGH",
+   "readiness_now": 79,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-01",
@@ -2503,10 +2578,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 81,
    "bb_min": 20,
-   "readiness": 52,
+   "readiness": 74,
    "rhr": 53.0,
    "steps": 5977,
-   "stress_avg": 37
+   "stress_avg": 37,
+   "readiness_level": "MODERATE",
+   "readiness_now": 52,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-02",
@@ -2523,7 +2601,10 @@
    "readiness": 78,
    "rhr": 48.0,
    "steps": 13076,
-   "stress_avg": 23
+   "stress_avg": 23,
+   "readiness_level": "HIGH",
+   "readiness_now": 78,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-03",
@@ -2540,7 +2621,10 @@
    "readiness": 85,
    "rhr": 47.0,
    "steps": 3761,
-   "stress_avg": 21
+   "stress_avg": 21,
+   "readiness_level": "HIGH",
+   "readiness_now": 85,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-04",
@@ -2554,10 +2638,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 96,
    "bb_min": 32,
-   "readiness": 71,
+   "readiness": 82,
    "rhr": 46.0,
    "steps": 14076,
-   "stress_avg": 20
+   "stress_avg": 20,
+   "readiness_level": "HIGH",
+   "readiness_now": 71,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-05",
@@ -2571,10 +2658,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 100,
    "bb_min": 30,
-   "readiness": 84,
+   "readiness": 94,
    "rhr": 46.0,
    "steps": 16904,
-   "stress_avg": 22
+   "stress_avg": 22,
+   "readiness_level": "HIGH",
+   "readiness_now": 84,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-06",
@@ -2588,10 +2678,13 @@
    "hrv_status": "BALANCED",
    "bb_max": 92,
    "bb_min": 29,
-   "readiness": 95,
+   "readiness": 94,
    "rhr": 48.0,
    "steps": 8184,
-   "stress_avg": 20
+   "stress_avg": 20,
+   "readiness_level": "HIGH",
+   "readiness_now": 95,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-07",
@@ -2608,7 +2701,10 @@
    "readiness": 94,
    "rhr": 48.0,
    "steps": 16516,
-   "stress_avg": 28
+   "stress_avg": 28,
+   "readiness_level": "HIGH",
+   "readiness_now": 94,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-08",
@@ -2625,7 +2721,10 @@
    "readiness": 59,
    "rhr": 51.0,
    "steps": 19952,
-   "stress_avg": 32
+   "stress_avg": 32,
+   "readiness_level": "MODERATE",
+   "readiness_now": 59,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-09",
@@ -2642,7 +2741,10 @@
    "readiness": 68,
    "rhr": 52.0,
    "steps": 30022,
-   "stress_avg": 35
+   "stress_avg": 35,
+   "readiness_level": "MODERATE",
+   "readiness_now": 68,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-10",
@@ -2659,7 +2761,10 @@
    "readiness": 39,
    "rhr": 52.0,
    "steps": 16301,
-   "stress_avg": 32
+   "stress_avg": 32,
+   "readiness_level": "LOW",
+   "readiness_now": 39,
+   "readiness_src": "morning"
   },
   {
    "date": "2026-08-11",
