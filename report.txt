@@ -1,37 +1,35 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-10-11T21:00
-Vygenerované: 2026-10-11T21:00
+Synchronizované: 2026-10-12T12:17
+Vygenerované: 2026-10-12T12:17
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:50:38
-- Rozdiel: +5:38 (nad cieľom)
-- Ďalšie predikcie: 5 km 22:42, 10 km 48:32, maratón 4:06:21
+- Garmin predikcia polmaratónu: 1:50:37
+- Rozdiel: +5:37 (nad cieľom)
+- Ďalšie predikcie: 5 km 22:41, 10 km 48:31, maratón 4:06:20
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
 | Metrika | Posledných 7 dní | Predchádzajúcich 7 | Zmena |
 |---|---|---|---|
-| Počet behov | 4 | 1 | +3 |
-| Objem | 34.4 km | 8.0 km | +26.4 km |
-| Priemerné tempo | 5:58/km | 6:32/km | – |
-| Priemerný tep | 148 bpm | 134 bpm | +14 bpm |
-| Priemerný spánok | 7:33:09 | 6:29:48 | +63 min |
+| Počet behov | 4 | 0 | +4 |
+| Objem | 34.4 km | 0.0 km | +34.4 km |
+| Priemerné tempo | 5:58/km | –/km | – |
+| Priemerný spánok | 7:29:26 | 6:33:28 | +56 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 7:33:09
-- HRV: 71 ms
-- Pokojový tep: 50 bpm
-- Kroky: 12456 denne
-- Naposledy (2026-10-11): spánok 5:37:00, skóre 64, HRV 51, pripravenosť ráno 18 (poor), aktuálne 25, stres 32
+- Priemerný spánok: 7:29:26
+- HRV: 70 ms
+- Pokojový tep: 49 bpm
+- Kroky: 11821 denne
+- Naposledy (2026-10-12): spánok 7:57:00, skóre 91, HRV 69, pripravenosť ráno 50 (moderate), aktuálne 50, stres 11
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
 
 | Dátum | Spánok | Skóre | Hlboký | REM | HRV | Pokoj. tep | Pripravenosť ráno | Stres | Kroky |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-09-28 | 8:01:00 | 90 | 1:26:00 | 2:23:00 | 66 | 49 | 63 | 29 | 17313 |
 | 2026-09-29 | 5:28:00 | 77 | 2:14:00 | 1:38:00 | 76 | 47 | 72 | 24 | 14695 |
 | 2026-09-30 | 6:17:00 | 84 | 2:03:00 | 1:57:00 | 68 | 45 | 80 | 23 | 8888 |
 | 2026-10-01 | 6:29:49 | 85 | 1:45:00 | 1:30:00 | 75 | 49 | 79 | 24 | 8899 |
@@ -44,13 +42,14 @@ Vygenerované: 2026-10-11T21:00
 | 2026-10-08 | 7:12:00 | 93 | 1:52:00 | 1:39:00 | 76 | 48 | 79 | 22 | 7999 |
 | 2026-10-09 | 6:41:00 | 93 | 1:53:00 | 1:56:00 | 72 | 47 | 94 | 20 | 16347 |
 | 2026-10-10 | 8:35:00 | 99 | 1:54:00 | 2:25:00 | 78 | 46 | 98 | 27 | 17442 |
-| 2026-10-11 | 5:37:00 | 64 | 48:00 | 48:00 | 51 | 55 | 18 | 32 | 11868 |
+| 2026-10-11 | 5:37:00 | 64 | 48:00 | 48:00 | 51 | 51 | 18 | 31 | 11868 |
+| 2026-10-12 | 7:57:00 | 91 | 2:06:00 | 1:57:00 | 69 | 47 | 50 | 11 | 658 |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
-- Akútna záťaž: 543
-- Chronická záťaž: 355
-- Load Ratio: 1.5 (vysoké)
+- Akútna záťaž: 441
+- Chronická záťaž: 352
+- Load Ratio: 1.2 (optimálne)
 - Garmin pásma: pod 0,8 nízke · 0,8–1,4 optimálne · 1,5–1,9 vysoké · 2,0+ veľmi vysoké
 - Load Ratio meria len záťaž. O dennej forme viac povie ranná pripravenosť.
 
@@ -63,7 +62,7 @@ Vygenerované: 2026-10-11T21:00
 | Túra | 0.0 km / 0× | 22.0 km / 3× |
 | Plávanie | 0.0 km / 0× | 4.4 km / 5× |
 
-- Uplynulo 11 z 31 dní mesiaca, 284 z 365 dní roka
+- Uplynulo 12 z 31 dní mesiaca, 285 z 365 dní roka
 - Sledované ciele: beh 100 km/mesiac a 1000 km/rok, bike rovnako (dajú sa zmeniť v dashboarde)
 
 ## Tepové zóny
@@ -316,7 +315,7 @@ Stĺpce: datum,sport,km,cas,tempo_alebo_rychlost,tep,max_tep,prevysenie_m,kadenc
 2026-10-10,run,11.30,55:50,4:56/km,168,184,136,170,4.7
 ```
 
-## Wellness po dňoch (105)
+## Wellness po dňoch (106)
 
 Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,stres,kroky
 
@@ -425,5 +424,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-10-08,7:12:00,93,1:52:00,1:39:00,3:41:00,76,48,79,22,7999
 2026-10-09,6:41:00,93,1:53:00,1:56:00,2:52:00,72,47,94,20,16347
 2026-10-10,8:35:00,99,1:54:00,2:25:00,4:16:00,78,46,98,27,17442
-2026-10-11,5:37:00,64,48:00,48:00,4:01:00,51,55,18,32,11868
+2026-10-11,5:37:00,64,48:00,48:00,4:01:00,51,51,18,31,11868
+2026-10-12,7:57:00,91,2:06:00,1:57:00,3:54:00,69,47,50,11,658
 ```

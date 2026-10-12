@@ -1,35 +1,35 @@
 {
- "generated_at": "2026-10-11T21:00",
+ "generated_at": "2026-10-12T12:17",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-11T21:00",
+  "synced_at": "2026-10-12T12:17",
   "race_predictions": {
-   "time5k_s": 1362,
-   "time10k_s": 2912,
-   "half_s": 6638,
-   "marathon_s": 14781
+   "time5k_s": 1361,
+   "time10k_s": 2911,
+   "half_s": 6637,
+   "marathon_s": 14780
   },
   "training_status": "PRODUCTIVE_6",
   "garmin_load": {
-   "ratio": 1.5,
-   "acute": 543,
-   "chronic": 355,
-   "status": "HIGH",
-   "chronic_min": 284.0,
-   "chronic_max": 532.5,
+   "ratio": 1.2,
+   "acute": 441,
+   "chronic": 352,
+   "status": "OPTIMAL",
+   "chronic_min": 281.6,
+   "chronic_max": 528.0,
    "raw": {
-    "acwrPercent": 66,
-    "acwrStatus": "HIGH",
-    "acwrStatusFeedback": "FEEDBACK_4",
-    "dailyTrainingLoadAcute": 543,
-    "maxTrainingLoadChronic": 532.5,
-    "minTrainingLoadChronic": 284.0,
-    "dailyTrainingLoadChronic": 355,
-    "dailyAcuteChronicWorkloadRatio": 1.5
+    "acwrPercent": 52,
+    "acwrStatus": "OPTIMAL",
+    "acwrStatusFeedback": "FEEDBACK_2",
+    "dailyTrainingLoadAcute": 441,
+    "maxTrainingLoadChronic": 528.0,
+    "minTrainingLoadChronic": 281.6,
+    "dailyTrainingLoadChronic": 352,
+    "dailyAcuteChronicWorkloadRatio": 1.2
    }
   },
   "endurance_score": 6007,
@@ -56,12 +56,6 @@
    }
   ],
   "intensity_weeks": [
-   {
-    "week": "2026-08-10",
-    "moderate": 62,
-    "vigorous": 61,
-    "goal": 150
-   },
    {
     "week": "2026-08-17",
     "moderate": 49,
@@ -109,15 +103,21 @@
     "moderate": 123,
     "vigorous": 304,
     "goal": 150
+   },
+   {
+    "week": "2026-10-12",
+    "moderate": 0,
+    "vigorous": 0,
+    "goal": 150
    }
   ]
  },
  "training_load": {
   "source": "garmin",
-  "acute": 543,
-  "chronic": 355,
-  "acwr": 1.5,
-  "band": "high",
+  "acute": 441,
+  "chronic": 352,
+  "acwr": 1.2,
+  "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
  "readiness_note": "readiness = ranna hodnota po prebudeni, readiness_now = posledna hodnota dna",
@@ -128,10 +128,10 @@
   "n": 4
  },
  "week_prev": {
-  "km": 8.0,
-  "pace": "6:32",
-  "hr": 134,
-  "n": 1
+  "km": 0.0,
+  "pace": "–",
+  "hr": null,
+  "n": 0
  },
  "personal_records": [
   {
@@ -1620,16 +1620,21 @@
    "hill_score": 38,
    "fitness_age": 27.192869657680944,
    "load_ratio": 1.5
+  },
+  {
+   "date": "2026-10-12",
+   "vo2max": null,
+   "half_s": 6637,
+   "time5k_s": 1361,
+   "time10k_s": 2911,
+   "endurance_score": 6007,
+   "hill_score": 38,
+   "fitness_age": 27.192869657680944,
+   "load_ratio": 1.2
   }
  ],
  "gear": [],
  "intensity_minutes_weekly": [
-  {
-   "week": "2026-08-10",
-   "moderate": 62,
-   "vigorous": 61,
-   "goal": 150
-  },
   {
    "week": "2026-08-17",
    "moderate": 49,
@@ -1676,6 +1681,12 @@
    "week": "2026-10-05",
    "moderate": 123,
    "vigorous": 304,
+   "goal": 150
+  },
+  {
+   "week": "2026-10-12",
+   "moderate": 0,
+   "vigorous": 0,
    "goal": 150
   }
  ],
@@ -1883,9 +1894,9 @@
   },
   "month_label": "2026-10",
   "year_label": "2026",
-  "day_of_month": 11,
+  "day_of_month": 12,
   "days_in_month": 31,
-  "day_of_year": 284,
+  "day_of_year": 285,
   "days_in_year": 365
  },
  "activities": [
@@ -5832,9 +5843,29 @@
    "readiness_level": "POOR",
    "readiness_now": 25,
    "readiness_src": "morning",
-   "rhr": 55.0,
+   "rhr": 51.0,
    "steps": 11868,
-   "stress_avg": 32
+   "stress_avg": 31
+  },
+  {
+   "date": "2026-10-12",
+   "sleep_s": 28620,
+   "sleep_score": 91,
+   "deep_s": 7560,
+   "light_s": 14040,
+   "rem_s": 7020,
+   "awake_s": 1200,
+   "hrv_last_night": 69,
+   "hrv_status": "BALANCED",
+   "bb_max": 100,
+   "bb_min": 29,
+   "readiness": 50,
+   "readiness_level": "MODERATE",
+   "readiness_now": 50,
+   "readiness_src": "morning",
+   "rhr": 47.0,
+   "steps": 658,
+   "stress_avg": 11
   }
  ]
 }
