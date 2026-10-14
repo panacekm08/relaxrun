@@ -1,39 +1,40 @@
 {
- "generated_at": "2026-10-14T09:38",
+ "generated_at": "2026-10-14T20:49",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-14T09:38",
+  "synced_at": "2026-10-14T20:49",
   "race_predictions": {
    "time5k_s": 1363,
    "time10k_s": 2912,
    "half_s": 6639,
    "marathon_s": 14783
   },
+  "vo2max": 50.2,
   "training_status": "MAINTAINING_6",
   "garmin_load": {
-   "ratio": 1.0,
-   "acute": 357,
-   "chronic": 356,
+   "ratio": 1.2,
+   "acute": 447,
+   "chronic": 372,
    "status": "OPTIMAL",
-   "chronic_min": 284.8,
-   "chronic_max": 534.0,
+   "chronic_min": 297.6,
+   "chronic_max": 558.0,
    "raw": {
-    "acwrPercent": 42,
+    "acwrPercent": 52,
     "acwrStatus": "OPTIMAL",
     "acwrStatusFeedback": "FEEDBACK_2",
-    "dailyTrainingLoadAcute": 357,
-    "maxTrainingLoadChronic": 534.0,
-    "minTrainingLoadChronic": 284.8,
-    "dailyTrainingLoadChronic": 356,
-    "dailyAcuteChronicWorkloadRatio": 1.0
+    "dailyTrainingLoadAcute": 447,
+    "maxTrainingLoadChronic": 558.0,
+    "minTrainingLoadChronic": 297.6,
+    "dailyTrainingLoadChronic": 372,
+    "dailyAcuteChronicWorkloadRatio": 1.2
    }
   },
-  "endurance_score": 6005,
-  "hill_score": 38,
+  "endurance_score": 6003,
+  "hill_score": 39,
   "fitness_age": 27.192869657680944,
   "garmin_prs": [
    {
@@ -106,26 +107,26 @@
    },
    {
     "week": "2026-10-12",
-    "moderate": 1,
-    "vigorous": 53,
+    "moderate": 4,
+    "vigorous": 108,
     "goal": 150
    }
   ]
  },
  "training_load": {
   "source": "garmin",
-  "acute": 357,
-  "chronic": 356,
-  "acwr": 1.0,
+  "acute": 447,
+  "chronic": 372,
+  "acwr": 1.2,
   "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
  "readiness_note": "readiness = ranna hodnota po prebudeni, readiness_now = posledna hodnota dna",
  "week_now": {
-  "km": 29.3,
-  "pace": "5:56",
-  "hr": 145,
-  "n": 3
+  "km": 37.3,
+  "pace": "6:01",
+  "hr": 142,
+  "n": 4
  },
  "week_prev": {
   "km": 13.1,
@@ -171,17 +172,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-04-15",
-   "s": "run",
-   "z": [
-    103,
-    430,
-    2508,
-    0,
-    0
-   ]
-  },
   {
    "d": "2026-04-25",
    "s": "bike",
@@ -830,6 +820,17 @@
     6,
     0
    ]
+  },
+  {
+   "d": "2026-10-14",
+   "s": "run",
+   "z": [
+    1046,
+    1479,
+    251,
+    53,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -844,9 +845,9 @@
    "load": 956
   },
   {
-   "km": 249.1,
-   "n": 20,
-   "load": 1209
+   "km": 257.1,
+   "n": 21,
+   "load": 1255
   },
   {
    "km": 128.1,
@@ -1645,14 +1646,14 @@
   },
   {
    "date": "2026-10-14",
-   "vo2max": null,
+   "vo2max": 50.2,
    "half_s": 6639,
    "time5k_s": 1363,
    "time10k_s": 2912,
-   "endurance_score": 6005,
-   "hill_score": 38,
+   "endurance_score": 6003,
+   "hill_score": 39,
    "fitness_age": 27.192869657680944,
-   "load_ratio": 1.0
+   "load_ratio": 1.2
   }
  ],
  "gear": [],
@@ -1707,8 +1708,8 @@
   },
   {
    "week": "2026-10-12",
-   "moderate": 1,
-   "vigorous": 53,
+   "moderate": 4,
+   "vigorous": 108,
    "goal": 150
   }
  ],
@@ -1716,11 +1717,11 @@
   {
    "m": "2026-10",
    "swim": 0.0,
-   "run": 42,
+   "run": 50,
    "bike": 159,
    "hike": 0,
-   "elev": 1595,
-   "n": 8
+   "elev": 1661,
+   "n": 9
   },
   {
    "m": "2026-09",
@@ -1844,11 +1845,11 @@
   {
    "y": "2026",
    "swim": 4.4,
-   "run": 589,
+   "run": 597,
    "bike": 646,
    "hike": 22,
-   "elev": 12070,
-   "n": 90
+   "elev": 12136,
+   "n": 91
   },
   {
    "y": "2025",
@@ -1864,10 +1865,10 @@
  "counters": {
   "month": {
    "run": {
-    "km": 42.4,
-    "n": 5,
-    "elev": 672,
-    "time_s": 15481
+    "km": 50.4,
+    "n": 6,
+    "elev": 738,
+    "time_s": 18545
    },
    "bike": {
     "km": 159.2,
@@ -1890,10 +1891,10 @@
   },
   "year": {
    "run": {
-    "km": 589.4,
-    "n": 68,
-    "elev": 6127,
-    "time_s": 221307
+    "km": 597.4,
+    "n": 69,
+    "elev": 6193,
+    "time_s": 224370
    },
    "bike": {
     "km": 646.3,
@@ -3985,6 +3986,22 @@
    "cadence": 159.78125,
    "aerobic_te": 2.9000000953674316,
    "vo2max": 50.0
+  },
+  {
+   "id": 24724220993,
+   "date": "2026-10-14",
+   "type": "running",
+   "name": "Kromeriz Running",
+   "distance_m": 8007.990234375,
+   "duration_s": 3063.781005859375,
+   "moving_s": 3051.6069946289062,
+   "avg_hr": 134.0,
+   "max_hr": 169.0,
+   "avg_speed_mps": 2.614000082015991,
+   "elev_gain_m": 66.0,
+   "cadence": 158.015625,
+   "aerobic_te": 2.9000000953674316,
+   "vo2max": 50.0
   }
  ],
  "wellness": [
@@ -5939,11 +5956,11 @@
    "bb_min": 34,
    "readiness": 92,
    "readiness_level": "HIGH",
-   "readiness_now": 92,
+   "readiness_now": 79,
    "readiness_src": "morning",
    "rhr": 48.0,
-   "steps": 1456,
-   "stress_avg": 12
+   "steps": 19535,
+   "stress_avg": 19
   }
  ]
 }
