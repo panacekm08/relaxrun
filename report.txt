@@ -1,7 +1,7 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-10-16T09:10
-Vygenerované: 2026-10-16T09:10
+Synchronizované: 2026-10-16T19:59
+Vygenerované: 2026-10-16T19:59
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
@@ -23,8 +23,8 @@ Vygenerované: 2026-10-16T09:10
 - Priemerný spánok: 7:00:17
 - HRV: 70 ms
 - Pokojový tep: 47 bpm
-- Kroky: 11671 denne
-- Naposledy (2026-10-16): spánok 7:20:00, skóre 98, HRV 77, pripravenosť ráno 96 (prime), aktuálne 96, stres 7
+- Kroky: 12709 denne
+- Naposledy (2026-10-16): spánok 7:20:00, skóre 98, HRV 77, pripravenosť ráno 96 (prime), aktuálne 96, stres 18
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
@@ -44,7 +44,7 @@ Vygenerované: 2026-10-16T09:10
 | 2026-10-13 | 6:12:00 | 82 | 1:34:00 | 1:20:00 | 70 | 46 | 65 | 21 | 8144 |
 | 2026-10-14 | 7:23:00 | 98 | 2:46:00 | 1:49:00 | 73 | 48 | 92 | 22 | 20628 |
 | 2026-10-15 | 5:58:00 | 77 | 1:34:00 | 52:00 | 71 | 47 | 84 | 21 | 7680 |
-| 2026-10-16 | 7:20:00 | 98 | 2:31:00 | 1:38:00 | 77 | 44 | 96 | 7 | 56 |
+| 2026-10-16 | 7:20:00 | 98 | 2:31:00 | 1:38:00 | 77 | 44 | 96 | 18 | 7320 |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
@@ -432,5 +432,5 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-10-13,6:12:00,82,1:34:00,1:20:00,3:18:00,70,46,65,21,8144
 2026-10-14,7:23:00,98,2:46:00,1:49:00,2:48:00,73,48,92,22,20628
 2026-10-15,5:58:00,77,1:34:00,52:00,3:32:00,71,47,84,21,7680
-2026-10-16,7:20:00,98,2:31:00,1:38:00,3:11:00,77,44,96,7,56
+2026-10-16,7:20:00,98,2:31:00,1:38:00,3:11:00,77,44,96,18,7320
 ```
