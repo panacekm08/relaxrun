@@ -1,13 +1,13 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-10-19T10:08
-Vygenerované: 2026-10-19T10:08
+Synchronizované: 2026-10-19T21:37
+Vygenerované: 2026-10-19T21:37
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:49:12
-- Rozdiel: +4:12 (nad cieľom)
-- Ďalšie predikcie: 5 km 22:34, 10 km 48:13, maratón 4:03:52
+- Garmin predikcia polmaratónu: 1:49:10
+- Rozdiel: +4:10 (nad cieľom)
+- Ďalšie predikcie: 5 km 22:33, 10 km 48:13, maratón 4:03:49
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
@@ -22,9 +22,9 @@ Vygenerované: 2026-10-19T10:08
 ## Regenerácia (priemer za 7 dní)
 - Priemerný spánok: 6:35:00
 - HRV: 66 ms
-- Pokojový tep: 47 bpm
-- Kroky: 12905 denne
-- Naposledy (2026-10-19): spánok 6:52:00, skóre 87, HRV 62, pripravenosť ráno 1 (poor), aktuálne 1, stres 14
+- Pokojový tep: 48 bpm
+- Kroky: 13575 denne
+- Naposledy (2026-10-19): spánok 6:52:00, skóre 87, HRV 62, pripravenosť ráno 1 (poor), aktuálne 1, stres 20
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
@@ -43,8 +43,8 @@ Vygenerované: 2026-10-19T10:08
 | 2026-10-15 | 5:58:00 | 77 | 1:34:00 | 52:00 | 71 | 47 | 84 | 21 | 7680 |
 | 2026-10-16 | 7:20:00 | 98 | 2:31:00 | 1:38:00 | 77 | 44 | 96 | 18 | 9128 |
 | 2026-10-17 | 6:09:00 | 83 | 2:09:00 | 1:13:00 | 68 | 47 | 93 | 31 | 39982 |
-| 2026-10-18 | 6:11:00 | 41 | 29:00 | – | 44 | 51 | 1 | 34 | 4731 |
-| 2026-10-19 | 6:52:00 | 87 | 1:56:00 | 1:38:00 | 62 | 47 | 1 | 14 | 45 |
+| 2026-10-18 | 6:11:00 | 41 | 29:00 | – | 44 | 57 | 1 | 33 | 5533 |
+| 2026-10-19 | 6:52:00 | 87 | 1:56:00 | 1:38:00 | 62 | 47 | 1 | 20 | 3930 |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
@@ -435,6 +435,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-10-15,5:58:00,77,1:34:00,52:00,3:32:00,71,47,84,21,7680
 2026-10-16,7:20:00,98,2:31:00,1:38:00,3:11:00,77,44,96,18,9128
 2026-10-17,6:09:00,83,2:09:00,1:13:00,2:47:00,68,47,93,31,39982
-2026-10-18,6:11:00,41,29:00,,5:42:00,44,51,1,34,4731
-2026-10-19,6:52:00,87,1:56:00,1:38:00,3:18:00,62,47,1,14,45
+2026-10-18,6:11:00,41,29:00,,5:42:00,44,57,1,33,5533
+2026-10-19,6:52:00,87,1:56:00,1:38:00,3:18:00,62,47,1,20,3930
 ```
