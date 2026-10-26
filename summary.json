@@ -1,39 +1,38 @@
 {
- "generated_at": "2026-10-25T19:48",
+ "generated_at": "2026-10-26T10:22",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-25T19:48",
+  "synced_at": "2026-10-26T10:22",
   "race_predictions": {
-   "time5k_s": 1343,
-   "time10k_s": 2880,
-   "half_s": 6502,
-   "marathon_s": 14498
+   "time5k_s": 1341,
+   "time10k_s": 2879,
+   "half_s": 6499,
+   "marathon_s": 14491
   },
-  "vo2max": 50.4,
   "training_status": "MAINTAINING_4",
   "garmin_load": {
-   "ratio": 0.9,
-   "acute": 375,
-   "chronic": 384,
+   "ratio": 0.8,
+   "acute": 305,
+   "chronic": 372,
    "status": "OPTIMAL",
-   "chronic_min": 307.20000000000005,
-   "chronic_max": 576.0,
+   "chronic_min": 297.6,
+   "chronic_max": 558.0,
    "raw": {
-    "acwrPercent": 38,
+    "acwrPercent": 33,
     "acwrStatus": "OPTIMAL",
     "acwrStatusFeedback": "FEEDBACK_2",
-    "dailyTrainingLoadAcute": 375,
-    "maxTrainingLoadChronic": 576.0,
-    "minTrainingLoadChronic": 307.20000000000005,
-    "dailyTrainingLoadChronic": 384,
-    "dailyAcuteChronicWorkloadRatio": 0.9
+    "dailyTrainingLoadAcute": 305,
+    "maxTrainingLoadChronic": 558.0,
+    "minTrainingLoadChronic": 297.6,
+    "dailyTrainingLoadChronic": 372,
+    "dailyAcuteChronicWorkloadRatio": 0.8
    }
   },
-  "endurance_score": 6104,
+  "endurance_score": 6106,
   "hill_score": 42,
   "fitness_age": 26.384014019576174,
   "garmin_prs": [
@@ -57,12 +56,6 @@
    }
   ],
   "intensity_weeks": [
-   {
-    "week": "2026-08-24",
-    "moderate": 30,
-    "vigorous": 222,
-    "goal": 150
-   },
    {
     "week": "2026-08-31",
     "moderate": 1,
@@ -110,14 +103,20 @@
     "moderate": 6,
     "vigorous": 187,
     "goal": 150
+   },
+   {
+    "week": "2026-10-26",
+    "moderate": 0,
+    "vigorous": 0,
+    "goal": 150
    }
   ]
  },
  "training_load": {
   "source": "garmin",
-  "acute": 375,
-  "chronic": 384,
-  "acwr": 0.9,
+  "acute": 305,
+  "chronic": 372,
+  "acwr": 0.8,
   "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
@@ -129,10 +128,10 @@
   "n": 3
  },
  "week_prev": {
-  "km": 43.3,
-  "pace": "9:29",
-  "hr": 140,
-  "n": 3
+  "km": 35.3,
+  "pace": "10:10",
+  "hr": 143,
+  "n": 2
  },
  "personal_records": [
   {
@@ -1775,16 +1774,21 @@
    "hill_score": 42,
    "fitness_age": 26.384014019576174,
    "load_ratio": 0.9
+  },
+  {
+   "date": "2026-10-26",
+   "vo2max": null,
+   "half_s": 6499,
+   "time5k_s": 1341,
+   "time10k_s": 2879,
+   "endurance_score": 6106,
+   "hill_score": 42,
+   "fitness_age": 26.384014019576174,
+   "load_ratio": 0.8
   }
  ],
  "gear": [],
  "intensity_minutes_weekly": [
-  {
-   "week": "2026-08-24",
-   "moderate": 30,
-   "vigorous": 222,
-   "goal": 150
-  },
   {
    "week": "2026-08-31",
    "moderate": 1,
@@ -1831,6 +1835,12 @@
    "week": "2026-10-19",
    "moderate": 6,
    "vigorous": 187,
+   "goal": 150
+  },
+  {
+   "week": "2026-10-26",
+   "moderate": 0,
+   "vigorous": 0,
    "goal": 150
   }
  ],
@@ -2038,9 +2048,9 @@
   },
   "month_label": "2026-10",
   "year_label": "2026",
-  "day_of_month": 25,
+  "day_of_month": 26,
   "days_in_month": 31,
-  "day_of_year": 298,
+  "day_of_year": 299,
   "days_in_year": 365
  },
  "activities": [
@@ -6358,14 +6368,34 @@
    "hrv_last_night": 70,
    "hrv_status": "BALANCED",
    "bb_max": 100,
-   "bb_min": 30,
+   "bb_min": 28,
    "readiness": 66,
    "readiness_level": "MODERATE",
    "readiness_now": 64,
    "readiness_src": "morning",
    "rhr": 47.0,
-   "steps": 14226,
-   "stress_avg": 23
+   "steps": 14670,
+   "stress_avg": 27
+  },
+  {
+   "date": "2026-10-26",
+   "sleep_s": 24840,
+   "sleep_score": 86,
+   "deep_s": 3420,
+   "light_s": 15600,
+   "rem_s": 5820,
+   "awake_s": 1560,
+   "hrv_last_night": 71,
+   "hrv_status": "BALANCED",
+   "bb_max": 95,
+   "bb_min": 28,
+   "readiness": 79,
+   "readiness_level": "HIGH",
+   "readiness_now": 79,
+   "readiness_src": "morning",
+   "rhr": 48.0,
+   "steps": 112,
+   "stress_avg": 12
   }
  ]
 }
