@@ -1,40 +1,40 @@
 {
- "generated_at": "2026-10-26T21:43",
+ "generated_at": "2026-10-27T09:57",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-26T21:43",
+  "synced_at": "2026-10-27T09:57",
   "race_predictions": {
-   "time5k_s": 1341,
-   "time10k_s": 2879,
-   "half_s": 6499,
-   "marathon_s": 14491
+   "time5k_s": 1340,
+   "time10k_s": 2877,
+   "half_s": 6495,
+   "marathon_s": 14482
   },
   "training_status": "MAINTAINING_4",
   "garmin_load": {
-   "ratio": 0.8,
-   "acute": 305,
-   "chronic": 372,
-   "status": "OPTIMAL",
-   "chronic_min": 297.6,
-   "chronic_max": 558.0,
+   "ratio": 0.6,
+   "acute": 236,
+   "chronic": 361,
+   "status": "LOW",
+   "chronic_min": 288.8,
+   "chronic_max": 541.5,
    "raw": {
-    "acwrPercent": 33,
-    "acwrStatus": "OPTIMAL",
-    "acwrStatusFeedback": "FEEDBACK_2",
-    "dailyTrainingLoadAcute": 305,
-    "maxTrainingLoadChronic": 558.0,
-    "minTrainingLoadChronic": 297.6,
-    "dailyTrainingLoadChronic": 372,
-    "dailyAcuteChronicWorkloadRatio": 0.8
+    "acwrPercent": 25,
+    "acwrStatus": "LOW",
+    "acwrStatusFeedback": "FEEDBACK_1",
+    "dailyTrainingLoadAcute": 236,
+    "maxTrainingLoadChronic": 541.5,
+    "minTrainingLoadChronic": 288.8,
+    "dailyTrainingLoadChronic": 361,
+    "dailyAcuteChronicWorkloadRatio": 0.6
    }
   },
-  "endurance_score": 6106,
+  "endurance_score": 6110,
   "hill_score": 42,
-  "fitness_age": 26.384014019576174,
+  "fitness_age": 26.29894061586122,
   "garmin_prs": [
    {
     "key": "5k",
@@ -114,10 +114,10 @@
  },
  "training_load": {
   "source": "garmin",
-  "acute": 305,
-  "chronic": 372,
-  "acwr": 0.8,
-  "band": "optimal",
+  "acute": 236,
+  "chronic": 361,
+  "acwr": 0.6,
+  "band": "low",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
  "readiness_note": "readiness = ranna hodnota po prebudeni, readiness_now = posledna hodnota dna",
@@ -1785,6 +1785,17 @@
    "hill_score": 42,
    "fitness_age": 26.384014019576174,
    "load_ratio": 0.8
+  },
+  {
+   "date": "2026-10-27",
+   "vo2max": null,
+   "half_s": 6495,
+   "time5k_s": 1340,
+   "time10k_s": 2877,
+   "endurance_score": 6110,
+   "hill_score": 42,
+   "fitness_age": 26.29894061586122,
+   "load_ratio": 0.6
   }
  ],
  "gear": [],
@@ -2048,9 +2059,9 @@
   },
   "month_label": "2026-10",
   "year_label": "2026",
-  "day_of_month": 26,
+  "day_of_month": 27,
   "days_in_month": 31,
-  "day_of_year": 299,
+  "day_of_year": 300,
   "days_in_year": 365
  },
  "activities": [
@@ -6394,8 +6405,28 @@
    "readiness_now": 79,
    "readiness_src": "morning",
    "rhr": 48.0,
-   "steps": 3052,
-   "stress_avg": 18
+   "steps": 4880,
+   "stress_avg": 20
+  },
+  {
+   "date": "2026-10-27",
+   "sleep_s": 23580,
+   "sleep_score": 87,
+   "deep_s": 6000,
+   "light_s": 11160,
+   "rem_s": 6420,
+   "awake_s": 720,
+   "hrv_last_night": 65,
+   "hrv_status": "BALANCED",
+   "bb_max": 99,
+   "bb_min": 45,
+   "readiness": 86,
+   "readiness_level": "HIGH",
+   "readiness_now": 86,
+   "readiness_src": "morning",
+   "rhr": 46.0,
+   "steps": 4242,
+   "stress_avg": 14
   }
  ]
 }
