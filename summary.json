@@ -1,20 +1,39 @@
 {
- "generated_at": "2026-10-30T10:57",
+ "generated_at": "2026-10-30T21:37",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-30T10:57",
+  "synced_at": "2026-10-30T21:37",
   "race_predictions": {
-   "time5k_s": 1313,
-   "time10k_s": 2834,
-   "half_s": 6411,
-   "marathon_s": 14282
+   "time5k_s": 1312,
+   "time10k_s": 2832,
+   "half_s": 6408,
+   "marathon_s": 14276
   },
-  "endurance_score": null,
-  "hill_score": null,
+  "training_status": "PRODUCTIVE_2",
+  "garmin_load": {
+   "ratio": 1.2,
+   "acute": 530,
+   "chronic": 415,
+   "status": "OPTIMAL",
+   "chronic_min": 332.0,
+   "chronic_max": 622.5,
+   "raw": {
+    "acwrPercent": 52,
+    "acwrStatus": "OPTIMAL",
+    "acwrStatusFeedback": "FEEDBACK_2",
+    "dailyTrainingLoadAcute": 530,
+    "maxTrainingLoadChronic": 622.5,
+    "minTrainingLoadChronic": 332.0,
+    "dailyTrainingLoadChronic": 415,
+    "dailyAcuteChronicWorkloadRatio": 1.2
+   }
+  },
+  "endurance_score": 6187,
+  "hill_score": 45,
   "fitness_age": 26.29894061586122,
   "garmin_prs": [
    {
@@ -87,17 +106,17 @@
    },
    {
     "week": "2026-10-26",
-    "moderate": 10,
-    "vigorous": 87,
+    "moderate": 312,
+    "vigorous": 119,
     "goal": 150
    }
   ]
  },
  "training_load": {
-  "source": "odhad",
-  "acute": 280,
-  "chronic": 305,
-  "acwr": 0.92,
+  "source": "garmin",
+  "acute": 530,
+  "chronic": 415,
+  "acwr": 1.2,
   "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
@@ -152,17 +171,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-05-22",
-   "s": "run",
-   "z": [
-    7,
-    36,
-    591,
-    1873,
-    21
-   ]
-  },
   {
    "d": "2026-05-25",
    "s": "run",
@@ -811,6 +819,17 @@
     526,
     249
    ]
+  },
+  {
+   "d": "2026-10-30",
+   "s": "hike",
+   "z": [
+    12895,
+    1742,
+    48,
+    0,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -835,9 +854,9 @@
    "load": 667
   },
   {
-   "km": 172.5,
-   "n": 11,
-   "load": 983
+   "km": 190.3,
+   "n": 12,
+   "load": 1221
   },
   {
    "km": 450.9,
@@ -1803,13 +1822,13 @@
   {
    "date": "2026-10-30",
    "vo2max": null,
-   "half_s": 6411,
-   "time5k_s": 1313,
-   "time10k_s": 2834,
-   "endurance_score": null,
-   "hill_score": null,
+   "half_s": 6408,
+   "time5k_s": 1312,
+   "time10k_s": 2832,
+   "endurance_score": 6187,
+   "hill_score": 45,
    "fitness_age": 26.29894061586122,
-   "load_ratio": null
+   "load_ratio": 1.2
   }
  ],
  "gear": [],
@@ -1864,8 +1883,8 @@
   },
   {
    "week": "2026-10-26",
-   "moderate": 10,
-   "vigorous": 87,
+   "moderate": 312,
+   "vigorous": 119,
    "goal": 150
   }
  ],
@@ -1875,9 +1894,9 @@
    "swim": 0.0,
    "run": 124,
    "bike": 159,
-   "hike": 0,
-   "elev": 3833,
-   "n": 15
+   "hike": 18,
+   "elev": 5400,
+   "n": 16
   },
   {
    "m": "2026-09",
@@ -2003,9 +2022,9 @@
    "swim": 4.4,
    "run": 671,
    "bike": 646,
-   "hike": 22,
-   "elev": 14308,
-   "n": 97
+   "hike": 40,
+   "elev": 15875,
+   "n": 98
   },
   {
    "y": "2025",
@@ -2033,10 +2052,10 @@
     "time_s": 20878
    },
    "hike": {
-    "km": 0.0,
-    "n": 0,
-    "elev": 0,
-    "time_s": 0
+    "km": 17.7,
+    "n": 1,
+    "elev": 1567,
+    "time_s": 30480
    },
    "swim": {
     "km": 0.0,
@@ -2059,10 +2078,10 @@
     "time_s": 98083
    },
    "hike": {
-    "km": 22.0,
-    "n": 3,
-    "elev": 766,
-    "time_s": 28577
+    "km": 39.7,
+    "n": 4,
+    "elev": 2333,
+    "time_s": 59056
    },
    "swim": {
     "km": 4.4,
@@ -4254,6 +4273,22 @@
    "cadence": 160.484375,
    "aerobic_te": 3.299999952316284,
    "vo2max": 51.0
+  },
+  {
+   "id": 24906698203,
+   "date": "2026-10-30",
+   "type": "hiking",
+   "name": "Vychodna Hiking",
+   "distance_m": 17749.009765625,
+   "duration_s": 30479.55078125,
+   "moving_s": 16155.0,
+   "avg_hr": 110.0,
+   "max_hr": 159.0,
+   "avg_speed_mps": 0.5820000171661377,
+   "elev_gain_m": 1567.0,
+   "cadence": 45.296875,
+   "aerobic_te": 2.4000000953674316,
+   "vo2max": null
   }
  ],
  "wellness": [
@@ -6511,7 +6546,7 @@
    "readiness_now": 95,
    "readiness_src": "morning",
    "rhr": 50.0,
-   "steps": 9808,
+   "steps": 10606,
    "stress_avg": 22
   },
   {
@@ -6523,11 +6558,16 @@
    "rem_s": null,
    "awake_s": null,
    "hrv_last_night": null,
-   "hrv_status": null,
-   "readiness": null,
-   "readiness_now": null,
-   "readiness_level": null,
-   "readiness_src": "none"
+   "hrv_status": "BALANCED",
+   "bb_max": 86,
+   "bb_min": 37,
+   "readiness": 92,
+   "readiness_level": "HIGH",
+   "readiness_now": 82,
+   "readiness_src": "morning",
+   "rhr": 52.0,
+   "steps": 27527,
+   "stress_avg": 60
   }
  ]
 }
