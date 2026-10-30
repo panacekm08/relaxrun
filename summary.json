@@ -1,39 +1,20 @@
 {
- "generated_at": "2026-10-29T21:53",
+ "generated_at": "2026-10-30T10:57",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-29T21:53",
+  "synced_at": "2026-10-30T10:57",
   "race_predictions": {
    "time5k_s": 1313,
    "time10k_s": 2834,
    "half_s": 6411,
    "marathon_s": 14282
   },
-  "training_status": "PRODUCTIVE_2",
-  "garmin_load": {
-   "ratio": 1.3,
-   "acute": 555,
-   "chronic": 417,
-   "status": "OPTIMAL",
-   "chronic_min": 333.6,
-   "chronic_max": 625.5,
-   "raw": {
-    "acwrPercent": 57,
-    "acwrStatus": "OPTIMAL",
-    "acwrStatusFeedback": "FEEDBACK_3",
-    "dailyTrainingLoadAcute": 555,
-    "maxTrainingLoadChronic": 625.5,
-    "minTrainingLoadChronic": 333.6,
-    "dailyTrainingLoadChronic": 417,
-    "dailyAcuteChronicWorkloadRatio": 1.3
-   }
-  },
-  "endurance_score": 6184,
-  "hill_score": 43,
+  "endurance_score": null,
+  "hill_score": null,
   "fitness_age": 26.29894061586122,
   "garmin_prs": [
    {
@@ -113,10 +94,10 @@
   ]
  },
  "training_load": {
-  "source": "garmin",
-  "acute": 555,
-  "chronic": 417,
-  "acwr": 1.3,
+  "source": "odhad",
+  "acute": 280,
+  "chronic": 305,
+  "acwr": 0.92,
   "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
@@ -1818,6 +1799,17 @@
    "hill_score": 43,
    "fitness_age": 26.29894061586122,
    "load_ratio": 1.3
+  },
+  {
+   "date": "2026-10-30",
+   "vo2max": null,
+   "half_s": 6411,
+   "time5k_s": 1313,
+   "time10k_s": 2834,
+   "endurance_score": null,
+   "hill_score": null,
+   "fitness_age": 26.29894061586122,
+   "load_ratio": null
   }
  ],
  "gear": [],
@@ -2081,9 +2073,9 @@
   },
   "month_label": "2026-10",
   "year_label": "2026",
-  "day_of_month": 29,
+  "day_of_month": 30,
   "days_in_month": 31,
-  "day_of_year": 302,
+  "day_of_year": 303,
   "days_in_year": 365
  },
  "activities": [
@@ -6521,6 +6513,21 @@
    "rhr": 50.0,
    "steps": 9808,
    "stress_avg": 22
+  },
+  {
+   "date": "2026-10-30",
+   "sleep_s": null,
+   "sleep_score": null,
+   "deep_s": null,
+   "light_s": null,
+   "rem_s": null,
+   "awake_s": null,
+   "hrv_last_night": null,
+   "hrv_status": null,
+   "readiness": null,
+   "readiness_now": null,
+   "readiness_level": null,
+   "readiness_src": "none"
   }
  ]
 }
