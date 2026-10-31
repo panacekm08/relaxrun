@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-10-31T10:31",
+ "generated_at": "2026-10-31T20:31",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-10-31T10:31",
+  "synced_at": "2026-10-31T20:31",
   "race_predictions": {
-   "time5k_s": 1312,
-   "time10k_s": 2832,
-   "half_s": 6408,
-   "marathon_s": 14276
+   "time5k_s": 1311,
+   "time10k_s": 2830,
+   "half_s": 6405,
+   "marathon_s": 14271
   },
   "training_status": "MAINTAINING_4",
   "garmin_load": {
@@ -32,8 +32,8 @@
     "dailyAcuteChronicWorkloadRatio": 1.0
    }
   },
-  "endurance_score": null,
-  "hill_score": null,
+  "endurance_score": 6189,
+  "hill_score": 45,
   "fitness_age": 26.29894061586122,
   "garmin_prs": [
    {
@@ -1833,11 +1833,11 @@
   {
    "date": "2026-10-31",
    "vo2max": null,
-   "half_s": 6408,
-   "time5k_s": 1312,
-   "time10k_s": 2832,
-   "endurance_score": null,
-   "hill_score": null,
+   "half_s": 6405,
+   "time5k_s": 1311,
+   "time10k_s": 2830,
+   "endurance_score": 6189,
+   "hill_score": 45,
    "fitness_age": 26.29894061586122,
    "load_ratio": 1.0
   }
@@ -6590,10 +6590,15 @@
    "awake_s": null,
    "hrv_last_night": null,
    "hrv_status": "BALANCED",
+   "bb_max": 19,
+   "bb_min": 19,
    "readiness": null,
    "readiness_now": null,
    "readiness_level": null,
-   "readiness_src": "none"
+   "readiness_src": "none",
+   "rhr": 58.0,
+   "steps": null,
+   "stress_avg": 20
   }
  ]
 }

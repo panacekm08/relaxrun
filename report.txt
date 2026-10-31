@@ -1,13 +1,13 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-10-31T10:31
-Vygenerované: 2026-10-31T10:31
+Synchronizované: 2026-10-31T20:31
+Vygenerované: 2026-10-31T20:31
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:46:48
-- Rozdiel: +1:48 (nad cieľom)
-- Ďalšie predikcie: 5 km 21:52, 10 km 47:12, maratón 3:57:56
+- Garmin predikcia polmaratónu: 1:46:45
+- Rozdiel: +1:45 (nad cieľom)
+- Ďalšie predikcie: 5 km 21:51, 10 km 47:10, maratón 3:57:51
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
@@ -22,9 +22,9 @@ Vygenerované: 2026-10-31T10:31
 ## Regenerácia (priemer za 7 dní)
 - Priemerný spánok: 7:07:24
 - HRV: 70 ms
-- Pokojový tep: 48 bpm
+- Pokojový tep: 50 bpm
 - Kroky: 15740 denne
-- Naposledy (2026-10-31): spánok –, skóre –, HRV –, pripravenosť ráno –, stres –
+- Naposledy (2026-10-31): spánok –, skóre –, HRV –, pripravenosť ráno –, stres 20
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
@@ -44,7 +44,7 @@ Vygenerované: 2026-10-31T10:31
 | 2026-10-28 | 6:57:00 | 94 | 1:39:00 | 1:43:00 | 69 | 46 | 68 | 27 | 15057 |
 | 2026-10-29 | 7:22:00 | 95 | 1:37:00 | 1:40:00 | 75 | 50 | 89 | 22 | 10606 |
 | 2026-10-30 | – | – | – | – | – | 52 | 92 | 55 | 27982 |
-| 2026-10-31 | – | – | – | – | – | – | – | – | – |
+| 2026-10-31 | – | – | – | – | – | 58 | – | 20 | – |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
@@ -174,8 +174,8 @@ Všetkých 135 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 
 ## Aktuálne hodnoty
 - VO2max: 50.6
-- Endurance score: –
-- Hill score: –
+- Endurance score: 6189
+- Hill score: 45
 - Stav tréningu podľa Garminu: MAINTAINING_4
 
 ---
@@ -455,5 +455,5 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-10-28,6:57:00,94,1:39:00,1:43:00,3:35:00,69,46,68,27,15057
 2026-10-29,7:22:00,95,1:37:00,1:40:00,4:05:00,75,50,89,22,10606
 2026-10-30,,,,,,,52,92,55,27982
-2026-10-31,,,,,,,,,,
+2026-10-31,,,,,,,58,,20,
 ```
