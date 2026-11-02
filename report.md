@@ -1,7 +1,7 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-02T12:45
-Vygenerované: 2026-11-02T12:45
+Synchronizované: 2026-11-02T23:57
+Vygenerované: 2026-11-02T23:57
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
@@ -13,18 +13,18 @@ Vygenerované: 2026-11-02T12:45
 
 | Metrika | Posledných 7 dní | Predchádzajúcich 7 | Zmena |
 |---|---|---|---|
-| Počet behov | 3 | 3 | +0 |
-| Objem | 25.5 km | 29.6 km | -4.1 km |
-| Priemerné tempo | 5:59/km | 6:15/km | – |
-| Priemerný tep | 150 bpm | 140 bpm | +10 bpm |
+| Počet behov | 4 | 3 | +1 |
+| Objem | 31.0 km | 29.6 km | +1.4 km |
+| Priemerné tempo | 6:02/km | 6:15/km | – |
+| Priemerný tep | 146 bpm | 140 bpm | +6 bpm |
 | Priemerný spánok | 7:07:14 | 6:33:03 | +34 min |
 
 ## Regenerácia (priemer za 7 dní)
 - Priemerný spánok: 7:07:14
 - HRV: 67 ms
 - Pokojový tep: 49 bpm
-- Kroky: 13245 denne
-- Naposledy (2026-11-02): spánok 8:45:31, skóre 94, HRV 68, pripravenosť ráno 89 (high), aktuálne 89, stres 14
+- Kroky: 14598 denne
+- Naposledy (2026-11-02): spánok 8:45:31, skóre 94, HRV 68, pripravenosť ráno 89 (high), aktuálne 78, stres 19
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
@@ -44,13 +44,13 @@ Vygenerované: 2026-11-02T12:45
 | 2026-10-30 | – | – | – | – | – | 52 | 92 | 55 | 27982 |
 | 2026-10-31 | – | – | – | – | – | 52 | 86 | 19 | 836 |
 | 2026-11-01 | 5:58:40 | 79 | 1:41:00 | 1:03:00 | 60 | 47 | 77 | 24 | 16174 |
-| 2026-11-02 | 8:45:31 | 94 | 1:55:00 | 1:57:00 | 68 | 49 | 89 | 14 | 816 |
+| 2026-11-02 | 8:45:31 | 94 | 1:55:00 | 1:57:00 | 68 | 49 | 89 | 19 | 10286 |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
-- Akútna záťaž: 373
-- Chronická záťaž: 400
-- Load Ratio: 0.9 (optimálne)
+- Akútna záťaž: 436
+- Chronická záťaž: 411
+- Load Ratio: 1.0 (optimálne)
 - Garmin pásma: pod 0,8 nízke · 0,8–1,4 optimálne · 1,5–1,9 vysoké · 2,0+ veľmi vysoké
 - Load Ratio meria len záťaž. O dennej forme viac povie ranná pripravenosť.
 
@@ -58,7 +58,7 @@ Vygenerované: 2026-11-02T12:45
 
 | Šport | Mesiac (2026-11) | Rok (2026) |
 |---|---|---|
-| Beh | 8.4 km / 1× | 679.8 km / 76× |
+| Beh | 13.9 km / 2× | 685.3 km / 77× |
 | Bike | 0.0 km / 0× | 646.3 km / 14× |
 | Túra | 0.0 km / 0× | 39.7 km / 4× |
 | Plávanie | 0.0 km / 0× | 4.4 km / 5× |
@@ -72,20 +72,20 @@ Vygenerované: 2026-11-02T12:45
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 16 % | 35 % | 28 % | 15 % | 5 % | 15:31:42 |
+| Beh | 17 % | 35 % | 27 % | 15 % | 5 % | 16:05:44 |
 | Bike | 64 % | 25 % | 10 % | 1 % | 0 % | 2:53:12 |
 | Túra | 88 % | 12 % | 0 % | 0 % | 0 % | 4:04:45 |
-| **Všetko** | 35 % | 29 % | 21 % | 11 % | 4 % | 22:29:39 |
+| **Všetko** | 36 % | 30 % | 20 % | 10 % | 4 % | 23:03:41 |
 
 ### Posledných 90 dní
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 10 % | 39 % | 31 % | 14 % | 6 % | 31:04:21 |
+| Beh | 10 % | 40 % | 30 % | 13 % | 6 % | 31:38:23 |
 | Bike | 30 % | 38 % | 30 % | 2 % | 0 % | 6:56:49 |
 | Túra | 87 % | 13 % | 0 % | 0 % | 0 % | 4:47:06 |
 | Plávanie | 38 % | 43 % | 19 % | 0 % | 0 % | 14:15 |
-| **Všetko** | 22 % | 36 % | 27 % | 10 % | 5 % | 43:02:31 |
+| **Všetko** | 22 % | 36 % | 27 % | 10 % | 5 % | 43:36:33 |
 
 ## Osobné rekordy
 
@@ -101,10 +101,11 @@ Vygenerované: 2026-11-02T12:45
 
 ## Posledných 40 aktivít
 
-Všetkých 136 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súbore activities.csv.
+Všetkých 137 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súbore activities.csv.
 
 | Dátum | Šport | km | Čas | Tempo / rýchlosť | Tep | Prevýšenie |
 |---|---|---|---|---|---|---|
+| 2026-11-02 | Beh | 5.5 | 34:38 | 6:17/km | 135 | 73 m |
 | 2026-11-01 | Beh | 8.4 | 57:34 | 6:54/km | 140 | 316 m |
 | 2026-10-30 | Túra | 17.7 | 8:28:00 | 28:37/km | 110 | 1567 m |
 | 2026-10-28 | Beh | 7.1 | 43:29 | 6:07/km | 148 | 41 m |
@@ -144,13 +145,12 @@ Všetkých 136 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 | 2026-08-05 | Beh | 6.3 | 46:02 | 7:19/km | 133 | 57 m |
 | 2026-08-04 | Beh | 7.0 | 50:17 | 7:11/km | 132 | 49 m |
 | 2026-08-01 | Bike | 74.1 | 2:26:09 | 30.4 km/h | 143 | 435 m |
-| 2026-07-29 | Beh | 7.3 | 50:45 | 6:58/km | 135 | 54 m |
 
 ## Mesačné súčty (km)
 
 | Mesiac | Beh | Bike | Túra | Plávanie | Prevýšenie | Aktivít |
 |---|---|---|---|---|---|---|
-| 2026-11 | 8 | 0 | 0 | 0.0 | 316 m | 1 |
+| 2026-11 | 14 | 0 | 0 | 0.0 | 389 m | 2 |
 | 2026-10 | 124 | 159 | 18 | 0.0 | 5400 m | 16 |
 | 2026-09 | 73 | 0 | 0 | 0.0 | 756 m | 9 |
 | 2026-08 | 73 | 127 | 6 | 0.4 | 2231 m | 13 |
@@ -167,16 +167,16 @@ Všetkých 136 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 
 | Rok | Beh | Bike | Túra | Plávanie | Prevýšenie | Aktivít |
 |---|---|---|---|---|---|---|
-| 2026 | 680 | 646 | 40 | 4.4 | 16191 m | 99 |
+| 2026 | 685 | 646 | 40 | 4.4 | 16264 m | 100 |
 | 2025 * | 187 | 370 | 28 | 0.0 | 5732 m | 37 |
 
 \* 2025 je neúplný – dáta až od 2025-09-01 (začiatok merania). Neporovnávať s celým rokom.
 
 ## Aktuálne hodnoty
 - VO2max: 50.7
-- Endurance score: 6198
+- Endurance score: 6193
 - Hill score: 46
-- Stav tréningu podľa Garminu: MAINTAINING_2
+- Stav tréningu podľa Garminu: PRODUCTIVE_3
 
 ---
 
@@ -184,7 +184,7 @@ Všetkých 136 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 
 Nasledujú úplné dáta od začiatku merania, v kompaktnom CSV formáte.
 
-## Všetky aktivity (136)
+## Všetky aktivity (137)
 
 Stĺpce: datum,sport,km,cas,tempo_alebo_rychlost,tep,max_tep,prevysenie_m,kadencia,TE
 
@@ -325,6 +325,7 @@ Stĺpce: datum,sport,km,cas,tempo_alebo_rychlost,tep,max_tep,prevysenie_m,kadenc
 2026-10-28,run,7.10,43:29,6:07/km,148,180,41,160,3.3
 2026-10-30,hike,17.75,8:28:00,28:37/km,110,159,1567,45,2.4
 2026-11-01,run,8.35,57:34,6:54/km,140,167,316,156,3.1
+2026-11-02,run,5.51,34:38,6:17/km,135,149,73,165,2.5
 ```
 
 ## Wellness po dňoch (127)
@@ -458,5 +459,5 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-10-30,,,,,,,52,92,55,27982
 2026-10-31,,,,,,,52,86,19,836
 2026-11-01,5:58:40,79,1:41:00,1:03:00,3:15:00,60,47,77,24,16174
-2026-11-02,8:45:31,94,1:55:00,1:57:00,4:54:00,68,49,89,14,816
+2026-11-02,8:45:31,94,1:55:00,1:57:00,4:54:00,68,49,89,19,10286
 ```
