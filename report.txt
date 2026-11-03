@@ -1,7 +1,7 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-03T08:30
-Vygenerované: 2026-11-03T08:30
+Synchronizované: 2026-11-03T12:10
+Vygenerované: 2026-11-03T12:10
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
@@ -24,7 +24,7 @@ Vygenerované: 2026-11-03T08:30
 - HRV: 68 ms
 - Pokojový tep: 49 bpm
 - Kroky: 12469 denne
-- Naposledy (2026-11-03): spánok 6:59:43, skóre 90, HRV 70, pripravenosť ráno 89 (high), aktuálne 73, stres 13
+- Naposledy (2026-11-03): spánok 6:59:43, skóre 90, HRV 70, pripravenosť ráno 89 (high), aktuálne 75, stres 13
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
