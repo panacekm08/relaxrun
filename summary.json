@@ -1,38 +1,39 @@
 {
- "generated_at": "2026-11-08T11:26",
+ "generated_at": "2026-11-08T21:15",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-08T11:26",
+  "synced_at": "2026-11-08T21:15",
   "race_predictions": {
    "time5k_s": 1280,
    "time10k_s": 2761,
    "half_s": 6300,
    "marathon_s": 14021
   },
+  "vo2max": 51.0,
   "training_status": "PRODUCTIVE_3",
   "garmin_load": {
-   "ratio": 1.0,
-   "acute": 469,
-   "chronic": 451,
+   "ratio": 1.1,
+   "acute": 545,
+   "chronic": 465,
    "status": "OPTIMAL",
-   "chronic_min": 360.8,
-   "chronic_max": 676.5,
+   "chronic_min": 372.0,
+   "chronic_max": 697.5,
    "raw": {
-    "acwrPercent": 42,
+    "acwrPercent": 47,
     "acwrStatus": "OPTIMAL",
     "acwrStatusFeedback": "FEEDBACK_2",
-    "dailyTrainingLoadAcute": 469,
-    "maxTrainingLoadChronic": 676.5,
-    "minTrainingLoadChronic": 360.8,
-    "dailyTrainingLoadChronic": 451,
-    "dailyAcuteChronicWorkloadRatio": 1.0
+    "dailyTrainingLoadAcute": 545,
+    "maxTrainingLoadChronic": 697.5,
+    "minTrainingLoadChronic": 372.0,
+    "dailyTrainingLoadChronic": 465,
+    "dailyAcuteChronicWorkloadRatio": 1.1
    }
   },
-  "endurance_score": 6293,
+  "endurance_score": 6288,
   "hill_score": 47,
   "fitness_age": 26.29894061586122,
   "garmin_prs": [
@@ -106,26 +107,26 @@
    },
    {
     "week": "2026-11-02",
-    "moderate": 13,
-    "vigorous": 210,
+    "moderate": 15,
+    "vigorous": 259,
     "goal": 150
    }
   ]
  },
  "training_load": {
   "source": "garmin",
-  "acute": 469,
-  "chronic": 451,
-  "acwr": 1.0,
+  "acute": 545,
+  "chronic": 465,
+  "acwr": 1.1,
   "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
  "readiness_note": "readiness = ranna hodnota po prebudeni, readiness_now = posledna hodnota dna",
  "week_now": {
-  "km": 37.0,
-  "pace": "5:51",
-  "hr": 145,
-  "n": 6
+  "km": 44.0,
+  "pace": "6:03",
+  "hr": 143,
+  "n": 7
  },
  "week_prev": {
   "km": 25.5,
@@ -171,17 +172,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-07-09",
-   "s": "run",
-   "z": [
-    48,
-    592,
-    2408,
-    832,
-    0
-   ]
-  },
   {
    "d": "2026-07-10",
    "s": "run",
@@ -830,6 +820,17 @@
     111,
     115
    ]
+  },
+  {
+   "d": "2026-11-08",
+   "s": "run",
+   "z": [
+    2533,
+    320,
+    80,
+    7,
+    13
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -864,9 +865,9 @@
    "load": 2651
   },
   {
-   "km": 439.5,
-   "n": 23,
-   "load": 2142
+   "km": 446.5,
+   "n": 24,
+   "load": 2183
   }
  ],
  "fitness_history": [
@@ -1920,14 +1921,14 @@
   },
   {
    "date": "2026-11-08",
-   "vo2max": null,
+   "vo2max": 51.0,
    "half_s": 6300,
    "time5k_s": 1280,
    "time10k_s": 2761,
-   "endurance_score": 6293,
+   "endurance_score": 6288,
    "hill_score": 47,
    "fitness_age": 26.29894061586122,
-   "load_ratio": 1.0
+   "load_ratio": 1.1
   }
  ],
  "gear": [],
@@ -1982,8 +1983,8 @@
   },
   {
    "week": "2026-11-02",
-   "moderate": 13,
-   "vigorous": 210,
+   "moderate": 15,
+   "vigorous": 259,
    "goal": 150
   }
  ],
@@ -1991,11 +1992,11 @@
   {
    "m": "2026-11",
    "swim": 0.0,
-   "run": 45,
+   "run": 52,
    "bike": 0,
    "hike": 0,
-   "elev": 755,
-   "n": 7
+   "elev": 822,
+   "n": 8
   },
   {
    "m": "2026-10",
@@ -2128,11 +2129,11 @@
   {
    "y": "2026",
    "swim": 4.4,
-   "run": 717,
+   "run": 724,
    "bike": 646,
    "hike": 40,
-   "elev": 16630,
-   "n": 105
+   "elev": 16697,
+   "n": 106
   },
   {
    "y": "2025",
@@ -2148,10 +2149,10 @@
  "counters": {
   "month": {
    "run": {
-    "km": 45.3,
-    "n": 7,
-    "elev": 755,
-    "time_s": 16444
+    "km": 52.4,
+    "n": 8,
+    "elev": 822,
+    "time_s": 19416
    },
    "bike": {
     "km": 0.0,
@@ -2174,10 +2175,10 @@
   },
   "year": {
    "run": {
-    "km": 716.8,
-    "n": 82,
-    "elev": 9120,
-    "time_s": 276021
+    "km": 723.8,
+    "n": 83,
+    "elev": 9187,
+    "time_s": 278994
    },
    "bike": {
     "km": 646.3,
@@ -4508,6 +4509,22 @@
    "elev_gain_m": 54.0,
    "cadence": 174.234375,
    "aerobic_te": 3.0999999046325684,
+   "vo2max": 51.0
+  },
+  {
+   "id": 25011168069,
+   "date": "2026-11-08",
+   "type": "running",
+   "name": "Puchov Running",
+   "distance_m": 7038.02978515625,
+   "duration_s": 2972.2490234375,
+   "moving_s": 2970.7689514160156,
+   "avg_hr": 130.0,
+   "max_hr": 180.0,
+   "avg_speed_mps": 2.368000030517578,
+   "elev_gain_m": 67.0,
+   "cadence": 163.375,
+   "aerobic_te": 2.5,
    "vo2max": 51.0
   }
  ],
@@ -6963,11 +6980,11 @@
    "bb_min": 25,
    "readiness": 97,
    "readiness_level": "PRIME",
-   "readiness_now": 97,
+   "readiness_now": 86,
    "readiness_src": "morning",
    "rhr": 49.0,
-   "steps": 316,
-   "stress_avg": 13
+   "steps": 16158,
+   "stress_avg": 18
   }
  ]
 }
