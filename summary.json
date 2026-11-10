@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-10T12:52",
+ "generated_at": "2026-11-10T22:26",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-10T12:52",
+  "synced_at": "2026-11-10T22:26",
   "race_predictions": {
    "time5k_s": 1277,
    "time10k_s": 2758,
@@ -17,19 +17,19 @@
   "training_status": "PRODUCTIVE_3",
   "garmin_load": {
    "ratio": 1.1,
-   "acute": 553,
-   "chronic": 471,
+   "acute": 567,
+   "chronic": 473,
    "status": "OPTIMAL",
-   "chronic_min": 376.8,
-   "chronic_max": 706.5,
+   "chronic_min": 378.40000000000003,
+   "chronic_max": 709.5,
    "raw": {
     "acwrPercent": 47,
     "acwrStatus": "OPTIMAL",
     "acwrStatusFeedback": "FEEDBACK_2",
-    "dailyTrainingLoadAcute": 553,
-    "maxTrainingLoadChronic": 706.5,
-    "minTrainingLoadChronic": 376.8,
-    "dailyTrainingLoadChronic": 471,
+    "dailyTrainingLoadAcute": 567,
+    "maxTrainingLoadChronic": 709.5,
+    "minTrainingLoadChronic": 378.40000000000003,
+    "dailyTrainingLoadChronic": 473,
     "dailyAcuteChronicWorkloadRatio": 1.1
    }
   },
@@ -107,7 +107,7 @@
    },
    {
     "week": "2026-11-09",
-    "moderate": 7,
+    "moderate": 55,
     "vigorous": 86,
     "goal": 150
    }
@@ -115,8 +115,8 @@
  },
  "training_load": {
   "source": "garmin",
-  "acute": 553,
-  "chronic": 471,
+  "acute": 567,
+  "chronic": 473,
   "acwr": 1.1,
   "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
@@ -2005,7 +2005,7 @@
   },
   {
    "week": "2026-11-09",
-   "moderate": 7,
+   "moderate": 55,
    "vigorous": 86,
    "goal": 150
   }
@@ -4580,6 +4580,22 @@
    "cadence": 170.03125,
    "aerobic_te": 3.4000000953674316,
    "vo2max": 51.0
+  },
+  {
+   "id": 25036075938,
+   "date": "2026-11-10",
+   "type": "badminton",
+   "name": "Badminton",
+   "distance_m": 236.85000610351562,
+   "duration_s": 3304.6708984375,
+   "moving_s": 250.0,
+   "avg_hr": 104.0,
+   "max_hr": 138.0,
+   "avg_speed_mps": 0.07199999690055847,
+   "elev_gain_m": null,
+   "cadence": 16.578125,
+   "aerobic_te": 0.800000011920929,
+   "vo2max": null
   }
  ],
  "wellness": [
@@ -7074,11 +7090,11 @@
    "bb_min": 43,
    "readiness": 94,
    "readiness_level": "HIGH",
-   "readiness_now": 76,
+   "readiness_now": 86,
    "readiness_src": "morning",
    "rhr": 44.0,
-   "steps": 8023,
-   "stress_avg": 15
+   "steps": 15741,
+   "stress_avg": 19
   }
  ]
 }
