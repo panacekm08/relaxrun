@@ -1,7 +1,7 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-10T11:17
-Vygenerované: 2026-11-10T11:17
+Synchronizované: 2026-11-10T12:52
+Vygenerované: 2026-11-10T12:52
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
