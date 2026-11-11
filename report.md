@@ -1,37 +1,36 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-10T22:26
-Vygenerované: 2026-11-10T22:26
+Synchronizované: 2026-11-11T12:01
+Vygenerované: 2026-11-11T12:01
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:44:55
-- Rozdiel: −0:05 (pod cieľom)
-- Ďalšie predikcie: 5 km 21:17, 10 km 45:58, maratón 3:53:27
+- Garmin predikcia polmaratónu: 1:44:52
+- Rozdiel: −0:08 (pod cieľom)
+- Ďalšie predikcie: 5 km 21:16, 10 km 45:56, maratón 3:53:21
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
 | Metrika | Posledných 7 dní | Predchádzajúcich 7 | Zmena |
 |---|---|---|---|
-| Počet behov | 7 | 4 | +3 |
-| Objem | 46.6 km | 26.1 km | +20.5 km |
-| Priemerné tempo | 6:10/km | 6:13/km | – |
-| Priemerný tep | 140 bpm | 145 bpm | -5 bpm |
-| Priemerný spánok | 7:12:21 | 7:12:35 | -0 min |
+| Počet behov | 6 | 4 | +2 |
+| Objem | 36.6 km | 29.0 km | +7.6 km |
+| Priemerné tempo | 6:30/km | 5:49/km | – |
+| Priemerný tep | 137 bpm | 148 bpm | -11 bpm |
+| Priemerný spánok | 7:08:01 | 7:16:39 | -9 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 7:12:21
-- HRV: 69 ms
+- Priemerný spánok: 7:08:01
+- HRV: 70 ms
 - Pokojový tep: 47 bpm
-- Kroky: 13782 denne
-- Naposledy (2026-11-10): spánok 7:26:00, skóre 99, HRV 77, pripravenosť ráno 94 (high), aktuálne 86, stres 19
+- Kroky: 11796 denne
+- Naposledy (2026-11-11): spánok 6:47:00, skóre 90, HRV 73, pripravenosť ráno 100 (prime), aktuálne 100, stres 11
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
 
 | Dátum | Spánok | Skóre | Hlboký | REM | HRV | Pokoj. tep | Pripravenosť ráno | Stres | Kroky |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-10-28 | 6:57:00 | 94 | 1:39:00 | 1:43:00 | 69 | 46 | 68 | 27 | 15057 |
 | 2026-10-29 | 7:22:00 | 95 | 1:37:00 | 1:40:00 | 75 | 50 | 89 | 22 | 10606 |
 | 2026-10-30 | – | – | – | – | – | 52 | 92 | 55 | 27982 |
 | 2026-10-31 | – | – | – | – | – | 52 | 86 | 19 | 836 |
@@ -44,13 +43,14 @@ Vygenerované: 2026-11-10T22:26
 | 2026-11-07 | 7:12:00 | 95 | 1:56:00 | 1:33:00 | 72 | 45 | 83 | 30 | 8770 |
 | 2026-11-08 | 7:46:00 | 84 | 1:42:00 | 1:39:00 | 72 | 49 | 97 | 21 | 17288 |
 | 2026-11-09 | 7:05:00 | 87 | 1:53:00 | 1:12:00 | 63 | 48 | 85 | 21 | 12826 |
-| 2026-11-10 | 7:26:00 | 99 | 2:03:00 | 1:53:00 | 77 | 44 | 94 | 19 | 15741 |
+| 2026-11-10 | 7:26:00 | 99 | 2:03:00 | 1:53:00 | 77 | 44 | 94 | 19 | 17353 |
+| 2026-11-11 | 6:47:00 | 90 | 1:28:00 | 1:31:00 | 73 | 47 | 100 | 11 | 320 |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
-- Akútna záťaž: 567
-- Chronická záťaž: 473
-- Load Ratio: 1.1 (optimálne)
+- Akútna záťaž: 462
+- Chronická záťaž: 463
+- Load Ratio: 0.9 (optimálne)
 - Garmin pásma: pod 0,8 nízke · 0,8–1,4 optimálne · 1,5–1,9 vysoké · 2,0+ veľmi vysoké
 - Load Ratio meria len záťaž. O dennej forme viac povie ranná pripravenosť.
 
@@ -63,7 +63,7 @@ Vygenerované: 2026-11-10T22:26
 | Túra | 0.0 km / 0× | 39.7 km / 4× |
 | Plávanie | 0.0 km / 0× | 4.4 km / 5× |
 
-- Uplynulo 10 z 30 dní mesiaca, 314 z 365 dní roka
+- Uplynulo 11 z 30 dní mesiaca, 315 z 365 dní roka
 - Sledované ciele: beh 100 km/mesiac a 1000 km/rok, bike rovnako (dajú sa zmeniť v dashboarde)
 
 ## Tepové zóny
@@ -173,7 +173,7 @@ Všetkých 145 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 
 ## Aktuálne hodnoty
 - VO2max: 51.2
-- Endurance score: 6298
+- Endurance score: 6301
 - Hill score: 47
 - Stav tréningu podľa Garminu: PRODUCTIVE_3
 
@@ -335,7 +335,7 @@ Stĺpce: datum,sport,km,cas,tempo_alebo_rychlost,tep,max_tep,prevysenie_m,kadenc
 2026-11-10,run,6.01,32:04,5:20/km,152,170,34,170,3.4
 ```
 
-## Wellness po dňoch (135)
+## Wellness po dňoch (136)
 
 Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,stres,kroky
 
@@ -474,5 +474,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-11-07,7:12:00,95,1:56:00,1:33:00,3:43:00,72,45,83,30,8770
 2026-11-08,7:46:00,84,1:42:00,1:39:00,4:25:00,72,49,97,21,17288
 2026-11-09,7:05:00,87,1:53:00,1:12:00,4:00:00,63,48,85,21,12826
-2026-11-10,7:26:00,99,2:03:00,1:53:00,3:30:00,77,44,94,19,15741
+2026-11-10,7:26:00,99,2:03:00,1:53:00,3:30:00,77,44,94,19,17353
+2026-11-11,6:47:00,90,1:28:00,1:31:00,3:48:00,73,47,100,11,320
 ```
