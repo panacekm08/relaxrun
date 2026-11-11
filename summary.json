@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-11-11T19:45",
+ "generated_at": "2026-11-11T23:33",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-11T19:45",
+  "synced_at": "2026-11-11T23:33",
   "race_predictions": {
-   "time5k_s": 1275,
-   "time10k_s": 2750,
-   "half_s": 6278,
-   "marathon_s": 13968
+   "time5k_s": 1274,
+   "time10k_s": 2748,
+   "half_s": 6273,
+   "marathon_s": 13962
   },
   "vo2max": 51.3,
   "training_status": "PRODUCTIVE_3",
@@ -1955,9 +1955,9 @@
   {
    "date": "2026-11-11",
    "vo2max": 51.3,
-   "half_s": 6278,
-   "time5k_s": 1275,
-   "time10k_s": 2750,
+   "half_s": 6273,
+   "time5k_s": 1274,
+   "time10k_s": 2748,
    "endurance_score": 6312,
    "hill_score": 47,
    "fitness_age": 24.5853692826539,
@@ -7134,14 +7134,14 @@
    "hrv_last_night": 73,
    "hrv_status": "BALANCED",
    "bb_max": 99,
-   "bb_min": 36,
+   "bb_min": 31,
    "readiness": 100,
    "readiness_level": "PRIME",
    "readiness_now": 90,
    "readiness_src": "morning",
    "rhr": 47.0,
-   "steps": 12089,
-   "stress_avg": 19
+   "steps": 12268,
+   "stress_avg": 22
   }
  ]
 }

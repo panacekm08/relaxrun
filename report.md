@@ -1,13 +1,13 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-11T19:45
-Vygenerované: 2026-11-11T19:45
+Synchronizované: 2026-11-11T23:33
+Vygenerované: 2026-11-11T23:33
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:44:38
-- Rozdiel: −0:22 (pod cieľom)
-- Ďalšie predikcie: 5 km 21:15, 10 km 45:50, maratón 3:52:48
+- Garmin predikcia polmaratónu: 1:44:33
+- Rozdiel: −0:27 (pod cieľom)
+- Ďalšie predikcie: 5 km 21:14, 10 km 45:48, maratón 3:52:42
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
@@ -23,8 +23,8 @@ Vygenerované: 2026-11-11T19:45
 - Priemerný spánok: 7:08:01
 - HRV: 70 ms
 - Pokojový tep: 47 bpm
-- Kroky: 13477 denne
-- Naposledy (2026-11-11): spánok 6:47:00, skóre 90, HRV 73, pripravenosť ráno 100 (prime), aktuálne 90, stres 19
+- Kroky: 13503 denne
+- Naposledy (2026-11-11): spánok 6:47:00, skóre 90, HRV 73, pripravenosť ráno 100 (prime), aktuálne 90, stres 22
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
@@ -44,7 +44,7 @@ Vygenerované: 2026-11-11T19:45
 | 2026-11-08 | 7:46:00 | 84 | 1:42:00 | 1:39:00 | 72 | 49 | 97 | 21 | 17288 |
 | 2026-11-09 | 7:05:00 | 87 | 1:53:00 | 1:12:00 | 63 | 48 | 85 | 21 | 12826 |
 | 2026-11-10 | 7:26:00 | 99 | 2:03:00 | 1:53:00 | 77 | 44 | 94 | 19 | 17353 |
-| 2026-11-11 | 6:47:00 | 90 | 1:28:00 | 1:31:00 | 73 | 47 | 100 | 19 | 12089 |
+| 2026-11-11 | 6:47:00 | 90 | 1:28:00 | 1:31:00 | 73 | 47 | 100 | 22 | 12268 |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
@@ -476,5 +476,5 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-11-08,7:46:00,84,1:42:00,1:39:00,4:25:00,72,49,97,21,17288
 2026-11-09,7:05:00,87,1:53:00,1:12:00,4:00:00,63,48,85,21,12826
 2026-11-10,7:26:00,99,2:03:00,1:53:00,3:30:00,77,44,94,19,17353
-2026-11-11,6:47:00,90,1:28:00,1:31:00,3:48:00,73,47,100,19,12089
+2026-11-11,6:47:00,90,1:28:00,1:31:00,3:48:00,73,47,100,22,12268
 ```
