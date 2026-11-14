@@ -1,37 +1,36 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-13T22:43
-Vygenerované: 2026-11-13T22:43
+Synchronizované: 2026-11-14T11:40
+Vygenerované: 2026-11-14T11:40
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:43:52
-- Rozdiel: −1:08 (pod cieľom)
-- Ďalšie predikcie: 5 km 21:06, 10 km 45:30, maratón 3:51:32
+- Garmin predikcia polmaratónu: 1:43:54
+- Rozdiel: −1:06 (pod cieľom)
+- Ďalšie predikcie: 5 km 21:07, 10 km 45:31, maratón 3:51:36
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
 | Metrika | Posledných 7 dní | Predchádzajúcich 7 | Zmena |
 |---|---|---|---|
-| Počet behov | 6 | 6 | +0 |
-| Objem | 35.8 km | 40.2 km | -4.4 km |
-| Priemerné tempo | 6:05/km | 6:08/km | – |
-| Priemerný tep | 141 bpm | 143 bpm | -2 bpm |
-| Priemerný spánok | 7:06:43 | 7:06:54 | -0 min |
+| Počet behov | 5 | 7 | -2 |
+| Objem | 30.7 km | 45.3 km | -14.6 km |
+| Priemerné tempo | 6:12/km | 6:03/km | – |
+| Priemerný tep | 139 bpm | 144 bpm | -5 bpm |
+| Priemerný spánok | 7:10:17 | 7:07:38 | +3 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 7:06:43
-- HRV: 70 ms
+- Priemerný spánok: 7:10:17
+- HRV: 68 ms
 - Pokojový tep: 47 bpm
-- Kroky: 13938 denne
-- Naposledy (2026-11-13): spánok 6:33:00, skóre 81, HRV 66, pripravenosť ráno 76 (high), aktuálne 81, stres 20
+- Kroky: 12724 denne
+- Naposledy (2026-11-14): spánok 7:37:00, skóre 78, HRV 63, pripravenosť ráno 79 (high), aktuálne 79, stres 17
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
 
 | Dátum | Spánok | Skóre | Hlboký | REM | HRV | Pokoj. tep | Pripravenosť ráno | Stres | Kroky |
 |---|---|---|---|---|---|---|---|---|---|
-| 2026-10-31 | – | – | – | – | – | 52 | 86 | 19 | 836 |
 | 2026-11-01 | 5:58:40 | 79 | 1:41:00 | 1:03:00 | 60 | 47 | 77 | 24 | 16174 |
 | 2026-11-02 | 8:45:31 | 94 | 1:55:00 | 1:57:00 | 68 | 49 | 89 | 20 | 11019 |
 | 2026-11-03 | 6:59:43 | 90 | 1:55:00 | 1:27:00 | 70 | 48 | 89 | 22 | 15126 |
@@ -44,13 +43,14 @@ Vygenerované: 2026-11-13T22:43
 | 2026-11-10 | 7:26:00 | 99 | 2:03:00 | 1:53:00 | 77 | 44 | 94 | 19 | 17353 |
 | 2026-11-11 | 6:47:00 | 90 | 1:28:00 | 1:31:00 | 73 | 47 | 100 | 22 | 12268 |
 | 2026-11-12 | 6:58:00 | 83 | 1:36:00 | 1:28:00 | 65 | 49 | 91 | 24 | 12263 |
-| 2026-11-13 | 6:33:00 | 81 | 1:31:00 | 1:20:00 | 66 | 46 | 76 | 20 | 16797 |
+| 2026-11-13 | 6:33:00 | 81 | 1:31:00 | 1:20:00 | 66 | 46 | 76 | 20 | 16818 |
+| 2026-11-14 | 7:37:00 | 78 | 1:36:00 | 1:35:00 | 63 | 49 | 79 | 17 | 252 |
 
 ## Tréningová záťaž
 - Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
-- Akútna záťaž: 466
-- Chronická záťaž: 479
-- Load Ratio: 0.9 (optimálne)
+- Akútna záťaž: 368
+- Chronická záťaž: 467
+- Load Ratio: 0.7 (nízke)
 - Garmin pásma: pod 0,8 nízke · 0,8–1,4 optimálne · 1,5–1,9 vysoké · 2,0+ veľmi vysoké
 - Load Ratio meria len záťaž. O dennej forme viac povie ranná pripravenosť.
 
@@ -63,7 +63,7 @@ Vygenerované: 2026-11-13T22:43
 | Túra | 5.6 km / 1× | 45.4 km / 5× |
 | Plávanie | 0.0 km / 0× | 4.4 km / 5× |
 
-- Uplynulo 13 z 30 dní mesiaca, 317 z 365 dní roka
+- Uplynulo 14 z 30 dní mesiaca, 318 z 365 dní roka
 - Sledované ciele: beh 100 km/mesiac a 1000 km/rok, bike rovnako (dajú sa zmeniť v dashboarde)
 
 ## Tepové zóny
@@ -72,9 +72,9 @@ Vygenerované: 2026-11-13T22:43
 
 | Šport | Z1 | Z2 | Z3 | Z4 | Z5 | Celkom |
 |---|---|---|---|---|---|---|
-| Beh | 24 % | 30 % | 32 % | 12 % | 2 % | 17:55:57 |
+| Beh | 23 % | 29 % | 33 % | 13 % | 2 % | 17:08:48 |
 | Túra | 88 % | 12 % | 0 % | 0 % | 0 % | 4:08:58 |
-| **Všetko** | 36 % | 27 % | 26 % | 10 % | 2 % | 22:04:55 |
+| **Všetko** | 36 % | 26 % | 26 % | 10 % | 2 % | 21:17:46 |
 
 ### Posledných 90 dní
 
@@ -173,7 +173,7 @@ Všetkých 148 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 
 ## Aktuálne hodnoty
 - VO2max: 51.4
-- Endurance score: 6341
+- Endurance score: 6339
 - Hill score: 47
 - Stav tréningu podľa Garminu: PRODUCTIVE_3
 
@@ -338,7 +338,7 @@ Stĺpce: datum,sport,km,cas,tempo_alebo_rychlost,tep,max_tep,prevysenie_m,kadenc
 2026-11-13,hike,5.63,1:21:17,14:27/km,72,134,94,92,0.5
 ```
 
-## Wellness po dňoch (138)
+## Wellness po dňoch (139)
 
 Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,stres,kroky
 
@@ -480,5 +480,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-11-10,7:26:00,99,2:03:00,1:53:00,3:30:00,77,44,94,19,17353
 2026-11-11,6:47:00,90,1:28:00,1:31:00,3:48:00,73,47,100,22,12268
 2026-11-12,6:58:00,83,1:36:00,1:28:00,3:54:00,65,49,91,24,12263
-2026-11-13,6:33:00,81,1:31:00,1:20:00,3:42:00,66,46,76,20,16797
+2026-11-13,6:33:00,81,1:31:00,1:20:00,3:42:00,66,46,76,20,16818
+2026-11-14,7:37:00,78,1:36:00,1:35:00,4:26:00,63,49,79,17,252
 ```
