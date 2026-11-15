@@ -1,41 +1,40 @@
 {
- "generated_at": "2026-11-14T21:37",
+ "generated_at": "2026-11-15T12:08",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-14T21:36",
+  "synced_at": "2026-11-15T12:08",
   "race_predictions": {
    "time5k_s": 1265,
-   "time10k_s": 2728,
-   "half_s": 6206,
-   "marathon_s": 13831
+   "time10k_s": 2727,
+   "half_s": 6204,
+   "marathon_s": 13827
   },
-  "vo2max": 51.3,
   "training_status": "PRODUCTIVE_3",
   "garmin_load": {
-   "ratio": 1.1,
-   "acute": 585,
-   "chronic": 506,
+   "ratio": 0.9,
+   "acute": 489,
+   "chronic": 493,
    "status": "OPTIMAL",
-   "chronic_min": 404.8,
-   "chronic_max": 759.0,
+   "chronic_min": 394.40000000000003,
+   "chronic_max": 739.5,
    "raw": {
-    "acwrPercent": 47,
+    "acwrPercent": 38,
     "acwrStatus": "OPTIMAL",
     "acwrStatusFeedback": "FEEDBACK_2",
-    "dailyTrainingLoadAcute": 585,
-    "maxTrainingLoadChronic": 759.0,
-    "minTrainingLoadChronic": 404.8,
-    "dailyTrainingLoadChronic": 506,
-    "dailyAcuteChronicWorkloadRatio": 1.1
+    "dailyTrainingLoadAcute": 489,
+    "maxTrainingLoadChronic": 739.5,
+    "minTrainingLoadChronic": 394.40000000000003,
+    "dailyTrainingLoadChronic": 493,
+    "dailyAcuteChronicWorkloadRatio": 0.9
    }
   },
-  "endurance_score": 6366,
+  "endurance_score": 6368,
   "hill_score": 49,
-  "fitness_age": 24.5853692826539,
+  "fitness_age": 24.512528522603358,
   "garmin_prs": [
    {
     "key": "5k",
@@ -115,23 +114,23 @@
  },
  "training_load": {
   "source": "garmin",
-  "acute": 585,
-  "chronic": 506,
-  "acwr": 1.1,
+  "acute": 489,
+  "chronic": 493,
+  "acwr": 0.9,
   "band": "optimal",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
  "readiness_note": "readiness = ranna hodnota po prebudeni, readiness_now = posledna hodnota dna",
  "week_now": {
-  "km": 46.0,
-  "pace": "6:12",
-  "hr": 141,
-  "n": 6
- },
- "week_prev": {
-  "km": 45.3,
+  "km": 39.0,
   "pace": "6:03",
   "hr": 144,
+  "n": 5
+ },
+ "week_prev": {
+  "km": 44.0,
+  "pace": "6:03",
+  "hr": 143,
   "n": 7
  },
  "personal_records": [
@@ -1995,6 +1994,17 @@
    "hill_score": 49,
    "fitness_age": 24.5853692826539,
    "load_ratio": 1.1
+  },
+  {
+   "date": "2026-11-15",
+   "vo2max": null,
+   "half_s": 6204,
+   "time5k_s": 1265,
+   "time10k_s": 2727,
+   "endurance_score": 6368,
+   "hill_score": 49,
+   "fitness_age": 24.512528522603358,
+   "load_ratio": 0.9
   }
  ],
  "gear": [],
@@ -2267,9 +2277,9 @@
   },
   "month_label": "2026-11",
   "year_label": "2026",
-  "day_of_month": 14,
+  "day_of_month": 15,
   "days_in_month": 30,
-  "day_of_year": 318,
+  "day_of_year": 319,
   "days_in_year": 365
  },
  "activities": [
@@ -7275,14 +7285,34 @@
    "hrv_last_night": 63,
    "hrv_status": "BALANCED",
    "bb_max": 95,
-   "bb_min": 28,
+   "bb_min": 24,
    "readiness": 79,
    "readiness_level": "HIGH",
    "readiness_now": 35,
    "readiness_src": "morning",
    "rhr": 49.0,
-   "steps": 20867,
+   "steps": 21028,
    "stress_avg": 24
+  },
+  {
+   "date": "2026-11-15",
+   "sleep_s": 29520,
+   "sleep_score": 98,
+   "deep_s": 6000,
+   "light_s": 16860,
+   "rem_s": 6660,
+   "awake_s": 120,
+   "hrv_last_night": 74,
+   "hrv_status": "BALANCED",
+   "bb_max": 100,
+   "bb_min": 24,
+   "readiness": 78,
+   "readiness_level": "HIGH",
+   "readiness_now": 78,
+   "readiness_src": "morning",
+   "rhr": 46.0,
+   "steps": 95,
+   "stress_avg": 12
   }
  ]
 }
