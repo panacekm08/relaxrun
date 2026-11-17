@@ -1,7 +1,7 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-17T00:54
-Vygenerované: 2026-11-17T00:54
+Synchronizované: 2026-11-17T13:43
+Vygenerované: 2026-11-17T13:43
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
@@ -17,14 +17,14 @@ Vygenerované: 2026-11-17T00:54
 | Objem | 25.7 km | 46.6 km | -20.9 km |
 | Priemerné tempo | 5:56/km | 6:10/km | – |
 | Priemerný tep | 148 bpm | 140 bpm | +8 bpm |
-| Priemerný spánok | 7:15:50 | 7:12:21 | +3 min |
+| Priemerný spánok | 7:04:51 | 7:12:21 | -8 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 7:15:50
-- HRV: 68 ms
-- Pokojový tep: 47 bpm
-- Kroky: 12454 denne
-- Naposledy (2026-11-17): spánok –, skóre –, HRV –, pripravenosť ráno 94 (high), aktuálne 94, stres 11
+- Priemerný spánok: 7:04:51
+- HRV: 69 ms
+- Pokojový tep: 46 bpm
+- Kroky: 12549 denne
+- Naposledy (2026-11-17): spánok 5:58:58, skóre 85, HRV 70, pripravenosť ráno 97 (prime), aktuálne 97, stres 9
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
@@ -44,13 +44,13 @@ Vygenerované: 2026-11-17T00:54
 | 2026-11-14 | 7:37:00 | 78 | 1:36:00 | 1:35:00 | 63 | 49 | 79 | 24 | 21028 |
 | 2026-11-15 | 8:12:00 | 98 | 1:40:00 | 1:51:00 | 74 | 46 | 78 | 19 | 13308 |
 | 2026-11-16 | 7:28:00 | 95 | 1:51:00 | 1:44:00 | 69 | 45 | 100 | 16 | 11476 |
-| 2026-11-17 | – | – | – | – | – | 44 | 94 | 11 | 17 |
+| 2026-11-17 | 5:58:58 | 85 | 2:17:00 | 1:20:00 | 70 | 43 | 97 | 9 | 681 |
 
 ## Tréningová záťaž
-- Zdroj: vlastný odhad z tepu a trvania aktivít (Garmin hodnota nebola dostupná)
-- Akútna záťaž (7 dní): 292
-- Chronická (týždenný priemer za 28 dní): 319
-- ACWR (odhad): 0.92 (optimálne)
+- Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
+- Akútna záťaž: 346
+- Chronická záťaž: 473
+- Load Ratio: 0.7 (nízke)
 - Garmin pásma: pod 0,8 nízke · 0,8–1,4 optimálne · 1,5–1,9 vysoké · 2,0+ veľmi vysoké
 - Load Ratio meria len záťaž. O dennej forme viac povie ranná pripravenosť.
 
@@ -172,9 +172,9 @@ Všetkých 152 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 
 ## Aktuálne hodnoty
 - VO2max: 51.3
-- Endurance score: –
-- Hill score: –
-- Stav tréningu podľa Garminu: –
+- Endurance score: 6371
+- Hill score: 49
+- Stav tréningu podľa Garminu: PRODUCTIVE_3
 
 ---
 
@@ -487,5 +487,5 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-11-14,7:37:00,78,1:36:00,1:35:00,4:26:00,63,49,79,24,21028
 2026-11-15,8:12:00,98,1:40:00,1:51:00,4:41:00,74,46,78,19,13308
 2026-11-16,7:28:00,95,1:51:00,1:44:00,3:53:00,69,45,100,16,11476
-2026-11-17,,,,,,,44,94,11,17
+2026-11-17,5:58:58,85,2:17:00,1:20:00,2:22:00,70,43,97,9,681
 ```
