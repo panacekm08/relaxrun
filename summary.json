@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-17T13:43",
+ "generated_at": "2026-11-17T23:54",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-17T13:43",
+  "synced_at": "2026-11-17T23:54",
   "race_predictions": {
    "time5k_s": 1264,
    "time10k_s": 2724,
@@ -16,24 +16,24 @@
   "training_status": "PRODUCTIVE_3",
   "garmin_load": {
    "ratio": 0.7,
-   "acute": 346,
-   "chronic": 473,
+   "acute": 380,
+   "chronic": 480,
    "status": "LOW",
-   "chronic_min": 378.40000000000003,
-   "chronic_max": 709.5,
+   "chronic_min": 384.0,
+   "chronic_max": 720.0,
    "raw": {
     "acwrPercent": 29,
     "acwrStatus": "LOW",
     "acwrStatusFeedback": "FEEDBACK_1",
-    "dailyTrainingLoadAcute": 346,
-    "maxTrainingLoadChronic": 709.5,
-    "minTrainingLoadChronic": 378.40000000000003,
-    "dailyTrainingLoadChronic": 473,
+    "dailyTrainingLoadAcute": 380,
+    "maxTrainingLoadChronic": 720.0,
+    "minTrainingLoadChronic": 384.0,
+    "dailyTrainingLoadChronic": 480,
     "dailyAcuteChronicWorkloadRatio": 0.7
    }
   },
   "endurance_score": 6371,
-  "hill_score": 49,
+  "hill_score": 51,
   "fitness_age": 24.512528522603358,
   "garmin_prs": [
    {
@@ -106,16 +106,16 @@
    },
    {
     "week": "2026-11-16",
-    "moderate": 54,
-    "vigorous": 1,
+    "moderate": 225,
+    "vigorous": 4,
     "goal": 150
    }
   ]
  },
  "training_load": {
   "source": "garmin",
-  "acute": 346,
-  "chronic": 473,
+  "acute": 380,
+  "chronic": 480,
   "acwr": 0.7,
   "band": "low",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
@@ -171,17 +171,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-07-22",
-   "s": "run",
-   "z": [
-    23,
-    2552,
-    128,
-    0,
-    0
-   ]
-  },
   {
    "d": "2026-07-23",
    "s": "run",
@@ -830,6 +819,17 @@
     0,
     0
    ]
+  },
+  {
+   "d": "2026-11-17",
+   "s": "hike",
+   "z": [
+    4715,
+    18,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -839,9 +839,9 @@
    "load": 1171
   },
   {
-   "km": 244.8,
-   "n": 24,
-   "load": 1113
+   "km": 261.8,
+   "n": 25,
+   "load": 1204
   },
   {
    "km": 286.6,
@@ -2024,7 +2024,7 @@
    "time5k_s": 1264,
    "time10k_s": 2724,
    "endurance_score": 6371,
-   "hill_score": 49,
+   "hill_score": 51,
    "fitness_age": 24.512528522603358,
    "load_ratio": 0.7
   }
@@ -2081,8 +2081,8 @@
   },
   {
    "week": "2026-11-16",
-   "moderate": 54,
-   "vigorous": 1,
+   "moderate": 225,
+   "vigorous": 4,
    "goal": 150
   }
  ],
@@ -2092,9 +2092,9 @@
    "swim": 0.0,
    "run": 91,
    "bike": 0,
-   "hike": 19,
-   "elev": 1659,
-   "n": 17
+   "hike": 36,
+   "elev": 2649,
+   "n": 18
   },
   {
    "m": "2026-10",
@@ -2229,9 +2229,9 @@
    "swim": 4.4,
    "run": 763,
    "bike": 646,
-   "hike": 59,
-   "elev": 17534,
-   "n": 115
+   "hike": 76,
+   "elev": 18524,
+   "n": 116
   },
   {
    "y": "2025",
@@ -2259,10 +2259,10 @@
     "time_s": 0
    },
    "hike": {
-    "km": 19.0,
-    "n": 4,
-    "elev": 282,
-    "time_s": 18654
+    "km": 36.0,
+    "n": 5,
+    "elev": 1272,
+    "time_s": 35076
    },
    "swim": {
     "km": 0.0,
@@ -2285,10 +2285,10 @@
     "time_s": 98083
    },
    "hike": {
-    "km": 58.7,
-    "n": 8,
-    "elev": 2615,
-    "time_s": 77710
+    "km": 75.7,
+    "n": 9,
+    "elev": 3605,
+    "time_s": 94132
    },
    "swim": {
     "km": 4.4,
@@ -4784,6 +4784,22 @@
    "cadence": 105.328125,
    "aerobic_te": 0.699999988079071,
    "vo2max": 51.0
+  },
+  {
+   "id": 25108576462,
+   "date": "2026-11-17",
+   "type": "hiking",
+   "name": "Ostravice Hiking",
+   "distance_m": 17006.009765625,
+   "duration_s": 16421.560546875,
+   "moving_s": 14661.0,
+   "avg_hr": 98.0,
+   "max_hr": 136.0,
+   "avg_speed_mps": 1.0360000133514404,
+   "elev_gain_m": 990.0,
+   "cadence": 89.28125,
+   "aerobic_te": 2.0,
+   "vo2max": null
   }
  ],
  "wellness": [
@@ -7415,14 +7431,14 @@
    "hrv_last_night": 70,
    "hrv_status": "BALANCED",
    "bb_max": 97,
-   "bb_min": 51,
+   "bb_min": 44,
    "readiness": 97,
    "readiness_level": "PRIME",
-   "readiness_now": 97,
+   "readiness_now": 95,
    "readiness_src": "morning",
    "rhr": 43.0,
-   "steps": 681,
-   "stress_avg": 9
+   "steps": 28653,
+   "stress_avg": 15
   }
  ]
 }
