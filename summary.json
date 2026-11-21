@@ -1,12 +1,12 @@
 {
- "generated_at": "2026-11-21T12:54",
+ "generated_at": "2026-11-21T22:14",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-21T12:54",
+  "synced_at": "2026-11-21T22:14",
   "race_predictions": {
    "time5k_s": 1255,
    "time10k_s": 2703,
@@ -16,19 +16,19 @@
   "training_status": "PRODUCTIVE_3",
   "garmin_load": {
    "ratio": 0.6,
-   "acute": 307,
-   "chronic": 458,
+   "acute": 316,
+   "chronic": 460,
    "status": "LOW",
-   "chronic_min": 366.40000000000003,
-   "chronic_max": 687.0,
+   "chronic_min": 368.0,
+   "chronic_max": 690.0,
    "raw": {
     "acwrPercent": 25,
     "acwrStatus": "LOW",
     "acwrStatusFeedback": "FEEDBACK_1",
-    "dailyTrainingLoadAcute": 307,
-    "maxTrainingLoadChronic": 687.0,
-    "minTrainingLoadChronic": 366.40000000000003,
-    "dailyTrainingLoadChronic": 458,
+    "dailyTrainingLoadAcute": 316,
+    "maxTrainingLoadChronic": 690.0,
+    "minTrainingLoadChronic": 368.0,
+    "dailyTrainingLoadChronic": 460,
     "dailyAcuteChronicWorkloadRatio": 0.6
    }
   },
@@ -106,16 +106,16 @@
    },
    {
     "week": "2026-11-16",
-    "moderate": 273,
-    "vigorous": 66,
+    "moderate": 326,
+    "vigorous": 68,
     "goal": 150
    }
   ]
  },
  "training_load": {
   "source": "garmin",
-  "acute": 307,
-  "chronic": 458,
+  "acute": 316,
+  "chronic": 460,
   "acwr": 0.6,
   "band": "low",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
@@ -171,17 +171,6 @@
   }
  ],
  "hr_zones_by_activity": [
-  {
-   "d": "2026-07-26",
-   "s": "run",
-   "z": [
-    46,
-    2201,
-    919,
-    0,
-    0
-   ]
-  },
   {
    "d": "2026-07-28",
    "s": "run",
@@ -830,6 +819,17 @@
     515,
     85
    ]
+  },
+  {
+   "d": "2026-11-21",
+   "s": "hike",
+   "z": [
+    652,
+    12,
+    0,
+    0,
+    0
+   ]
   }
  ],
  "day_of_week_pattern": [
@@ -859,9 +859,9 @@
    "load": 1323
   },
   {
-   "km": 471.3,
-   "n": 26,
-   "load": 2773
+   "km": 476.7,
+   "n": 27,
+   "load": 2800
   },
   {
    "km": 454.7,
@@ -2125,8 +2125,8 @@
   },
   {
    "week": "2026-11-16",
-   "moderate": 273,
-   "vigorous": 66,
+   "moderate": 326,
+   "vigorous": 68,
    "goal": 150
   }
  ],
@@ -2136,9 +2136,9 @@
    "swim": 0.0,
    "run": 102,
    "bike": 0,
-   "hike": 41,
-   "elev": 2840,
-   "n": 21
+   "hike": 46,
+   "elev": 3111,
+   "n": 22
   },
   {
    "m": "2026-10",
@@ -2273,9 +2273,9 @@
    "swim": 4.4,
    "run": 774,
    "bike": 646,
-   "hike": 81,
-   "elev": 18715,
-   "n": 119
+   "hike": 86,
+   "elev": 18986,
+   "n": 120
   },
   {
    "y": "2025",
@@ -2303,10 +2303,10 @@
     "time_s": 0
    },
    "hike": {
-    "km": 41.2,
-    "n": 6,
-    "elev": 1361,
-    "time_s": 39263
+    "km": 46.5,
+    "n": 7,
+    "elev": 1632,
+    "time_s": 44230
    },
    "swim": {
     "km": 0.0,
@@ -2329,10 +2329,10 @@
     "time_s": 98083
    },
    "hike": {
-    "km": 80.9,
-    "n": 10,
-    "elev": 3694,
-    "time_s": 98319
+    "km": 86.2,
+    "n": 11,
+    "elev": 3965,
+    "time_s": 103286
    },
    "swim": {
     "km": 4.4,
@@ -4892,6 +4892,22 @@
    "cadence": 167.421875,
    "aerobic_te": 3.299999952316284,
    "vo2max": 52.0
+  },
+  {
+   "id": 25151977890,
+   "date": "2026-11-21",
+   "type": "walking",
+   "name": "Oravska Lesna Walking",
+   "distance_m": 5336.3798828125,
+   "duration_s": 4967.2939453125,
+   "moving_s": 4373.0,
+   "avg_hr": 85.0,
+   "max_hr": 135.0,
+   "avg_speed_mps": 1.0740000009536743,
+   "elev_gain_m": 271.0,
+   "cadence": 90.71875,
+   "aerobic_te": 0.6000000238418579,
+   "vo2max": 51.0
   }
  ],
  "wellness": [
@@ -7606,11 +7622,11 @@
    "bb_min": 16,
    "readiness": 57,
    "readiness_level": "MODERATE",
-   "readiness_now": 57,
+   "readiness_now": 58,
    "readiness_src": "morning",
    "rhr": 48.0,
-   "steps": 597,
-   "stress_avg": 25
+   "steps": 9575,
+   "stress_avg": 27
   }
  ]
 }
