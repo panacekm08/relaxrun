@@ -1,20 +1,39 @@
 {
- "generated_at": "2026-11-24T03:23",
+ "generated_at": "2026-11-24T15:06",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-24T03:23",
+  "synced_at": "2026-11-24T15:06",
   "race_predictions": {
    "time5k_s": 1257,
    "time10k_s": 2706,
    "half_s": 6149,
    "marathon_s": 13725
   },
-  "endurance_score": null,
-  "hill_score": null,
+  "training_status": "RECOVERY_1",
+  "garmin_load": {
+   "ratio": 0.5,
+   "acute": 225,
+   "chronic": 426,
+   "status": "LOW",
+   "chronic_min": 340.8,
+   "chronic_max": 639.0,
+   "raw": {
+    "acwrPercent": 20,
+    "acwrStatus": "LOW",
+    "acwrStatusFeedback": "FEEDBACK_1",
+    "dailyTrainingLoadAcute": 225,
+    "maxTrainingLoadChronic": 639.0,
+    "minTrainingLoadChronic": 340.8,
+    "dailyTrainingLoadChronic": 426,
+    "dailyAcuteChronicWorkloadRatio": 0.5
+   }
+  },
+  "endurance_score": 6412,
+  "hill_score": 52,
   "fitness_age": 24.50890324951315,
   "garmin_prs": [
    {
@@ -94,10 +113,10 @@
   ]
  },
  "training_load": {
-  "source": "odhad",
-  "acute": 180,
-  "chronic": 319,
-  "acwr": 0.57,
+  "source": "garmin",
+  "acute": 225,
+  "chronic": 426,
+  "acwr": 0.5,
   "band": "low",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
@@ -2081,10 +2100,10 @@
    "half_s": 6149,
    "time5k_s": 1257,
    "time10k_s": 2706,
-   "endurance_score": null,
-   "hill_score": null,
+   "endurance_score": 6412,
+   "hill_score": 52,
    "fitness_age": 24.50890324951315,
-   "load_ratio": null
+   "load_ratio": 0.5
   }
  ],
  "gear": [],
@@ -7716,23 +7735,23 @@
   },
   {
    "date": "2026-11-24",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "bb_max": 32,
+   "sleep_s": 26280,
+   "sleep_score": 97,
+   "deep_s": 7620,
+   "light_s": 12540,
+   "rem_s": 6120,
+   "awake_s": 660,
+   "hrv_last_night": 76,
+   "hrv_status": "BALANCED",
+   "bb_max": 96,
    "bb_min": 31,
-   "readiness": 75,
-   "readiness_level": "HIGH",
-   "readiness_now": 75,
-   "readiness_src": "earliest",
-   "rhr": 48.0,
-   "steps": null,
-   "stress_avg": 21
+   "readiness": 97,
+   "readiness_level": "PRIME",
+   "readiness_now": 97,
+   "readiness_src": "morning",
+   "rhr": 44.0,
+   "steps": 2528,
+   "stress_avg": 19
   }
  ]
 }
