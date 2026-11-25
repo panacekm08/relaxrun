@@ -1,21 +1,40 @@
 {
- "generated_at": "2026-11-25T01:29",
+ "generated_at": "2026-11-25T14:46",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-25T01:29",
+  "synced_at": "2026-11-25T14:46",
   "race_predictions": {
    "time5k_s": 1259,
    "time10k_s": 2707,
    "half_s": 6149,
    "marathon_s": 13716
   },
-  "endurance_score": null,
-  "hill_score": null,
-  "fitness_age": 24.50890324951315,
+  "training_status": "RECOVERY_1",
+  "garmin_load": {
+   "ratio": 0.7,
+   "acute": 301,
+   "chronic": 429,
+   "status": "LOW",
+   "chronic_min": 343.20000000000005,
+   "chronic_max": 643.5,
+   "raw": {
+    "acwrPercent": 29,
+    "acwrStatus": "LOW",
+    "acwrStatusFeedback": "FEEDBACK_1",
+    "dailyTrainingLoadAcute": 301,
+    "maxTrainingLoadChronic": 643.5,
+    "minTrainingLoadChronic": 343.20000000000005,
+    "dailyTrainingLoadChronic": 429,
+    "dailyAcuteChronicWorkloadRatio": 0.7
+   }
+  },
+  "endurance_score": 6416,
+  "hill_score": 52,
+  "fitness_age": 24.235750821334456,
   "garmin_prs": [
    {
     "key": "5k",
@@ -94,10 +113,10 @@
   ]
  },
  "training_load": {
-  "source": "odhad",
-  "acute": 179,
-  "chronic": 316,
-  "acwr": 0.57,
+  "source": "garmin",
+  "acute": 301,
+  "chronic": 429,
+  "acwr": 0.7,
   "band": "low",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
@@ -2092,10 +2111,10 @@
    "half_s": 6149,
    "time5k_s": 1259,
    "time10k_s": 2707,
-   "endurance_score": null,
-   "hill_score": null,
-   "fitness_age": 24.50890324951315,
-   "load_ratio": null
+   "endurance_score": 6416,
+   "hill_score": 52,
+   "fitness_age": 24.235750821334456,
+   "load_ratio": 0.7
   }
  ],
  "gear": [],
@@ -7763,23 +7782,23 @@
   },
   {
    "date": "2026-11-25",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "bb_max": 38,
+   "sleep_s": 25680,
+   "sleep_score": 89,
+   "deep_s": 6000,
+   "light_s": 15540,
+   "rem_s": 4140,
+   "awake_s": 540,
+   "hrv_last_night": 72,
+   "hrv_status": "BALANCED",
+   "bb_max": 91,
    "bb_min": 36,
-   "readiness": null,
-   "readiness_now": null,
-   "readiness_level": null,
-   "readiness_src": "none",
-   "rhr": 49.0,
-   "steps": null,
-   "stress_avg": 23
+   "readiness": 86,
+   "readiness_level": "HIGH",
+   "readiness_now": 86,
+   "readiness_src": "morning",
+   "rhr": 48.0,
+   "steps": 5537,
+   "stress_avg": 29
   }
  ]
 }
