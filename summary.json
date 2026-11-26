@@ -1,21 +1,40 @@
 {
- "generated_at": "2026-11-26T01:03",
+ "generated_at": "2026-11-26T14:11",
  "goal": {
   "race": "half_marathon",
   "target": "1:45:00",
   "target_s": 6300
  },
  "meta": {
-  "synced_at": "2026-11-26T01:03",
+  "synced_at": "2026-11-26T14:11",
   "race_predictions": {
-   "time5k_s": 1259,
-   "time10k_s": 2707,
-   "half_s": 6149,
-   "marathon_s": 13716
+   "time5k_s": 1261,
+   "time10k_s": 2710,
+   "half_s": 6155,
+   "marathon_s": 13727
   },
-  "endurance_score": null,
-  "hill_score": null,
-  "fitness_age": 24.235750821334456,
+  "training_status": "RECOVERY_1",
+  "garmin_load": {
+   "ratio": 0.6,
+   "acute": 252,
+   "chronic": 410,
+   "status": "LOW",
+   "chronic_min": 328.0,
+   "chronic_max": 615.0,
+   "raw": {
+    "acwrPercent": 25,
+    "acwrStatus": "LOW",
+    "acwrStatusFeedback": "FEEDBACK_1",
+    "dailyTrainingLoadAcute": 252,
+    "maxTrainingLoadChronic": 615.0,
+    "minTrainingLoadChronic": 328.0,
+    "dailyTrainingLoadChronic": 410,
+    "dailyAcuteChronicWorkloadRatio": 0.6
+   }
+  },
+  "endurance_score": 6412,
+  "hill_score": 52,
+  "fitness_age": 23.93220321523895,
   "garmin_prs": [
    {
     "key": "5k",
@@ -94,10 +113,10 @@
   ]
  },
  "training_load": {
-  "source": "odhad",
-  "acute": 180,
-  "chronic": 322,
-  "acwr": 0.56,
+  "source": "garmin",
+  "acute": 252,
+  "chronic": 410,
+  "acwr": 0.6,
   "band": "low",
   "note": "Garmin pasma: <0.8 nizke, 0.8-1.4 optimalne, 1.5-1.9 vysoke, 2.0+ velmi vysoke. source=garmin -> Garmin Load Ratio, source=odhad -> vlastny vypocet."
  },
@@ -2100,13 +2119,13 @@
   {
    "date": "2026-11-26",
    "vo2max": null,
-   "half_s": 6149,
-   "time5k_s": 1259,
-   "time10k_s": 2707,
-   "endurance_score": null,
-   "hill_score": null,
-   "fitness_age": 24.235750821334456,
-   "load_ratio": null
+   "half_s": 6155,
+   "time5k_s": 1261,
+   "time10k_s": 2710,
+   "endurance_score": 6412,
+   "hill_score": 52,
+   "fitness_age": 23.93220321523895,
+   "load_ratio": 0.6
   }
  ],
  "gear": [],
@@ -7799,29 +7818,34 @@
    "hrv_last_night": 72,
    "hrv_status": "BALANCED",
    "bb_max": 91,
-   "bb_min": 26,
+   "bb_min": 22,
    "readiness": 86,
    "readiness_level": "HIGH",
    "readiness_now": 93,
    "readiness_src": "morning",
    "rhr": 48.0,
-   "steps": 16087,
+   "steps": 16303,
    "stress_avg": 30
   },
   {
    "date": "2026-11-26",
-   "sleep_s": null,
-   "sleep_score": null,
-   "deep_s": null,
-   "light_s": null,
-   "rem_s": null,
-   "awake_s": null,
-   "hrv_last_night": null,
-   "hrv_status": null,
-   "readiness": null,
-   "readiness_now": null,
-   "readiness_level": null,
-   "readiness_src": "none"
+   "sleep_s": 28680,
+   "sleep_score": 87,
+   "deep_s": 6900,
+   "light_s": 18480,
+   "rem_s": 3300,
+   "awake_s": 300,
+   "hrv_last_night": 76,
+   "hrv_status": "BALANCED",
+   "bb_max": 92,
+   "bb_min": 21,
+   "readiness": 100,
+   "readiness_level": "PRIME",
+   "readiness_now": 100,
+   "readiness_src": "morning",
+   "rhr": 49.0,
+   "steps": 64,
+   "stress_avg": 15
   }
  ]
 }

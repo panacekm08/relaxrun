@@ -1,13 +1,13 @@
 # Tréningový prehľad — Martin
 
-Synchronizované: 2026-11-26T01:03
-Vygenerované: 2026-11-26T01:03
+Synchronizované: 2026-11-26T14:11
+Vygenerované: 2026-11-26T14:11
 
 ## Cieľ
 - Cieľ polmaratónu: 1:45:00
-- Garmin predikcia polmaratónu: 1:42:29
-- Rozdiel: −2:31 (pod cieľom)
-- Ďalšie predikcie: 5 km 20:59, 10 km 45:07, maratón 3:48:36
+- Garmin predikcia polmaratónu: 1:42:35
+- Rozdiel: −2:25 (pod cieľom)
+- Ďalšie predikcie: 5 km 21:01, 10 km 45:10, maratón 3:48:47
 
 ## Posledných 7 dní vs. predchádzajúcich 7 (behy)
 
@@ -17,14 +17,14 @@ Vygenerované: 2026-11-26T01:03
 | Objem | 16.0 km | 21.4 km | -5.4 km |
 | Priemerné tempo | 5:24/km | 6:11/km | – |
 | Priemerný tep | 149 bpm | 148 bpm | +1 bpm |
-| Priemerný spánok | 6:18:50 | 7:15:08 | -56 min |
+| Priemerný spánok | 6:33:00 | 7:15:08 | -42 min |
 
 ## Regenerácia (priemer za 7 dní)
-- Priemerný spánok: 6:18:50
+- Priemerný spánok: 6:33:00
 - HRV: 71 ms
-- Pokojový tep: 45 bpm
-- Kroky: 12610 denne
-- Naposledy (2026-11-26): spánok –, skóre –, HRV –, pripravenosť ráno –, stres –
+- Pokojový tep: 46 bpm
+- Kroky: 10849 denne
+- Naposledy (2026-11-26): spánok 7:58:00, skóre 87, HRV 76, pripravenosť ráno 100 (prime), aktuálne 100, stres 15
 - Pripravenosť = ranná hodnota po prebudení (Garmin Training Readiness). Aktuálna počas dňa klesá s každou aktivitou.
 
 ### Posledných 14 dní po dňoch
@@ -43,14 +43,14 @@ Vygenerované: 2026-11-26T01:03
 | 2026-11-22 | 6:42:00 | 79 | 1:14:00 | 1:35:00 | 57 | 43 | 71 | 30 | 13381 |
 | 2026-11-23 | 5:06:57 | 69 | 1:38:00 | 55:00 | 79 | 44 | 80 | 20 | 9494 |
 | 2026-11-24 | 7:18:00 | 97 | 2:07:00 | 1:42:00 | 76 | 44 | 97 | 23 | 12773 |
-| 2026-11-25 | 7:08:00 | 89 | 1:40:00 | 1:09:00 | 72 | 48 | 86 | 30 | 16087 |
-| 2026-11-26 | – | – | – | – | – | – | – | – | – |
+| 2026-11-25 | 7:08:00 | 89 | 1:40:00 | 1:09:00 | 72 | 48 | 86 | 30 | 16303 |
+| 2026-11-26 | 7:58:00 | 87 | 1:55:00 | 55:00 | 76 | 49 | 100 | 15 | 64 |
 
 ## Tréningová záťaž
-- Zdroj: vlastný odhad z tepu a trvania aktivít (Garmin hodnota nebola dostupná)
-- Akútna záťaž (7 dní): 180
-- Chronická (týždenný priemer za 28 dní): 322
-- ACWR (odhad): 0.56 (nízke)
+- Zdroj: Garmin Load Ratio (rovnaké číslo ako na hodinkách)
+- Akútna záťaž: 252
+- Chronická záťaž: 410
+- Load Ratio: 0.6 (nízke)
 - Garmin pásma: pod 0,8 nízke · 0,8–1,4 optimálne · 1,5–1,9 vysoké · 2,0+ veľmi vysoké
 - Load Ratio meria len záťaž. O dennej forme viac povie ranná pripravenosť.
 
@@ -172,9 +172,9 @@ Všetkých 161 aktivít je v CSV nižšie (sekcia KOMPLETNÁ HISTÓRIA) a v súb
 
 ## Aktuálne hodnoty
 - VO2max: 51.7
-- Endurance score: –
-- Hill score: –
-- Stav tréningu podľa Garminu: –
+- Endurance score: 6412
+- Hill score: 52
+- Stav tréningu podľa Garminu: RECOVERY_1
 
 ---
 
@@ -504,6 +504,6 @@ Stĺpce: datum,spanok,skore,hlboky,rem,lahky,hrv,pokojovy_tep,pripravenost_rano,
 2026-11-22,6:42:00,79,1:14:00,1:35:00,3:53:00,57,43,71,30,13381
 2026-11-23,5:06:57,69,1:38:00,55:00,2:34:00,79,44,80,20,9494
 2026-11-24,7:18:00,97,2:07:00,1:42:00,3:29:00,76,44,97,23,12773
-2026-11-25,7:08:00,89,1:40:00,1:09:00,4:19:00,72,48,86,30,16087
-2026-11-26,,,,,,,,,,
+2026-11-25,7:08:00,89,1:40:00,1:09:00,4:19:00,72,48,86,30,16303
+2026-11-26,7:58:00,87,1:55:00,55:00,5:08:00,76,49,100,15,64
 ```
